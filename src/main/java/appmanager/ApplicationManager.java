@@ -46,8 +46,8 @@ public class ApplicationManager {
             driver = new InternetExplorerDriver();
         }
 
-        driver.get(properties.getProperty("web.baseUrl"));
         driver.manage().window().maximize();
+        driver.get(properties.getProperty("web.baseUrl"));
         sessionHelper = new SessionHelper(driver);
 //        groupHelper = new GroupHelper(driver);
 //        contactHelper = new ContactHelper(driver);

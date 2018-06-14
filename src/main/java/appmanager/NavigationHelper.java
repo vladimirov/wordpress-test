@@ -3,6 +3,9 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+
 public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(WebDriver driver) {
@@ -18,13 +21,42 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("groups"));
     }
 
-    public void gotoHomePage() {
-        if (isElementPresent(By.id("maintable"))){
-            return;
-        }
-        click(By.linkText("home"));
+    public String url() throws URISyntaxException {
+        URI uri = new URI(String.valueOf(driver.getCurrentUrl()));
+        String path = uri.getPath();
+        String pageName = path.substring(path.lastIndexOf('/') + 1);
+        return String.valueOf(pageName);
     }
-    
+
+
+    public void gotoHomePage() {
+        click(By.linkText("Home"));
+    }
+
+    public void gotoPostsPage() {
+        click(By.linkText("Posts"));
+    }
+
+    public void gotoMediaPage() {
+        click(By.linkText("Media"));
+    }
+
+    public void gotoPagesPage() {
+        click(By.linkText("Pages"));
+
+    }
+
+    public void gotoPluginsPage() {
+        click(By.xpath("//a[@href='plugins.php']"));
+    }
+
+    public void gotoUsersPage() {
+        click(By.linkText("Users"));
+    }
+
+    public void gotoSettingsPage() {
+        click(By.linkText("Settings"));
+    }
 
 }
 
