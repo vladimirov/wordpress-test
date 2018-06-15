@@ -12,14 +12,14 @@ public class NavigationHelper extends HelperBase {
         super(driver);
     }
 
-    public void groupPage() {
-        if (isElementPresent(By.tagName("h1"))
-                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
-                && isElementPresent(By.name("new"))) {
-            return;
-        }
-        click(By.linkText("groups"));
-    }
+//    public void groupPage() {
+//        if (isElementPresent(By.tagName("h1"))
+//                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
+//                && isElementPresent(By.name("new"))) {
+//            return;
+//        }
+//        click(By.linkText("groups"));
+//    }
 
     public String url() throws URISyntaxException {
         URI uri = new URI(String.valueOf(driver.getCurrentUrl()));
@@ -56,6 +56,10 @@ public class NavigationHelper extends HelperBase {
 
     public void gotoSettingsPage() {
         click(By.linkText("Settings"));
+    }
+
+    public void gotoAdminUrl() {
+
     }
 
 }

@@ -45,15 +45,21 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
         }
-
         driver.manage().window().maximize();
-        driver.get(properties.getProperty("web.baseUrl"));
+    }
+
+    public void openAdminUrl () {
+        driver.get(properties.getProperty("web.adminUrl"));
         sessionHelper = new SessionHelper(driver);
-//        groupHelper = new GroupHelper(driver);
-//        contactHelper = new ContactHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+    }
 
+    public void openBaseUrl () {
+        driver.get(properties.getProperty("web.baseUrl"));
+        sessionHelper = new SessionHelper(driver);
+        navigationHelper = new NavigationHelper(driver);
+        sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
     public void stop() {
