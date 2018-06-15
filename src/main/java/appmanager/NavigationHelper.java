@@ -58,9 +58,5 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("Settings"));
     }
 
-    public void gotoAdminUrl() {
-
-    }
-
 }
 

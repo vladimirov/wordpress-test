@@ -19,6 +19,8 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private String browser;
+    private PageSpeedHelper pageSpeedHelper;
+
 //    private DbHelper dbHelper;
 //    private ContactHelper contactHelper;
 //    private GroupHelper groupHelper;
@@ -34,32 +36,40 @@ public class ApplicationManager {
 
 //        dbHelper = new DbHelper();
 
-        if (browser.equals(BrowserType.CHROME)) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\chromedriver.exe");
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            driver = new ChromeDriver(capabilities);
-        } else if (browser.equals(BrowserType.FIREFOX)) {
-            System.setProperty("webdriver.firefox.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\geckodriver.exe");
-            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-            driver = new FirefoxDriver(capabilities);
-        } else if (browser.equals(BrowserType.IE)) {
-            driver = new InternetExplorerDriver();
+        switch (browser) {
+            case BrowserType.CHROME: {
+                System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\chromedriver.exe");
+                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                driver = new ChromeDriver(capabilities);
+                break;
+            }
+            case BrowserType.FIREFOX: {
+                System.setProperty("webdriver.firefox.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\geckodriver.exe");
+                DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+                driver = new FirefoxDriver(capabilities);
+                break;
+            }
+            case BrowserType.IE:
+                driver = new InternetExplorerDriver();
+                break;
         }
         driver.manage().window().maximize();
+        pageSpeedHelper = new PageSpeedHelper(driver);
     }
 
-    public void openAdminUrl () {
+    public void openAdminUrl() {
         driver.get(properties.getProperty("web.adminUrl"));
         sessionHelper = new SessionHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
-    public void openBaseUrl () {
+    public void openBaseUrl() {
         driver.get(properties.getProperty("web.baseUrl"));
-        sessionHelper = new SessionHelper(driver);
-        navigationHelper = new NavigationHelper(driver);
-        sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+    }
+
+    public void openPageSpeedUrl() {
+        driver.get(properties.getProperty("web.pageSpeedUrl"));
     }
 
     public void stop() {
@@ -68,6 +78,10 @@ public class ApplicationManager {
 
     public NavigationHelper goTo() {
         return navigationHelper;
+    }
+
+    public PageSpeedHelper pageSpeed() {
+        return pageSpeedHelper;
     }
 
 //    public GroupHelper group() {
