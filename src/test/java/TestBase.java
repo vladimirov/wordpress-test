@@ -25,10 +25,10 @@ public class TestBase {
         context.setAttribute("app", app);
     }
 
-//    @AfterSuite(alwaysRun = true)
-//    public void tearDown() {
-//        app.stop();
-//    }
+    @AfterSuite(alwaysRun = true)
+    public void tearDown() {
+        app.stop();
+    }
 
     @BeforeMethod
     public void logTestStart(Method m, Object[] p) {

@@ -11,8 +11,7 @@ public class PageSpeedTest extends TestBase{
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
         app.pageSpeed().isElementPresent(By.className("tab-title"));
-
-        //save screenshot
+        app.pageSpeed().screenShot();
 
     }
 

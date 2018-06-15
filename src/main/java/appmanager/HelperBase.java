@@ -1,10 +1,15 @@
 package appmanager;
 
+import antlr.Tool;
 import org.openqa.selenium.*;
+import org.testng.internal.Utils;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class HelperBase {
+
     protected WebDriver driver;
 
     public HelperBase(WebDriver driver) {
@@ -55,9 +60,11 @@ public class HelperBase {
         }
     }
 
-    public void saveScreenshot() {
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("c:\\screenshot.png"));
+    public void screenShot() {
+        File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String filename = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
+        File dest = new File("C:\\Projects\\Wordpress/" + filename);
+        Utils.copyFile(scr, dest);
     }
 
 }

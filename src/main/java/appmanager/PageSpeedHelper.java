@@ -28,7 +28,6 @@ public class PageSpeedHelper extends HelperBase{
 
     public void analyzeButtonClick() {
         click(By.className("analyze-cell"));
-
     }
 
 
