@@ -12,6 +12,9 @@ public class AddPostTest extends TestBase {
         app.site().enterPostTitle();
         app.site().enterTestContent();
         app.site().publish();
+        //make a screen shot
+        app.openTestPostPage();
+        app.site().screenShot();
 
 
 

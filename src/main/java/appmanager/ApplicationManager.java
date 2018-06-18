@@ -83,6 +83,11 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.pageSpeedUrl"));
     }
 
+    public void openTestPostPage() {
+        driver.get(properties.getProperty("web.baseUrl") + "test-post/");
+
+    }
+
     public void stop() {
         driver.quit();
     }
