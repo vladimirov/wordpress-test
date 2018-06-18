@@ -1,6 +1,7 @@
 package appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -26,6 +27,11 @@ public class SiteHelper extends HelperBase {
     public void enterTestContent() {
         click(By.id("content-html"));
         type(By.className("wp-editor-area"), Keys.chord(Keys.CONTROL, "v"));
+    }
+
+    public void scrollUp() {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,-250)", "");
     }
 
     public void publish() {
