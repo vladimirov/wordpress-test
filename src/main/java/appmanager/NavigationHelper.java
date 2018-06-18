@@ -41,11 +41,6 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("Media"));
     }
 
-    public void gotoPagesPage() {
-        click(By.linkText("Pages"));
-
-    }
-
     public void gotoPluginsPage() {
         click(By.xpath("//a[@href='plugins.php']"));
     }
@@ -60,6 +55,10 @@ public class NavigationHelper extends HelperBase {
 
     public void copyTestContent() {
         click(By.id("js-copy-button"));
+    }
+
+    public void addNewPostButtonClick() {
+        click(By.xpath("//a[@href='post-new.php']"));
     }
 
 }

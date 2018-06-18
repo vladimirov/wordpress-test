@@ -8,7 +8,7 @@ public class AddPostTest extends TestBase {
         app.goTo().copyTestContent();
         app.openAdminUrl();
         app.goTo().gotoPostsPage();
-        app.
+        app.goTo().addNewPostButtonClick();
 
 
     }
