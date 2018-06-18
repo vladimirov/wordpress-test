@@ -58,5 +58,9 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("Settings"));
     }
 
+    public void copyTestContent() {
+        click(By.id("js-copy-button"));
+    }
+
 }
 

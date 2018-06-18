@@ -80,6 +80,11 @@ public class HelperBase {
         }
     }
 
+    public void setText(By locator) {
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element.sendKeys(Keys.chord(Keys.CONTROL, "v"), "");
+    }
+
     public void screenShot() {
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String filename = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());

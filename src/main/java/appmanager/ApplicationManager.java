@@ -64,6 +64,14 @@ public class ApplicationManager {
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
+    public void openCrmUrl() {
+        driver.get(properties.getProperty("web.crmUrl"));
+        sessionHelper = new SessionHelper(driver);
+        navigationHelper = new NavigationHelper(driver);
+        sessionHelper.login(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
+        driver.get(properties.getProperty("web.crmUrl"));
+    }
+
     public void openBaseUrl() {
         driver.get(properties.getProperty("web.baseUrl"));
     }
