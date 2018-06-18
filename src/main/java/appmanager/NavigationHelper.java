@@ -57,9 +57,7 @@ public class NavigationHelper extends HelperBase {
         click(By.id("js-copy-button"));
     }
 
-    public void addNewPostButtonClick() {
-        click(By.xpath("//a[@href='post-new.php']"));
-    }
+
 
 }
 

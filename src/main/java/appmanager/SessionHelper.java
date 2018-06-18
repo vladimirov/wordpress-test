@@ -9,9 +9,17 @@ public class SessionHelper extends HelperBase{
         super(driver);
     }
 
-    public void login(String username, String password) {
+    public void loginToAdmin(String username, String password) {
         type(By.name("log"), username);
         type(By.name("pwd"), password);
         click(By.name("wp-submit"));
     }
+
+    public void loginToCrm(String username, String password) {
+        type(By.name("log"), username);
+        type(By.name("pwd"), password);
+        click(By.cssSelector("button.btn.btn-danger.btn-block.btn-flat"));
+    }
+
+
 }

@@ -20,6 +20,8 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private String browser;
     private PageSpeedHelper pageSpeedHelper;
+    private SiteHelper siteHelper;
+
 
 //    private DbHelper dbHelper;
 //    private ContactHelper contactHelper;
@@ -54,21 +56,22 @@ public class ApplicationManager {
                 break;
         }
         driver.manage().window().maximize();
+
         pageSpeedHelper = new PageSpeedHelper(driver);
+        siteHelper = new SiteHelper(driver);
+        navigationHelper = new NavigationHelper(driver);
     }
 
     public void openAdminUrl() {
         driver.get(properties.getProperty("web.adminUrl"));
         sessionHelper = new SessionHelper(driver);
-        navigationHelper = new NavigationHelper(driver);
-        sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+        sessionHelper.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
     public void openCrmUrl() {
         driver.get(properties.getProperty("web.crmUrl"));
         sessionHelper = new SessionHelper(driver);
-        navigationHelper = new NavigationHelper(driver);
-        sessionHelper.login(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
+        sessionHelper.loginToCrm(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
         driver.get(properties.getProperty("web.crmUrl"));
     }
 
@@ -90,6 +93,10 @@ public class ApplicationManager {
 
     public PageSpeedHelper pageSpeed() {
         return pageSpeedHelper;
+    }
+
+    public SiteHelper site() {
+        return siteHelper;
     }
 
 //    public GroupHelper group() {
