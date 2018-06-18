@@ -2,18 +2,28 @@ package appmanager;
 
 import antlr.Tool;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.internal.Utils;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class HelperBase {
 
     protected WebDriver driver;
+    public WebDriverWait wait;
+    public int timeOutInSeconds = 10;
+    public WebElement element;
+
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, timeOutInSeconds);
+
     }
 
     protected void click(By locator) {
@@ -57,6 +67,16 @@ public class HelperBase {
             return true;
         } catch (NoSuchElementException e) {
             return false;
+        }
+    }
+
+    public void waitToBePresent(By locator) {
+        try {
+            element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            System.out.println("ELEMENT " + locator + " HAS BEEN FOUND");
+        } catch (NullPointerException ignored) {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            System.out.println("ELEMENT " + locator + " NOT FOUND");
         }
     }
 

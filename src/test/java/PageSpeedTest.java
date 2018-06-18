@@ -10,7 +10,10 @@ public class PageSpeedTest extends TestBase{
         app.openPageSpeedUrl();
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
-        app.pageSpeed().isElementPresent(By.className("tab-title"));
+
+
+//        app.pageSpeed().isElementPresent(By.className("tab-title"));
+        app.pageSpeed().waitToBePresent(By.cssSelector("div.speed-report-card"));
         app.pageSpeed().screenShot();
 
     }
