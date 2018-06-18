@@ -24,7 +24,12 @@ public class SiteHelper extends HelperBase {
     }
 
     public void enterTestContent() {
-        type(By.id("tinymce"), Keys.chord(Keys.CONTROL, "v"));
+        click(By.id("content-html"));
+        type(By.className("wp-editor-area"), Keys.chord(Keys.CONTROL, "v"));
+    }
+
+    public void publish() {
+        click(By.id("publish"));
     }
 
 

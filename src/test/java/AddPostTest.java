@@ -10,7 +10,8 @@ public class AddPostTest extends TestBase {
         app.goTo().gotoPostsPage();
         app.site().addNewPostButtonClick();
         app.site().enterPostTitle();
-//        app.site().enterTestContent();
+        app.site().enterTestContent();
+        app.site().publish();
 
 
 
