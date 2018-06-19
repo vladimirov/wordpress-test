@@ -73,6 +73,14 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.crmUrl"));
     }
 
+    public void openBaseUrl() {
+        driver.get(properties.getProperty("web.baseUrl"));
+    }
+
+    public void openPageNotFoundUrl() {
+        driver.get(properties.getProperty("web.baseUrl") + "404");
+    }
+
     public void stop() {
         driver.quit();
     }
