@@ -1,4 +1,3 @@
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.net.URISyntaxException;
@@ -10,29 +9,29 @@ public class DefaultPagesTest extends TestBase {
 
     @Test
     public void testDefaultPages() throws URISyntaxException {
-        app.openAdminUrl();
+        app.loginToAdmin();
 
-        app.goTo().gotoHomePage();
-        assertThat(app.goTo().url(), equalTo("index.php"));
+        app.admin().gotoHomePage();
+        assertThat(app.admin().url(), equalTo("index.php"));
 
-        app.goTo().gotoPostsPage();
-        assertThat(app.goTo().url(), equalTo("edit.php"));
+        app.admin().gotoPostsPage();
+        assertThat(app.admin().url(), equalTo("edit.php"));
 
-        app.goTo().gotoMediaPage();
-        assertThat(app.goTo().url(), equalTo("upload.php"));
+        app.admin().gotoMediaPage();
+        assertThat(app.admin().url(), equalTo("upload.php"));
 
-//        app.goTo().gotoPagesPage();
-//        System.out.println(app.goTo().url());
-//        assertThat(app.goTo().url(), equalTo("edit.php?post_type=page"));
+//        app.admin().gotoPagesPage();
+//        System.out.println(app.admin().url());
+//        assertThat(app.admin().url(), equalTo("edit.php?post_type=page"));
 
-        app.goTo().gotoPluginsPage();
-        assertThat(app.goTo().url(), equalTo("plugins.php"));
+        app.admin().gotoPluginsPage();
+        assertThat(app.admin().url(), equalTo("plugins.php"));
 
-        app.goTo().gotoUsersPage();
-        assertThat(app.goTo().url(), equalTo("users.php"));
+        app.admin().gotoUsersPage();
+        assertThat(app.admin().url(), equalTo("users.php"));
 
-        app.goTo().gotoSettingsPage();
-        assertThat(app.goTo().url(), equalTo("options-general.php"));
+        app.admin().gotoSettingsPage();
+        assertThat(app.admin().url(), equalTo("options-general.php"));
 
     }
 

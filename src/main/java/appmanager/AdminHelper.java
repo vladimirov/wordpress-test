@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class NavigationHelper extends HelperBase {
+public class AdminHelper extends HelperBase {
 
-    public NavigationHelper(WebDriver driver) {
+    public AdminHelper(WebDriver driver) {
         super(driver);
     }
 

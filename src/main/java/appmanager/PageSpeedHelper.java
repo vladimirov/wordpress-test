@@ -17,6 +17,10 @@ public class PageSpeedHelper extends HelperBase{
         properties = new Properties();
     }
 
+    public void openPageSpeedUrl() {
+        driver.get(properties.getProperty("web.pageSpeedUrl"));
+    }
+
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));

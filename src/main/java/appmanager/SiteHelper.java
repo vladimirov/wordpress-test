@@ -17,6 +17,10 @@ public class SiteHelper extends HelperBase {
         properties = new Properties();
     }
 
+    public void openBaseUrl() {
+        driver.get(properties.getProperty("web.baseUrl"));
+    }
+
     public void addNewPostButtonClick() {
         click(By.xpath("//a[@href='post-new.php']"));
     }

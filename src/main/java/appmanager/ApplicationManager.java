@@ -17,7 +17,7 @@ public class ApplicationManager {
     WebDriver driver;
 
     private SessionHelper sessionHelper;
-    private NavigationHelper navigationHelper;
+    private AdminHelper adminHelper;
     private String browser;
     private PageSpeedHelper pageSpeedHelper;
     private SiteHelper siteHelper;
@@ -57,36 +57,28 @@ public class ApplicationManager {
 
         pageSpeedHelper = new PageSpeedHelper(driver);
         siteHelper = new SiteHelper(driver);
-        navigationHelper = new NavigationHelper(driver);
+        adminHelper = new AdminHelper(driver);
     }
 
-    public void openAdminUrl() {
+    public void loginToAdmin() {
         driver.get(properties.getProperty("web.adminUrl"));
         sessionHelper = new SessionHelper(driver);
         sessionHelper.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
-    public void openCrmUrl() {
+    public void loginToCRM() {
         driver.get(properties.getProperty("web.crmUrl"));
         sessionHelper = new SessionHelper(driver);
         sessionHelper.loginToCrm(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
         driver.get(properties.getProperty("web.crmUrl"));
     }
 
-    public void openBaseUrl() {
-        driver.get(properties.getProperty("web.baseUrl"));
-    }
-
-    public void openPageSpeedUrl() {
-        driver.get(properties.getProperty("web.pageSpeedUrl"));
-    }
-
     public void stop() {
         driver.quit();
     }
 
-    public NavigationHelper goTo() {
-        return navigationHelper;
+    public AdminHelper admin() {
+        return adminHelper;
     }
 
     public PageSpeedHelper pageSpeed() {
