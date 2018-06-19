@@ -6,7 +6,6 @@ public class PageNotFoundTest extends TestBase{
     public void testNotFoundPage(){
         app.openPageNotFoundUrl();
         app.site().screenShot();
-
     }
 
 }

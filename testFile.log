@@ -411,3 +411,5 @@
 13222 [main] INFO  TestBase - Stop test createPostTest
 3348 [main] INFO  TestBase - Start test testNotFoundPage with parameters []
 5274 [main] INFO  TestBase - Stop test testNotFoundPage
+3409 [main] INFO  TestBase - Start test testNotFoundPage with parameters []
+5251 [main] INFO  TestBase - Stop test testNotFoundPage
