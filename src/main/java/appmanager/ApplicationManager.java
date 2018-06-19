@@ -21,8 +21,6 @@ public class ApplicationManager {
     private String browser;
     private PageSpeedHelper pageSpeedHelper;
     private SiteHelper siteHelper;
-
-
 //    private DbHelper dbHelper;
 //    private ContactHelper contactHelper;
 //    private GroupHelper groupHelper;
@@ -81,11 +79,6 @@ public class ApplicationManager {
 
     public void openPageSpeedUrl() {
         driver.get(properties.getProperty("web.pageSpeedUrl"));
-    }
-
-    public void openTestPostPage() {
-        driver.get(properties.getProperty("web.baseUrl") + "test-post/");
-
     }
 
     public void stop() {

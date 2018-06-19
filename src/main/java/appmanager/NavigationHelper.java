@@ -12,22 +12,12 @@ public class NavigationHelper extends HelperBase {
         super(driver);
     }
 
-//    public void groupPage() {
-//        if (isElementPresent(By.tagName("h1"))
-//                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
-//                && isElementPresent(By.name("new"))) {
-//            return;
-//        }
-//        click(By.linkText("groups"));
-//    }
-
     public String url() throws URISyntaxException {
         URI uri = new URI(String.valueOf(driver.getCurrentUrl()));
         String path = uri.getPath();
         String pageName = path.substring(path.lastIndexOf('/') + 1);
         return String.valueOf(pageName);
     }
-
 
     public void gotoHomePage() {
         click(By.linkText("Home"));
@@ -57,7 +47,13 @@ public class NavigationHelper extends HelperBase {
         click(By.id("js-copy-button"));
     }
 
-
-
+    //    public void groupPage() {
+//        if (isElementPresent(By.tagName("h1"))
+//                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
+//                && isElementPresent(By.name("new"))) {
+//            return;
+//        }
+//        click(By.linkText("groups"));
+//    }
 }
 

@@ -1,15 +1,16 @@
 package appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.Properties;
 
 public class SiteHelper extends HelperBase {
 
     private final Properties properties;
+    private String title = "Test Post " + System.currentTimeMillis();
+    JavascriptExecutor jse = (JavascriptExecutor) driver;
+
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -21,7 +22,7 @@ public class SiteHelper extends HelperBase {
     }
 
     public void enterPostTitle() {
-        type(By.name("post_title"), "Test Post");
+        type(By.name("post_title"), title);
     }
 
     public void enterTestContent() {
@@ -29,14 +30,30 @@ public class SiteHelper extends HelperBase {
         type(By.className("wp-editor-area"), Keys.chord(Keys.CONTROL, "v"));
     }
 
-    public void scrollUp() {
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("window.scrollBy(0,-250)", "");
-    }
-
-    public void publish() {
+    public void publishPost() {
+        jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
+        type(By.id("original_publish"), "test");
+        submit(By.id("original_publish"));
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+        waitToBePresent(By.id("message"));
         click(By.id("publish"));
     }
 
+    public void scrollUp() {
+        jse.executeScript("window.scrollBy(0,-250)", "");
+    }
 
+    public void previewPost() {
+        click(By.cssSelector("button.handlediv"));
+        click(By.id("post-preview"));
+    }
+
+    public void openTestPostPage() {
+        type(By.id("post-search-input"), title);
+        click(By.id("search-submit"));
+        click(By.cssSelector("a.row-title"));
+        click(By.id("sample-permalink"));
+        waitToBePresent(By.cssSelector("div#primary"));
+    }
 }

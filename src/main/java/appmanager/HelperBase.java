@@ -1,6 +1,5 @@
 package appmanager;
 
-import antlr.Tool;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,8 +8,6 @@ import org.testng.internal.Utils;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
 public class HelperBase {
 
@@ -30,20 +27,14 @@ public class HelperBase {
         driver.findElement(locator).click();
     }
 
-//    protected void type(By locator, String text) {
-//        click(locator);
-//        if (text != null) {
-//            String existingText = driver.findElement(locator).getAttribute("value");
-//            if (!text.equals(existingText)) {
-//                driver.findElement(locator).clear();
-//                driver.findElement(locator).sendKeys(text);
-//            }
-//        }
-//    }
-
     protected void type(By locator, String text) {
         click(locator);
+        driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
+    }
+
+    protected void submit(By locator) {
+        driver.findElement(locator).submit();
     }
 
     protected void attach(By locator, File file) {
@@ -87,4 +78,15 @@ public class HelperBase {
         Utils.copyFile(scr, dest);
     }
 
+
+    //    protected void type(By locator, String text) {
+//        click(locator);
+//        if (text != null) {
+//            String existingText = driver.findElement(locator).getAttribute("value");
+//            if (!text.equals(existingText)) {
+//                driver.findElement(locator).clear();
+//                driver.findElement(locator).sendKeys(text);
+//            }
+//        }
+//    }
 }
