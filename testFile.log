@@ -381,3 +381,9 @@
 17164 [main] INFO  TestBase - Stop test createPostTest
 2568 [main] INFO  TestBase - Start test createPostTest with parameters []
 16996 [main] INFO  TestBase - Stop test createPostTest
+2570 [main] INFO  TestBase - Start test createPostTest with parameters []
+16168 [main] INFO  TestBase - Stop test createPostTest
+2506 [main] INFO  TestBase - Start test testPageSpeed with parameters []
+14721 [main] INFO  TestBase - Stop test testPageSpeed
+2572 [main] INFO  TestBase - Start test testDefaultPages with parameters []
+10770 [main] INFO  TestBase - Stop test testDefaultPages
