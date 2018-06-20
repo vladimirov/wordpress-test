@@ -6,8 +6,12 @@ import java.util.Properties;
 
 public class SiteHelper extends HelperBase {
     private final Properties properties;
-    private String title = "Test Post " + System.currentTimeMillis();
     JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+    public String postTitle = "Test Post " + System.currentTimeMillis();
+    public String pageNotFoundTitle = "Oops! That page can’t be found.";
+
+    private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -19,7 +23,7 @@ public class SiteHelper extends HelperBase {
     }
 
     public void enterPostTitle() {
-        type(By.name("post_title"), title);
+        type(By.name("post_title"), postTitle);
     }
 
     public void enterTestContent() {
@@ -42,11 +46,19 @@ public class SiteHelper extends HelperBase {
     }
 
     public void openTestPostPage() {
-        type(By.id("post-search-input"), title);
+        type(By.id("post-search-input"), postTitle);
         click(By.id("search-submit"));
         click(By.cssSelector("a.row-title"));
         click(By.id("sample-permalink"));
         waitToBePresent(By.cssSelector("div#primary"));
+    }
+
+    public boolean postTitleIsDisplayed() {
+        return isElementPresent(createdPostTitleLocator);
+    }
+
+    public boolean postTitleTextIsDisplayed() {
+        return isTextDisplayed(postTitle, createdPostTitleLocator);
     }
 
 }

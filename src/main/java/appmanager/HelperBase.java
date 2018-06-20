@@ -1,8 +1,11 @@
 package appmanager;
 
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.internal.Utils;
 
 import java.io.File;
@@ -10,6 +13,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class HelperBase {
+
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
 
     protected WebDriver driver;
     public WebDriverWait wait;
@@ -20,17 +25,29 @@ public class HelperBase {
     public HelperBase(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSeconds);
-
     }
 
     protected void click(By locator) {
-        driver.findElement(locator).click();
+        logger.info("CLICK ON ELEMENT: " + locator);
+        try {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.click();
+        } catch (StaleElementReferenceException ignored) {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.click();
+        }
     }
 
     protected void type(By locator, String text) {
-        click(locator);
-        driver.findElement(locator).clear();
-        driver.findElement(locator).sendKeys(text);
+        logger.info("SEND TO " + locator + " KEYS " + text);
+        try {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.clear();
+            element.sendKeys(text);
+        } catch (StaleElementReferenceException ignored) {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.sendKeys(text);
+        }
     }
 
     protected void submit(By locator) {
@@ -63,11 +80,11 @@ public class HelperBase {
 
     public void waitToBePresent(By locator) {
         try {
+            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-            System.out.println("ELEMENT " + locator + " HAS BEEN FOUND");
         } catch (NullPointerException ignored) {
             element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-            System.out.println("ELEMENT " + locator + " NOT FOUND");
+            logger.info("ELEMENT HAS NOT BEEN FOUND: " + locator);
         }
     }
 
@@ -78,6 +95,18 @@ public class HelperBase {
         Utils.copyFile(scr, dest);
     }
 
+    protected boolean isTextDisplayed(String text, By locator) {
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        logger.info("ACTUAL TEXT:   " + element.getText());
+        logger.info("EXPECTED TEXT: " + text);
+        return element.getText().equals(text);
+    }
+
+//    public String getElementText(By locator) {
+//        WebElement element = driver.findElement(locator);
+//        return element.getText();
+//    }
 
     //    protected void type(By locator, String text) {
 //        click(locator);

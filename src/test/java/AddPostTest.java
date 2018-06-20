@@ -1,5 +1,8 @@
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.*;
+
+
 public class AddPostTest extends TestBase {
 
     @Test
@@ -15,6 +18,9 @@ public class AddPostTest extends TestBase {
         app.admin().gotoPostsPage();
         app.site().openTestPostPage();
         app.site().screenShot();
+
+        assertEquals(app.site().postTitleIsDisplayed(), true);
+        assertTrue(app.site().postTitleTextIsDisplayed());
     }
 
 }
