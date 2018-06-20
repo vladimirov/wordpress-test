@@ -77,6 +77,10 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.baseUrl"));
     }
 
+    public void openPageSpeedUrl() {
+        driver.get(properties.getProperty("web.pageSpeedUrl"));
+    }
+
     public void openPageNotFoundUrl() {
         driver.get(properties.getProperty("web.baseUrl") + "404");
     }

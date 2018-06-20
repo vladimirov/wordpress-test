@@ -3,9 +3,10 @@
 <suite name="Suite1" verbose="1" >
     <test name="Test" >
         <classes>
-            <!--<class name="GroupCreationTest" />-->
-            <!--<class name="GroupModificationTest" />-->
-            <!--<class name="GroupDeletionTest" />-->
+            <class name="AddPostTest" />
+            <class name="DefaultPagesTest" />
+            <class name="PageNotFoundTest" />
+            <class name="PageSpeedTest" />
         </classes>
     </test>
 

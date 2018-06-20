@@ -3,13 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0bd5e109-3e85-4177-99e0-ed5553722132-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0ca2206e-4793-4984-8ecf-dbaeb5d6758c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/12d18df5-2280-429a-b901-133b02e1297f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8508200a-95e2-4aad-9243-b7a379b3d457-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fd50cdb0-32b0-470d-ae0f-fdb4646b9b57-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,44 +26,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <file leaf-file-name="local.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="97" column="32" lean-forward="true" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultPagesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DefaultPagesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
+      <file leaf-file-name="SessionHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1744#1745#0" expanded="true" />
-                <element signature="e#1808#1809#0" expanded="true" />
-                <element signature="e#1857#1858#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -82,22 +92,22 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/allure.properties" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/TestSiteHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageNotFoundTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddPostTest.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
       </list>
     </option>
   </component>
@@ -204,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddPostTest">
+  <component name="RunManager" selected="TestNG.DefaultPagesTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -370,11 +380,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddPostTest" />
-        <item itemvalue="TestNG.PageNotFoundTest" />
         <item itemvalue="TestNG.DefaultPagesTest" />
-        <item itemvalue="TestNG.AddPostTest.createPostTest" />
+        <item itemvalue="TestNG.PageNotFoundTest" />
         <item itemvalue="TestNG.PageSpeedTest" />
+        <item itemvalue="TestNG.AddPostTest" />
+        <item itemvalue="TestNG.AddPostTest.createPostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -466,39 +476,46 @@
       <option name="project" value="LOCAL" />
       <updated>1529437690960</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added assertions to add post test">
+      <created>1529491481651</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1529491481652</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2018.06.20 at 12h 57m 47s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedTest - 2018.06.20 at 17h 05m 42s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 00m 55s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 06m 54s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 01m 39s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 07m 06s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 03m 25s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 07m 24s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 24m 52s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="PageNotFoundTest - 2018.06.20 at 17h 08m 51s.xml">
+      <configuration name="PageNotFoundTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 27m 56s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="PageNotFoundTest - 2018.06.20 at 17h 09m 27s.xml">
+      <configuration name="PageNotFoundTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 31m 01s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="PageNotFoundTest - 2018.06.20 at 17h 10m 44s.xml">
+      <configuration name="PageNotFoundTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 32m 37s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="PageNotFoundTest - 2018.06.20 at 17h 11m 10s.xml">
+      <configuration name="PageNotFoundTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 33m 18s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 11m 34s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.20 at 13h 38m 57s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 11m 58s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -514,11 +531,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.25053534" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.24411134" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.70021415" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32869378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -559,7 +576,8 @@
     <MESSAGE value="added openAdminUrl and openBaseUrl in Application manager" />
     <MESSAGE value="screenshot adding fix" />
     <MESSAGE value="create post test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="create post test added" />
+    <MESSAGE value="added assertions to add post test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added assertions to add post test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -575,25 +593,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageSpeedTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/groups.json" />
-    <entry file="file://$PROJECT_DIR$/testng.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allure.properties" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties" />
@@ -602,7 +601,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/DefaultPagesTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/groups.json" />
-    <entry file="file://$PROJECT_DIR$/testng.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/allure.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/String.java">
@@ -657,20 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DefaultPagesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -690,23 +674,6 @@
     <entry file="file://$PROJECT_DIR$/20180620103910.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageNotFoundTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -715,34 +682,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#878#879#0" expanded="true" />
             <element signature="e#904#905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageSpeedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3314#3315#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,10 +766,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="510">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
             <element signature="e#1744#1745#0" expanded="true" />
             <element signature="e#1808#1809#0" expanded="true" />
             <element signature="e#1857#1858#0" expanded="true" />
@@ -839,13 +780,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/20180620045811.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/PageSpeedHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageNotFoundTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageSpeedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620050541.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620050408.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620050850.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620050925.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620051043.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20180620051109.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DefaultPagesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
