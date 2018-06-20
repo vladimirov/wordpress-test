@@ -882,3 +882,14 @@
 7720 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
 7854 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
 8301 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+3521 [main] INFO  TestBase - START TEST createPostTest WITH PARAMETERS []
+4812 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5012 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5167 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7386 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8324 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8368 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8512 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+8649 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+9096 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+19408 [main] INFO  TestBase - STOP TEST createPostTest

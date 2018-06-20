@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/SessionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/SessionHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
@@ -67,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -616,13 +613,17 @@
       <option name="project" value="LOCAL" />
       <updated>1529491481652</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added assertions to add post test">
+      <created>1529526986864</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1529526986865</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageNotFoundTest - 2018.06.20 at 17h 11m 10s.xml">
-      <configuration name="PageNotFoundTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DefaultPagesTest - 2018.06.20 at 17h 11m 34s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
@@ -650,6 +651,9 @@
     <history-entry file="AddPostTest - 2018.06.20 at 23h 20m 46s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AddPostTest - 2018.06.20 at 23h 40m 36s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -664,7 +668,7 @@
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="13" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.81511253" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.81511253" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="12" />
       <window_info id="Designer" order="9" />
@@ -923,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -967,6 +961,16 @@
             <element signature="e#1808#1809#0" expanded="true" />
             <element signature="e#1857#1858#0" expanded="true" />
             <element signature="e#1931#1932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
