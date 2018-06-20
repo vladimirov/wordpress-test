@@ -31,12 +31,17 @@ public class SiteHelper extends HelperBase {
         type(By.className("wp-editor-area"), Keys.chord(Keys.CONTROL, "v"));
     }
 
+
     public void publishPost() {
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(By.id("original_publish"), "test");
         submit(By.id("original_publish"));
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
+
+        if (isAlertPresent()) {
+            Alert alert = driver.switchTo().alert();
+            alert.accept();
+        }
+
         waitToBePresent(By.id("message"));
         click(By.id("publish"));
     }

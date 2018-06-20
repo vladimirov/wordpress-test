@@ -10,6 +10,7 @@ public class SessionHelper extends HelperBase{
     }
 
     public void loginToAdmin(String username, String password) {
+        waitToBePresent(By.name("log"));
         type(By.name("log"), username);
         type(By.name("pwd"), password);
         click(By.name("wp-submit"));

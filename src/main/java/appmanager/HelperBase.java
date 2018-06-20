@@ -60,23 +60,6 @@ public class HelperBase {
         }
     }
 
-    public boolean isAlertPresent() {
-        try {
-            driver.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-    }
-
-    public boolean isElementPresent(By locator) {
-        try {
-            driver.findElement(locator);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
 
     public void waitToBePresent(By locator) {
         try {
@@ -95,6 +78,24 @@ public class HelperBase {
         Utils.copyFile(scr, dest);
     }
 
+    public boolean isAlertPresent() {
+        try {
+            driver.switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
+    }
+
+    public boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
     protected boolean isTextDisplayed(String text, By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -103,12 +104,10 @@ public class HelperBase {
         return element.getText().equals(text);
     }
 
-//    public String getElementText(By locator) {
-//        WebElement element = driver.findElement(locator);
-//        return element.getText();
-//    }
+}
 
-    //    protected void type(By locator, String text) {
+
+//    protected void type(By locator, String text) {
 //        click(locator);
 //        if (text != null) {
 //            String existingText = driver.findElement(locator).getAttribute("value");
@@ -118,4 +117,4 @@ public class HelperBase {
 //            }
 //        }
 //    }
-}
+
