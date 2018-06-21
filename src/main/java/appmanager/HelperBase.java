@@ -122,6 +122,16 @@ public class HelperBase {
         jse.executeScript("arguments[0].scrollIntoView();", element);
     }
 
+    protected boolean textIsDisplayed(String text, By locator) {
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+        logger.info("ACTUAL TEXT:   " + element.getText());
+        logger.info("EXPECTED TEXT: " + text);
+
+        return element.getText().equals(text);
+    }
+
 }
 
 

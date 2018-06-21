@@ -11,6 +11,7 @@ public class SiteHelper extends HelperBase {
 
     public String postTitle = "Test Post " + System.currentTimeMillis();
     public String pageNotFoundTitle = "Oops! That page can’t be found.";
+    public String movedToTrashMessage = "1 post moved to the Trash. ";
 
     private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
@@ -27,6 +28,7 @@ public class SiteHelper extends HelperBase {
     private By permalinkLocator = By.id("sample-permalink");
     private By testPostPageLocator = By.cssSelector("div#primary");
     private  By helpLinkLocator = By.id("contextual-help-link");
+    private By moveToTrashLocator = By.cssSelector("a.submitdelete.deletion");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -75,7 +77,11 @@ public class SiteHelper extends HelperBase {
     }
 
     public void deleteTestPost() {
+        click(moveToTrashLocator);
+    }
 
+    public boolean movedToTrashMessageIsDisplayed() {
+        return textIsDisplayed(movedToTrashMessage, moveToTrashLocator);
     }
 
     public boolean postTitleIsDisplayed() {

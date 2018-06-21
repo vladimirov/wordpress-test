@@ -24,12 +24,14 @@ public class AddPostTest extends TestBase {
         assertTrue(app.site().postTitleTextIsDisplayed());
     }
 
-//    @AfterTest
-//    public void testPostDeletion(){
-//        app.loginToAdmin();
-//        app.admin().gotoPostsPage();
-//        app.site().searchTestPostInAdmin();
-//        app.site().deleteTestPost();
-//    }
+    @AfterTest
+    public void testPostDeletion(){
+        app.loginToAdmin();//TODO Do not login
+        app.admin().gotoPostsPage();
+        app.site().searchTestPostInAdmin();
+        app.site().deleteTestPost();
+
+        assertTrue(app.site().movedToTrashMessageIsDisplayed());
+    }
 
 }
