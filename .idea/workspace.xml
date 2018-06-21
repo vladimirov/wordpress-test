@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +18,8 @@
       <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+            <state relative-caret-position="526">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -31,8 +27,8 @@
       <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="714">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#730#731#0" expanded="true" />
@@ -47,8 +43,8 @@
       <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1391,28 +1387,24 @@
       <option name="project" value="LOCAL" />
       <updated>1529583142798</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="login input fix">
+      <created>1529592393622</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1529592393622</updated>
+    </task>
+    <task id="LOCAL-00018" summary="login input fix">
+      <created>1529593250451</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1529593250451</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 21m 58s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 23m 21s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 23m 46s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 25m 11s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 28m 27s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 15h 29m 23s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AddPostTest - 2018.06.21 at 15h 29m 37s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
@@ -1423,6 +1415,24 @@
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="AddPostTest - 2018.06.21 at 17h 26m 18s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 47m 27s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 49m 29s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 50m 01s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 53m 28s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 56m 04s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 57m 59s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1439,7 +1449,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.76338327" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41862956" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="4" />
@@ -1556,20 +1566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="289" selection-start-line="289" selection-end-line="289" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/LoggerContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/spi/EventArgUtil.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -1581,13 +1577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="441" selection-start-line="441" selection-end-line="441" />
         </state>
       </provider>
     </entry>
@@ -1741,17 +1730,6 @@
     <entry file="file://$PROJECT_DIR$/20180621011036.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3422#3423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/RegexpExpectedExceptionsHolder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1763,13 +1741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="496" selection-start-line="496" selection-end-line="496" />
         </state>
       </provider>
     </entry>
@@ -1789,27 +1760,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3422#3423#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+          <folding>
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#10909#10910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/LoggerContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+          <folding>
+            <element signature="e#4825#4826#0" expanded="true" />
+            <element signature="e#4876#4877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="441" selection-start-line="441" selection-end-line="441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="453" selection-start-line="453" selection-end-line="453" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="714">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#730#731#0" expanded="true" />
