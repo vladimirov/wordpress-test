@@ -26,6 +26,7 @@ public class SiteHelper extends HelperBase {
     private By successMessageLocator = By.id("message");
     private By permalinkLocator = By.id("sample-permalink");
     private By testPostPageLocator = By.cssSelector("div#primary");
+    private  By helpLinkLocator = By.id("contextual-help-link");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -46,11 +47,8 @@ public class SiteHelper extends HelperBase {
     }
 
     public void publishPost() {
-//        driver.switchTo().defaultContent();
-//        scrollUp();
-
-
-
+//        click(By.id("new-tag-post_tag"));
+        scrollTillElementIsVisible(helpLinkLocator);
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(hiddenPublishInputLocator, "test");
         submit(hiddenPublishInputLocator);

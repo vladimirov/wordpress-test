@@ -107,11 +107,19 @@ public class HelperBase {
         return element.getText().equals(text);
     }
 
-    public void scrollUp() {
+    protected void scrollUp() {
         logger.info("SCROLL UP");
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,-250)", "");
 
+    }
+
+    protected void scrollTillElementIsVisible(By locator) {
+        logger.info("SCROLL TILL ELEMENT IS VISIBLE: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView();", element);
     }
 
 }
