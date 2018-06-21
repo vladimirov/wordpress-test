@@ -12,6 +12,7 @@ public class SiteHelper extends HelperBase {
     public String pageNotFoundTitle = "Oops! That page can’t be found.";
 
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
+    private By adminBarLocator = By.cssSelector("a.ab-item");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -64,6 +65,10 @@ public class SiteHelper extends HelperBase {
 
     public boolean postTitleTextIsDisplayed() {
         return isTextDisplayed(postTitle, createdPostTitleLocator);
+    }
+
+    public boolean adminBarIsDisplayed() {
+        return isElementPresent(adminBarLocator);
     }
 
 }

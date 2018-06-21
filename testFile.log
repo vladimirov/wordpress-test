@@ -893,3 +893,106 @@
 8649 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
 9096 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
 19408 [main] INFO  TestBase - STOP TEST createPostTest
+3028 [main] INFO  TestBase - START TEST createPostTest WITH PARAMETERS []
+4096 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4293 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4419 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6385 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7320 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7353 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7490 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7628 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8102 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+18397 [main] INFO  TestBase - STOP TEST createPostTest
+2706 [main] INFO  TestBase - START TEST createPostTest WITH PARAMETERS []
+3817 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4021 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4196 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6076 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6832 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6863 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7048 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7202 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8959 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9618 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12243 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529573173853
+12664 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+12770 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+12950 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+13044 [main] INFO  TestBase - STOP TEST createPostTest
+2658 [main] INFO  TestBase - START TEST createPostTest WITH PARAMETERS []
+4128 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4328 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4490 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6243 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7024 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7058 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7213 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7349 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8601 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9282 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+13329 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529573192936
+13727 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13832 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+14020 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+14117 [main] INFO  TestBase - STOP TEST createPostTest
+2571 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+4179 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4244 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+4407 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4569 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5719 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2611 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+4130 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4195 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+4358 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4511 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5639 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2555 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3799 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3861 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+4026 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4180 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5326 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2584 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+4382 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4446 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+4600 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4769 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5907 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2563 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3743 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3806 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+3958 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4115 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5261 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2577 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3760 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3826 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+3937 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4066 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5150 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2444 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3835 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3898 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+4010 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4143 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4663 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2557 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3684 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3748 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+3862 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+3986 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5753 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2462 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3664 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3725 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+3849 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+3993 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5161 [main] INFO  TestBase - STOP TEST testloginToAdmin
+2522 [main] INFO  TestBase - START TEST testloginToAdmin WITH PARAMETERS []
+3757 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3816 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+3929 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+4063 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4563 [main] INFO  TestBase - STOP TEST testloginToAdmin

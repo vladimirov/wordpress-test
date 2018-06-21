@@ -42,10 +42,13 @@ public class HelperBase {
         logger.info("SEND TO " + locator + " KEYS " + text);
         try {
             element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.click();
             element.clear();
             element.sendKeys(text);
         } catch (StaleElementReferenceException ignored) {
             element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element.click();
+            element.clear();
             element.sendKeys(text);
         }
     }
