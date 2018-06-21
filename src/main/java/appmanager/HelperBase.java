@@ -20,7 +20,7 @@ public class HelperBase {
     public WebDriverWait wait;
     public int timeOutInSeconds = 10;
     public WebElement element;
-
+    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -105,6 +105,11 @@ public class HelperBase {
         logger.info("ACTUAL TEXT:   " + element.getText());
         logger.info("EXPECTED TEXT: " + text);
         return element.getText().equals(text);
+    }
+
+    public void scrollUp() {
+        jse.executeScript("window.scrollBy(0,250)", "");
+
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class SiteHelper extends HelperBase {
     private final Properties properties;
-    JavascriptExecutor jse = (JavascriptExecutor) driver;
+    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
 
     public String postTitle = "Test Post " + System.currentTimeMillis();
     public String pageNotFoundTitle = "Oops! That page can’t be found.";
@@ -35,7 +35,6 @@ public class SiteHelper extends HelperBase {
 
 
     public void publishPost() {
-//        driver.switchTo().defaultContent();
         scrollUp();
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(By.id("original_publish"), "test");
@@ -52,13 +51,7 @@ public class SiteHelper extends HelperBase {
         waitToBePresent(By.id("message"));
     }
 
-    public void scrollUp() {
 
-//        WebElement element = driver.findElement(By.tagName("header"));
-
-        jse.executeScript("window.scrollBy(0,250)", "");
-
-    }
 
     public void searchTestPostInAdmin() {
         type(By.id("post-search-input"), postTitle);
