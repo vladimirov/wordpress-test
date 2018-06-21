@@ -1,3 +1,4 @@
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
@@ -6,7 +7,7 @@ import static org.testng.Assert.*;
 public class AddPostTest extends TestBase {
 
     @Test
-    public void createPostTest() {
+    public void testPostCreation() {
         app.loginToCRM();
         app.admin().copyTestContent();
         app.loginToAdmin();
@@ -16,11 +17,21 @@ public class AddPostTest extends TestBase {
         app.site().enterTestContent();
         app.site().publishPost();
         app.admin().gotoPostsPage();
+        app.site().searchTestPostInAdmin();
         app.site().openTestPostPage();
         app.site().screenShot();
 
-        assertEquals(app.site().postTitleIsDisplayed(), true);
         assertTrue(app.site().postTitleTextIsDisplayed());
+    }
+
+    @AfterTest
+    public void testPostDeletion(){
+        app.loginToAdmin();
+        app.admin().gotoPostsPage();
+        app.site().searchTestPostInAdmin();
+        app.site().deleteTestPost();
+
+
     }
 
 }

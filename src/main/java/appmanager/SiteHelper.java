@@ -13,6 +13,7 @@ public class SiteHelper extends HelperBase {
 
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
     private By adminBarLocator = By.cssSelector("a.ab-item");
+    private By postTitleLocator = By.name("post_title");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -24,7 +25,7 @@ public class SiteHelper extends HelperBase {
     }
 
     public void enterPostTitle() {
-        type(By.name("post_title"), postTitle);
+        type(postTitleLocator, postTitle);
     }
 
     public void enterTestContent() {
@@ -34,29 +35,44 @@ public class SiteHelper extends HelperBase {
 
 
     public void publishPost() {
+//        driver.switchTo().defaultContent();
+        scrollUp();
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(By.id("original_publish"), "test");
         submit(By.id("original_publish"));
 
-        if (isAlertPresent()) {
+        try {
             Alert alert = driver.switchTo().alert();
             alert.accept();
+        } catch (NoAlertPresentException e) {
+            click(By.id("publish"));
+            waitToBePresent(By.id("message"));
         }
-
-        waitToBePresent(By.id("message"));
         click(By.id("publish"));
+        waitToBePresent(By.id("message"));
     }
 
     public void scrollUp() {
-        jse.executeScript("window.scrollBy(0,-250)", "");
+
+//        WebElement element = driver.findElement(By.tagName("header"));
+
+        jse.executeScript("window.scrollBy(0,250)", "");
+
+    }
+
+    public void searchTestPostInAdmin() {
+        type(By.id("post-search-input"), postTitle);
+        click(By.id("search-submit"));
     }
 
     public void openTestPostPage() {
-        type(By.id("post-search-input"), postTitle);
-        click(By.id("search-submit"));
         click(By.cssSelector("a.row-title"));
         click(By.id("sample-permalink"));
         waitToBePresent(By.cssSelector("div#primary"));
+    }
+
+    public void deleteTestPost() {
+
     }
 
     public boolean postTitleIsDisplayed() {
@@ -70,5 +86,6 @@ public class SiteHelper extends HelperBase {
     public boolean adminBarIsDisplayed() {
         return isElementPresent(adminBarLocator);
     }
+
 
 }
