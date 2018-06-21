@@ -54,6 +54,7 @@ public class HelperBase {
     }
 
     protected void submit(By locator) {
+        logger.info("SUBMIT ELEMENT: " + locator);
         driver.findElement(locator).submit();
     }
 
@@ -62,7 +63,6 @@ public class HelperBase {
             driver.findElement(locator).sendKeys(file.getAbsolutePath());
         }
     }
-
 
     public void waitToBePresent(By locator) {
         try {
@@ -108,7 +108,9 @@ public class HelperBase {
     }
 
     public void scrollUp() {
-        jse.executeScript("window.scrollBy(0,250)", "");
+        logger.info("SCROLL UP");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,-250)", "");
 
     }
 

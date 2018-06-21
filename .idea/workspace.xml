@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,78 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="696">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteWebDriver.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="438" selection-start-line="438" selection-end-line="438" />
+            <state relative-caret-position="340">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
-                <element signature="e#9415#9416#0" expanded="true" />
-                <element signature="e#9479#9480#0" expanded="true" />
-                <element signature="e#17401#17402#0" expanded="true" />
-                <element signature="e#17465#17466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImmutableMap.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/collect/ImmutableMap.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectPreconditions.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/collect/CollectPreconditions.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebElementToJsonConverter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar!/org/openqa/selenium/remote/internal/WebElementToJsonConverter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Capabilities.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/Capabilities.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractCapabilities.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/AbstractCapabilities.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,32 +59,11 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="170">
               <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3422#3423#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,8 +102,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddPostTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" />
       </list>
     </option>
@@ -177,10 +116,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -253,7 +192,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Addressbook" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WooCommerce" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1438,38 +1377,52 @@
       <option name="project" value="LOCAL" />
       <updated>1529573759810</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="login input fix">
+      <created>1529577343501</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1529577343501</updated>
+    </task>
+    <task id="LOCAL-00016" summary="login input fix">
+      <created>1529583142798</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1529583142798</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 26m 10s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 21m 58s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 27m 09s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 23m 21s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 29m 16s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 23m 46s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 30m 00s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 25m 11s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 30m 26s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 28m 27s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 30m 51s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 29m 23s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 31m 54s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 29m 37s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 32m 41s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 15h 29m 52s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 33m 22s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 20m 49s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2018.06.21 at 13h 33m 53s.xml">
+    <history-entry file="AddPostTest - 2018.06.21 at 17h 26m 18s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1477,34 +1430,34 @@
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="9" />
-      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.3222698" />
-      <window_info anchor="right" id="Palette&#9;" order="12" />
-      <window_info id="Image Layers" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.5299786" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info id="Capture Tool" order="12" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.76338327" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39828694" />
+      <window_info anchor="right" id="Palette" order="7" />
       <window_info id="Designer" order="9" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.19616205" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info id="UI Designer" order="13" />
-      <window_info anchor="right" id="Theme Preview" order="11" />
-      <window_info id="Favorites" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.39828694" />
-      <window_info anchor="right" id="Palette" order="9" />
-      <window_info id="Designer" order="9" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="10" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info id="Favorites" order="10" side_tool="true" />
@@ -1518,10 +1471,10 @@
       <window_info anchor="right" id="Palette&#9;" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32869378" />
       <window_info anchor="right" id="Maven Projects" order="13" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.19440243" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19440243" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1540,24 +1493,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/AddPostTest.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/AddPostTest.java</url>
           <line>17</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/groups.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allure.properties" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1577,20 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="928" selection-start-line="928" selection-end-line="928" />
         </state>
       </provider>
     </entry>
@@ -1757,34 +1687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3422#3423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/AbstractCapabilities.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1836,14 +1738,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
+    <entry file="file://$PROJECT_DIR$/20180621011036.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+        <state relative-caret-position="170">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#3422#3423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/RegexpExpectedExceptionsHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/ExpectedExceptionsHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="496" selection-start-line="496" selection-end-line="496" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#3059#3060#0" expanded="true" />
+            <element signature="e#3628#3629#0" expanded="true" />
+            <element signature="e#3664#3665#0" expanded="true" />
+            <element signature="e#3703#3704#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
           </folding>
         </state>
       </provider>

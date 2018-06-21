@@ -1356,3 +1356,198 @@
 11520 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
 11610 [main] INFO  TestBase - STOP TEST testPostCreation
 11657 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+2812 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5702 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5921 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+6107 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+8185 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8933 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8965 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+9133 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+9285 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+10430 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+11227 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12844 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583370129
+13273 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13357 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+76778 [main] INFO  TestBase - STOP TEST testPostCreation
+2721 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3931 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4162 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4330 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6088 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6854 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6885 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7058 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7207 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8430 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9154 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10709 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583450779
+11074 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11155 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+41288 [main] INFO  TestBase - STOP TEST testPostCreation
+2288 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4089 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4304 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4464 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6279 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7073 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7102 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7304 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7451 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8561 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9294 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10835 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583524162
+11256 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11337 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+170155 [main] INFO  TestBase - STOP TEST testPostCreation
+2205 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3371 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+3605 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+3774 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5542 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6442 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6474 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+6642 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+6799 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+7888 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+8680 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10201 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583698024
+10606 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+10687 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+10854 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: button.content-tmce
+20966 [main] INFO  TestBase - STOP TEST testPostCreation
+2247 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3458 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+3661 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+3848 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5625 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6398 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6428 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+6592 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+6741 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+7408 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+2496 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3664 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+3881 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4045 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6103 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6854 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6885 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7081 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7227 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8269 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9152 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10665 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583805929
+11028 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11110 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11267 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.content-tmce
+21596 [main] INFO  TestBase - STOP TEST testPostCreation
+2210 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3793 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4007 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4185 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5871 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6635 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6665 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+6871 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7026 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8280 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9044 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10586 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529583876537
+10967 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11054 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11217 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: new-tag-post_tag
+36546 [main] INFO  TestBase - STOP TEST testPostCreation
+2293 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3415 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+3627 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+3791 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5784 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6636 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6668 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+6826 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7005 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8251 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9025 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+11221 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529584038096
+11581 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11662 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11820 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.handlediv
+71857 [main] INFO  TestBase - STOP TEST testPostCreation
+2203 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3377 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+3606 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+3771 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5564 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6367 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6405 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+6560 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+6717 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+7869 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+8641 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10185 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529584113275
+10525 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+10612 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+10774 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: formatdiv
+52515 [main] INFO  TestBase - STOP TEST testPostCreation
+2576 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3896 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4116 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4279 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6251 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6992 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7026 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7183 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7331 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+7780 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+2629 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3841 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4041 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4226 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+5972 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6801 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+6835 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7026 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7172 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8317 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9092 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+10830 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529584182562
+11182 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11264 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11418 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: formatdiv
+11528 [main] INFO  TestBase - STOP TEST testPostCreation
+2689 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3926 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4153 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4322 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6175 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+6982 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7023 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7177 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7333 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8742 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9436 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+11076 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529590838301
+11473 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11571 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11733 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: formatdiv
+11854 [main] INFO  TestBase - STOP TEST testPostCreation
+2818 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+3966 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4182 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4357 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6647 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7464 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7500 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+7700 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+7847 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+9199 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+9844 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+11371 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529591167743
+11734 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+11813 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+11966 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: formatdiv
+12055 [main] INFO  appmanager.HelperBase - SCROLL UP
+12076 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+12139 [main] INFO  TestBase - STOP TEST testPostCreation

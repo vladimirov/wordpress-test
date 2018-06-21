@@ -5,15 +5,27 @@ import org.openqa.selenium.*;
 import java.util.Properties;
 
 public class SiteHelper extends HelperBase {
+
     private final Properties properties;
     protected JavascriptExecutor jse = (JavascriptExecutor) driver;
 
     public String postTitle = "Test Post " + System.currentTimeMillis();
     public String pageNotFoundTitle = "Oops! That page can’t be found.";
 
+    private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
     private By adminBarLocator = By.cssSelector("a.ab-item");
-    private By postTitleLocator = By.name("post_title");
+    private By postTitleLocator = By.cssSelector("a.row-title");
+    private By postTitleInputLocator = By.name("post_title");
+    private By textTabLocator = By.id("content-html");
+    private By textAreaLocator = By.className("wp-editor-area");
+    private By postSearchLocator = By.id("post-search-input");
+    private By postSearchButtonLocator = By.id("search-submit");
+    private By publishPostButtonLocator = By.id("publish");
+    private By hiddenPublishInputLocator = By.id("original_publish");
+    private By successMessageLocator = By.id("message");
+    private By permalinkLocator = By.id("sample-permalink");
+    private By testPostPageLocator = By.cssSelector("div#primary");
 
     public SiteHelper(WebDriver driver) {
         super(driver);
@@ -21,47 +33,47 @@ public class SiteHelper extends HelperBase {
     }
 
     public void addNewPostButtonClick() {
-        click(By.xpath("//a[@href='post-new.php']"));
+        click(addPostButtonLocator);
     }
 
     public void enterPostTitle() {
-        type(postTitleLocator, postTitle);
+        type(postTitleInputLocator, postTitle);
     }
 
     public void enterTestContent() {
-        click(By.id("content-html"));
-        type(By.className("wp-editor-area"), Keys.chord(Keys.CONTROL, "v"));
+        click(textTabLocator);
+        type(textAreaLocator, Keys.chord(Keys.CONTROL, "v"));
     }
 
-
     public void publishPost() {
-        scrollUp();
-        jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
-        type(By.id("original_publish"), "test");
-        submit(By.id("original_publish"));
+//        driver.switchTo().defaultContent();
+//        scrollUp();
 
+
+
+        jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
+        type(hiddenPublishInputLocator, "test");
+        submit(hiddenPublishInputLocator);
         try {
             Alert alert = driver.switchTo().alert();
             alert.accept();
         } catch (NoAlertPresentException e) {
-            click(By.id("publish"));
-            waitToBePresent(By.id("message"));
+            click(publishPostButtonLocator);
+            waitToBePresent(successMessageLocator);
         }
-        click(By.id("publish"));
-        waitToBePresent(By.id("message"));
+        click(publishPostButtonLocator);
+        waitToBePresent(successMessageLocator);
     }
 
-
-
     public void searchTestPostInAdmin() {
-        type(By.id("post-search-input"), postTitle);
-        click(By.id("search-submit"));
+        type(postSearchLocator, postTitle);
+        click(postSearchButtonLocator);
     }
 
     public void openTestPostPage() {
-        click(By.cssSelector("a.row-title"));
-        click(By.id("sample-permalink"));
-        waitToBePresent(By.cssSelector("div#primary"));
+        click(postTitleLocator);
+        click(permalinkLocator);
+        waitToBePresent(testPostPageLocator);
     }
 
     public void deleteTestPost() {
