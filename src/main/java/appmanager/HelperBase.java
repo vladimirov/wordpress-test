@@ -148,7 +148,6 @@ public class HelperBase {
         logger.info("SCROLL UP");
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,-250)", "");
-
     }
 
     protected void scrollTillElementIsVisible(By locator) {
@@ -157,6 +156,12 @@ public class HelperBase {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].scrollIntoView();", element);
+    }
+
+    protected void scrollDownToFooter() {
+        logger.info("SCROLL DOWN TO THE FOOTER");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
     protected boolean textIsDisplayed(String text, By locator) {

@@ -28,10 +28,11 @@ public class AdminHelper extends HelperBase {
     private By permalinkLocator = By.id("sample-permalink");
     private By moveToTrashLocator = By.cssSelector("a.submitdelete.deletion");
     private By helpLinkLocator = By.id("contextual-help-link");
-//    private By bulkActionSelectorLocator = By.className("comment.column-comment.has-row-actions.column-primary");
     private By commentAuthorLocator = By.cssSelector("div.comment-author");
     private By approveCommentLocator = By.cssSelector("span.approve");
     private By columnResponseLocator = By.cssSelector("div.response-links");
+    private By testPostPageLocator = By.cssSelector("div#primary");
+
 
 
     public AdminHelper(WebDriver driver) {
@@ -110,8 +111,8 @@ public class AdminHelper extends HelperBase {
         click(permalinkLocator);
     }
 
-    public void gotoTestPostPage(){
-
+    public void openTestPostPageOnSite(){
+        waitToBePresent(testPostPageLocator);
     }
 
     public void deleteTestPost() {

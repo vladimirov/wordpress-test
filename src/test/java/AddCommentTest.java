@@ -9,7 +9,7 @@ public class AddCommentTest extends TestBase{
     public void testCommentCreation(){
         app.openBaseUrl();
         app.site().searchTestPost();
-        app.site().openTestPostPageOnSite();
+        app.site().openPostFromSearchResults();
         app.site().postComment();
         app.loginToAdmin();
         app.admin().gotoCommentsPage();

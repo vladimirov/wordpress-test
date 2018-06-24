@@ -18,7 +18,7 @@ public class AddPostTest extends TestBase {
         app.admin().gotoPostsPage();
         app.admin().searchTestPostInAdmin();
         app.admin().clickOnTestPostPermalink();
-        app.site().openTestPostPageOnSite();
+        app.admin().openTestPostPageOnSite();
         app.admin().screenShot();
 
         assertTrue(app.admin().postTitleTextIsDisplayed());

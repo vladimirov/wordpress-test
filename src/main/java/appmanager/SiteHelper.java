@@ -3,9 +3,6 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 public class SiteHelper extends HelperBase {
 
     public SiteHelper(WebDriver driver) {
@@ -19,43 +16,46 @@ public class SiteHelper extends HelperBase {
     public String email = System.currentTimeMillis() + "@mail.com";
 
     private By adminBarLocator = By.cssSelector("a.ab-item");
-    private By testPostPageLocator = By.cssSelector("div#primary");
     private By searchInputLocator = By.xpath("//input[@type='search']");
     private By searchButtonLocator = By.cssSelector("button.search-submit");
     private By postHeadingLocator = By.cssSelector("h2.entry-title");
-    private By commentInputLocator = By.cssSelector("textarea#comment");
+    private By continueReadingLocator = By.className("link-more");
+    private By commentInputLocator = By.id("comment");
     private By commentContentLocator = By.cssSelector("div.comment-content");
     private By nameLocator = By.id("author");
     private By emailLocator = By.id("email");
     private By postCommentLocator = By.id("submit");
     private By commentTextLocator = By.xpath("//div[@class='comment-content']/p");
 
-    public void openTestPostPageOnSite(){
-        waitToBePresent(testPostPageLocator);
-    }
-
-    public void searchTestPost(){
-        scrollTillElementIsVisible(searchInputLocator);
-        type(searchInputLocator, simplePostTitle);
-        click(searchButtonLocator);
-    }
 
     public boolean adminBarIsDisplayed() {
         return isElementPresent(adminBarLocator);
     }
 
-    public void openTestPostPage(){
-        click(postHeadingLocator);
+    public void searchTestPost() {
+        scrollTillElementIsVisible(searchInputLocator);
+        type(searchInputLocator, simplePostTitle);
+//        click(searchButtonLocator);
+        submit(searchInputLocator);
     }
 
-    public void postComment(){
+    public void openPostFromSearchResults() {
+//        driver.switchTo().defaultContent();
+        click(continueReadingLocator);
+    }
+
+    public void postComment() {
+
+        waitForPageToLoad(driver);
+
+        scrollTillElementIsVisible(commentInputLocator);
         type(commentInputLocator, comment);
         type(nameLocator, name);
         type(emailLocator, email);
         click(postCommentLocator);
     }
 
-    public void scrollToComment(){
+    public void scrollToComment() {
         scrollTillElementIsVisible(commentContentLocator);
     }
 

@@ -2187,3 +2187,87 @@
 5898 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
 5945 [main] INFO  appmanager.HelperBase - SEND TO By.cssSelector: textarea#comment KEYS The quick brown fox jumps over the lazy dog
 16227 [main] INFO  TestBase - STOP TEST testCommentCreation
+3833 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+12079 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+12146 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+12520 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+13237 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+13293 [main] INFO  appmanager.HelperBase - SEND TO By.cssSelector: textarea#comment KEYS The quick brown fox jumps over the lazy dog
+23554 [main] INFO  TestBase - STOP TEST testCommentCreation
+4247 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5863 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5919 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+6188 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+6693 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+6736 [main] INFO  appmanager.HelperBase - SEND TO By.name: comment KEYS The quick brown fox jumps over the lazy dog
+17006 [main] INFO  TestBase - STOP TEST testCommentCreation
+3608 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5659 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5721 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+6023 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+6518 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+6561 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16835 [main] INFO  TestBase - STOP TEST testCommentCreation
+3636 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5122 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5177 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5503 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5946 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16232 [main] INFO  TestBase - STOP TEST testCommentCreation
+3233 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5237 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5295 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5560 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+6008 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: h2.entry-title
+6083 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16356 [main] INFO  TestBase - STOP TEST testCommentCreation
+3446 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5048 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5096 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5379 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5833 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: h2.entry-title
+5903 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16367 [main] INFO  TestBase - STOP TEST testCommentCreation
+3268 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+4853 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+4902 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5175 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5600 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+5677 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+15947 [main] INFO  TestBase - STOP TEST testCommentCreation
+3479 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5226 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5276 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5557 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+6055 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+6123 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16397 [main] INFO  TestBase - STOP TEST testCommentCreation
+3354 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5044 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5095 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5376 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5845 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //input[@type='search']
+5909 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+5989 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16266 [main] INFO  TestBase - STOP TEST testCommentCreation
+3252 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+4656 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+4718 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+4977 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5429 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+20961 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+90049 [main] INFO  TestBase - STOP TEST testCommentCreation
+3268 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+4925 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+4983 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5261 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5693 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+5775 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16043 [main] INFO  TestBase - STOP TEST testCommentCreation
+3400 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+5030 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+5081 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+5360 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.xpath: //input[@type='search']
+5749 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: link-more
+5830 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+16097 [main] INFO  TestBase - STOP TEST testCommentCreation
