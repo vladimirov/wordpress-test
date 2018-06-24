@@ -19,13 +19,14 @@ public class SiteHelper extends HelperBase {
     private By searchInputLocator = By.xpath("//input[@type='search']");
     private By searchButtonLocator = By.cssSelector("button.search-submit");
     private By postHeadingLocator = By.cssSelector("h2.entry-title");
-    private By continueReadingLocator = By.className("link-more");
+    private By continueReadingLocator = By.cssSelector("a.more-link");
     private By commentInputLocator = By.id("comment");
     private By commentContentLocator = By.cssSelector("div.comment-content");
     private By nameLocator = By.id("author");
     private By emailLocator = By.id("email");
     private By postCommentLocator = By.id("submit");
     private By commentTextLocator = By.xpath("//div[@class='comment-content']/p");
+    private By asideLocator = By.id("secondary");
 
 
     public boolean adminBarIsDisplayed() {
@@ -35,12 +36,10 @@ public class SiteHelper extends HelperBase {
     public void searchTestPost() {
         scrollTillElementIsVisible(searchInputLocator);
         type(searchInputLocator, simplePostTitle);
-//        click(searchButtonLocator);
-        submit(searchInputLocator);
+        click(searchButtonLocator);
     }
 
     public void openPostFromSearchResults() {
-//        driver.switchTo().defaultContent();
         click(continueReadingLocator);
     }
 

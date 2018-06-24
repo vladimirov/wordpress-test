@@ -32,8 +32,8 @@ public class AdminHelper extends HelperBase {
     private By approveCommentLocator = By.cssSelector("span.approve");
     private By columnResponseLocator = By.cssSelector("div.response-links");
     private By testPostPageLocator = By.cssSelector("div#primary");
-
-
+    private By commentsMenu = By.id("menu-comments");
+    private By approveSectionLocator = By.xpath("//tbody[@id='the-comment-list']/tr[1]");
 
     public AdminHelper(WebDriver driver) {
         super(driver);
@@ -64,8 +64,8 @@ public class AdminHelper extends HelperBase {
         click(By.linkText("Settings"));
     }
 
-    public void gotoCommentsPage(){
-        click(By.linkText("Comments"));
+    public void gotoCommentsPage() {
+        click(commentsMenu);
     }
 
     public String url() throws URISyntaxException {
@@ -111,7 +111,7 @@ public class AdminHelper extends HelperBase {
         click(permalinkLocator);
     }
 
-    public void openTestPostPageOnSite(){
+    public void openTestPostPageOnSite() {
         waitToBePresent(testPostPageLocator);
     }
 
@@ -132,13 +132,15 @@ public class AdminHelper extends HelperBase {
     }
 
 
-
-    public void approveComment(){
+    public void approveComment() {
         hoverOnElement(commentAuthorLocator);
+
+        hoverOnElement(approveSectionLocator);
+
         click(approveCommentLocator);
     }
 
-    public void openPostWithComment (){
+    public void openPostWithComment() {
         click(columnResponseLocator);
         click(permalinkLocator);
     }
