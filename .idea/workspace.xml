@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="AdminHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="111" />
+            <state relative-caret-position="34">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2506#2507#0" expanded="true" />
@@ -552,13 +549,17 @@
       <option name="project" value="LOCAL" />
       <updated>1529876426984</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added comment creation test">
+      <created>1529877960508</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1529877960508</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 30m 26s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AddCommentTest - 2018.06.25 at 00h 31m 43s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
@@ -586,6 +587,9 @@
     <history-entry file="AddCommentTest - 2018.06.25 at 00h 54m 30s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AddCommentTest - 2018.06.25 at 01h 05m 30s.xml">
+      <configuration name="AddCommentTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -600,7 +604,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="3" weight="1.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.6688103" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329582" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="4" />
@@ -657,7 +661,8 @@
     <MESSAGE value="added assertions to add post test" />
     <MESSAGE value="login input fix" />
     <MESSAGE value="added test post creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test post creation" />
+    <MESSAGE value="added comment creation test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comment creation test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -955,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="111" />
+        <state relative-caret-position="34">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2506#2507#0" expanded="true" />
