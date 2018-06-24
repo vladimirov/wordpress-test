@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase  {
 
     @Test
-    public void testloginToAdmin() {
+    public void testLoginToAdmin() {
         app.loginToAdmin();
         Assert.assertTrue(app.site().adminBarIsDisplayed());
     }

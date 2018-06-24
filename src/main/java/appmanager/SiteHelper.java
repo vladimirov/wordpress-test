@@ -1,94 +1,75 @@
 package appmanager;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
-import java.util.Properties;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class SiteHelper extends HelperBase {
 
-    private final Properties properties;
-    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
-
-    public String postTitle = "Test Post " + System.currentTimeMillis();
-    public String pageNotFoundTitle = "Oops! That page can’t be found.";
-    public String movedToTrashMessage = "1 post moved to the Trash. ";
-
-    private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
-    private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
-    private By adminBarLocator = By.cssSelector("a.ab-item");
-    private By postTitleLocator = By.cssSelector("a.row-title");
-    private By postTitleInputLocator = By.name("post_title");
-    private By textTabLocator = By.id("content-html");
-    private By textAreaLocator = By.className("wp-editor-area");
-    private By postSearchLocator = By.id("post-search-input");
-    private By postSearchButtonLocator = By.id("search-submit");
-    private By publishPostButtonLocator = By.id("publish");
-    private By hiddenPublishInputLocator = By.id("original_publish");
-    private By successMessageLocator = By.id("message");
-    private By permalinkLocator = By.id("sample-permalink");
-    private By testPostPageLocator = By.cssSelector("div#primary");
-    private By helpLinkLocator = By.id("contextual-help-link");
-    private By moveToTrashLocator = By.cssSelector("a.submitdelete.deletion");
-    private By spinnerLocator = By.cssSelector("span.spinner");
-
     public SiteHelper(WebDriver driver) {
         super(driver);
-        properties = new Properties();
     }
 
-    public void addNewPostButtonClick() {
-        click(addPostButtonLocator);
-    }
+    public String simplePostTitle = "The quick brown fox jumps over the lazy dog";
+    public String comment = "The quick brown fox jumps over the lazy dog";
+    public String pageNotFoundTitle = "Oops! That page can’t be found.";
+    public String name = "Name " + System.currentTimeMillis();
+    public String email = System.currentTimeMillis() + "@mail.com";
 
-    public void enterPostTitle() {
-        type(postTitleInputLocator, postTitle);
-    }
+    private By adminBarLocator = By.cssSelector("a.ab-item");
+    private By testPostPageLocator = By.cssSelector("div#primary");
+    private By searchInputLocator = By.xpath("//input[@type='search']");
+    private By searchButtonLocator = By.cssSelector("button.search-submit");
+    private By postHeadingLocator = By.cssSelector("h2.entry-title");
+    private By commentInputLocator = By.cssSelector("textarea#comment");
+    private By commentContentLocator = By.cssSelector("div.comment-content");
+    private By nameLocator = By.id("author");
+    private By emailLocator = By.id("email");
+    private By postCommentLocator = By.id("submit");
+    private By commentTextLocator = By.xpath("//div[@class='comment-content']/p");
 
-    public void enterTestContent() {
-        click(textTabLocator);
-        type(textAreaLocator, Keys.chord(Keys.CONTROL, "v"));
-    }
-
-    public void publishPost() {
-        scrollTillElementIsVisible(helpLinkLocator);
-        jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
-        type(hiddenPublishInputLocator, "test");
-        submit(hiddenPublishInputLocator);
-        click(publishPostButtonLocator);
-//        waitForPageToLoad(driver);
-        waitToBePresent(successMessageLocator);
-    }
-
-    public void searchTestPostInAdmin() {
-        type(postSearchLocator, postTitle);
-        click(postSearchButtonLocator);
-    }
-
-    public void openTestPostPage() {
-        click(postTitleLocator);
-        click(permalinkLocator);
+    public void openTestPostPageOnSite(){
         waitToBePresent(testPostPageLocator);
     }
 
-    public void deleteTestPost() {
-        click(moveToTrashLocator);
-    }
-
-    public boolean movedToTrashMessageIsDisplayed() {
-        return textIsDisplayed(movedToTrashMessage, moveToTrashLocator);
-    }
-
-    public boolean postTitleIsDisplayed() {
-        return isElementPresent(createdPostTitleLocator);
-    }
-
-    public boolean postTitleTextIsDisplayed() {
-        return isTextDisplayed(postTitle, createdPostTitleLocator);
+    public void searchTestPost(){
+        scrollTillElementIsVisible(searchInputLocator);
+        type(searchInputLocator, simplePostTitle);
+        click(searchButtonLocator);
     }
 
     public boolean adminBarIsDisplayed() {
         return isElementPresent(adminBarLocator);
     }
 
+    public void openTestPostPage(){
+        click(postHeadingLocator);
+    }
 
+    public void postComment(){
+        type(commentInputLocator, comment);
+        type(nameLocator, name);
+        type(emailLocator, email);
+        click(postCommentLocator);
+    }
+
+    public void scrollToComment(){
+        scrollTillElementIsVisible(commentContentLocator);
+    }
+
+    public boolean commentTextIsDisplayed() {
+        return isTextDisplayed(comment, commentContentLocator);
+    }
+
+    //    public void groupPage() {
+//        if (isElementPresent(By.tagName("h1"))
+//                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
+//                && isElementPresent(By.name("new"))) {
+//            return;
+//        }
+//        click(By.linkText("groups"));
+//    }
 }
+

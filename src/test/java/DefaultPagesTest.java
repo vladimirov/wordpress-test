@@ -20,10 +20,6 @@ public class DefaultPagesTest extends TestBase {
         app.admin().gotoMediaPage();
         assertThat(app.admin().url(), equalTo("upload.php"));
 
-//        app.admin().gotoPagesPage();
-//        System.out.println(app.admin().url());
-//        assertThat(app.admin().url(), equalTo("edit.php?post_type=page"));
-
         app.admin().gotoPluginsPage();
         assertThat(app.admin().url(), equalTo("plugins.php"));
 

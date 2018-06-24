@@ -17,10 +17,10 @@ public class ApplicationManager {
     WebDriver driver;
 
     private SessionHelper sessionHelper;
-    private AdminHelper adminHelper;
+    private SiteHelper siteHelper;
     private String browser;
     private PageSpeedHelper pageSpeedHelper;
-    private SiteHelper siteHelper;
+    private AdminHelper adminHelper;
 //    private DbHelper dbHelper;
 //    private ContactHelper contactHelper;
 //    private GroupHelper groupHelper;
@@ -56,8 +56,8 @@ public class ApplicationManager {
         driver.manage().window().maximize();
 
         pageSpeedHelper = new PageSpeedHelper(driver);
-        siteHelper = new SiteHelper(driver);
         adminHelper = new AdminHelper(driver);
+        siteHelper = new SiteHelper(driver);
     }
 
     public void loginToAdmin() {
@@ -89,16 +89,16 @@ public class ApplicationManager {
         driver.quit();
     }
 
-    public AdminHelper admin() {
-        return adminHelper;
+    public SiteHelper site() {
+        return siteHelper;
     }
 
     public PageSpeedHelper pageSpeed() {
         return pageSpeedHelper;
     }
 
-    public SiteHelper site() {
-        return siteHelper;
+    public AdminHelper admin() {
+        return adminHelper;
     }
 
 //    public GroupHelper group() {

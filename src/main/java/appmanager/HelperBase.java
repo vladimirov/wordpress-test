@@ -2,6 +2,7 @@ package appmanager;
 
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -102,6 +103,12 @@ public class HelperBase {
         } catch (Throwable pageLoadWaitError) {
             fail("Timeout during page load");
         }
+    }
+
+    protected void hoverOnElement(By locator) {
+        logger.info("HOVER ON ELEMENT: " + locator);
+        element = driver.findElement(locator);
+        (new Actions(driver)).moveToElement(element).perform();
     }
 
     public void screenShot() {
