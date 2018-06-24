@@ -1719,3 +1719,327 @@
 19160 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529594382381
 19173 [main] INFO  TestBase - STOP TEST testPostCreation
 19715 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3577 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+11196 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+11507 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+11764 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+15046 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+16090 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+16135 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+16388 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+16572 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+19692 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+20675 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+24553 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529835466483
+25105 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+25235 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+25469 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+25522 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+25740 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+25829 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+25927 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+28981 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+29098 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+29136 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+32477 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529835466483
+32765 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+33484 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+34696 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+35838 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+36546 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+36593 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529835466483
+36593 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529835466483
+36609 [main] INFO  TestBase - STOP TEST testPostCreation
+4021 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5297 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5581 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5787 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+8074 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+9353 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+9398 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+9655 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+9818 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+11190 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+12076 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+14154 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529836578369
+14636 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+14737 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+14962 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+15021 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+15222 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+15292 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+15417 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+18591 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+18697 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: span.spinner
+28985 [main] INFO  TestBase - STOP TEST testPostCreation
+3304 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4557 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4816 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5015 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6969 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7744 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7784 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8015 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+8188 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+9397 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+10281 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12271 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529836679952
+12867 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+12994 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+13251 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+13321 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+13601 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+13700 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+13830 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+16897 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+17067 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+17094 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+19591 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529836679952
+19842 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+20511 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+21581 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+22436 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+23157 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+23199 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529836679952
+23199 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529836679952
+23216 [main] INFO  TestBase - STOP TEST testPostCreation
+3360 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4557 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4807 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5018 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+8276 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+9115 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+9144 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+9388 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+9557 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+10980 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+11742 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+13691 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529837027262
+14172 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+14273 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+14480 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+14524 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+14752 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+14831 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+14943 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+18466 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+18693 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+18716 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+22099 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529837027262
+22370 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+23071 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+24134 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+25023 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+25742 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+25781 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529837027262
+25782 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529837027262
+25800 [main] INFO  TestBase - STOP TEST testPostCreation
+3242 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5433 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5697 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5905 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+8124 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8873 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8918 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+9141 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+9309 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+10470 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+11251 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+13036 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838329918
+13476 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13576 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+13778 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+13838 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+14056 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+14128 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+14255 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+16950 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+17110 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+17140 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+20557 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529838329918
+20866 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+22876 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+23946 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+24802 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+25516 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+25558 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529838329918
+25558 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529838329918
+25560 [main] INFO  TestBase - STOP TEST testPostCreation
+3163 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4187 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4464 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+4691 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7821 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8548 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8593 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8846 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+9033 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+10185 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+11032 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12862 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838387164
+13332 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13443 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+13657 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+13711 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+13931 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+14011 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+14112 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+16807 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+46780 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+46843 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+3356 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+6572 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+6860 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+7051 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+8792 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+10165 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+10212 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+10420 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+10598 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+11954 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+12885 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+14689 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838439427
+15250 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+15383 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+15631 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+15708 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+15945 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+16014 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+16115 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+19210 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+19350 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+19375 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+20082 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529838439427
+20386 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+21072 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+22381 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+23245 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+23968 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+24014 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529838439427
+24014 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529838439427
+24030 [main] INFO  TestBase - STOP TEST testPostCreation
+3117 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+7130 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+7422 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+7650 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+9468 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+10468 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+10513 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+10771 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+10962 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+12277 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+13167 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+15015 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838469398
+15483 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+15584 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+15791 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+15840 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+16060 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+16139 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+16268 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+50400 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+3387 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4596 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+4874 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5090 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7048 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7858 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7905 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8132 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+8298 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+9617 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+10484 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12239 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838525795
+12692 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+12795 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+12989 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+13041 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+13264 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+19719 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+3294 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5176 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5431 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5633 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7554 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8438 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8479 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8725 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+8891 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+10125 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+10968 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+12778 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838561583
+13250 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13357 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+13581 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+13634 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+13849 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+13904 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+14035 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+16634 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+17368 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529838561583
+17661 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+18368 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+19341 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+20202 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+20917 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+20964 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529838561583
+20964 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529838561583
+20980 [main] INFO  TestBase - STOP TEST testPostCreation
+3190 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+6151 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+6399 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+6611 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+9115 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+10048 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+10088 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+10340 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+10527 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+11901 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+13654 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+15471 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838593047
+15908 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+16029 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+16232 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+16287 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+16469 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+16518 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+16644 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+19506 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+20206 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529838593047
+20509 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+21198 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+24030 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+24913 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+25649 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+25696 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529838593047
+25696 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529838593047
+25712 [main] INFO  TestBase - STOP TEST testPostCreation
+3288 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4944 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5210 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5418 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7549 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8306 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+8348 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS developer_kitchen
+8584 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS Mf5RUfuhlLJlRAzGjd5M
+8752 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+9939 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+10831 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+13189 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529838624257
+13653 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+13762 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+13968 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+14033 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+14259 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+14314 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+14446 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+17172 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+17951 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529838624257
+18231 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+18933 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+20069 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+20966 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+21684 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+21724 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529838624257
+21724 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529838624257
+21741 [main] INFO  TestBase - STOP TEST testPostCreation

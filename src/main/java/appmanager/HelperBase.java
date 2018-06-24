@@ -2,7 +2,9 @@ package appmanager;
 
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +13,9 @@ import org.testng.internal.Utils;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import static org.testng.AssertJUnit.assertFalse;
+import static org.testng.AssertJUnit.fail;
 
 public class HelperBase {
 
@@ -71,6 +76,31 @@ public class HelperBase {
         } catch (NullPointerException ignored) {
             element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
             logger.info("ELEMENT HAS NOT BEEN FOUND: " + locator);
+        }
+    }
+
+    public void waitTillElementIsNotVisible(By locator) {
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        } catch (NullPointerException ignored) {
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
+        }
+    }
+
+    public void waitForPageToLoad(WebDriver driver) {
+        ExpectedCondition< Boolean > pageLoad = new
+                ExpectedCondition < Boolean > () {
+                    public Boolean apply(WebDriver driver) {
+                        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+                    }
+                };
+
+        Wait< WebDriver > wait = new WebDriverWait(driver, 60);
+        try {
+            wait.until(pageLoad);
+        } catch (Throwable pageLoadWaitError) {
+            fail("Timeout during page load");
         }
     }
 
