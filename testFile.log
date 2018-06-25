@@ -3103,3 +3103,335 @@
 3887 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
 3964 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
 14477 [main] INFO  TestBase - STOP TEST testPageSpeed
+2435 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+4460 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+4499 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+4698 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+5082 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.more-link
+5427 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+5449 [main] INFO  appmanager.HelperBase - SEND TO By.id: comment KEYS The quick brown fox jumps over the lazy dog
+5638 [main] INFO  appmanager.HelperBase - SEND TO By.id: author KEYS Name 1529943541355
+5778 [main] INFO  appmanager.HelperBase - SEND TO By.id: email KEYS 1529943541355@mail.com
+5920 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: submit
+6965 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+7004 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+7118 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+7222 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+8115 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: menu-comments
+8635 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.cssSelector: div.comment-author
+8681 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.xpath: //tbody[@id='the-comment-list']/tr[1]
+8727 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: span.approve
+8818 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: div.response-links
+9366 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.cssSelector: div.comment-content
+9390 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: div.comment-content
+9418 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   The quick brown fox jumps over the lazy dog
+9418 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: The quick brown fox jumps over the lazy dog
+9433 [main] INFO  TestBase - STOP TEST testCommentCreation
+2165 [main] INFO  TestBase - START TEST testLoginToAdmin WITH PARAMETERS []
+3436 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3501 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3624 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+3739 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4598 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+4600 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5193 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5378 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5540 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7104 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7818 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+18083 [main] INFO  TestBase - STOP TEST testPostCreation
+18083 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+18960 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+18999 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+19063 [main] INFO  TestBase - STOP TEST testCommentCreation
+19064 [main] INFO  TestBase - START TEST testDefaultPages WITH PARAMETERS []
+19439 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+29668 [main] INFO  TestBase - STOP TEST testDefaultPages
+29669 [main] INFO  TestBase - START TEST testNotFoundPage WITH PARAMETERS []
+30771 [main] INFO  TestBase - STOP TEST testNotFoundPage
+30771 [main] INFO  TestBase - START TEST testPageSpeed WITH PARAMETERS []
+31332 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://localhost/wordpress-test/
+31528 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+31647 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+41869 [main] INFO  TestBase - STOP TEST testPageSpeed
+2067 [main] INFO  TestBase - START TEST testLoginToAdmin WITH PARAMETERS []
+3330 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3391 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3505 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+3627 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4477 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+4478 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+4980 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5167 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5325 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+6734 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7429 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+17680 [main] INFO  TestBase - STOP TEST testPostCreation
+17681 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+18543 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+18581 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+18651 [main] INFO  TestBase - STOP TEST testCommentCreation
+18651 [main] INFO  TestBase - START TEST testDefaultPages WITH PARAMETERS []
+19046 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+29263 [main] INFO  TestBase - STOP TEST testDefaultPages
+29263 [main] INFO  TestBase - START TEST testNotFoundPage WITH PARAMETERS []
+30355 [main] INFO  TestBase - STOP TEST testNotFoundPage
+30356 [main] INFO  TestBase - START TEST testPageSpeed WITH PARAMETERS []
+30797 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://localhost/wordpress-test/
+30962 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+31044 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+41263 [main] INFO  TestBase - STOP TEST testPageSpeed
+2439 [main] INFO  TestBase - START TEST testLoginToAdmin WITH PARAMETERS []
+3705 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3762 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3894 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4012 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4826 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+4828 [main] INFO  TestBase - START TEST testPostCreation WITH PARAMETERS []
+5578 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5751 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5917 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7323 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7982 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+18261 [main] INFO  TestBase - STOP TEST testPostCreation
+18262 [main] INFO  TestBase - START TEST testCommentCreation WITH PARAMETERS []
+19136 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+19170 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+19244 [main] INFO  TestBase - STOP TEST testCommentCreation
+19245 [main] INFO  TestBase - START TEST testDefaultPages WITH PARAMETERS []
+19671 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+2522 [main] INFO  TestBase - START TEST testLoginToAdmin
+3778 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3831 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4024 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4127 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5002 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+5012 [main] INFO  TestBase - START TEST testPostCreation
+5616 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5795 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+5944 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7298 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+7946 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+18214 [main] INFO  TestBase - STOP TEST testPostCreation
+18215 [main] INFO  TestBase - START TEST testCommentCreation
+19082 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+19116 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+19182 [main] INFO  TestBase - STOP TEST testCommentCreation
+19184 [main] INFO  TestBase - START TEST testDefaultPages
+19588 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+2450 [main] INFO  TestBase - START TEST testLoginToAdmin
+4067 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4123 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4322 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4432 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5269 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+2491 [main] INFO  TestBase - START TEST testLoginToAdmin
+4134 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4190 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4312 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4430 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5276 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+5278 [main] INFO  TestBase - START TEST testPostCreation
+5787 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+5983 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+6151 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+7452 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+8099 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+18372 [main] INFO  TestBase - STOP TEST testPostCreation
+2075 [main] INFO  TestBase - START TEST testLoginToAdmin
+3996 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4058 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4176 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4292 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5091 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+2485 [main] INFO  TestBase - START TEST testLoginToAdmin
+3751 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3805 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4003 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4117 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4943 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+7193 [main] INFO  TestBase - START TEST testPostCreation
+8297 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+8473 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+8646 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+10078 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+10914 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+10960 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+11074 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+11185 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+11446 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+2496 [main] INFO  TestBase - START TEST testLoginToAdmin
+3736 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3789 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3987 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4091 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4913 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+7186 [main] INFO  TestBase - START TEST testPostCreation
+8247 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+8423 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+8597 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+9924 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+10756 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+10801 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+10907 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+11027 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+12811 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+13332 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+14092 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529944495289 The quick brown fox jumps over the lazy dog
+14503 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+14567 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS v
+14711 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+14753 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+14900 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+14967 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+17666 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+17699 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+18174 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529944495289 The quick brown fox jumps over the lazy dog
+18469 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+19054 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+19579 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+20204 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+20712 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+20740 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529944495289 The quick brown fox jumps over the lazy dog
+20740 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529944495289 The quick brown fox jumps over the lazy dog
+20749 [main] INFO  TestBase - STOP TEST testPostCreation
+22837 [main] INFO  TestBase - START TEST testCommentCreation
+24630 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+24655 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+24851 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+25232 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.more-link
+25588 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+25608 [main] INFO  appmanager.HelperBase - SEND TO By.id: comment KEYS The quick brown fox jumps over the lazy dog
+25788 [main] INFO  appmanager.HelperBase - SEND TO By.id: author KEYS Name 1529944510940
+25922 [main] INFO  appmanager.HelperBase - SEND TO By.id: email KEYS 1529944510940@mail.com
+26062 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: submit
+28115 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+28153 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+28260 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+28369 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+29166 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: menu-comments
+29686 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.cssSelector: div.comment-author
+29732 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.xpath: //tbody[@id='the-comment-list']/tr[1]
+29780 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: span.approve
+29864 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: div.response-links
+30454 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.cssSelector: div.comment-content
+30477 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: div.comment-content
+30506 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   The quick brown fox jumps over the lazy dog
+30506 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: The quick brown fox jumps over the lazy dog
+30517 [main] INFO  TestBase - STOP TEST testCommentCreation
+32790 [main] INFO  TestBase - START TEST testDefaultPages
+34058 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+34107 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+34220 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+34339 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+34611 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Home
+44876 [main] INFO  TestBase - STOP TEST testDefaultPages
+46991 [main] INFO  TestBase - START TEST testNotFoundPage
+48746 [main] INFO  TestBase - STOP TEST testNotFoundPage
+50850 [main] INFO  TestBase - START TEST testPageSpeed
+52897 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://localhost/wordpress-test/
+53071 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+53148 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+63361 [main] INFO  TestBase - STOP TEST testPageSpeed
+2133 [main] INFO  TestBase - START TEST testLoginToAdmin
+3785 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+3852 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3972 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4085 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4904 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+7677 [main] INFO  TestBase - START TEST testPostCreation
+9135 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS denis.vladimirov@beetroot.se
+9313 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS %hLQVc%gtDXBiEjq
+9472 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.btn.btn-danger.btn-block.btn-flat
+12160 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: js-copy-button
+12999 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+13045 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+13216 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+13320 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+14089 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+14604 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='post-new.php']
+15363 [main] INFO  appmanager.HelperBase - SEND TO By.name: post_title KEYS Test Post 1529944657148 The quick brown fox jumps over the lazy dog
+15820 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: content-html
+15888 [main] INFO  appmanager.HelperBase - SEND TO By.className: wp-editor-area KEYS ?v?
+16044 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: contextual-help-link
+16089 [main] INFO  appmanager.HelperBase - SEND TO By.id: original_publish KEYS test
+16246 [main] INFO  appmanager.HelperBase - SUBMIT ELEMENT: By.id: original_publish
+16313 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: publish
+18999 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: message
+19035 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+19502 [main] INFO  appmanager.HelperBase - SEND TO By.id: post-search-input KEYS Test Post 1529944657148 The quick brown fox jumps over the lazy dog
+19798 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: search-submit
+20383 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.row-title
+20908 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: sample-permalink
+21537 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div#primary
+22046 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: h1.entry-title
+22077 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   Test Post 1529944657148 The quick brown fox jumps over the lazy dog
+22078 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: Test Post 1529944657148 The quick brown fox jumps over the lazy dog
+22087 [main] INFO  TestBase - STOP TEST testPostCreation
+24108 [main] INFO  TestBase - START TEST testCommentCreation
+25888 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.xpath: //input[@type='search']
+25914 [main] INFO  appmanager.HelperBase - SEND TO By.xpath: //input[@type='search'] KEYS The quick brown fox jumps over the lazy dog
+26107 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: button.search-submit
+26470 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: a.more-link
+26825 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.id: comment
+26854 [main] INFO  appmanager.HelperBase - SEND TO By.id: comment KEYS The quick brown fox jumps over the lazy dog
+27034 [main] INFO  appmanager.HelperBase - SEND TO By.id: author KEYS Name 1529944673579
+27173 [main] INFO  appmanager.HelperBase - SEND TO By.id: email KEYS 1529944673579@mail.com
+27313 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: submit
+28380 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+28421 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+28533 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+28648 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+29437 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: menu-comments
+29963 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.cssSelector: div.comment-author
+30014 [main] INFO  appmanager.HelperBase - HOVER ON ELEMENT: By.xpath: //tbody[@id='the-comment-list']/tr[1]
+30064 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: span.approve
+30145 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.cssSelector: div.response-links
+30736 [main] INFO  appmanager.HelperBase - SCROLL TILL ELEMENT IS VISIBLE: By.cssSelector: div.comment-content
+30764 [main] INFO  appmanager.HelperBase - WAIT ELEMENT TO BE PRESENT: By.cssSelector: div.comment-content
+30798 [main] INFO  appmanager.HelperBase - ACTUAL TEXT:   The quick brown fox jumps over the lazy dog
+30799 [main] INFO  appmanager.HelperBase - EXPECTED TEXT: The quick brown fox jumps over the lazy dog
+30813 [main] INFO  TestBase - STOP TEST testCommentCreation
+33516 [main] INFO  TestBase - START TEST testDefaultPages
+34832 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+34887 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+35006 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+35117 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+36030 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Home
+36538 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+37062 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Media
+37680 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='plugins.php']
+38956 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Users
+39410 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Settings
+39925 [main] INFO  TestBase - STOP TEST testDefaultPages
+42215 [main] INFO  TestBase - START TEST testNotFoundPage
+44027 [main] INFO  TestBase - STOP TEST testNotFoundPage
+45982 [main] INFO  TestBase - START TEST testPageSpeed
+47156 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://localhost/wordpress-test/
+47325 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+47414 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+57635 [main] INFO  TestBase - STOP TEST testPageSpeed
+2325 [main] INFO  TestBase - START TEST testPageSpeed
+3341 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://localhost/wordpress-test/
+3515 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+3595 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+13866 [main] INFO  TestBase - STOP TEST testPageSpeed
+2471 [main] INFO  TestBase - START TEST testPageSpeed
+4510 [main] INFO  appmanager.HelperBase - SEND TO By.name: url KEYS http://www.testinginterviewquestion.com/2014/08/how-to-use-reportng-for-reporting-using_27.html
+4834 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.className: analyze-cell
+4924 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.speed-report-card
+15199 [main] INFO  TestBase - STOP TEST testPageSpeed
+2471 [main] INFO  TestBase - START TEST testDefaultPages
+4118 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.name: log
+4175 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4295 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4415 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5202 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Home
+5723 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Posts
+6254 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Media
+6896 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.xpath: //a[@href='plugins.php']
+8175 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Users
+8618 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.linkText: Settings
+9129 [main] INFO  TestBase - STOP TEST testDefaultPages
+2363 [main] INFO  TestBase - START TEST testNotFoundPage
+5742 [main] INFO  TestBase - STOP TEST testNotFoundPage
