@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appmanager/HelperBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,13 +21,11 @@
       <file leaf-file-name="SiteHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="50">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
-                <element signature="e#1696#1697#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#2059#2060#0" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
+                <element signature="e#2029#2030#0" expanded="true" />
+                <element signature="e#2094#2095#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="581">
+              <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -43,14 +43,10 @@
       <file leaf-file-name="AdminHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="443">
+              <caret line="145" column="59" lean-forward="true" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2506#2507#0" expanded="true" />
-                <element signature="e#2541#2542#0" expanded="true" />
-                <element signature="e#3913#3914#0" expanded="true" />
-                <element signature="e#3965#3966#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +55,8 @@
       <file leaf-file-name="AddCommentTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddCommentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="272">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/AdminHelperTrue.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/DefaultPagesTest.java" />
@@ -110,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/test/java/AddCommentTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddPostTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java" />
       </list>
     </option>
@@ -122,10 +118,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -135,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -194,11 +191,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WooCommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -385,9 +381,9 @@
       <list>
         <item itemvalue="TestNG.AddCommentTest" />
         <item itemvalue="TestNG.AddPostTest" />
-        <item itemvalue="TestNG.AddPostTest.testPostDeletion" />
-        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.DefaultPagesTest" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.AddPostTest.testPostDeletion" />
       </list>
     </recent_temporary>
   </component>
@@ -560,61 +556,61 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 31m 43s.xml">
+    <history-entry file="AddPostTest - 2018.06.25 at 12h 32m 47s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.25 at 12h 34m 55s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddCommentTest - 2018.06.25 at 12h 35m 24s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 37m 36s.xml">
+    <history-entry file="AddCommentTest - 2018.06.25 at 12h 37m 27s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 37m 58s.xml">
+    <history-entry file="LoginTest - 2018.06.25 at 14h 56m 48s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2018.06.25 at 14h 57m 06s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2018.06.25 at 14h 57m 30s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddCommentTest - 2018.06.25 at 14h 57m 56s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 39m 32s.xml">
+    <history-entry file="AddCommentTest - 2018.06.25 at 15h 08m 20s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 47m 07s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 48m 49s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 49m 32s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 51m 32s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 00h 54m 30s.xml">
-      <configuration name="AddCommentTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddCommentTest - 2018.06.25 at 01h 05m 30s.xml">
+    <history-entry file="AddCommentTest - 2018.06.25 at 15h 08m 25s.xml">
       <configuration name="AddCommentTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.31993568" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.31905782" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.6688103" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.1124197" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329582" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39871383" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39828694" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -626,14 +622,14 @@
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.40192926" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.19742814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.40192926" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="6" />
@@ -666,7 +662,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -897,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -911,10 +900,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddCommentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -928,46 +952,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/SiteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-          <folding>
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddCommentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/AdminHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="443">
+          <caret line="145" column="59" lean-forward="true" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2506#2507#0" expanded="true" />
-            <element signature="e#2541#2542#0" expanded="true" />
-            <element signature="e#3913#3914#0" expanded="true" />
-            <element signature="e#3965#3966#0" expanded="true" />
           </folding>
         </state>
       </provider>

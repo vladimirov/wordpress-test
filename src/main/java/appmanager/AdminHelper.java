@@ -97,6 +97,9 @@ public class AdminHelper extends HelperBase {
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(hiddenPublishInputLocator, "test");
         submit(hiddenPublishInputLocator);
+        if (isAlertPresent()){
+            driver.switchTo().alert().accept();
+        }
         click(publishPostButtonLocator);
         waitToBePresent(successMessageLocator);
     }
@@ -134,15 +137,14 @@ public class AdminHelper extends HelperBase {
 
     public void approveComment() {
         hoverOnElement(commentAuthorLocator);
-
         hoverOnElement(approveSectionLocator);
-
         click(approveCommentLocator);
     }
 
     public void openPostWithComment() {
         click(columnResponseLocator);
-        click(permalinkLocator);
+//        click(By.cssSelector("a.comments-view-item-link"));
+//        click(permalinkLocator);
     }
 
 
