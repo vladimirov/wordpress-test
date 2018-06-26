@@ -5,45 +5,46 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-    <test name="TestBase">
+
+    <!--<test name="TestBase">-->
+        <!--<classes>-->
+            <!--<class name="LoginTest"/>-->
+            <!--<class name="AddPostTest"/>-->
+            <!--<class name="AddCommentTest"/>-->
+            <!--<class name="DefaultPagesTest"/>-->
+            <!--<class name="PageNotFoundTest"/>-->
+            <!--<class name="PageSpeedTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="LoginTest">
         <classes>
             <class name="LoginTest"/>
+        </classes>
+    </test>
+    <test name="AddPostTest">
+        <classes>
             <class name="AddPostTest"/>
+        </classes>
+    </test>
+    <test name="AddCommentTest">
+        <classes>
             <class name="AddCommentTest"/>
+        </classes>
+    </test>
+    <test name="DefaultPagesTest">
+        <classes>
             <class name="DefaultPagesTest"/>
+        </classes>
+    </test>
+    <test name="PageNotFoundTest">
+        <classes>
             <class name="PageNotFoundTest"/>
+        </classes>
+    </test>
+    <test name="PageSpeedTest">
+        <classes>
             <class name="PageSpeedTest"/>
         </classes>
     </test>
-
-    <!--<test name="LoginTest" >-->
-    <!--<classes>-->
-    <!--<class name="LoginTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="AddPostTest" >-->
-    <!--<classes>-->
-    <!--<class name="AddPostTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="AddCommentTest" >-->
-    <!--<classes>-->
-    <!--<class name="AddCommentTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="DefaultPagesTest" >-->
-    <!--<classes>-->
-    <!--<class name="DefaultPagesTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="PageNotFoundTest" >-->
-    <!--<classes>-->
-    <!--<class name="PageNotFoundTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="PageSpeedTest" >-->
-    <!--<classes>-->
-    <!--<class name="PageSpeedTest" />-->
-    <!--</classes>-->
-    <!--</test>-->
 </suite>
