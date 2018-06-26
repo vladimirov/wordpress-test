@@ -24,21 +24,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.21.0</version>
                 <configuration>
-                    <!--<arguements>-->
-                    <!--<argument>${env}</argument>-->
-                    <!--</arguements>-->
                     <properties>
-                        <!--Disable Default Listeners-->
                         <property>
                             <name>usedefaultlisteners</name>
                             <value>false</value>
                         </property>
-                        <!-- Setting ReportNG listeners -->
                         <property>
                             <name>listener</name>
                             <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
                         </property>
                     </properties>
+
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
