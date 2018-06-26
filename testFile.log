@@ -668,3 +668,63 @@
 50222 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.cssSelector: div.jfk-progressStatus
 50271 [main] INFO  appmanager.HelperBase - WAIT TILL ELEMENT IS NOT VISIBLE: By.cssSelector: div.jfk-progressStatus
 51142 [main] INFO  TestBase - STOP TEST testPageSpeed
+136  [main] INFO  TestBase - START TEST testLoginToAdmin
+148  [main] INFO  TestBase - STOP TEST testLoginToAdmin
+257  [main] INFO  TestBase - START TEST testLoginToAdmin
+277  [main] INFO  TestBase - STOP TEST testLoginToAdmin
+207  [main] INFO  TestBase - START TEST testLoginToAdmin
+3602 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+3658 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+3723 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3870 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+3984 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4869 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+145  [main] INFO  TestBase - START TEST testLoginToAdmin
+3963 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+4026 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+4087 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4249 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4366 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5203 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+392  [main] INFO  TestBase - START TEST testLoginToAdmin
+3715 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+3774 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+3833 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3994 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4113 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5147 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+138  [main] INFO  TestBase - START TEST testLoginToAdmin
+3719 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+3777 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+3836 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3987 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4096 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4949 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+137  [main] INFO  TestBase - START TEST testLoginToAdmin
+4494 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+4547 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+4682 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4819 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4935 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5767 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+248  [main] INFO  TestBase - START TEST testLoginToAdmin
+3601 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+3658 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+3803 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+3926 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4036 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4887 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+201  [main] INFO  TestBase - START TEST testLoginToAdmin
+4001 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+4071 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+4131 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4290 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4402 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+5280 [main] INFO  TestBase - STOP TEST testLoginToAdmin
+137  [main] INFO  TestBase - START TEST testLoginToAdmin
+3725 [main] INFO  appmanager.HelperBase - ELEMENT HAS BEEN FOUND: By.id: loginform
+3795 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.id: loginform
+3859 [main] INFO  appmanager.HelperBase - SEND TO By.name: log KEYS admin
+4019 [main] INFO  appmanager.HelperBase - SEND TO By.name: pwd KEYS 12345
+4123 [main] INFO  appmanager.HelperBase - CLICK ON ELEMENT: By.name: wp-submit
+4999 [main] INFO  TestBase - STOP TEST testLoginToAdmin

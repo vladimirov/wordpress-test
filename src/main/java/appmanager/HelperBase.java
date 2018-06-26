@@ -4,7 +4,6 @@ package appmanager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -15,6 +14,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import static org.testng.AssertJUnit.fail;
 
 public class HelperBase {
@@ -25,7 +25,6 @@ public class HelperBase {
     public WebDriverWait wait;
     public int timeOutInSeconds = 10;
     public WebElement element;
-    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -35,10 +34,10 @@ public class HelperBase {
     protected void click(By locator) {
         logger.info("CLICK ON ELEMENT: " + locator);
         try {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(presenceOfElementLocated(locator));
             element.click();
         } catch (StaleElementReferenceException ignored) {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(presenceOfElementLocated(locator));
             element.click();
         }
     }
@@ -46,12 +45,12 @@ public class HelperBase {
     protected void type(By locator, String text) {
         logger.info("SEND TO " + locator + " KEYS " + text);
         try {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(presenceOfElementLocated(locator));
             element.click();
             element.clear();
             element.sendKeys(text);
         } catch (StaleElementReferenceException ignored) {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(presenceOfElementLocated(locator));
             element.click();
             element.clear();
             element.sendKeys(text);
@@ -72,16 +71,16 @@ public class HelperBase {
     public void waitToBePresent(By locator) {
         try {
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
-            element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            element = wait.until(visibilityOfElementLocated(locator));
         } catch (NullPointerException ignored) {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(presenceOfElementLocated(locator));
             logger.info("ELEMENT HAS NOT BEEN FOUND: " + locator);
         }
     }
 
     public void waitTillElementIsNotVisible(By locator) {
         logger.info("WAIT TILL ELEMENT IS NOT VISIBLE: " + locator);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        wait.until(invisibilityOfElementLocated(locator));
     }
 
     public void waitForPageToLoad(WebDriver driver) {
@@ -133,7 +132,7 @@ public class HelperBase {
 
     protected boolean isTextDisplayed(String text, By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
-        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element = wait.until(presenceOfElementLocated(locator));
         logger.info("ACTUAL TEXT:   " + element.getText());
         logger.info("EXPECTED TEXT: " + text);
         return element.getText().equals(text);
@@ -147,7 +146,7 @@ public class HelperBase {
 
     protected void scrollTillElementIsVisible(By locator) {
         logger.info("SCROLL TILL ELEMENT IS VISIBLE: " + locator);
-        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element = wait.until(presenceOfElementLocated(locator));
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].scrollIntoView();", element);
@@ -161,7 +160,7 @@ public class HelperBase {
 
     protected boolean textIsDisplayed(String text, By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
-        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element = wait.until(presenceOfElementLocated(locator));
 
         logger.info("ACTUAL TEXT:   " + element.getText());
         logger.info("EXPECTED TEXT: " + text);
