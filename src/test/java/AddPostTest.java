@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 public class AddPostTest extends TestBase {
 
     @Test
-    public void testPostCreation() {
+    public void testPostCreation() throws InterruptedException {
         app.loginToCRM();
         app.admin().copyTestContent();
         app.loginToAdmin();
@@ -33,7 +33,7 @@ public class AddPostTest extends TestBase {
 //    }
 
     @Test(enabled = false)
-    public void testPostDeletion() {
+    public void testPostDeletion() throws InterruptedException {
         app.loginToAdmin();//TODO Do not login
         app.admin().gotoPostsPage();
         app.admin().searchTestPostInAdmin();

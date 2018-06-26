@@ -15,7 +15,6 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.fail;
 
 public class HelperBase {
@@ -81,23 +80,19 @@ public class HelperBase {
     }
 
     public void waitTillElementIsNotVisible(By locator) {
-        try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-        } catch (NullPointerException ignored) {
-            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
-        }
+        logger.info("WAIT TILL ELEMENT IS NOT VISIBLE: " + locator);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
     public void waitForPageToLoad(WebDriver driver) {
-        ExpectedCondition< Boolean > pageLoad = new
-                ExpectedCondition < Boolean > () {
+        ExpectedCondition<Boolean> pageLoad = new
+                ExpectedCondition<Boolean>() {
                     public Boolean apply(WebDriver driver) {
                         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
                     }
                 };
 
-        Wait< WebDriver > wait = new WebDriverWait(driver, 60);
+        Wait<WebDriver> wait = new WebDriverWait(driver, 60);
         try {
             wait.until(pageLoad);
         } catch (Throwable pageLoadWaitError) {

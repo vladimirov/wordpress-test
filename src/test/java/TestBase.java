@@ -16,13 +16,13 @@ public class TestBase {
     protected static final ApplicationManager app
             = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp(ITestContext context) throws Exception {
         app.init();
         context.setAttribute("app", app);
     }
 
-    @AfterTest(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         app.stop();
     }

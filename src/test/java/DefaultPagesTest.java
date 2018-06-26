@@ -8,7 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class DefaultPagesTest extends TestBase {
 
     @Test
-    public void testDefaultPages() throws URISyntaxException {
+    public void testDefaultPages() throws URISyntaxException, InterruptedException {
         app.loginToAdmin();
 
         app.admin().gotoHomePage();
