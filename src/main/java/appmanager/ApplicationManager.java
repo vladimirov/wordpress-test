@@ -38,13 +38,13 @@ public class ApplicationManager {
 
         switch (browser) {
             case BrowserType.CHROME: {
-                System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
                 DesiredCapabilities capabilities = DesiredCapabilities.chrome();
                 driver = new ChromeDriver(capabilities);
                 break;
             }
             case BrowserType.FIREFOX: {
-                System.setProperty("webdriver.firefox.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\geckodriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\geckodriver.exe");
                 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
                 driver = new FirefoxDriver(capabilities);
                 break;
