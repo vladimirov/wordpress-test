@@ -2,6 +2,7 @@ import model.PostData;
 import model.Posts;
 import org.testng.annotations.Test;
 
+import java.math.BigInteger;
 import java.sql.*;
 
 public class DbConnectionTest {

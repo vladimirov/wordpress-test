@@ -1,15 +1,15 @@
 package model;
 
 import com.google.gson.annotations.Expose;
-import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
+import sun.text.normalizer.UCharacter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.math.BigInteger;
 import java.util.Objects;
+
+import static sun.text.normalizer.UCharacter.*;
 
 
 //@XStreamAlias("group")
@@ -20,7 +20,7 @@ public class PostData {
     @XStreamOmitField
     @Id
     @Column(name = "id")
-    private int id;
+    private long id;
 
     @Expose
     @Column(name = "post_title")
@@ -28,7 +28,7 @@ public class PostData {
     private String title;
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -37,7 +37,7 @@ public class PostData {
     }
 
 
-    public PostData withId(int id) {
+    public PostData withId(long id) {
         this.id = id;
         return this;
     }
