@@ -16,7 +16,7 @@
         <!-- Database connection settings -->
         <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/wordpress-test</property>
         <property name="connection.username">root</property>
         <property name="connection.password"></property>
 
@@ -36,8 +36,8 @@
         <property name="hbm2ddl.auto">validate</property>
 
         <!-- Names the annotated entity class -->
-        <mapping class="ru.stqa.pft.addressbook.model.GroupData"/>
-        <mapping class="ru.stqa.pft.addressbook.model.ContactData"/>
+        <mapping class="model.PostData"/>
+
 
 
 
