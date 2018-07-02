@@ -142,8 +142,8 @@ public class AdminHelper extends HelperBase {
     }
 
     public void openPostWithComment() {
-        click(columnResponseLocator);
-//        click(By.cssSelector("a.comments-view-item-link"));
+//        click(columnResponseLocator);
+        click(By.cssSelector("a.comments-view-item-link"));
 //        click(permalinkLocator);
     }
 
