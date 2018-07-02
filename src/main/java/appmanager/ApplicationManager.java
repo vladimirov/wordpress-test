@@ -21,7 +21,7 @@ public class ApplicationManager {
     private String browser;
     private PageSpeedHelper pageSpeedHelper;
     private AdminHelper adminHelper;
-//    private DbHelper dbHelper;
+    private DbHelper dbHelper;
 //    private ContactHelper contactHelper;
 //    private GroupHelper groupHelper;
 
@@ -34,7 +34,7 @@ public class ApplicationManager {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
 
-//        dbHelper = new DbHelper();
+        dbHelper = new DbHelper();
 
         switch (browser) {
             case BrowserType.CHROME: {
@@ -113,8 +113,8 @@ public class ApplicationManager {
 //        return contactHelper;
 //    }
 
-//    public DbHelper db() {
-//        return dbHelper;
-//    }
+    public DbHelper db() {
+        return dbHelper;
+    }
 
 }

@@ -3,13 +3,12 @@ package model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
-import sun.text.normalizer.UCharacter;
 
-import javax.persistence.*;
-import java.math.BigInteger;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
-
-import static sun.text.normalizer.UCharacter.*;
 
 
 //@XStreamAlias("group")
