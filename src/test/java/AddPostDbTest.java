@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertTrue;
 
-public class DbAddPostTest extends TestBase {
+public class AddPostDbTest extends TestBase {
 
     @Test
     public void testPostCreation() throws InterruptedException {
@@ -26,7 +26,7 @@ public class DbAddPostTest extends TestBase {
         Posts after = app.db().posts();
 //        assertThat(after.size(), equalTo(before.size() + 1));
 
-        assertThat(after, equalTo(before.withAdded(post).withAdded(post)));
+        assertThat(after, equalTo(before.withAdded(post)));
 
 
     }
