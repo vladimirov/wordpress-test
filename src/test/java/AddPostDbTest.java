@@ -20,13 +20,12 @@ public class AddPostDbTest extends TestBase {
         app.admin().enterTestContent();
         app.admin().publishPost();
 
-
-        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
+//        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
 
         Posts after = app.db().posts();
-//        assertThat(after.size(), equalTo(before.size() + 1));
+        assertThat(after.size(), equalTo(before.size() + 2));
 
-        assertThat(after, equalTo(before.withAdded(post)));
+//        assertThat(after, equalTo(before.withAdded(post)));
 
 
     }
