@@ -36,6 +36,12 @@
             <class name="PageSpeedTest"/>
         </classes>
     </test>
+    <test name="Search Results Page Test">
+        <classes>
+            <class name="SearchPageTest"/>
+        </classes>
+    </test>
+
 
     <!--<test name="TestBase">-->
     <!--<classes>-->

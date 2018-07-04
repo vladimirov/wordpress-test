@@ -1,5 +1,6 @@
-package appmanager;
+package pages;
 
+import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
@@ -10,11 +11,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class PageSpeedHelper extends HelperBase {
+public class PageSpeedPage extends HelperBase {
 
     private final Properties properties;
 
-    public PageSpeedHelper(WebDriver driver) {
+    public PageSpeedPage(WebDriver driver) {
         super(driver);
         properties = new Properties();
     }

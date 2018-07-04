@@ -1,12 +1,13 @@
-package appmanager;
+package pages;
 
+import appmanager.HelperBase;
 import org.openqa.selenium.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Properties;
 
-public class AdminHelper extends HelperBase {
+public class AdminPage extends HelperBase {
 
     private final Properties properties;
     protected JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -35,7 +36,7 @@ public class AdminHelper extends HelperBase {
     private By commentsMenu = By.id("menu-comments");
     private By approveSectionLocator = By.xpath("//tbody[@id='the-comment-list']/tr[1]");
 
-    public AdminHelper(WebDriver driver) {
+    public AdminPage(WebDriver driver) {
         super(driver);
         properties = new Properties();
     }

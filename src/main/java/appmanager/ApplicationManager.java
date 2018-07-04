@@ -6,6 +6,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.AdminPage;
+import pages.LoginPage;
+import pages.PageSpeedPage;
+import pages.SitePage;
 
 import java.io.File;
 import java.io.FileReader;
@@ -16,14 +20,12 @@ public class ApplicationManager {
     private final Properties properties;
     WebDriver driver;
 
-    private SessionHelper sessionHelper;
-    private SiteHelper siteHelper;
+    private LoginPage loginPage;
+    private SitePage sitePage;
     private String browser;
-    private PageSpeedHelper pageSpeedHelper;
-    private AdminHelper adminHelper;
+    private PageSpeedPage pageSpeedPage;
+    private AdminPage adminPage;
     private DbHelper dbHelper;
-//    private ContactHelper contactHelper;
-//    private GroupHelper groupHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -55,21 +57,21 @@ public class ApplicationManager {
         }
         driver.manage().window().maximize();
 
-        pageSpeedHelper = new PageSpeedHelper(driver);
-        adminHelper = new AdminHelper(driver);
-        siteHelper = new SiteHelper(driver);
+        pageSpeedPage = new PageSpeedPage(driver);
+        adminPage = new AdminPage(driver);
+        sitePage = new SitePage(driver);
     }
 
     public void loginToAdmin() {
         driver.get(properties.getProperty("web.baseUrl") + "wp-admin/");
-        sessionHelper = new SessionHelper(driver);
-        sessionHelper.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+        loginPage = new LoginPage(driver);
+        loginPage.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
     public void loginToCRM() {
         driver.get(properties.getProperty("web.crmUrl"));
-        sessionHelper = new SessionHelper(driver);
-        sessionHelper.loginToCrm(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
+        loginPage = new LoginPage(driver);
+        loginPage.loginToCrm(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
         driver.get(properties.getProperty("web.crmUrl"));
     }
 
@@ -93,29 +95,17 @@ public class ApplicationManager {
         driver.quit();
     }
 
-    public SiteHelper site() {
-        return siteHelper;
+    public SitePage site() {
+        return sitePage;
     }
 
-    public PageSpeedHelper pageSpeed() {
-        return pageSpeedHelper;
+    public PageSpeedPage pageSpeed() {
+        return pageSpeedPage;
     }
 
-    public AdminHelper admin() {
-        return adminHelper;
+    public AdminPage admin() {
+        return adminPage;
     }
-
-//    public GroupHelper group() {
-//        return groupHelper;
-//    }
-
-//    public ContactHelper getContactHelper() {
-//        return contactHelper;
-//    }
-
-//    public ContactHelper contact() {
-//        return contactHelper;
-//    }
 
     public DbHelper db() {
         return dbHelper;

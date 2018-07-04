@@ -1,11 +1,12 @@
-package appmanager;
+package pages;
 
+import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SessionHelper extends HelperBase {
+public class LoginPage extends HelperBase {
 
-    public SessionHelper(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         super(driver);
     }
 

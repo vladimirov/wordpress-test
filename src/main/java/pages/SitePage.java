@@ -1,11 +1,12 @@
-package appmanager;
+package pages;
 
+import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SiteHelper extends HelperBase {
+public class SitePage extends HelperBase {
 
-    public SiteHelper(WebDriver driver) {
+    public SitePage(WebDriver driver) {
         super(driver);
     }
 
