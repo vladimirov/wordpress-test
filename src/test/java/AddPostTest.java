@@ -22,7 +22,7 @@ public class AddPostTest extends TestBase {
         app.admin().searchTestPostInAdmin();
         app.admin().clickOnTestPostPermalink();
         app.admin().openTestPostPageOnSite();
-        app.admin().screenShot();
+        app.admin().screenShot("TestPost");
         assertTrue(app.admin().postTitleTextIsDisplayed());
     }
 

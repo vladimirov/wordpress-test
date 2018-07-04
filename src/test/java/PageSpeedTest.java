@@ -12,7 +12,7 @@ public class PageSpeedTest extends TestBase {
         app.pageSpeed().analyzeButtonClick();
         app.pageSpeed().waitTillAnalyzing();
         if (app.pageSpeed().speedReportCardIsDisplayed() || app.pageSpeed().errorBarIsDisplayed()) {
-            app.pageSpeed().screenShot();
+            app.pageSpeed().screenShot("TestPageSpeed");
         }
     }
 

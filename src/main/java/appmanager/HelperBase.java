@@ -105,9 +105,9 @@ public class HelperBase {
         (new Actions(driver)).moveToElement(element).perform();
     }
 
-    public void screenShot() {
+    public void screenShot(String name) {
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String filename = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
+        String filename = name + "-" + new SimpleDateFormat("ddhhmmss'.png'").format(new Date());
         File dest = new File("C:\\Projects\\Wordpress/" + filename);
         Utils.copyFile(scr, dest);
     }

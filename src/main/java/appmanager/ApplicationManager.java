@@ -34,7 +34,7 @@ public class ApplicationManager {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
 
-        dbHelper = new DbHelper();
+//        dbHelper = new DbHelper();
 
         switch (browser) {
             case BrowserType.CHROME: {
@@ -61,7 +61,7 @@ public class ApplicationManager {
     }
 
     public void loginToAdmin() {
-        driver.get(properties.getProperty("web.adminUrl"));
+        driver.get(properties.getProperty("web.baseUrl") + "wp-admin/");
         sessionHelper = new SessionHelper(driver);
         sessionHelper.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
