@@ -161,11 +161,17 @@ public class HelperBase {
     protected boolean textIsDisplayed(String text, By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(presenceOfElementLocated(locator));
-
         logger.info("ACTUAL TEXT:   " + element.getText());
         logger.info("EXPECTED TEXT: " + text);
-
         return element.getText().equals(text);
+    }
+
+    protected void openBrowserConsole() {
+//        Keys.chord(Keys.CONTROL, Keys.SHIFT, "j");
+
+        driver.findElement(By.cssSelector("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, "j"));
+
+
     }
 
 }

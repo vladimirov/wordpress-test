@@ -85,6 +85,10 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.baseUrl") + "404");
     }
 
+    public void openSearchPageUrl() {
+        driver.get(properties.getProperty("web.baseUrl") + "?s=test");
+    }
+
     public void stop() {
         driver.quit();
     }

@@ -62,6 +62,15 @@ public class SiteHelper extends HelperBase {
         return isTextDisplayed(comment, commentContentLocator);
     }
 
+    public void makeClick(){
+        click(By.cssSelector("body"));
+    }
+
+    public void screenBrowserConsole(){
+        openBrowserConsole();
+        screenShot("TestConsoleErrors");
+    }
+
     //    public void groupPage() {
 //        if (isElementPresent(By.tagName("h1"))
 //                && driver.findElement(By.tagName("h1")).getText().equals("Groups")
