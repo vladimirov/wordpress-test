@@ -132,7 +132,7 @@ public class HelperBase {
         }
     }
 
-    protected boolean isTextDisplayed(String text, By locator) {
+    protected boolean isTextDisplayed(By locator, String text) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(presenceOfElementLocated(locator));
         logger.info("ACTUAL TEXT:   " + element.getText());
@@ -160,7 +160,7 @@ public class HelperBase {
         jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
-    protected boolean textIsDisplayed(String text, By locator) {
+    protected boolean textIsDisplayed(By locator, String text) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(presenceOfElementLocated(locator));
         logger.info("ACTUAL TEXT:   " + element.getText());

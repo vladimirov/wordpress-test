@@ -9,11 +9,12 @@ import java.util.Properties;
 
 public class AdminPage extends HelperBase {
 
-    private final Properties properties;
-    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
+    public AdminPage(WebDriver driver) {
+        super(driver);
+    }
 
+    protected JavascriptExecutor jse = (JavascriptExecutor) driver;
     public String postTitle = "Test Post " + System.currentTimeMillis() + " The quick brown fox jumps over the lazy dog";
-    public String movedToTrashMessage = "1 post moved to the Trash. ";
 
     private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
@@ -36,10 +37,6 @@ public class AdminPage extends HelperBase {
     private By commentsMenu = By.id("menu-comments");
     private By approveSectionLocator = By.xpath("//tbody[@id='the-comment-list']/tr[1]");
 
-    public AdminPage(WebDriver driver) {
-        super(driver);
-        properties = new Properties();
-    }
 
     public void gotoHomePage() {
         click(By.linkText("Home"));
@@ -124,15 +121,11 @@ public class AdminPage extends HelperBase {
     }
 
     public boolean movedToTrashMessageIsDisplayed() {
-        return textIsDisplayed(movedToTrashMessage, moveToTrashLocator);
-    }
-
-    public boolean postTitleIsDisplayed() {
-        return isElementPresent(createdPostTitleLocator);
+        return textIsDisplayed(moveToTrashLocator, "1 post moved to the Trash. ");
     }
 
     public boolean postTitleTextIsDisplayed() {
-        return isTextDisplayed(postTitle, createdPostTitleLocator);
+        return isTextDisplayed(createdPostTitleLocator, postTitle);
     }
 
 
@@ -143,9 +136,7 @@ public class AdminPage extends HelperBase {
     }
 
     public void openPostWithComment() {
-//        click(columnResponseLocator);
         click(By.cssSelector("a.comments-view-item-link"));
-//        click(permalinkLocator);
     }
 
 
