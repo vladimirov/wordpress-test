@@ -10,7 +10,6 @@ public class SitePage extends HelperBase {
         super(driver);
     }
 
-    public String comment = "The quick brown fox jumps over the lazy dog";
     public String name = "Name " + System.currentTimeMillis();
     public String email = System.currentTimeMillis() + "@mail.com";
 
@@ -23,6 +22,7 @@ public class SitePage extends HelperBase {
     private By nameLocator = By.id("author");
     private By emailLocator = By.id("email");
     private By postCommentLocator = By.id("submit");
+    private By paginationLocator = By.cssSelector("nav.navigation.pagination");
 
 
     public boolean adminBarIsDisplayed() {
@@ -40,9 +40,7 @@ public class SitePage extends HelperBase {
     }
 
     public void postComment() {
-
         waitForPageToLoad(driver);
-
         scrollTillElementIsVisible(commentInputLocator);
         type(commentInputLocator, "The quick brown fox jumps over the lazy dog");
         type(nameLocator, name);
@@ -58,13 +56,13 @@ public class SitePage extends HelperBase {
         return isTextDisplayed(commentContentLocator, "The quick brown fox jumps over the lazy dog");
     }
 
-    public void makeClick(){
-        click(By.cssSelector("body"));
-    }
-
     public void screenBrowserConsole(){
         openBrowserConsole();
         screenShot("TestConsoleErrors");
+    }
+
+    public void scrollToPagination(){
+        scrollTillElementIsVisible(paginationLocator);
     }
 
 }

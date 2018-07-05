@@ -1,13 +1,12 @@
 import org.testng.annotations.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertTrue;
 
 
 public class AddPostTest extends TestBase {
 
     @Test
-    public void testPostCreation() throws InterruptedException {
+    public void testPostCreation() {
         app.loginToCRM();
         app.admin().copyTestContent();
         app.loginToAdmin();
@@ -24,16 +23,8 @@ public class AddPostTest extends TestBase {
         assertTrue(app.admin().postTitleTextIsDisplayed());
     }
 
-//    @Test
-//    public void testCommentCreation(){
-//        app.loginToAdmin();
-//        app.admin().gotoPostsPage();
-//        app.site().searchTestPostInAdmin();
-//        app.admin().clickOnTestPostPermalink();
-//    }
-
     @Test(enabled = false)
-    public void testPostDeletion() throws InterruptedException {
+    public void testPostDeletion() {
         app.loginToAdmin();//TODO Do not login
         app.admin().gotoPostsPage();
         app.admin().searchTestPostInAdmin();

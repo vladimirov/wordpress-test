@@ -79,6 +79,10 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.baseUrl"));
     }
 
+    public void openAdminUrl() {
+        driver.get(properties.getProperty("web.baseUrl" + "wp-admin/"));
+    }
+
     public void openPageSpeedUrl() {
         driver.get(properties.getProperty("web.pageSpeedUrl"));
     }
