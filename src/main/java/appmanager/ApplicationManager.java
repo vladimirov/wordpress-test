@@ -6,10 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.AdminPage;
-import pages.LoginPage;
-import pages.PageSpeedPage;
-import pages.SitePage;
+import pages.*;
 
 import java.io.File;
 import java.io.FileReader;
@@ -26,6 +23,7 @@ public class ApplicationManager {
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private DbHelper dbHelper;
+    private FaviconPage faviconPage;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -60,6 +58,7 @@ public class ApplicationManager {
         pageSpeedPage = new PageSpeedPage(driver);
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
+        faviconPage = new FaviconPage(driver);
     }
 
     public void loginToAdmin() {
@@ -96,6 +95,10 @@ public class ApplicationManager {
     }
 
 
+    public void openTest()  {
+        driver.get(properties.getProperty("web.test"));
+    }
+
 
     public void stop() {
         driver.quit();
@@ -111,6 +114,10 @@ public class ApplicationManager {
 
     public AdminPage admin() {
         return adminPage;
+    }
+
+    public FaviconPage faviconPage() {
+        return faviconPage;
     }
 
     public DbHelper db() {

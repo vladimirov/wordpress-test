@@ -4,6 +4,7 @@ package appmanager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -149,7 +150,6 @@ public class HelperBase {
     protected void scrollTillElementIsVisible(By locator) {
         logger.info("SCROLL TILL ELEMENT IS VISIBLE: " + locator);
         element = wait.until(presenceOfElementLocated(locator));
-
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].scrollIntoView();", element);
     }
@@ -170,6 +170,19 @@ public class HelperBase {
 
     protected void openBrowserConsole() {
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, "j"));
+    }
+
+    protected boolean elementHasAttribute(By locator, String expectedValue, String attribute) {
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        logger.info("EXPECTED VALUE: " + expectedValue);
+        logger.info("ACTUAL VALUE:   " + element.getAttribute(attribute));
+        return element.getAttribute("value").equals(expectedValue);
+    }
+
+    public String getElementAttribute (String attribute){
+        logger.info("GETTING ELEMENT ATTRIBUTE: " + attribute);
+        return element.getAttribute(attribute);
     }
 
     protected void verifyLinkActive(String linkUrl) {
