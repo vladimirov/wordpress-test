@@ -21,7 +21,7 @@ public class FaviconTest extends TestBase {
             System.out.println(e);
         }
 
-        
+        //https://www.mkyong.com/java/jsoup-get-favicon-from-html-page/
 
     }
 
