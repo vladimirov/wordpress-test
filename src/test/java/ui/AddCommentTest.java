@@ -10,9 +10,6 @@ public class AddCommentTest extends TestBase {
 
     @Test(priority = 2)
     public void testCommentCreation(){
-//        app.openBaseUrl();
-//        app.site().searchTestPost();
-
         app.openSearchPageUrl();
         app.site().openPostFromSearchResults();
         app.site().postComment();
