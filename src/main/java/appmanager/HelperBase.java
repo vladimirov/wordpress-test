@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import org.testng.internal.Utils;
 
 import java.io.File;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -152,7 +154,7 @@ public class HelperBase {
         jse.executeScript("arguments[0].scrollIntoView();", element);
     }
 
-    protected void scrollDownToFooter() {
+    protected void scrollToFooter() {
         logger.info("SCROLL DOWN TO THE FOOTER");
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -167,24 +169,26 @@ public class HelperBase {
     }
 
     protected void openBrowserConsole() {
-//        Keys.chord(Keys.CONTROL, Keys.SHIFT, "j");
-
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, "j"));
+    }
 
-
+    protected void verifyLinkActive(String linkUrl) {
+        logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
+            if (httpURLConnect.getResponseCode() == 200) {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            }
+            if (httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND) {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }
-
-
-//    protected void type(By locator, String text) {
-//        click(locator);
-//        if (text != null) {
-//            String existingText = driver.findElement(locator).getAttribute("value");
-//            if (!text.equals(existingText)) {
-//                driver.findElement(locator).clear();
-//                driver.findElement(locator).sendKeys(text);
-//            }
-//        }
-//    }
 

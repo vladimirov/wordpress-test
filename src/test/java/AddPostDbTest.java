@@ -1,4 +1,3 @@
-import model.PostData;
 import model.Posts;
 import org.testng.annotations.Test;
 

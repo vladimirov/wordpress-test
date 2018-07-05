@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 
-public class AddCommentTest extends TestBase{
+public class AddCommentTest extends TestBase {
 
     @Test
     public void testCommentCreation(){

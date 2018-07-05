@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
 
-//@Listeners(MyTestListener.class)
+
 public class TestBase {
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
