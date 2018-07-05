@@ -1,3 +1,6 @@
+package admin;
+
+import appmanager.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

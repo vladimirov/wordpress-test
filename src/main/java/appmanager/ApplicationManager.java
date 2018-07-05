@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ApplicationManager {
-    private final Properties properties;
+    public final Properties properties;
     WebDriver driver;
 
     private LoginPage loginPage;
@@ -94,6 +94,8 @@ public class ApplicationManager {
     public void openSearchPageUrl() {
         driver.get(properties.getProperty("web.baseUrl") + "?s=test");
     }
+
+
 
     public void stop() {
         driver.quit();

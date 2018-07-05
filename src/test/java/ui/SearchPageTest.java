@@ -1,3 +1,6 @@
+package ui;
+
+import appmanager.TestBase;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;

@@ -1,3 +1,6 @@
+package ui;
+
+import appmanager.TestBase;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
@@ -5,10 +8,12 @@ import static org.testng.Assert.*;
 
 public class AddCommentTest extends TestBase {
 
-    @Test
+    @Test(priority = 2)
     public void testCommentCreation(){
-        app.openBaseUrl();
-        app.site().searchTestPost();
+//        app.openBaseUrl();
+//        app.site().searchTestPost();
+
+        app.openSearchPageUrl();
         app.site().openPostFromSearchResults();
         app.site().postComment();
         app.loginToAdmin();

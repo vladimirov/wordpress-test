@@ -65,5 +65,7 @@ public class SitePage extends HelperBase {
         scrollTillElementIsVisible(paginationLocator);
     }
 
+
+
 }
 

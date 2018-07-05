@@ -1,3 +1,5 @@
+package db;
+
 import model.PostData;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

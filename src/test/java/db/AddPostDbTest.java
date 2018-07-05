@@ -1,3 +1,6 @@
+package db;
+
+import appmanager.TestBase;
 import model.Posts;
 import org.testng.annotations.Test;
 
@@ -8,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 public class AddPostDbTest extends TestBase {
 
     @Test
-    public void testPostCreation() throws InterruptedException {
+    public void testPostCreation()  {
         Posts before = app.db().posts();
         app.loginToCRM();
         app.admin().copyTestContent();

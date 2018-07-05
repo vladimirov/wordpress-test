@@ -1,3 +1,6 @@
+package ui;
+
+import appmanager.TestBase;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
@@ -5,7 +8,7 @@ import static org.testng.Assert.assertTrue;
 
 public class AddPostTest extends TestBase {
 
-    @Test
+    @Test(priority = 1)
     public void testPostCreation() {
         app.loginToCRM();
         app.admin().copyTestContent();
@@ -23,7 +26,7 @@ public class AddPostTest extends TestBase {
         assertTrue(app.admin().postTitleTextIsDisplayed());
     }
 
-    @Test(enabled = false)
+    @Test(priority = 3, enabled = false)
     public void testPostDeletion() {
         app.loginToAdmin();//TODO Do not login
         app.admin().gotoPostsPage();

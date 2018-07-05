@@ -1,7 +1,10 @@
 package pages;
 
 import appmanager.HelperBase;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -95,7 +98,7 @@ public class AdminPage extends HelperBase {
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(hiddenPublishInputLocator, "test");
         submit(hiddenPublishInputLocator);
-        if (isAlertPresent()){
+        if (isAlertPresent()) {
             driver.switchTo().alert().accept();
         }
         click(publishPostButtonLocator);
