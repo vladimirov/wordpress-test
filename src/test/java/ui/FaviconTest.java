@@ -19,6 +19,7 @@ public class FaviconTest extends TestBase {
 
         for (Elements e : app.faviconPage().elementsWithFavicons())  {
             System.out.println(e);
+            assertTrue(e.attr("href"), "");
         }
 
         //https://www.mkyong.com/java/jsoup-get-favicon-from-html-page/

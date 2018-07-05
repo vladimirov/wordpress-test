@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/FaviconPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="129">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +39,8 @@
       <file leaf-file-name="FaviconTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="186">
+              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -782,13 +778,17 @@
       <option name="project" value="LOCAL" />
       <updated>1530803223233</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="pagination test added">
+      <created>1530831235907</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1530831235907</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FaviconTest - 2018.07.06 at 00h 37m 45s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="FaviconTest - 2018.07.06 at 00h 39m 10s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
@@ -814,6 +814,9 @@
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="FaviconTest - 2018.07.06 at 01h 45m 39s.xml">
+      <configuration name="FaviconTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FaviconTest - 2018.07.06 at 01h 50m 26s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1141,7 +1144,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/FaviconPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1150,8 +1153,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="186">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
