@@ -3,6 +3,10 @@ package pages;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.Logs;
 
 public class SitePage extends HelperBase {
 
@@ -56,16 +60,28 @@ public class SitePage extends HelperBase {
         return isTextDisplayed(commentContentLocator, "The quick brown fox jumps over the lazy dog");
     }
 
-    public void screenBrowserConsole(){
+    public void screenBrowserConsole() {
         openBrowserConsole();
         screenShot("TestConsoleErrors");
     }
 
-    public void scrollToPagination(){
+    public void scrollToPagination() {
         scrollTillElementIsVisible(paginationLocator);
     }
 
-
+    public void getConsoleErrors() {
+        Logs logs = driver.manage().logs();
+        LogEntries logEntries = logs.get(LogType.BROWSER);
+        for (LogEntry logEntry : logEntries) {
+            if (logEntry.getMessage().toLowerCase().contains("failed to load resource")) {
+                System.out.println("Error Message in Console:" + logEntry.getMessage());
+            } else if (logEntry.getMessage().toLowerCase().contains("warning")) {
+                System.out.println("Warning Message in Console:" + logEntry.getMessage());
+            } else {
+                System.out.println("Information Message in Console:" + logEntry.getMessage());
+            }
+        }
+    }
 
 }
 

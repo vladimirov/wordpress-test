@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,38 +20,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1236">
-              <caret line="188" column="57" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FaviconPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/FaviconPage.java">
+      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="639">
+              <caret line="203" column="5" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FaviconTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
+      <file leaf-file-name="ConsoleErrorsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="119">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SitePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="80" column="94" lean-forward="true" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2318#2319#0" expanded="true" />
+                <element signature="e#2379#2380#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,12 +128,13 @@
         <option value="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AddCommentTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/FaviconPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
       </list>
     </option>
   </component>
@@ -154,10 +162,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="-1771" />
+    <option name="y" value="38" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -260,6 +268,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Wordpress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wordpress" type="462c0819:PsiDirectoryNode" />
+              <item name="test-screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -273,7 +286,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTMLGrabber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CrossbrowserTesting" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25274727" />
@@ -418,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FaviconTest">
+  <component name="RunManager" selected="TestNG.ConsoleErrorsTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -490,7 +503,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FaviconTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsoleErrorsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Wordpress" />
       <extension name="coverage">
         <pattern>
@@ -502,7 +515,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.FaviconTest" />
+      <option name="MAIN_CLASS_NAME" value="ui.ConsoleErrorsTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -519,7 +532,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PageNotFoundTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FaviconTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Wordpress" />
       <extension name="coverage">
         <pattern>
@@ -531,7 +544,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.PageNotFoundTest" />
+      <option name="MAIN_CLASS_NAME" value="ui.FaviconTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -603,16 +616,16 @@
       <item itemvalue="TestNG.AddPostTest" />
       <item itemvalue="TestNG.AddCommentTest" />
       <item itemvalue="TestNG.PageSpeedTest" />
-      <item itemvalue="TestNG.PageNotFoundTest" />
       <item itemvalue="TestNG.FaviconTest" />
+      <item itemvalue="TestNG.ConsoleErrorsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ConsoleErrorsTest" />
         <item itemvalue="TestNG.FaviconTest" />
         <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="TestNG.AddCommentTest" />
         <item itemvalue="TestNG.AddPostTest" />
-        <item itemvalue="TestNG.PageNotFoundTest" />
       </list>
     </recent_temporary>
   </component>
@@ -921,39 +934,60 @@
       <option name="project" value="LOCAL" />
       <updated>1530831235907</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="favicon test added">
+      <created>1530867884292</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1530867884292</updated>
+    </task>
+    <task id="LOCAL-00044" summary="favicon test added">
+      <created>1530867939705</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1530867939705</updated>
+    </task>
+    <task id="LOCAL-00045" summary="favicon test fix">
+      <created>1530873943818</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1530873943819</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 18m 11s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 38m 38s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 39m 54s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 40m 48s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 43m 09s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 42m 56s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 43m 27s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 43m 12s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 54m 16s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 43m 28s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 54m 41s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 43m 52s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 57m 33s.xml">
+    <history-entry file="FaviconTest - 2018.07.06 at 13h 44m 39s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 11h 58m 35s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
+    <history-entry file="ConsoleErrorsTest - 2018.07.06 at 13h 51m 18s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 12h 01m 52s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
+    <history-entry file="ConsoleErrorsTest - 2018.07.06 at 14h 04m 40s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FaviconTest - 2018.07.06 at 12h 02m 15s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
+    <history-entry file="ConsoleErrorsTest - 2018.07.06 at 14h 05m 59s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -969,7 +1003,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19349681" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3875803" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.43683085" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4261242" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="4" />
@@ -1025,7 +1059,9 @@
     <MESSAGE value="screen shot names fixed" />
     <MESSAGE value="verify link actice added" />
     <MESSAGE value="pagination test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination test added" />
+    <MESSAGE value="favicon test added" />
+    <MESSAGE value="favicon test fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon test fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,13 +1073,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1206,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/SearchPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1262,49 +1284,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+        <state relative-caret-position="407">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
           <folding>
-            <element signature="e#3314#3315#0" expanded="true" />
-            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3379#3380#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1236">
-          <caret line="188" column="57" selection-start-line="188" selection-start-column="57" selection-end-line="188" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/FaviconPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="612">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="221">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-screenshots/TestConsoleErrors-06015117.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="203" column="5" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="80" column="94" lean-forward="true" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

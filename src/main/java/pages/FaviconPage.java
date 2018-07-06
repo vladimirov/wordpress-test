@@ -46,5 +46,3 @@ public class FaviconPage extends HelperBase {
     }
 
 }
-
-
