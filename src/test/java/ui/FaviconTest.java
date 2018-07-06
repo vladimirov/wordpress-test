@@ -14,7 +14,8 @@ public class FaviconTest extends TestBase {
 
     @Test(enabled = true)
     public void testFavicon() throws IOException, URISyntaxException {
-        app.openTestUrl();
+        app.openBaseUrl();
+//        app.openTestUrl();
 
         assertTrue(app.faviconPage().isFaviconPresent());
         assertEquals(app.faviconPage().croppedFaviconText(), "cropped-favicon-32x32.png");
