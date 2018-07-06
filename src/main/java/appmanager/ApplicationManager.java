@@ -95,7 +95,7 @@ public class ApplicationManager {
     }
 
 
-    public void openTest()  {
+    public void openTestUrl()  {
         driver.get(properties.getProperty("web.test"));
     }
 

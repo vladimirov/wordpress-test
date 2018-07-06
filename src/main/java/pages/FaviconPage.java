@@ -8,8 +8,8 @@ import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class FaviconPage extends HelperBase {
 
@@ -17,21 +17,25 @@ public class FaviconPage extends HelperBase {
         super(driver);
     }
 
-    public List<Elements> elementsWithFavicons() throws IOException {
-        String url = "https://wp-dev.space/ism/kitchen/develop/";
-//        String url = "https://wp-dev.space/ism/countersteer/master/";
-        Document doc = Jsoup.connect(url).get();
-        Elements links = doc.head().select("link[href~=.*\\.(ico|png)]");
-        List<Elements> list = new ArrayList<>();
-        for (Element link : links) {
-            list.add(link.getElementsByAttribute("href"));
-//            System.out.println(link.getElementsByAttribute("href"));
+
+    public boolean isFaviconPresent() throws IOException {
+        try {
+            Document doc = Jsoup.connect(driver.getCurrentUrl()).get();
+            Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
+            return link != null;
+        } catch (NullPointerException e) {
+            return false;
         }
-        return list;
+    }
+
+    public String croppedFaviconText() throws IOException, URISyntaxException {
+        Document doc = Jsoup.connect(driver.getCurrentUrl()).get();
+        Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
+        String linkHref = link.attr("href");
+        URI uri = new URI(linkHref);
+        String[] segments = uri.getPath().split("/");
+        return segments[segments.length - 1];
     }
 }
-//                <link rel="icon" href="https://wp-dev.space/ceatus/ybsg/develop/" +
-//                "wp-content/uploads/2018/05/cropped-fav-icon-32x32.png" sizes="32x32">
 
-//        Document document = Jsoup.parse(url);
 

@@ -1,28 +1,23 @@
 package ui;
 
 import appmanager.TestBase;
-import org.jsoup.select.Elements;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.lang.model.element.Element;
 import java.io.IOException;
+import java.net.URISyntaxException;
 
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 
 public class FaviconTest extends TestBase {
 
-    @Test
-    public void testFavIcon1() throws IOException {
-        app.openTest();
-        System.out.println(app.faviconPage().elementsWithFavicons().size());
+    @Test(enabled = true)
+    public void testFavicon() throws IOException, URISyntaxException {
+        app.openTestUrl();
 
-        for (Elements e : app.faviconPage().elementsWithFavicons())  {
-            System.out.println(e);
-            assertTrue(e.attr("href"), "");
-        }
-
-        //https://www.mkyong.com/java/jsoup-get-favicon-from-html-page/
+        assertTrue(app.faviconPage().isFaviconPresent());
+        assertEquals(app.faviconPage().croppedFaviconText(), "cropped-favicon-32x32.png");
 
     }
 
