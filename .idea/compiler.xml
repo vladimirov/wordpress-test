@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Wordpress" />
+        <module name="wordpress" />
+        <module name="wordpress-test" />
       </profile>
     </annotationProcessing>
   </component>
