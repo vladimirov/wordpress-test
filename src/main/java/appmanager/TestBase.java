@@ -28,7 +28,7 @@ public class TestBase {
     }
 
     @BeforeMethod
-    public void logTestStart(Method m, Object[] p) {
+    public void logTestStart(Method m) {
         logger.info("START TEST " + m.getName());
     }
 

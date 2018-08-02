@@ -22,8 +22,8 @@ public class ApplicationManager {
     private String browser;
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
-    private DbHelper dbHelper;
     private FaviconPage faviconPage;
+//    private DbHelper dbHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -120,8 +120,8 @@ public class ApplicationManager {
         return faviconPage;
     }
 
-    public DbHelper db() {
-        return dbHelper;
-    }
+//    public DbHelper db() {
+//        return dbHelper;
+//    }
 
 }
