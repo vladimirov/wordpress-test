@@ -10,29 +10,25 @@ import static org.testng.Assert.assertTrue;
 
 public class AddPostDbTest extends TestBase {
 
-    @Test
-    public void testPostCreation()  {
-        Posts before = app.db().posts();
-        app.loginToCRM();
-        app.admin().copyTestContent();
-        app.loginToAdmin();
-        app.admin().gotoPostsPage();
-        app.admin().addNewPostButtonClick();
-        app.admin().enterPostTitle();
-        app.admin().enterTestContent();
-        app.admin().publishPost();
+//    @Test
+//    public void testPostCreation()  {
+//        Posts before = app.db().posts();
+//        app.loginToCRM();
+//        app.admin().copyTestContent();
+//        app.loginToAdmin();
+//        app.admin().gotoPostsPage();
+//        app.admin().addNewPostButtonClick();
+//        app.admin().enterPostTitle();
+//        app.admin().enterTestContent();
+//        app.admin().publishPost();
 
 //        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
 
-        Posts after = app.db().posts();
-        assertThat(after.size(), equalTo(before.size() + 2));
+//        Posts after = app.db().posts();
+//        assertThat(after.size(), equalTo(before.size() + 2));
 
 //        assertThat(after, equalTo(before.withAdded(post)));
 
 
-    }
-
-
-
-
+//    }
 }

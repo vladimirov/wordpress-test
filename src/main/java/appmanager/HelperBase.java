@@ -125,10 +125,13 @@ public class HelperBase {
     }
 
     public boolean isElementPresent(By locator) {
+        logger.info("TRYING TO FOUND ELEMENT: " + locator);
         try {
             driver.findElement(locator);
+            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             return true;
         } catch (NoSuchElementException e) {
+            logger.info("CANT FOUND ELEMENT: " + locator);
             return false;
         }
     }
