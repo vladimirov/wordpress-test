@@ -12,7 +12,6 @@ public class AddPostTest extends TestBase {
 
     @Test(priority = 1)
     public void testPostCreation() throws IOException {
-
         app.loginToAdmin();
         app.admin().gotoPostsPage();
         app.admin().addNewPostButtonClick();
@@ -27,9 +26,9 @@ public class AddPostTest extends TestBase {
         assertTrue(app.admin().postTitleTextIsDisplayed());
     }
 
-//    @Test(priority = 3, enabled = false)
+//    @Test(priority = 2, enabled = false)
 //    public void testPostDeletion() {
-//        app.loginToAdmin();//TODO Do not login
+//        app.loginToAdmin();//
 //        app.admin().gotoPostsPage();
 //        app.admin().searchTestPostInAdmin();
 //        app.admin().deleteTestPost();
