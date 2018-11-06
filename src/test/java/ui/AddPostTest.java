@@ -3,15 +3,16 @@ package ui;
 import appmanager.TestBase;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 import static org.testng.Assert.assertTrue;
 
 
 public class AddPostTest extends TestBase {
 
     @Test(priority = 1)
-    public void testPostCreation() {
-        app.loginToCRM();
-        app.admin().copyTestContent();
+    public void testPostCreation() throws IOException {
+
         app.loginToAdmin();
         app.admin().gotoPostsPage();
         app.admin().addNewPostButtonClick();
@@ -26,13 +27,13 @@ public class AddPostTest extends TestBase {
         assertTrue(app.admin().postTitleTextIsDisplayed());
     }
 
-    @Test(priority = 3, enabled = false)
-    public void testPostDeletion() {
-        app.loginToAdmin();//TODO Do not login
-        app.admin().gotoPostsPage();
-        app.admin().searchTestPostInAdmin();
-        app.admin().deleteTestPost();
-        assertTrue(app.admin().movedToTrashMessageIsDisplayed());
-    }
+//    @Test(priority = 3, enabled = false)
+//    public void testPostDeletion() {
+//        app.loginToAdmin();//TODO Do not login
+//        app.admin().gotoPostsPage();
+//        app.admin().searchTestPostInAdmin();
+//        app.admin().deleteTestPost();
+//        assertTrue(app.admin().movedToTrashMessageIsDisplayed());
+//    }
 
 }

@@ -6,6 +6,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Properties;
@@ -88,9 +92,25 @@ public class AdminPage extends HelperBase {
         type(postTitleInputLocator, postTitle);
     }
 
-    public void enterTestContent() {
+//    public void enterTestContent() {
+//        click(textTabLocator);
+//        type(textAreaLocator, Keys.chord(Keys.CONTROL, "v"));
+//    }
+
+    private String testContent() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/main/resources/test-content.txt")));
+        String text = "";
+        String line = reader.readLine();
+        while (line != null) {
+            text += line;
+            line = reader.readLine();
+        }
+        return text;
+    }
+
+    public void enterTestContent() throws IOException {
         click(textTabLocator);
-        type(textAreaLocator, Keys.chord(Keys.CONTROL, "v"));
+        type(textAreaLocator, testContent());
     }
 
     public void publishPost() {

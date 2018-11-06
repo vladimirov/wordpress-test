@@ -3,6 +3,8 @@ package ui;
 import appmanager.TestBase;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 import static org.testng.Assert.assertTrue;
 
 public class SearchPageTest extends TestBase {
@@ -14,7 +16,7 @@ public class SearchPageTest extends TestBase {
     }
 
     @Test
-    public void testSearchResultsPagination() {
+    public void testSearchResultsPagination() throws IOException {
         app.loginToCRM();
         app.admin().copyTestContent();
         app.loginToAdmin();
