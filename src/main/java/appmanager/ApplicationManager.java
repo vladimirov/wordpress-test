@@ -94,12 +94,6 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.baseUrl") + "?s=test");
     }
 
-
-    public void openTestUrl()  {
-        driver.get(properties.getProperty("web.test"));
-    }
-
-
     public void stop() {
         driver.quit();
     }

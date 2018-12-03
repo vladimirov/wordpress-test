@@ -14,9 +14,7 @@ public class FaviconTest extends TestBase {
 
     @Test(enabled = true)
     public void testFavicon() throws IOException, URISyntaxException {
-//        app.openBaseUrl();
-        app.openTestUrl();
-
+        app.openBaseUrl();
         assertTrue(app.faviconPage().isFaviconPresent());
         assertTrue(app.faviconPage().verifyFaviconLink());
     }

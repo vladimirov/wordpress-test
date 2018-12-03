@@ -1,9 +1,17 @@
 package ui;
 
 import appmanager.TestBase;
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
@@ -34,5 +42,4 @@ public class AddPostTest extends TestBase {
 //        app.admin().deleteTestPost();
 //        assertTrue(app.admin().movedToTrashMessageIsDisplayed());
 //    }
-
 }
