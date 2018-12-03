@@ -110,8 +110,11 @@ public class HelperBase {
 
     public void screenShot(String name) {
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String filename = name + "-" + new SimpleDateFormat("ddhhmmss'.png'").format(new Date());
-        File dest = new File("C:\\Projects\\Wordpress\\test-screenshots/" + filename);
+//        String filename = name + "-" + new SimpleDateFormat("ddhhmmss'.png'").format(new Date());
+//        File dest = new File("test-screenshots/" + filename);
+
+        File dest = new File("test-screenshots/" + name + ".png");
+
         Utils.copyFile(scr, dest);
     }
 
@@ -183,9 +186,23 @@ public class HelperBase {
         return element.getAttribute("value").equals(expectedValue);
     }
 
-    public String getElementAttribute (String attribute){
+    public String getElementAttribute (By locator, String attribute){
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         logger.info("GETTING ELEMENT ATTRIBUTE: " + attribute);
         return element.getAttribute(attribute);
+    }
+
+    public String getElementAttributeValue (By locator){
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return element.getAttribute("value");
+    }
+
+    public String getElementText (By locator){
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return element.getText();
     }
 
     protected void verifyLinkActive(String linkUrl) {
@@ -205,6 +222,5 @@ public class HelperBase {
             System.out.println(e.getMessage());
         }
     }
-
 }
 

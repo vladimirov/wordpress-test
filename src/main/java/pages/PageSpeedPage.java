@@ -2,7 +2,6 @@ package pages;
 
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
@@ -23,8 +22,10 @@ public class PageSpeedPage extends HelperBase {
     private By analyzeButtonLocator = By.className("analyze-cell");
     private By urlInputLocator = By.name("url");
     private By progressStatusLocator = By.cssSelector("div.jfk-progressStatus");
-    private By speedReportCardLocator = By.cssSelector("div.speed-report-card");
+    private By reportSummaryLocator = By.cssSelector("div.report-summary");
     private By errorBarLocator = By.cssSelector("div.error-bar");
+    private By desktopTabLocator = By.xpath("//div[contains(@class,'goog-tab goog-tab-selected')]");
+    private By percentageLocator = By.cssSelector("div.lh-gauge__percentage");
 
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
@@ -46,13 +47,20 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
-    public boolean speedReportCardIsDisplayed() {
-        return isElementPresent(speedReportCardLocator);
+    public void desktopTabClick() {
+        click(desktopTabLocator);
+    }
+
+    public boolean reportSummaryIsDisplayed() {
+        return isElementPresent(reportSummaryLocator);
     }
 
     public boolean errorBarIsDisplayed() {
         return isElementPresent(errorBarLocator);
     }
 
+    public String percentValue(){
+        return getElementText(percentageLocator);
+    }
 
 }

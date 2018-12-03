@@ -1,5 +1,9 @@
 package appmanager;
 
+import org.gitlab4j.api.GitLabApi;
+import org.gitlab4j.api.GitLabApiException;
+import org.gitlab4j.api.models.FileUpload;
+import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,7 +27,6 @@ public class ApplicationManager {
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
-//    private DbHelper dbHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -33,9 +36,6 @@ public class ApplicationManager {
     public void init() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-
-//        dbHelper = new DbHelper();
-
         switch (browser) {
             case BrowserType.CHROME: {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
@@ -59,6 +59,10 @@ public class ApplicationManager {
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
         faviconPage = new FaviconPage(driver);
+    }
+
+    public void stop() {
+        driver.quit();
     }
 
     public void loginToAdmin() {
@@ -94,10 +98,6 @@ public class ApplicationManager {
         driver.get(properties.getProperty("web.baseUrl") + "?s=test");
     }
 
-    public void stop() {
-        driver.quit();
-    }
-
     public SitePage site() {
         return sitePage;
     }
@@ -114,8 +114,14 @@ public class ApplicationManager {
         return faviconPage;
     }
 
-//    public DbHelper db() {
-//        return dbHelper;
-//    }
+    public void uploadScreenshotToGitlab(String screenName, String issueTitle) throws GitLabApiException {
+
+        GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
+        Project project = gitLabApi.getProjectApi().getProject(490);
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenName));
+        gitLabApi.getIssuesApi().createIssue(490, issueTitle, upload.getMarkdown());
+
+    }
+
 
 }
