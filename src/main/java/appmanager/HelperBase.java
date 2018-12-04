@@ -3,6 +3,9 @@ package appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -14,6 +17,7 @@ import org.testng.internal.Utils;
 import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import static org.testng.AssertJUnit.fail;
@@ -107,12 +111,11 @@ public class HelperBase {
     }
 
     public void screenShot(String name) {
+        logger.info("MAKING SCREENSHOT...");
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //        String filename = name + "-" + new SimpleDateFormat("ddhhmmss'.png'").format(new Date());
 //        File dest = new File("test-screenshots/" + filename);
-
         File dest = new File("test-screenshots/" + name + ".png");
-
         Utils.copyFile(scr, dest);
     }
 
@@ -173,6 +176,7 @@ public class HelperBase {
     }
 
     protected void openBrowserConsole() {
+        logger.info("OPENING BROWSER CONSOLE...");
         driver.findElement(By.cssSelector("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, "j"));
     }
 
@@ -218,6 +222,14 @@ public class HelperBase {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        }
+    }
+
+    public void analyzeLog() {
+        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            System.out.println("* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+            //do something useful with the data
         }
     }
 

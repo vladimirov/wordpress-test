@@ -17,7 +17,6 @@ public class FaviconPage extends HelperBase {
         super(driver);
     }
 
-
     public boolean isFaviconPresent() throws IOException {
         try {
             Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
