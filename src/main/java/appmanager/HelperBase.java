@@ -14,8 +14,6 @@ import org.testng.internal.Utils;
 import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import static org.testng.AssertJUnit.fail;
@@ -186,20 +184,20 @@ public class HelperBase {
         return element.getAttribute("value").equals(expectedValue);
     }
 
-    public String getElementAttribute (By locator, String attribute){
+    public String getElementAttribute(By locator, String attribute) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         logger.info("GETTING ELEMENT ATTRIBUTE: " + attribute);
         return element.getAttribute(attribute);
     }
 
-    public String getElementAttributeValue (By locator){
+    public String getElementAttributeValue(By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.getAttribute("value");
     }
 
-    public String getElementText (By locator){
+    public String getElementText(By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.getText();
@@ -222,5 +220,6 @@ public class HelperBase {
             System.out.println(e.getMessage());
         }
     }
+
 }
 

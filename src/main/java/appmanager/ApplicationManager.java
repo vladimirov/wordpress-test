@@ -115,7 +115,6 @@ public class ApplicationManager {
     }
 
     public void uploadScreenshotToGitlab(String screenName, String issueTitle) throws GitLabApiException {
-
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(490);
         FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenName));
