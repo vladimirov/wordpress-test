@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="console errors test added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
-              <caret line="130" column="1" lean-forward="true" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+              <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
               <folding>
                 <element signature="e#2913#2914#0" expanded="true" />
                 <element signature="e#2978#2979#0" expanded="true" />
@@ -118,20 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="340">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -338,7 +322,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543942659000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543942914344" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -507,13 +491,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00006" summary="screenshot adding fix">
-      <created>1529339318391</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1529339318391</updated>
     </task>
     <task id="LOCAL-00007" summary="screenshot adding fix">
       <created>1529349295679</created>
@@ -851,13 +828,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543933727431</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="console errors test added">
+      <created>1543942686990</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1543942686990</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConsoleErrorsTest - 2018.12.04 at 18h 29m 28s.xml">
-      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ConsoleErrorsTest - 2018.12.04 at 18h 30m 32s.xml">
       <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
@@ -885,6 +866,9 @@
     <history-entry file="ConsoleErrorsTest - 2018.12.04 at 18h 42m 52s.xml">
       <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ConsoleErrorsTest - 2018.12.04 at 18h 56m 54s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
@@ -900,7 +884,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32683983" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.31404072" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.42550912" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.42550912" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551983" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -1184,17 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
-          <caret line="130" column="1" lean-forward="true" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
           <folding>
             <element signature="e#2913#2914#0" expanded="true" />
             <element signature="e#2978#2979#0" expanded="true" />
@@ -1206,6 +1183,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
