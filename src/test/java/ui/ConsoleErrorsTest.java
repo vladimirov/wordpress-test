@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.gitlab4j.api.GitLabApiException;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -23,18 +24,10 @@ public class ConsoleErrorsTest extends TestBase {
     }
 
     @Test
-    public void testMethod() {
+    public void testMethod() throws GitLabApiException {
         app.openBaseUrl();
-        app.site().analyzeLog();
+        app.uploadIssueDescriptionToGitlab("Errors in browser console are displayed", app.site().analyzeLog());
 
     }
-
-
-//    @Test
-//    public void testConsoleLogging(){
-//        app.openBaseUrl();
-//        app.site().screenBrowserConsole();
-////        app.site().getConsoleErrors();
-//    }
 
 }

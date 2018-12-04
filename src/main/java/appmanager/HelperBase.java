@@ -225,12 +225,24 @@ public class HelperBase {
         }
     }
 
-    public void analyzeLog() {
+//    public void analyzeLog() {
+//        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+//        for (LogEntry entry : logEntries) {
+//            System.out.println("* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+//            //do something useful with the data
+//        }
+//    }
+
+    public String analyzeLog() {
+        String errorMessage;
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        String buffer = "";
         for (LogEntry entry : logEntries) {
-            System.out.println("* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
-            //do something useful with the data
+            errorMessage = "* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage();
+            System.out.println(errorMessage);
+            buffer += errorMessage + "\n\r";
         }
+        return buffer;
     }
 
 }

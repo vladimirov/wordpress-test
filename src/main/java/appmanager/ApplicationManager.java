@@ -114,12 +114,17 @@ public class ApplicationManager {
         return faviconPage;
     }
 
-    public void uploadScreenshotToGitlab(String screenName, String issueTitle) throws GitLabApiException {
+    public void uploadScreenshotToGitlab(String issueTitle, String screenName) throws GitLabApiException {
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
-        Project project = gitLabApi.getProjectApi().getProject(490);
+        Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
         FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenName));
-        gitLabApi.getIssuesApi().createIssue(490, issueTitle, upload.getMarkdown());
+        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, upload.getMarkdown());
+    }
 
+    public void uploadIssueDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+        GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
+        Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
+        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, description);
     }
 
 

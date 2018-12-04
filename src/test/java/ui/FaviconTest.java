@@ -20,7 +20,7 @@ public class FaviconTest extends TestBase {
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
             app.faviconPage().screenShot("FaviconTest");
-            app.uploadScreenshotToGitlab("FaviconTest.png", "Favicon is missing");
+            app.uploadScreenshotToGitlab("Favicon is missing", "FaviconTest.png");
         }
     }
 

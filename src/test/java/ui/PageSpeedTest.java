@@ -33,7 +33,7 @@ public class PageSpeedTest extends TestBase {
         if (percentDesktop < 50) {
             System.out.println("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
             app.pageSpeed().screenShot("PageSpeedTestDesktop");
-            app.uploadScreenshotToGitlab("PageSpeedTestDesktop.png", "Google PageSpeed Desktop percentage value need to be more than 50");
+            app.uploadScreenshotToGitlab("Google PageSpeed Desktop percentage value need to be more than 50", "PageSpeedTestDesktop.png");
         }
 
 
