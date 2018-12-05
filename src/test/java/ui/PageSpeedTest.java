@@ -47,17 +47,13 @@ public class PageSpeedTest extends TestBase {
     @Test
     public void pagespeedApiTest() throws IOException, GeneralSecurityException {
         String url = "http://www.ogilvy.co.za/";
-
         JsonFactory jsonFactory = new  JacksonFactory();
         HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
-
         HttpRequestInitializer httpRequestInitializer = null; //this can be null here!
         Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, httpRequestInitializer).build();
-
         Pagespeedonline.Pagespeedapi.Runpagespeed runpagespeed  = p.pagespeedapi().runpagespeed(url);
         PagespeedApiPagespeedResponseV4 result = runpagespeed.execute();
-//        PagespeedApiPagespeedResponseV4.FormattedResults formattedResults = result.getFormattedResults();
-        PagespeedApiImageV4 formattedResults = result.getScreenshot();
+        PagespeedApiPagespeedResponseV4.FormattedResults formattedResults = result.getFormattedResults();
 
 
         System.out.println(formattedResults.toPrettyString());
