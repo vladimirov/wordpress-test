@@ -260,5 +260,10 @@ public class HelperBase {
         return buffer;
     }
 
+    public String pageLinkForGitlab() {
+//        return "* [ ] " + driver.getCurrentUrl() + "\n";
+        return driver.getCurrentUrl() + "\n";
+    }
+
 }
 

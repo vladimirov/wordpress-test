@@ -117,6 +117,13 @@ public class ApplicationManager {
         return faviconPage;
     }
 
+    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+        logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
+        GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
+        Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
+        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, description);
+    }
+
     public void uploadIssueWithScreenshotToGitlab(String issueTitle, String screenshotName) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH SCREENSHOT");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
@@ -125,11 +132,12 @@ public class ApplicationManager {
         gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, upload.getMarkdown());
     }
 
-    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
-        logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
+    public String getGitlabFileMarkdown(String screenshotName) throws GitLabApiException {
+        logger.info("UPLOADING SCREENSHOT TO GITLAB ");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
-        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, description);
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenshotName + ".png"));
+        return upload.getMarkdown();
     }
 
 }
