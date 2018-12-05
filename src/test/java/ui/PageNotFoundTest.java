@@ -8,7 +8,7 @@ public class PageNotFoundTest extends TestBase {
     @Test
     public void testNotFoundPage() {
         app.openPageNotFoundUrl();
-        app.site().screenShot("Test404");
+        app.site().screenshotCapture("Test404");
     }
 
 }

@@ -62,7 +62,7 @@ public class SitePage extends HelperBase {
 
     public void screenBrowserConsole() {
         openBrowserConsole();
-        screenShot("TestConsoleErrors");
+        screenshotCapture("TestConsoleErrors");
     }
 
     public void scrollToPagination() {

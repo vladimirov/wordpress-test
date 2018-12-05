@@ -12,7 +12,7 @@ public class SearchPageTest extends TestBase {
     @Test
     public void testSearchResults() {
         app.openSearchPageUrl();
-        app.site().screenShot("TestSearchPage");
+        app.site().screenshotCapture("TestSearchPage");
     }
 
     @Test
@@ -29,7 +29,7 @@ public class SearchPageTest extends TestBase {
         }
         app.openSearchPageUrl();
         app.site().scrollToPagination();
-        app.admin().screenShot("TestPostSearchPagePagination");
+        app.admin().screenshotCapture("TestPostSearchPagePagination");
     }
 
 }

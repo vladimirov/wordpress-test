@@ -2,6 +2,7 @@ package appmanager;
 
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -13,10 +14,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.internal.Utils;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.Dimension;
 import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -110,13 +118,19 @@ public class HelperBase {
         (new Actions(driver)).moveToElement(element).perform();
     }
 
-    public void screenShot(String name) {
-        logger.info("MAKING SCREENSHOT...");
+    public void screenshotCapture(String name) {
+        logger.info("SCREENSHOT CAPTURING...");
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        String filename = name + "-" + new SimpleDateFormat("ddhhmmss'.png'").format(new Date());
-//        File dest = new File("test-screenshots/" + filename);
-        File dest = new File("test-screenshots/" + name + ".png");
+        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
+        File dest = new File("test-screenshots/" + name + "-" + date.format(new Date()));
         Utils.copyFile(scr, dest);
+    }
+
+    public void screenshotCaptureAllScreen(String name) throws Exception {
+        logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
+        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
+        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + name + "-" + date.format(new Date())));
     }
 
     public boolean isAlertPresent() {
@@ -224,14 +238,6 @@ public class HelperBase {
             System.out.println(e.getMessage());
         }
     }
-
-//    public void analyzeLog() {
-//        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-//        for (LogEntry entry : logEntries) {
-//            System.out.println("* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
-//            //do something useful with the data
-//        }
-//    }
 
     public String analyzeLog() {
         String errorMessage;
