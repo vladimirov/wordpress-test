@@ -1,6 +1,10 @@
 package appmanager;
 
 
+import org.gitlab4j.api.GitLabApi;
+import org.gitlab4j.api.GitLabApiException;
+import org.gitlab4j.api.models.FileUpload;
+import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.interactions.Actions;
@@ -26,6 +30,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import static org.testng.AssertJUnit.fail;
@@ -33,6 +38,7 @@ import static org.testng.AssertJUnit.fail;
 public class HelperBase {
 
     Logger logger = LoggerFactory.getLogger(HelperBase.class);
+    public final Properties properties;
 
     protected WebDriver driver;
     public WebDriverWait wait;
@@ -42,6 +48,7 @@ public class HelperBase {
     public HelperBase(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSeconds);
+        properties = new Properties();
     }
 
     protected void click(By locator) {
@@ -118,19 +125,21 @@ public class HelperBase {
         (new Actions(driver)).moveToElement(element).perform();
     }
 
-    public void screenshotCapture(String name) {
+    public void screenshotCapture(String screenshotName) {
         logger.info("SCREENSHOT CAPTURING...");
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
-        File dest = new File("test-screenshots/" + name + "-" + date.format(new Date()));
+//        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
+//        File dest = new File("test-screenshots/" + name + "-" + date.format(new Date()));
+        File dest = new File("test-screenshots/" + screenshotName + ".png");
         Utils.copyFile(scr, dest);
     }
 
-    public void screenshotCaptureAllScreen(String name) throws Exception {
+    public void screenshotCaptureAllScreen(String screenshotName) throws Exception {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + name + "-" + date.format(new Date())));
+//        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + name + "-" + date.format(new Date())));
+        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
     }
 
     public boolean isAlertPresent() {

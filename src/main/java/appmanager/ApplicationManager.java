@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.*;
 
 import java.io.File;
@@ -20,6 +22,7 @@ import java.util.Properties;
 public class ApplicationManager {
     public final Properties properties;
     WebDriver driver;
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
 
     private LoginPage loginPage;
     private SitePage sitePage;
@@ -114,18 +117,19 @@ public class ApplicationManager {
         return faviconPage;
     }
 
-    public void uploadScreenshotToGitlab(String issueTitle, String screenName) throws GitLabApiException {
+    public void uploadIssueWithScreenshotToGitlab(String issueTitle, String screenshotName) throws GitLabApiException {
+        logger.info("UPLOADING ISSUE TO GITLAB WITH SCREENSHOT");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
-        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenName));
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenshotName));
         gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, upload.getMarkdown());
     }
 
-    public void uploadIssueDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+        logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
         gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, description);
     }
-
 
 }

@@ -2,8 +2,6 @@ package ui;
 
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
@@ -16,7 +14,7 @@ import java.util.logging.Level;
 public class ConsoleErrorsTest extends TestBase {
 
     @BeforeMethod
-    public void  setUp(){
+    public void setUp() {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
         logPrefs.enable(LogType.BROWSER, Level.ALL);
@@ -26,8 +24,7 @@ public class ConsoleErrorsTest extends TestBase {
     @Test
     public void testMethod() throws GitLabApiException {
         app.openBaseUrl();
-        app.uploadIssueDescriptionToGitlab("Errors in browser console are displayed", app.site().analyzeLog());
-
+        app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", app.site().analyzeLog());
     }
 
 }
