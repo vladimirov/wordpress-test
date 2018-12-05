@@ -166,6 +166,12 @@
             <artifactId>ashot</artifactId>
             <version>1.5.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-pagespeedonline</artifactId>
+            <version>v4-rev15-1.25.0</version>
+        </dependency>
     </dependencies>
 
 </project>

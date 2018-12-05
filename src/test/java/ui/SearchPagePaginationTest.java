@@ -8,15 +8,7 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertTrue;
 
-public class SearchPageTest extends TestBase {
-
-    @Test
-    public void testSearchResults() throws GitLabApiException {
-        String screenshotName = "SearchPageTest";
-        app.openSearchPageUrl();
-        app.site().screenshotCapture(screenshotName);
-        app.uploadIssueWithScreenshotToGitlab("Search page layout screenshot", screenshotName);
-    }
+public class SearchPagePaginationTest extends TestBase {
 
     @Test(enabled = false)
     public void testSearchResultsPagination() throws IOException {

@@ -44,7 +44,7 @@
     <!--</test>-->
     <!--<test name="Search Results Page Test">-->
         <!--<classes>-->
-            <!--<class name="ui.SearchPageTest"/>-->
+            <!--<class name="ui.SearchPagePaginationTest"/>-->
         <!--</classes>-->
     <!--</test>-->
 

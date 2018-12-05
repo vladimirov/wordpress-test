@@ -8,7 +8,7 @@ public class DefaultPagesTest extends TestBase {
 
     @Test
     public void testDefaultPages() throws GitLabApiException {
-        String searchPageScreenshot = "SearchPageTest";
+        String searchPageScreenshot = "SearchPagePaginationTest";
         String pageNotFoundScreenshot = "404PageTest";
         app.openSearchPageUrl();
         app.site().screenshotCapture(searchPageScreenshot);
