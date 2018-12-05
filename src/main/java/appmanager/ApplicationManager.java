@@ -98,7 +98,7 @@ public class ApplicationManager {
     }
 
     public void openSearchPageUrl() {
-        driver.get(properties.getProperty("web.baseUrl") + "?s=test");
+        driver.get(properties.getProperty("web.baseUrl") + "?s=");
     }
 
     public SitePage site() {

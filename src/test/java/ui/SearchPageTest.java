@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -10,12 +11,14 @@ import static org.testng.Assert.assertTrue;
 public class SearchPageTest extends TestBase {
 
     @Test
-    public void testSearchResults() {
+    public void testSearchResults() throws GitLabApiException {
+        String screenshotName = "SearchPageTest";
         app.openSearchPageUrl();
-        app.site().screenshotCapture("TestSearchPage");
+        app.site().screenshotCapture(screenshotName);
+        app.uploadIssueWithScreenshotToGitlab("Search page layout screenshot", screenshotName);
     }
 
-    @Test
+    @Test(enabled = false)
     public void testSearchResultsPagination() throws IOException {
         app.loginToCRM();
         app.admin().copyTestContent();
