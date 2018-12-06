@@ -11,6 +11,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class AdminPage extends HelperBase {
 
@@ -95,15 +98,20 @@ public class AdminPage extends HelperBase {
 //        type(textAreaLocator, Keys.chord(Keys.CONTROL, "v"));
 //    }
 
+//    private String testContent() throws IOException {
+//        BufferedReader reader = new BufferedReader(new FileReader(new File("src/main/resources/test-content.txt")));
+//        String text = "";
+//        String line = reader.readLine();
+//        while (line != null) {
+//            text += line;
+//            line = reader.readLine();
+//        }
+//        return text;
+//    }
+
     private String testContent() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/main/resources/test-content.txt")));
-        String text = "";
-        String line = reader.readLine();
-        while (line != null) {
-            text += line;
-            line = reader.readLine();
-        }
-        return text;
+        return new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
+                StandardCharsets.UTF_8);
     }
 
     public void enterTestContent() throws IOException {
