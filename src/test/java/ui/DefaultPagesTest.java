@@ -12,7 +12,7 @@ public class DefaultPagesTest extends TestBase {
 
     @Test
     public void testDefaultPages() throws Exception {
-        String searchPageScreenshot = "SearchPagePaginationTest";
+        String searchPageScreenshot = "SearchPageTest";
         String pageNotFoundScreenshot = "404PageTest";
         String testPostScreenshot = "TestPost";
         //Search Page
