@@ -1,12 +1,7 @@
 package appmanager;
 
 
-import org.gitlab4j.api.GitLabApi;
-import org.gitlab4j.api.GitLabApiException;
-import org.gitlab4j.api.models.FileUpload;
-import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.*;
-import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
@@ -23,8 +18,6 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.Dimension;
 import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -42,7 +35,7 @@ public class HelperBase {
 
     protected WebDriver driver;
     public WebDriverWait wait;
-    public int timeOutInSeconds = 10;
+    public int timeOutInSeconds = 20;
     public WebElement element;
 
     public HelperBase(WebDriver driver) {

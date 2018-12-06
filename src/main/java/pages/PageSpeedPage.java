@@ -32,7 +32,6 @@ public class PageSpeedPage extends HelperBase {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
         type(urlInputLocator, properties.getProperty("web.baseUrl"));
-        System.out.println(properties.getProperty("web.baseUrl"));
     }
 
     public void analyzeButtonClick() {
@@ -51,6 +50,7 @@ public class PageSpeedPage extends HelperBase {
         try {
             click(desktopTabLocator);
         } catch (Exception e) {
+            waitToBePresent(desktopTabLocator);
             click(desktopTabLocator);
         }
     }
