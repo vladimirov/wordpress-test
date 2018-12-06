@@ -1,4 +1,4 @@
-package ui;
+package admin;
 
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;

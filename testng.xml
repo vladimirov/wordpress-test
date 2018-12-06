@@ -12,40 +12,4 @@
         </packages>
     </test>
 
-    <!--<test name="Login Test">-->
-        <!--<classes>-->
-            <!--<class name="admin.LoginTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Add Post Test">-->
-        <!--<classes>-->
-            <!--<class name="ui.AddPostTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Add Comment Test">-->
-        <!--<classes>-->
-            <!--<class name="ui.AddCommentTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Default Pages Test">-->
-        <!--<classes>-->
-            <!--<class name="admin.DefaultPagesTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Page Not Found Test">-->
-        <!--<classes>-->
-            <!--<class name="ui.PageNotFoundTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="PageSpeed Test">-->
-        <!--<classes>-->
-            <!--<class name="ui.PageSpeedTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Search Results Page Test">-->
-        <!--<classes>-->
-            <!--<class name="ui.SearchPagePaginationTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-
 </suite>

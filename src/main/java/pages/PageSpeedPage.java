@@ -46,6 +46,10 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
+    public boolean desktopTabIsDisplayed(){
+        return isElementPresent(desktopTabLocator);
+    }
+
     public void desktopTabClick() {
         try {
             click(desktopTabLocator);
@@ -54,6 +58,8 @@ public class PageSpeedPage extends HelperBase {
             click(desktopTabLocator);
         }
     }
+
+
 
     public boolean reportSummaryIsDisplayed() {
         return isElementPresent(reportSummaryLocator);

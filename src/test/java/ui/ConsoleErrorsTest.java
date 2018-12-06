@@ -1,19 +1,22 @@
 package ui;
 
+import appmanager.HelperBase;
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.BeforeMethod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
 
 public class ConsoleErrorsTest extends TestBase {
 
-    @BeforeMethod
+    @BeforeTest
     public void setUp() {
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
@@ -22,9 +25,12 @@ public class ConsoleErrorsTest extends TestBase {
     }
 
     @Test
-    public void testMethod() throws GitLabApiException {
+    public void consoleErrors() throws GitLabApiException {
         app.openBaseUrl();
-        app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", app.site().analyzeLog());
+        String errors = app.site().consoleLog();
+        if (errors.length() > 0) {
+            app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", errors);
+        }
     }
 
 }

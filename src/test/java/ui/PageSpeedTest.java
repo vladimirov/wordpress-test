@@ -20,6 +20,7 @@ public class PageSpeedTest extends TestBase {
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
         app.pageSpeed().waitTillAnalyzing();
+        app.pageSpeed().desktopTabIsDisplayed();
         app.pageSpeed().desktopTabClick();
         int percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
         if (percentDesktop < 50) {

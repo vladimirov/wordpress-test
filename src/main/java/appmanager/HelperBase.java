@@ -35,7 +35,7 @@ public class HelperBase {
 
     protected WebDriver driver;
     public WebDriverWait wait;
-    public int timeOutInSeconds = 20;
+    public int timeOutInSeconds = 15;
     public WebElement element;
 
     public HelperBase(WebDriver driver) {
@@ -241,20 +241,17 @@ public class HelperBase {
         }
     }
 
-    public String analyzeLog() {
-        String errorMessage;
+    public String consoleLog() {
+        String errorMessage = "";
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
-        String buffer = "";
         for (LogEntry entry : logEntries) {
-            errorMessage = "* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage();
-            System.out.println(errorMessage);
-            buffer += errorMessage + "\n\r";
+            errorMessage += "* [ ] " + new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage() + "\n\r";
         }
-        return buffer;
+        logger.info("SEARCH FOR ERROR MESSAGES..." + "\n" + errorMessage);
+        return errorMessage;
     }
 
     public String pageLinkForGitlab() {
-//        return "* [ ] " + driver.getCurrentUrl() + "\n";
         return driver.getCurrentUrl() + "\n";
     }
 
