@@ -38,12 +38,12 @@ public class DefaultPagesTest extends TestBase {
         app.admin().openTestPostPageOnSite();
         app.site().screenshotCaptureAllScreen(testPostScreenshot);
         assertTrue(app.admin().postTitleTextIsDisplayed());
-        String checkboxTestPost = "* [ ] Test Post " + app.site().pageLinkForGitlab();
+        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
 
         app.uploadIssueWithDescriptionToGitlab(
                 "Default pages layout screenshots",
-                checkboxSearchLink + checkbox404Link + checkboxTestPost + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost);
+                checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost);
 
 
     }
