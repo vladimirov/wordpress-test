@@ -1,10 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
-import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 import static org.testng.Assert.assertTrue;
 

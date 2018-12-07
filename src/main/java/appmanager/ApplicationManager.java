@@ -17,6 +17,7 @@ import pages.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Properties;
 
 public class ApplicationManager {
@@ -121,22 +122,44 @@ public class ApplicationManager {
         logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
-        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, description);
+        gitLabApi.getIssuesApi().createIssue(
+                project.getId(),
+                issueTitle,
+                description,
+                null,
+                Collections.singletonList(17),
+                null,
+                "Question",
+                null,
+                null,
+                null,
+                null);
     }
 
     public void uploadIssueWithScreenshotToGitlab(String issueTitle, String screenshotName) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH SCREENSHOT");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
-        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenshotName + ".png"));
-        gitLabApi.getIssuesApi().createIssue(project.getId(), issueTitle, upload.getMarkdown());
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
+        gitLabApi.getIssuesApi().createIssue(
+                project.getId(),
+                issueTitle,
+                upload.getMarkdown(),
+                null,
+                Collections.singletonList(17),
+                null,
+                "Question",
+                null,
+                null,
+                null,
+                null);
     }
 
     public String getGitlabFileMarkdown(String screenshotName) throws GitLabApiException {
         logger.info("UPLOADING SCREENSHOT TO GITLAB ");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
-        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/"+ screenshotName + ".png"));
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
         return upload.getMarkdown();
     }
 
