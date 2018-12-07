@@ -109,7 +109,7 @@ public class AdminPage extends HelperBase {
 //        return text;
 //    }
 
-    private String testContent() throws IOException {
+    public String testContent() throws IOException {
         return new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
                 StandardCharsets.UTF_8);
     }
