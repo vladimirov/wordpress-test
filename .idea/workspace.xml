@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="issue assignee and labels added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="add post via api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/admin/DefaultPagesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/admin/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,10 +66,10 @@
         <counts>
           <entry key="CLASS" value="31" />
           <entry key="Image" value="21" />
-          <entry key="JAVA" value="127" />
+          <entry key="JAVA" value="139" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Properties" value="23" />
-          <entry key="XML" value="17" />
+          <entry key="XML" value="18" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -82,10 +83,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5686" />
-          <entry key="PLAIN_TEXT" value="276" />
+          <entry key="JAVA" value="5871" />
+          <entry key="PLAIN_TEXT" value="304" />
           <entry key="Properties" value="87" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="24" />
           <entry key="YAML" value="23" />
         </counts>
       </usages-collector>
@@ -94,31 +95,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/config/wordpress.local-test.yaml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/PostData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Posts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -149,9 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/model/PostData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/DbHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DbAddPostTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Posts.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageSpeedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageNotFoundTest.java" />
@@ -197,9 +201,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/config/wordpress.local-test.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config/wordpress.local/-test.yaml" />
         <option value="$PROJECT_DIR$/src/test/resources/config/wordpress.local-test.yaml" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/PostData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java" />
       </list>
     </option>
   </component>
@@ -262,6 +269,21 @@
               <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,15 +297,15 @@
               <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +319,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544176153786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544199187063" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -335,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddPostViaApi">
+  <component name="RunManager" selected="TestNG.DbConnectionTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -344,23 +366,6 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddPostTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wordpress-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.AddPostTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -382,16 +387,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleErrorsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DbConnectionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.ConsoleErrorsTest" />
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.DbConnectionTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -409,6 +414,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
       <option name="MAIN_CLASS_NAME" value="ui.DefaultPagesTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HbConnectionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="wordpress-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.HbConnectionTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -442,19 +464,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ConsoleErrorsTest" />
       <item itemvalue="TestNG.DefaultPagesTest" />
       <item itemvalue="TestNG.PageSpeedTest" />
-      <item itemvalue="TestNG.AddPostTest" />
       <item itemvalue="TestNG.AddPostViaApi" />
+      <item itemvalue="TestNG.HbConnectionTest" />
+      <item itemvalue="TestNG.DbConnectionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DbConnectionTest" />
+        <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.AddPostViaApi" />
         <item itemvalue="TestNG.DefaultPagesTest" />
         <item itemvalue="TestNG.PageSpeedTest" />
-        <item itemvalue="TestNG.AddPostTest" />
-        <item itemvalue="TestNG.ConsoleErrorsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -468,13 +490,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00022" summary="added comment creation test">
-      <created>1529877960508</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1529877960508</updated>
     </task>
     <task id="LOCAL-00023" summary="testng.xml added">
       <created>1529939559937</created>
@@ -812,46 +827,53 @@
       <option name="project" value="LOCAL" />
       <updated>1544168956353</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="add post via api">
+      <created>1544181708860</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1544181708861</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 27m 58s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 16h 55m 41s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 28m 59s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 16h 55m 45s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 31m 08s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 16h 56m 03s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 32m 08s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 00m 52s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 32m 31s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 04m 07s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 33m 10s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 05m 58s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 36m 36s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 07m 07s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 37m 21s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 26m 23s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 43m 11s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 17h 38m 44s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostViaApi - 2018.12.07 at 11h 46m 00s.xml">
-      <configuration name="AddPostViaApi" configurationId="TestNG" />
+    <history-entry file="DbConnectionTest - 2018.12.07 at 18h 02m 42s.xml">
+      <configuration name="DbConnectionTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1927" y="0" width="1799" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20874065" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20874065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -861,7 +883,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.55411255" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.26298702" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.22943723" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551948" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -883,7 +905,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create post test added" />
     <MESSAGE value="added assertions to add post test" />
     <MESSAGE value="login input fix" />
     <MESSAGE value="added test post creation" />
@@ -908,52 +929,14 @@
     <MESSAGE value="default pages test optimized" />
     <MESSAGE value="pageSpeed test optimized" />
     <MESSAGE value="issue assignee and labels added" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue assignee and labels added" />
+    <MESSAGE value="add post via api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add post via api" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test-screenshots/FaviconTest.png" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/text/SimpleDateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="420" column="13" selection-start-line="420" selection-start-column="13" selection-end-line="420" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-screenshots/FaviconTestAllScreen-0512104845.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FaviconPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageNotFoundTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/HttpTransport.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-pagespeedonline/v4-rev15-1.25.0/google-api-services-pagespeedonline-v4-rev15-1.25.0.jar!/com/google/api/services/pagespeedonline/model/PagespeedApiPagespeedResponseV4.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.8.0-beta1/slf4j-api-1.8.0-beta1.jar!/org/slf4j/LoggerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1008,6 +991,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="e#1647#1648#0" expanded="true" />
+            <element signature="e#1705#1706#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,6 +1084,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+          <folding>
+            <element signature="e#3127#3128#0" expanded="true" />
+            <element signature="e#3181#3182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,6 +1137,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="29" column="30" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,6 +1147,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="74" column="116" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="116" />
+          <folding>
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,13 +1197,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/HbConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="214">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1214,10 +1218,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostViaApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+        <state relative-caret-position="527">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/PostData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Posts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/SQLException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="75" column="74" selection-start-line="75" selection-start-column="74" selection-end-line="75" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
         </state>
       </provider>
     </entry>

@@ -14,9 +14,9 @@
     <session-factory>
 
         <!-- Database connection settings -->
-        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/wordpress-test</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/wordpress.local</property>
         <property name="connection.username">root</property>
         <property name="connection.password"></property>
 
@@ -37,8 +37,6 @@
 
         <!-- Names the annotated entity class -->
         <mapping class="model.PostData"/>
-
-
 
 
     </session-factory>

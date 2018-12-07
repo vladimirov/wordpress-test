@@ -29,7 +29,7 @@ public class AddPostViaApi extends TestBase {
 
         final Post post = PostBuilder.aPost()
                 .withTitle(TitleBuilder.aTitle().withRendered("Title from Wordpress Java API").build())
-                .withExcerpt(ExcerptBuilder.anExcerpt().withRendered(" ").build())
+                .withExcerpt(ExcerptBuilder.anExcerpt().withRendered("te").build())
                 .withContent(ContentBuilder.aContent().withRendered(app.admin().testContent()).build())
                 .build();
 
