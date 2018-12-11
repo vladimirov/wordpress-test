@@ -18,14 +18,14 @@ import java.io.IOException;
 
 public class AddPostViaApi extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void addPostViaApi() throws IOException, PostCreateException {
         String baseUrl = "http://wordpress.local";
         String username = "admin";
         String password = "12345";
         boolean debug = false;
 
-        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, username, password,false, debug));
+        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, username, password, false, debug));
 
         final Post post = PostBuilder.aPost()
                 .withTitle(TitleBuilder.aTitle().withRendered("Title from Wordpress Java API").build())
