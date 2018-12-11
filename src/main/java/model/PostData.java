@@ -68,8 +68,5 @@ public class PostData {
                 "id='" + id + '\'' +
                 ", name='" + title + '\'' +
                 '}';
-
     }
-
-
 }
