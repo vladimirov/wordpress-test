@@ -10,9 +10,9 @@ import static org.testng.Assert.assertTrue;
 
 public class AddPostDbTest extends TestBase {
 
-//    @Test
-//    public void testPostCreation()  {
-//        Posts before = app.db().posts();
+    @Test
+    public void testPostCreation()  {
+        Posts before = app.db().posts();
 //        app.loginToCRM();
 //        app.admin().copyTestContent();
 //        app.loginToAdmin();
@@ -21,14 +21,14 @@ public class AddPostDbTest extends TestBase {
 //        app.admin().enterPostTitle();
 //        app.admin().enterTestContent();
 //        app.admin().publishPost();
-
+//
 //        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
-
+//
 //        Posts after = app.db().posts();
 //        assertThat(after.size(), equalTo(before.size() + 2));
-
+//
 //        assertThat(after, equalTo(before.withAdded(post)));
 
 
-//    }
+    }
 }

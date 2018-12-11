@@ -31,6 +31,8 @@ public class ApplicationManager {
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
+    private DbHelper dbHelper;
+
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -40,6 +42,7 @@ public class ApplicationManager {
     public void init() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
+        dbHelper = new DbHelper();
         switch (browser) {
             case BrowserType.CHROME: {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
@@ -161,6 +164,10 @@ public class ApplicationManager {
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
         FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
         return upload.getMarkdown();
+    }
+
+    public DbHelper db() {
+        return dbHelper;
     }
 
 }

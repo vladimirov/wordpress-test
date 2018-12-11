@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AddPostViaApi extends TestBase {
+public class AddPostAPITest extends TestBase {
 
     @Test(enabled = false)
     public void addPostViaApi() throws IOException, PostCreateException {
