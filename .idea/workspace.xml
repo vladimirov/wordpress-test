@@ -18,26 +18,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="194">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+            <state relative-caret-position="222">
+              <caret line="29" column="32" selection-start-line="29" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="231">
+              <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+              <folding>
+                <element signature="e#3127#3128#0" expanded="true" />
+                <element signature="e#3181#3182#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -238,7 +245,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544560973868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544562685486" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -348,13 +355,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00029" summary="added reportng">
-      <created>1530024897565</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1530024897565</updated>
     </task>
     <task id="LOCAL-00030" summary="added reportng">
       <created>1530024993983</created>
@@ -692,25 +692,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544558602903</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add post in database">
+      <created>1544561052971</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1544561052971</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 24m 04s.xml">
-      <configuration name="AddPostDbTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 28m 06s.xml">
-      <configuration name="AddPostDbTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 34m 29s.xml">
-      <configuration name="AddPostDbTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 36m 43s.xml">
-      <configuration name="AddPostDbTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 37m 55s.xml">
-      <configuration name="AddPostDbTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AddPostDbTest - 2018.12.11 at 22h 39m 50s.xml">
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
@@ -724,6 +716,21 @@
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="AddPostDbTest - 2018.12.11 at 22h 42m 47s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 49m 50s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 54m 58s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 55m 32s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostDbTest - 2018.12.11 at 23h 01m 04s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostDbTest - 2018.12.11 at 23h 05m 07s.xml">
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -741,7 +748,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.55394524" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.5378422" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.27697262" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551948" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -846,13 +853,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/admin/DefaultPagesTest.java" />
     <entry file="file://$PROJECT_DIR$/test-screenshots/SearchPagePaginationTest.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -871,17 +871,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/model/builder/ContentBuilder.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/model/Content.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/api/Posts.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
-          <folding>
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/model/builder/PostBuilder.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -893,16 +882,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/exception/ParsedRestException.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/exception/PostCreateException.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/model/builder/ExcerptBuilder.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.3/wp-api-v2-client-java-4.8.3.jar!/com/afrozaar/wordpress/wpapi/v2/model/RenderableField.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.3/wp-api-v2-client-java-4.8.3.jar!/com/afrozaar/wordpress/wpapi/v2/model/Excerpt.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.3/wp-api-v2-client-java-4.8.3.jar!/com/afrozaar/wordpress/wpapi/v2/model/builder/ExcerptBuilder.class" />
@@ -1024,13 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1038,10 +1010,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="235" column="9" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+          <folding>
+            <element signature="e#3127#3128#0" expanded="true" />
+            <element signature="e#3181#3182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="29" column="32" selection-start-line="29" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="194">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
         </state>
       </provider>
     </entry>
