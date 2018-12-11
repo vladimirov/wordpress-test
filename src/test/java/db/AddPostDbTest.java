@@ -13,6 +13,7 @@ public class AddPostDbTest extends TestBase {
     @Test
     public void testPostCreation()  {
         Posts before = app.db().posts();
+        System.out.println(before.size());
 //        app.loginToCRM();
 //        app.admin().copyTestContent();
 //        app.loginToAdmin();
