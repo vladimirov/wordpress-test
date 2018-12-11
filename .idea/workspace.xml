@@ -18,8 +18,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="264">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -27,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="230">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -229,7 +238,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544558585636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544560973868" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -339,13 +348,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00028" summary="added reportng">
-      <created>1530024731635</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1530024731636</updated>
     </task>
     <task id="LOCAL-00029" summary="added reportng">
       <created>1530024897565</created>
@@ -683,38 +685,45 @@
       <option name="project" value="LOCAL" />
       <updated>1544558467749</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="add post in database">
+      <created>1544558602903</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1544558602903</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostDbTest - 2018.12.11 at 20h 36m 19s.xml">
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 24m 04s.xml">
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 21h 32m 49s.xml">
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 28m 06s.xml">
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 21h 33m 08s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 34m 29s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 21h 53m 49s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 36m 43s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 21h 54m 58s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 37m 55s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 21h 55m 51s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 39m 50s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 21h 58m 56s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 40m 43s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 22h 00m 34s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 41m 18s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DbConnectionTest - 2018.12.11 at 22h 01m 31s.xml">
-      <configuration name="DbConnectionTest" configurationId="TestNG" />
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 41m 58s.xml">
+      <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 02m 19s.xml">
+    <history-entry file="AddPostDbTest - 2018.12.11 at 22h 42m 47s.xml">
       <configuration name="AddPostDbTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -732,7 +741,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.55394524" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.37037036" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.5378422" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551948" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -784,7 +793,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testFile.log" />
     <entry file="file://$PROJECT_DIR$/info.log" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -938,17 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/collect/ForwardingCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1002,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1016,17 +1006,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/collect/ForwardingCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="230">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostDbTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="264">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
