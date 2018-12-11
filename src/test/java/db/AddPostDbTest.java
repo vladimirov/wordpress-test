@@ -12,9 +12,9 @@ public class AddPostDbTest extends TestBase {
 
     @Test
     public void testPostCreation() {
-//        Posts before = app.db().posts();
-
-        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
+        Posts before = app.db().posts();
+        System.out.println("Number of posts is: " + before.size());
+//        PostData post = new PostData().withId(Integer.MAX_VALUE).withTitle("Test DB Creation");
 
 
         //        Posts after = app.db().posts();
