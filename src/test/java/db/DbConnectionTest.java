@@ -20,7 +20,6 @@ public class DbConnectionTest {
             while (rs.next()) {
                 posts.add(new PostData().withId(rs.getInt("id")).withTitle(rs.getString("post_title")));
             }
-            posts.add(new PostData().withId(rs.getInt("id")).withTitle(rs.getString("post_title")));
             rs.close();
             st.close();
             conn.close();
