@@ -36,7 +36,7 @@ public class ApplicationManager {
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
-    private DbHelper dbHelper;
+//    private DbHelper dbHelper;
     public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
 
 
@@ -49,7 +49,7 @@ public class ApplicationManager {
     public void init() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-        dbHelper = new DbHelper();
+//        dbHelper = new DbHelper();
         switch (browser) {
             case BrowserType.CHROME: {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
@@ -122,9 +122,9 @@ public class ApplicationManager {
         return faviconPage;
     }
 
-    public DbHelper db() {
-        return dbHelper;
-    }
+//    public DbHelper db() {
+//        return dbHelper;
+//    }
 
     public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description, String label) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
