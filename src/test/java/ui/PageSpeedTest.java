@@ -21,9 +21,7 @@ public class PageSpeedTest extends TestBase {
         app.openPageSpeedUrl();
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
-        app.pageSpeed().waitTillAnalyzing();
-//        app.pageSpeed().desktopTabIsClickable();
-//        app.pageSpeed().containerMobileElementIsDisplayed();
+//        app.pageSpeed().waitTillAnalyzing();
         app.pageSpeed().percentageIsPresent();
 
         app.pageSpeed().desktopTabClick();

@@ -228,7 +228,7 @@ public class HelperBase {
     }
 
     public boolean elementHasValue(By locator){
-        logger.info("WAITING TILL ELEMENT " + locator + "HAS VALUE");
+        logger.info("WAITING TILL ELEMENT " + locator + " HAS VALUE");
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.getText().length() > 0;
     }

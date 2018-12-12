@@ -38,18 +38,20 @@ public class PageSpeedPage extends HelperBase {
         click(analyzeButtonLocator);
     }
 
-    public void waitTillAnalyzing() {
-        try {
-            waitToBePresent(progressStatusLocator);
-        } catch (Exception e) {
-            waitToBePresent(progressStatusLocator);
-        }
-    }
+//    public void waitTillAnalyzing() {
+//        try {
+//            waitToBePresent(progressStatusLocator);
+//        } catch (Exception e) {
+//            waitToBePresent(progressStatusLocator);
+//        }
+//    }
 
     public void percentageIsPresent(){
         try {
             elementHasValue(percentageLocator);
         } catch (Exception e){
+            elementHasValue(percentageLocator);
+        } finally {
             elementHasValue(percentageLocator);
         }
     }
