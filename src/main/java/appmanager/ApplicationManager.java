@@ -6,7 +6,9 @@ import org.gitlab4j.api.models.FileUpload;
 import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -29,17 +31,13 @@ public class ApplicationManager {
     public final Properties properties;
     WebDriver driver;
     Logger logger = LoggerFactory.getLogger(HelperBase.class);
-
     private LoginPage loginPage;
     private SitePage sitePage;
     private String browser;
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
-//    private DbHelper dbHelper;
     public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
-
-
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -49,18 +47,20 @@ public class ApplicationManager {
     public void init() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-//        dbHelper = new DbHelper();
         switch (browser) {
             case BrowserType.CHROME: {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
-                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-                driver = new ChromeDriver(capabilities);
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.setCapability("webdriver.chrome.driver", true);
+                driver = new ChromeDriver(options);
                 break;
             }
             case BrowserType.FIREFOX: {
-                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\geckodriver.exe");
-                DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-                driver = new FirefoxDriver(capabilities);
+                System.setProperty("webdriver.gecko.driver", "C:\\Windows\\geckodriver.exe");
+                FirefoxOptions options = new FirefoxOptions();
+                options.setCapability("marionette", true);
+                driver = new FirefoxDriver(options);
                 break;
             }
             case BrowserType.IE:
@@ -90,7 +90,6 @@ public class ApplicationManager {
     }
 
     public void openTestPostUrl() {
-//        driver.get(properties.getProperty("web.baseUrl") + "test-post");
         driver.get(properties.getProperty("web.baseUrl") + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
 
@@ -121,10 +120,6 @@ public class ApplicationManager {
     public FaviconPage faviconPage() {
         return faviconPage;
     }
-
-//    public DbHelper db() {
-//        return dbHelper;
-//    }
 
     public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description, String label) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");

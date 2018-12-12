@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="updates project files">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,6 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-267">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -231,7 +242,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544646881370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544648254196" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -269,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DefaultPagesTest">
+  <component name="RunManager" selected="TestNG.PageSpeedTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -371,9 +382,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="TestNG.DefaultPagesTest" />
         <item itemvalue="TestNG.ConsoleErrorsTest" />
-        <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="TestNG.FaviconTest" />
         <item itemvalue="TestNG.C:/Projects/wordpress-test/testng.xml" />
       </list>
@@ -389,13 +400,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add post db test in progress">
-      <created>1530607675348</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1530607675348</updated>
     </task>
     <task id="LOCAL-00034" summary="add post db test in progress">
       <created>1530626022111</created>
@@ -733,25 +737,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544644146587</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="updates project files">
+      <created>1544647264534</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1544647264534</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConsoleErrorsTest - 2018.12.12 at 21h 34m 24s.xml">
-      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConsoleErrorsTest - 2018.12.12 at 21h 35m 39s.xml">
-      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FaviconTest - 2018.12.12 at 21h 36m 18s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2018.12.12 at 21h 37m 16s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageSpeedTest - 2018.12.12 at 21h 38m 27s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ConsoleErrorsTest - 2018.12.12 at 21h 41m 33s.xml">
       <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
@@ -767,12 +763,27 @@
     <history-entry file="DefaultPagesTest - 2018.12.12 at 21h 46m 56s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.12 at 22h 51m 41s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.12 at 22h 53m 46s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.12 at 22h 54m 59s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.12 at 22h 55m 26s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.12 at 22h 56m 20s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="0" width="1309" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20416333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20416333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -782,7 +793,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.5522876" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.42647058" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.42810458" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551948" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -1082,17 +1093,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="124" selection-start-line="124" selection-start-column="2" selection-end-line="126" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
         </state>
       </provider>
     </entry>
