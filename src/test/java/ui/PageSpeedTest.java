@@ -13,7 +13,7 @@ import java.io.IOException;
 public class PageSpeedTest extends TestBase {
     
     @Test
-    public void testPagespeed() throws IOException, GitLabApiException {
+    public void testPageSpeed() throws IOException, GitLabApiException {
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
         String desc = "PageSpeed Desktop percentage value need to be more than 50";
         String pageSpeedScreenshot = "PageSpeedTestDesktop";
@@ -22,8 +22,10 @@ public class PageSpeedTest extends TestBase {
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
         app.pageSpeed().waitTillAnalyzing();
-//        app.pageSpeed().desktopTabIsDisplayed();
-        app.pageSpeed().desktopTabIsClickable();
+//        app.pageSpeed().desktopTabIsClickable();
+//        app.pageSpeed().containerMobileElementIsDisplayed();
+        app.pageSpeed().percentageIsPresent();
+
         app.pageSpeed().desktopTabClick();
         String pageSpeedLink = app.site().pageLinkForGitlab();
         int percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
@@ -33,7 +35,8 @@ public class PageSpeedTest extends TestBase {
             String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     "PageSpeed Desktop percentage value is " + percentDesktop,
-                    pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage);
+                    pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
+                    null);
         } else {
             logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + percentDesktop);
         }

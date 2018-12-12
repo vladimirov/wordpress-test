@@ -19,7 +19,8 @@ public class AdminPage extends HelperBase {
     }
 
     protected JavascriptExecutor jse = (JavascriptExecutor) driver;
-    public String postTitle = "Test Post " + System.currentTimeMillis() + " The quick brown fox jumps over the lazy dog";
+//    public String postTitle = "Test Post - The quick brown fox jumps over the lazy dog";
+
 
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
 
@@ -34,8 +35,8 @@ public class AdminPage extends HelperBase {
                 StandardCharsets.UTF_8);
     }
 
-    public boolean postTitleTextIsDisplayed() {
-        return isTextDisplayed(createdPostTitleLocator, postTitle);
-    }
+//    public boolean postTitleTextIsDisplayed() {
+//        return isTextDisplayed(createdPostTitleLocator, postTitle);
+//    }
 
 }

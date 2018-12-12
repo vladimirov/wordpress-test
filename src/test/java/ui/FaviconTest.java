@@ -19,7 +19,7 @@ public class FaviconTest extends TestBase {
             assertTrue(app.faviconPage().isFaviconPresent());
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
-            app.uploadIssueWithDescriptionToGitlab("Favicon is missing", "Check site favicon");
+            app.uploadIssueWithDescriptionToGitlab("Favicon is missing", "Check site favicon", null);
         }
     }
 

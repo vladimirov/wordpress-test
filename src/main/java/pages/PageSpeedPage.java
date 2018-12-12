@@ -29,10 +29,8 @@ public class PageSpeedPage extends HelperBase {
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-
 //        type(urlInputLocator, properties.getProperty("web.baseUrl"));
-
-        //Test URL
+        //TODO Remove web.baseUrlToTestPageSpeed
         type(urlInputLocator, properties.getProperty("web.baseUrlToTestPageSpeed"));
     }
 
@@ -48,9 +46,13 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
-//    public boolean desktopTabIsDisplayed(){
-//        return isElementVisible(desktopTabLocator);
-//    }
+    public void percentageIsPresent(){
+        try {
+            elementHasValue(percentageLocator);
+        } catch (Exception e){
+            elementHasValue(percentageLocator);
+        }
+    }
 
     public void desktopTabClick() {
         try {
@@ -71,7 +73,4 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
-    public void desktopTabIsClickable() {
-        waitTillElementIsClickable(desktopTabLocator);
-    }
 }

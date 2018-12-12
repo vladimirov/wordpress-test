@@ -37,6 +37,8 @@ public class ApplicationManager {
     private AdminPage adminPage;
     private FaviconPage faviconPage;
     private DbHelper dbHelper;
+    public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
+
 
 
     public ApplicationManager(String browser) {
@@ -88,7 +90,8 @@ public class ApplicationManager {
     }
 
     public void openTestPostUrl() {
-        driver.get(properties.getProperty("web.baseUrl") + "test-post");
+//        driver.get(properties.getProperty("web.baseUrl") + "test-post");
+        driver.get(properties.getProperty("web.baseUrl") + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
 
     public void openPageSpeedUrl() {
@@ -123,7 +126,7 @@ public class ApplicationManager {
         return dbHelper;
     }
 
-    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description, String label) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION");
         GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
         Project project = gitLabApi.getProjectApi().getProject(properties.getProperty("projectId"));
@@ -134,7 +137,7 @@ public class ApplicationManager {
                 null,
                 Collections.singletonList(17),
                 null,
-                "Question",
+                label,
                 null,
                 null,
                 null,
@@ -185,14 +188,14 @@ public class ApplicationManager {
                     "values (?, ?, ?, ?, ?, ?, ?, ?)";
             // create the mysql insert prepared statement
             PreparedStatement preparedStmt = conn.prepareStatement(query);
-            preparedStmt.setString(1, admin().postTitle);
+            preparedStmt.setString(1, postTitle);
             preparedStmt.setDate(2, date);
             preparedStmt.setString(3, content);
             preparedStmt.setString(4, "");
             preparedStmt.setString(5, "");
             preparedStmt.setString(6, "");
             preparedStmt.setString(7, "");
-            preparedStmt.setString(8, "test-post");
+            preparedStmt.setString(8, postTitle.toLowerCase().replaceAll(" ", "-"));
             // execute the prepared statement
             preparedStmt.execute();
             conn.close();

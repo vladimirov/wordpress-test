@@ -102,6 +102,17 @@ public class HelperBase {
         }
     }
 
+    public void waitTillElementIsVisible(By locator) {
+        logger.info("WAITING TILL ELEMENT IS VISIBLE: " + locator);
+        try {
+            logger.info("ELEMENT IS VISIBLE: " + locator);
+            element = wait.until(visibilityOfElementLocated(locator));
+        } catch (TimeoutException e) {
+            logger.info("ELEMENT IS VISIBLE: " + locator);
+            element = wait.until(visibilityOfElementLocated(locator));
+        }
+    }
+
     public void waitTillElementIsNotVisible(By locator) {
         logger.info("WAIT TILL ELEMENT IS NOT VISIBLE: " + locator);
         wait.until(invisibilityOfElementLocated(locator));
@@ -214,6 +225,12 @@ public class HelperBase {
         logger.info("EXPECTED VALUE: " + expectedValue);
         logger.info("ACTUAL VALUE:   " + element.getAttribute(attribute));
         return element.getAttribute("value").equals(expectedValue);
+    }
+
+    public boolean elementHasValue(By locator){
+        logger.info("WAITING TILL ELEMENT " + locator + "HAS VALUE");
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return element.getText().length() > 0;
     }
 
     public String getElementAttribute(By locator, String attribute) {
