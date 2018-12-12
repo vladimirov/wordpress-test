@@ -2,14 +2,14 @@ package pages;
 
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.List;
+import java.util.Properties;
 
 public class PageSpeedPage extends HelperBase {
 
@@ -23,15 +23,17 @@ public class PageSpeedPage extends HelperBase {
     private By analyzeButtonLocator = By.className("analyze-cell");
     private By urlInputLocator = By.name("url");
     private By progressStatusLocator = By.cssSelector("div.jfk-progressStatus");
-    private By reportSummaryLocator = By.cssSelector("div.report-summary");
-    private By errorBarLocator = By.cssSelector("div.error-bar");
     private By desktopTabLocator = By.xpath("//div[text()='Desktop']");
     private By percentageLocator = By.xpath("//div[@class='lh-gauge__percentage']");
 
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-        type(urlInputLocator, properties.getProperty("web.baseUrl"));
+
+//        type(urlInputLocator, properties.getProperty("web.baseUrl"));
+
+        //Test URL
+        type(urlInputLocator, properties.getProperty("web.baseUrlToTestPageSpeed"));
     }
 
     public void analyzeButtonClick() {
@@ -46,9 +48,9 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
-    public boolean desktopTabIsDisplayed(){
-        return isElementPresent(desktopTabLocator);
-    }
+//    public boolean desktopTabIsDisplayed(){
+//        return isElementVisible(desktopTabLocator);
+//    }
 
     public void desktopTabClick() {
         try {
@@ -59,31 +61,17 @@ public class PageSpeedPage extends HelperBase {
         }
     }
 
-
-
-    public boolean reportSummaryIsDisplayed() {
-        return isElementPresent(reportSummaryLocator);
-    }
-
-    public boolean errorBarIsDisplayed() {
-        return isElementPresent(errorBarLocator);
-    }
-
-    public String percentValue() {
-        return getElementText(percentageLocator);
-    }
-
-    public String mobilePercent() {
-        List<WebElement> percents = driver.findElements(percentageLocator);
-        return percents.get(0).getText();
-    }
-
     public String desktopPercent() {
-        List<WebElement> percents = driver.findElements(percentageLocator);
-        return percents.get(1).getText();
+        try {
+            List<WebElement> percents = driver.findElements(percentageLocator);
+            return percents.get(1).getText();
+        } catch (IndexOutOfBoundsException e) {
+            List<WebElement> percents = driver.findElements(percentageLocator);
+            return percents.get(1).getText();
+        }
     }
 
-
-
-
+    public void desktopTabIsClickable() {
+        waitTillElementIsClickable(desktopTabLocator);
+    }
 }

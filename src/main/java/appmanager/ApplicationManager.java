@@ -17,6 +17,11 @@ import pages.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Properties;
 
@@ -78,19 +83,12 @@ public class ApplicationManager {
         loginPage.loginToAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
 
-    public void loginToCRM() {
-        driver.get(properties.getProperty("web.crmUrl"));
-        loginPage = new LoginPage(driver);
-        loginPage.loginToCrm(properties.getProperty("web.crmLogin"), properties.getProperty("web.crmPass"));
-        driver.get(properties.getProperty("web.crmUrl"));
-    }
-
     public void openBaseUrl() {
         driver.get(properties.getProperty("web.baseUrl"));
     }
 
-    public void openAdminUrl() {
-        driver.get(properties.getProperty("web.baseUrl" + "wp-admin/"));
+    public void openTestPostUrl() {
+        driver.get(properties.getProperty("web.baseUrl") + "test-post");
     }
 
     public void openPageSpeedUrl() {
@@ -119,6 +117,10 @@ public class ApplicationManager {
 
     public FaviconPage faviconPage() {
         return faviconPage;
+    }
+
+    public DbHelper db() {
+        return dbHelper;
     }
 
     public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
@@ -166,8 +168,37 @@ public class ApplicationManager {
         return upload.getMarkdown();
     }
 
-    public DbHelper db() {
-        return dbHelper;
+    public void addPostDb(String content) {
+        logger.info("CREATING TEST POST IN DATABASE ");
+        try {
+            // create a mysql database connection
+            String myDriver = "com.mysql.cj.jdbc.Driver";
+            Class.forName(myDriver);
+            Connection conn = DriverManager
+                    .getConnection(properties.getProperty("databaseUrl"), properties.getProperty("databaseUser"), properties.getProperty("databasePass"));
+            // create a sql date object so we can use it in our INSERT statement
+            Calendar calendar = Calendar.getInstance();
+            Date date = new Date(calendar.getTime().getTime());
+            // the mysql insert statement
+            String query = "insert into wp_posts " +
+                    "(post_title, post_date, post_content, post_excerpt, to_ping, pinged, post_content_filtered, post_name) " +
+                    "values (?, ?, ?, ?, ?, ?, ?, ?)";
+            // create the mysql insert prepared statement
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString(1, admin().postTitle);
+            preparedStmt.setDate(2, date);
+            preparedStmt.setString(3, content);
+            preparedStmt.setString(4, "");
+            preparedStmt.setString(5, "");
+            preparedStmt.setString(6, "");
+            preparedStmt.setString(7, "");
+            preparedStmt.setString(8, "test-post");
+            // execute the prepared statement
+            preparedStmt.execute();
+            conn.close();
+        } catch (Exception e) {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
     }
-
 }

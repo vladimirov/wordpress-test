@@ -35,7 +35,7 @@ public class HelperBase {
 
     protected WebDriver driver;
     public WebDriverWait wait;
-    public int timeOutInSeconds = 15;
+    public int timeOutInSeconds = 40;
     public WebElement element;
 
     public HelperBase(WebDriver driver) {
@@ -86,8 +86,19 @@ public class HelperBase {
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             element = wait.until(visibilityOfElementLocated(locator));
         } catch (NullPointerException ignored) {
+            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             element = wait.until(presenceOfElementLocated(locator));
-            logger.info("ELEMENT HAS NOT BEEN FOUND: " + locator);
+        }
+    }
+
+    public void waitTillElementIsClickable(By locator) {
+        logger.info("WAITING TILL ELEMENT IS CLICKABLE: " + locator);
+        try {
+            logger.info("ELEMENT IS CLICKABLE: " + locator);
+            element = wait.until(elementToBeClickable(locator));
+        } catch (TimeoutException e) {
+            logger.info("ELEMENT IS CLICKABLE: " + locator);
+            element = wait.until(elementToBeClickable(locator));
         }
     }
 
@@ -144,9 +155,10 @@ public class HelperBase {
         }
     }
 
-    public boolean isElementPresent(By locator) {
+    public boolean isElementVisible(By locator) {
         logger.info("TRYING TO FOUND ELEMENT: " + locator);
         try {
+            logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             driver.findElement(locator);
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             return true;

@@ -1,11 +1,19 @@
 package ui;
 
 import appmanager.TestBase;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static org.testng.Assert.assertTrue;
 
 public class DefaultPagesTest extends TestBase {
+
+    @BeforeTest
+    public void addTestPostDb() throws IOException {
+        app.addPostDb(app.admin().testContent());
+    }
 
     @Test
     public void testDefaultPages() throws Exception {
@@ -23,16 +31,7 @@ public class DefaultPagesTest extends TestBase {
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
         //Test Post Page
-        app.loginToAdmin();
-        app.admin().gotoPostsPage();
-        app.admin().addNewPostButtonClick();
-        app.admin().enterPostTitle();
-        app.admin().enterTestContent();
-        app.admin().publishPost();
-        app.admin().gotoPostsPage();
-        app.admin().searchTestPostInAdmin();
-        app.admin().clickOnTestPostPermalink();
-        app.admin().openTestPostPageOnSite();
+        app.openTestPostUrl();
         app.site().screenshotCaptureAllScreen(testPostScreenshot);
         assertTrue(app.admin().postTitleTextIsDisplayed());
         String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
@@ -41,7 +40,5 @@ public class DefaultPagesTest extends TestBase {
         app.uploadIssueWithDescriptionToGitlab(
                 "Default pages layout screenshots",
                 checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost);
-
-
     }
 }

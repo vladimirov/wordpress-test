@@ -31,7 +31,7 @@ public class HbConnectionTest {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void testHbConnection() {
         Session session = sessionFactory.openSession();
         session.beginTransaction();

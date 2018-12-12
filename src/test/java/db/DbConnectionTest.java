@@ -8,7 +8,7 @@ import java.sql.*;
 
 public class DbConnectionTest {
 
-    @Test
+    @Test(enabled = false)
     public void testDbConnection() {
         Connection conn = null;
         try {

@@ -22,7 +22,8 @@ public class PageSpeedTest extends TestBase {
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
         app.pageSpeed().waitTillAnalyzing();
-        app.pageSpeed().desktopTabIsDisplayed();
+//        app.pageSpeed().desktopTabIsDisplayed();
+        app.pageSpeed().desktopTabIsClickable();
         app.pageSpeed().desktopTabClick();
         String pageSpeedLink = app.site().pageLinkForGitlab();
         int percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
