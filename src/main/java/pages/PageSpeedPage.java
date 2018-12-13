@@ -22,7 +22,6 @@ public class PageSpeedPage extends HelperBase {
 
     private By analyzeButtonLocator = By.className("analyze-cell");
     private By urlInputLocator = By.name("url");
-    private By progressStatusLocator = By.cssSelector("div.jfk-progressStatus");
     private By desktopTabLocator = By.xpath("//div[text()='Desktop']");
     private By percentageLocator = By.xpath("//div[@class='lh-gauge__percentage']");
 
@@ -38,18 +37,10 @@ public class PageSpeedPage extends HelperBase {
         click(analyzeButtonLocator);
     }
 
-//    public void waitTillAnalyzing() {
-//        try {
-//            waitToBePresent(progressStatusLocator);
-//        } catch (Exception e) {
-//            waitToBePresent(progressStatusLocator);
-//        }
-//    }
-
-    public void percentageIsPresent(){
+    public void percentageIsPresent() {
         try {
             elementHasValue(percentageLocator);
-        } catch (Exception e){
+        } catch (Exception e) {
             elementHasValue(percentageLocator);
         } finally {
             elementHasValue(percentageLocator);
@@ -58,6 +49,7 @@ public class PageSpeedPage extends HelperBase {
 
     public void desktopTabClick() {
         try {
+            waitToBePresent(desktopTabLocator);
             click(desktopTabLocator);
         } catch (Exception e) {
             waitToBePresent(desktopTabLocator);

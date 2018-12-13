@@ -5,9 +5,16 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-    <test name="UI Tests">
-        <packages>
-            <package name="ui"/>
-        </packages>
+    <!--<test name="UI Tests">-->
+    <!--<packages>-->
+    <!--<package name="ui"/>-->
+    <!--</packages>-->
+    <!--</test>    -->
+
+    <test name="PageSpeed Test">
+        <classes>
+            <class name="ui.PageSpeedTest" />
+        </classes>
     </test>
+
 </suite>

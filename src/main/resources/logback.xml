@@ -4,7 +4,7 @@
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <!--<file>test-${bySecond}.log</file>-->
-        <file>info.log</file>
+        <file>logger.log</file>
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>

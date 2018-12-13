@@ -11,22 +11,28 @@ import java.io.IOException;
 
 
 public class PageSpeedTest extends TestBase {
-    
+
     @Test
     public void testPageSpeed() throws IOException, GitLabApiException {
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
         String desc = "PageSpeed Desktop percentage value need to be more than 50";
         String pageSpeedScreenshot = "PageSpeedTestDesktop";
+        int percentDesktop;
 
         app.openPageSpeedUrl();
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
-//        app.pageSpeed().waitTillAnalyzing();
         app.pageSpeed().percentageIsPresent();
-
         app.pageSpeed().desktopTabClick();
+        try {
+            percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
+        } catch (IndexOutOfBoundsException e) {
+            app.pageSpeed().analyzeButtonClick();
+            app.pageSpeed().percentageIsPresent();
+            app.pageSpeed().desktopTabClick();
+            percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
+        }
         String pageSpeedLink = app.site().pageLinkForGitlab();
-        int percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
         if (percentDesktop < 50) {
             logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
             app.pageSpeed().screenshotCapture(pageSpeedScreenshot);
@@ -41,3 +47,5 @@ public class PageSpeedTest extends TestBase {
     }
 
 }
+
+//*/2 * * * *
