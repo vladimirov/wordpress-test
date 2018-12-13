@@ -51,7 +51,7 @@ public class ApplicationManager {
             case BrowserType.CHROME: {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
+//                options.addArguments("--headless");
                 options.setCapability("webdriver.chrome.driver", true);
                 driver = new ChromeDriver(options);
                 break;
