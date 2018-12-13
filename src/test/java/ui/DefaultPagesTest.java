@@ -40,10 +40,5 @@ public class DefaultPagesTest extends TestBase {
                 "Default pages layout screenshots",
                 checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
                 "Question");
-
-//        app.uploadIssueWithDescriptionToGitlab(
-//                "Default pages layout screenshots",
-//                checkboxTestPostLink + "\n" + markdownTestPost,
-//                "Question");
     }
 }
