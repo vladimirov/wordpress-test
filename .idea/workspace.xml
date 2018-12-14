@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="added test post creation test via ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db/PageSpeedApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,40 +20,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3451">
-              <caret line="228" column="25" lean-forward="true" selection-start-line="228" selection-start-column="25" selection-end-line="228" selection-end-column="25" />
-              <folding>
-                <element signature="e#11211#11212#0" expanded="true" />
-                <element signature="e#11263#11264#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="839">
+              <caret line="228" column="25" selection-start-line="228" selection-start-column="25" selection-end-line="228" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/db/PageSpeedApiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-                <element signature="e#2357#2358#0" expanded="true" />
-                <element signature="e#3828#3829#0" expanded="true" />
-                <element signature="e#4148#4149#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="421">
+              <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -128,15 +144,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
       </list>
     </option>
   </component>
@@ -176,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,15 +280,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544784294171" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544802405547" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress-test-container" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -308,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddPostTest">
+  <component name="RunManager" selected="TestNG.PageSpeedTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -325,7 +341,7 @@
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -342,7 +358,7 @@
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,7 +392,7 @@
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -393,7 +409,7 @@
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -416,11 +432,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="TestNG.AddPostTest" />
         <item itemvalue="TestNG.ConsoleErrorsTest" />
         <item itemvalue="TestNG.FaviconTest" />
         <item itemvalue="TestNG.DefaultPagesTest" />
-        <item itemvalue="TestNG.PageSpeedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -434,13 +450,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00039" summary="pagination test added">
-      <created>1530794729356</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1530794729356</updated>
     </task>
     <task id="LOCAL-00040" summary="pagination test added">
       <created>1530801517477</created>
@@ -778,13 +787,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544715989181</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="added test post creation test via ui">
+      <created>1544798986597</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1544798986597</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FaviconTest - 2018.12.13 at 17h 03m 53s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ConsoleErrorsTest - 2018.12.13 at 17h 05m 15s.xml">
       <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
@@ -812,12 +825,15 @@
     <history-entry file="AddPostTest - 2018.12.14 at 12h 44m 10s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PageSpeedTest - 2018.12.14 at 17h 41m 21s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="0" width="1773" height="1057" extended-state="1" />
+    <frame x="-1927" y="0" width="1773" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24576765" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24868652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -827,7 +843,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.5519481" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.37878788" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.37878788" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5551948" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -1060,23 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/db/AddPostAPITest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1098,31 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="228" column="25" lean-forward="true" selection-start-line="228" selection-start-column="25" selection-end-line="228" selection-end-column="25" />
-          <folding>
-            <element signature="e#11211#11212#0" expanded="true" />
-            <element signature="e#11263#11264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -1130,13 +1104,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
@@ -1159,15 +1126,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        <state relative-caret-position="-113">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-            <element signature="e#2357#2358#0" expanded="true" />
+            <element signature="e#3776#3777#0" expanded="true" />
             <element signature="e#3828#3829#0" expanded="true" />
+            <element signature="e#4074#4075#0" expanded="true" />
             <element signature="e#4148#4149#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="228" column="25" selection-start-line="228" selection-start-column="25" selection-end-line="228" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db/PageSpeedApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
         </state>
       </provider>
     </entry>
