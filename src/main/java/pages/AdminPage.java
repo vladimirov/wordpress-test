@@ -52,18 +52,29 @@ public class AdminPage extends HelperBase {
         click(By.linkText("Posts"));
     }
 
+    public void closeTipsPopUp() {
+        click(By.cssSelector("button.components-buttoncomponents-icon-buttonnux-dot-tip__disable"));
+    }
+
     public void addNewPostButtonClick() {
         click(addPostButtonLocator);
     }
 
     public void enterPostTitle() {
-
-        type(postTitleInputLocator, postTitle);
+        try {
+            type(postTitleInputLocator, postTitle);
+        } catch (Exception e){
+            type(By.id("post-title-0"), postTitle);
+        }
     }
 
     public void enterTestContent() throws IOException {
-        click(textTabLocator);
-        type(textAreaLocator, testContent());
+        try{
+            click(textTabLocator);
+            type(textAreaLocator, testContent());
+        } catch (Exception e){
+            type(By.cssSelector("div.components-autocomplete"), testContent());
+        }
     }
 
     public void publishPost() {

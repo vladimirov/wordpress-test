@@ -35,7 +35,7 @@ public class HelperBase {
 
     protected WebDriver driver;
     public WebDriverWait wait;
-    public int timeOutInSeconds = 40;
+    public int timeOutInSeconds = 10;
     public WebElement element;
 
     public HelperBase(WebDriver driver) {
@@ -125,7 +125,6 @@ public class HelperBase {
                         return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
                     }
                 };
-
         Wait<WebDriver> wait = new WebDriverWait(driver, 60);
         try {
             wait.until(pageLoad);

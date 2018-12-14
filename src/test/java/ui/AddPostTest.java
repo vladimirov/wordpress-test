@@ -14,6 +14,10 @@ public class AddPostTest extends TestBase {
         app.loginToAdmin();
         app.admin().gotoPostsPage();
         app.admin().addNewPostButtonClick();
+
+        //Close tips popup in wordpress5
+//        app.admin().closeTipsPopUp();
+
         app.admin().enterPostTitle();
         app.admin().enterTestContent();
         app.admin().publishPost();
