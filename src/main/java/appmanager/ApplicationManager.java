@@ -3,6 +3,7 @@ package appmanager;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
+import org.gitlab4j.api.models.Issue;
 import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,9 +17,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.*;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -44,7 +46,7 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void init() throws IOException {
+    public void init() throws IOException, GitLabApiException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
         switch (browser) {
