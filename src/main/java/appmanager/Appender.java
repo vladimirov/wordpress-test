@@ -12,7 +12,8 @@ import java.util.Properties;
 
 public class Appender {
 
-    public static void main(String[] args) throws IOException, GitLabApiException {
+//    public static void main(String[] args) throws IOException, GitLabApiException {
+    public void appendLogger() throws IOException, GitLabApiException {
         Properties properties = new Properties();
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));

@@ -27,8 +27,11 @@ public class TestBase {
     protected static final ApplicationManager app
             = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
+    Appender appender = new Appender();
+
     @BeforeSuite
     public void setUp(ITestContext context) throws Exception {
+        appender.appendLogger();
         app.init();
         context.setAttribute("app", app);
     }

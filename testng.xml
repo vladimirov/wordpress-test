@@ -12,9 +12,9 @@
     <!--</packages>-->
     <!--</test>    -->
 
-    <test name="PageSpeed Test">
+    <test name="Console Errors Test">
         <classes>
-            <class name="ui.PageSpeedTest" />
+            <class name="ui.ConsoleErrorsTest" />
         </classes>
     </test>
 
