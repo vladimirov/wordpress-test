@@ -31,7 +31,7 @@ public class TestBase {
 
     @BeforeSuite
     public void setUp(ITestContext context) throws Exception {
-        appender.appendLogger();
+//        appender.appendLogger();
         app.init();
         context.setAttribute("app", app);
     }

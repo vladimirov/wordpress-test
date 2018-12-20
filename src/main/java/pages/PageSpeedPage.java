@@ -28,9 +28,9 @@ public class PageSpeedPage extends HelperBase {
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-//        type(urlInputLocator, properties.getProperty("web.baseUrl"));
+        type(urlInputLocator, properties.getProperty("web.baseUrl"));
         //TODO Remove web.baseUrlToTestPageSpeed
-        type(urlInputLocator, properties.getProperty("web.baseUrlToTestPageSpeed"));
+//        type(urlInputLocator, properties.getProperty("web.baseUrlToTestPageSpeed"));
     }
 
     public void analyzeButtonClick() {
