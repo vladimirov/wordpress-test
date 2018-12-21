@@ -41,6 +41,7 @@ public class ApplicationManager {
     private FaviconPage faviconPage;
     public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
 
+
     public ApplicationManager(String browser) {
         this.browser = browser;
         properties = new Properties();

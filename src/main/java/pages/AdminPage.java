@@ -1,16 +1,18 @@
 package pages;
 
 import appmanager.HelperBase;
+import com.google.api.client.util.Charsets;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.stream.Stream;
 
 public class AdminPage extends HelperBase {
 
@@ -52,29 +54,30 @@ public class AdminPage extends HelperBase {
         click(By.linkText("Posts"));
     }
 
-    public void closeTipsPopUp() {
-        click(By.cssSelector("button.components-buttoncomponents-icon-buttonnux-dot-tip__disable"));
-    }
-
     public void addNewPostButtonClick() {
         click(addPostButtonLocator);
     }
 
     public void enterPostTitle() {
         try {
-            type(postTitleInputLocator, postTitle);
-        } catch (Exception e){
+            click(By.xpath("//div[@class='components-popover__content']/button"));//closeTipsPopUp
             type(By.id("post-title-0"), postTitle);
+        } catch (Exception e) {
+            type(postTitleInputLocator, postTitle);
         }
     }
+///////////////////////////////////////////////////////////
+//    public void enterTestContent() throws IOException {
+//        click(textTabLocator);
+//        type(textAreaLocator, testContent());
+//    }
 
     public void enterTestContent() throws IOException {
-        try{
-            click(textTabLocator);
-            type(textAreaLocator, testContent());
-        } catch (Exception e){
-            type(By.cssSelector("div.components-autocomplete"), testContent());
-        }
+        click(By.xpath("//div[@class='editor-inserter']"));
+        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
+//        type(By.id("mce_0"), testContent());
+//        type(By.id("mce_0"), readLineByLineJava8());
+        type(By.id("mce_0"), readTextFile());
     }
 
     public void publishPost() {
@@ -108,8 +111,34 @@ public class AdminPage extends HelperBase {
                 StandardCharsets.UTF_8);
     }
 
-    public boolean postTitleTextIsDisplayed() {
-        return isTextDisplayed(createdPostTitleLocator, postTitle);
+    private String readLineByLineJava8() {
+        StringBuilder contentBuilder = new StringBuilder();
+        try (Stream<String> stream = Files.lines(Paths.get("src/main/resources/test-content.txt"), StandardCharsets.UTF_8)) {
+            stream.forEach(s -> contentBuilder.append(s).append("\n"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return contentBuilder.toString();
+    }
+
+    public String readTextFile() {
+        StringBuilder returnValue = new StringBuilder();
+        FileReader file;
+        String line = "";
+        try {
+            file = new FileReader("src/main/resources/test-content.txt");
+            try (BufferedReader reader = new BufferedReader(file)) {
+                while ((line = reader.readLine()) != null) {
+                    returnValue.append(line).append("\n");
+                }
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("File not found");
+        } catch (IOException e) {
+            throw new RuntimeException("IO Error occured");
+        }
+        return returnValue.toString();
+
     }
 
 }

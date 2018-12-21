@@ -1,4 +1,4 @@
-package db;
+package api;
 
 import appmanager.TestBase;
 
@@ -16,9 +16,9 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AddPostAPITest extends TestBase {
+public class AddPostApiTest extends TestBase {
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void addPostViaApi() throws IOException, PostCreateException {
         String baseUrl = "http://wordpress.local";
         String username = "admin";

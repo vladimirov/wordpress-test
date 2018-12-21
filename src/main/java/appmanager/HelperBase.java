@@ -60,12 +60,22 @@ public class HelperBase {
         try {
             element = wait.until(presenceOfElementLocated(locator));
             element.click();
-            element.clear();
             element.sendKeys(text);
         } catch (StaleElementReferenceException ignored) {
             element = wait.until(presenceOfElementLocated(locator));
             element.click();
-            element.clear();
+            element.sendKeys(text);
+        }
+    }
+
+    protected void sendKeys(By locator, String text) {
+        logger.info("SEND KEYS TO ELEMENT: " + locator);
+        try {
+            element = wait.until(presenceOfElementLocated(locator));
+            element.sendKeys(text);
+        } catch (StaleElementReferenceException ignored) {
+            element = wait.until(presenceOfElementLocated(locator));
+            element.click();
             element.sendKeys(text);
         }
     }
@@ -226,7 +236,7 @@ public class HelperBase {
         return element.getAttribute("value").equals(expectedValue);
     }
 
-    public boolean elementHasValue(By locator){
+    public boolean elementHasValue(By locator) {
         logger.info("WAITING TILL ELEMENT " + locator + " HAS VALUE");
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.getText().length() > 0;
