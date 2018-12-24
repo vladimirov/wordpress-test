@@ -23,17 +23,20 @@ public class AddPostApiTest extends TestBase {
         String baseUrl = "http://wordpress.local";
         String username = "admin";
         String password = "12345";
+        boolean usePermalinkEndpoint = false;
         boolean debug = false;
 
-        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, username, password, false, debug));
+        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, username, password, usePermalinkEndpoint, debug));
 
         final Post post = PostBuilder.aPost()
-                .withTitle(TitleBuilder.aTitle().withRendered("Title from Wordpress Java API").build())
-                .withExcerpt(ExcerptBuilder.anExcerpt().withRendered("te").build())
+                .withTitle(TitleBuilder.aTitle().withRendered("Title_from_Wordpress_Java_API").build())
+                .withExcerpt(ExcerptBuilder.anExcerpt().withRendered("").build())
                 .withContent(ContentBuilder.aContent().withRendered(app.admin().testContent()).build())
                 .build();
 
         final Post createdPost = client.createPost(post, PostStatus.publish);
+
+
 
         System.out.println(createdPost.getLink());
 
