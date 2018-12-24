@@ -6,24 +6,16 @@ import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.Project;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Properties;
+import static appmanager.ApplicationManager.gitlabApiToken;
+import static appmanager.ApplicationManager.gitlabHostUrl;
+import static appmanager.ApplicationManager.projectId;
 
 public class GitlabApiTest extends TestBase {
 
     @Test
-    public void getProjectIdViaGitlabApi() throws IOException, GitLabApiException {
-        Properties properties = new Properties();
-        String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
-
-
-        GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
-
-        Project project = gitLabApi.getProjectApi().getProject("490");
-
+    public void getProjectIdViaGitlabApi() throws GitLabApiException {
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        Project project = gitLabApi.getProjectApi().getProject(projectId);
         System.out.println(project.getName());
 
     }

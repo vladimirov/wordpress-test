@@ -16,17 +16,15 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static appmanager.ApplicationManager.baseUrl;
+import static appmanager.ApplicationManager.adminLogin;
+import static appmanager.ApplicationManager.adminPassword;
+
 public class AddPostApiTest extends TestBase {
 
     @Test(enabled = true)
     public void addPostViaApi() throws IOException, PostCreateException {
-        String baseUrl = "http://wordpress.local";
-        String username = "admin";
-        String password = "12345";
-        boolean usePermalinkEndpoint = false;
-        boolean debug = false;
-
-        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, username, password, usePermalinkEndpoint, debug));
+        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, adminLogin, adminPassword, false, false));
 
         final Post post = PostBuilder.aPost()
                 .withTitle(TitleBuilder.aTitle().withRendered("Title_from_Wordpress_Java_API").build())
@@ -35,8 +33,6 @@ public class AddPostApiTest extends TestBase {
                 .build();
 
         final Post createdPost = client.createPost(post, PostStatus.publish);
-
-
 
         System.out.println(createdPost.getLink());
 
