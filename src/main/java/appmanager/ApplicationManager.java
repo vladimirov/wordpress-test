@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,11 +56,9 @@ public class ApplicationManager {
 
     public void init() throws IOException, GitLabApiException {
         switch (browser) {
-//            case BrowserType.CHROME: {
             case "chrome": {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
-//                options.addArguments("--headless");
                 options.setCapability("webdriver.chrome.driver", true);
                 driver = new ChromeDriver(options);
                 break;
@@ -72,7 +71,10 @@ public class ApplicationManager {
                 break;
             }
             case BrowserType.IE:
-                driver = new InternetExplorerDriver();
+                System.setProperty("webdriver.ie.driver", "C:\\Windows\\IEDriverServer.exe");
+                InternetExplorerOptions options = new InternetExplorerOptions();
+                options.setCapability("webdriver.ie.driver", true);
+                driver = new InternetExplorerDriver(options);
                 break;
         }
         driver.manage().window().maximize();
@@ -188,19 +190,15 @@ public class ApplicationManager {
     public void addPostDb(String content) {
         logger.info("CREATING TEST POST IN DATABASE ");
         try {
-            // create a mysql database connection
             String myDriver = "com.mysql.cj.jdbc.Driver";
             Class.forName(myDriver);
             Connection conn = DriverManager
                     .getConnection(databaseUrl, databaseUser, databasePass);
-            // create a sql date object so we can use it in our INSERT statement
             Calendar calendar = Calendar.getInstance();
             Date date = new Date(calendar.getTime().getTime());
-            // the mysql insert statement
             String query = "insert into wp_posts " +
                     "(post_title, post_date, post_content, post_excerpt, to_ping, pinged, post_content_filtered, post_name) " +
                     "values (?, ?, ?, ?, ?, ?, ?, ?)";
-            // create the mysql insert prepared statement
             PreparedStatement preparedStmt = conn.prepareStatement(query);
             preparedStmt.setString(1, postTitle);
             preparedStmt.setDate(2, date);
@@ -210,7 +208,6 @@ public class ApplicationManager {
             preparedStmt.setString(6, "");
             preparedStmt.setString(7, "");
             preparedStmt.setString(8, postTitle.toLowerCase().replaceAll(" ", "-"));
-            // execute the prepared statement
             preparedStmt.execute();
             conn.close();
         } catch (Exception e) {
