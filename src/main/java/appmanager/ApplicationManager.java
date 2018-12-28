@@ -55,7 +55,8 @@ public class ApplicationManager {
 
     public void init() throws IOException, GitLabApiException {
         switch (browser) {
-            case BrowserType.CHROME: {
+//            case BrowserType.CHROME: {
+            case "chrome": {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
 //                options.addArguments("--headless");
@@ -63,7 +64,7 @@ public class ApplicationManager {
                 driver = new ChromeDriver(options);
                 break;
             }
-            case BrowserType.FIREFOX: {
+            case "firefox": {
                 System.setProperty("webdriver.gecko.driver", "C:\\Windows\\geckodriver.exe");
                 FirefoxOptions options = new FirefoxOptions();
                 options.setCapability("marionette", true);
@@ -178,7 +179,7 @@ public class ApplicationManager {
 
     public String getGitlabFileMarkdown(String screenshotName) throws GitLabApiException {
         logger.info("UPLOADING SCREENSHOT TO GITLAB ");
-        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl,gitlabApiToken);
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
         FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
         return upload.getMarkdown();
