@@ -54,7 +54,7 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void init() throws IOException, GitLabApiException {
+    public void init() throws IOException {
         switch (browser) {
             case "chrome": {
                 System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
