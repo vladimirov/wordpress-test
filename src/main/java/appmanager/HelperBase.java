@@ -18,14 +18,11 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
@@ -163,7 +160,12 @@ public class HelperBase {
     public void screenshotCaptureAllScreen(String screenshotName) throws IOException {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+        try {
+            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+        } catch (IOException e) {
+            new File("test-screenshots/").mkdirs();
+            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+        }
     }
 
     public boolean isAlertPresent() {
