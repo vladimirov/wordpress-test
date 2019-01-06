@@ -1,17 +1,29 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1">
+<suite name="UI Tests">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-    <test name="UI Tests">
-        <packages>
-            <package name="ui"/>
-        </packages>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ui.AddPostTest"> </class>
+            <class name="ui.ConsoleErrorsTest"> </class>
+        </classes>
     </test>
-
-
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ui.AddPostTest">
+            </class>
+        </classes>
+    </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="ui.AddPostTest">
+            </class>
+        </classes>
+    </test>
 </suite>
-
-

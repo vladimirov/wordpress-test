@@ -5,13 +5,7 @@ import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
 import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
-import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.*;
@@ -33,7 +27,6 @@ public class ApplicationManager {
     public final Properties properties;
     private LoginPage loginPage;
     private SitePage sitePage;
-    private String browser;
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
@@ -49,34 +42,12 @@ public class ApplicationManager {
     public static String databaseUser;
     public static String databasePass;
 
-    public ApplicationManager(String browser) {
-        this.browser = browser;
+    public ApplicationManager() {
         properties = new Properties();
     }
 
-    public void init() throws IOException {
-        switch (browser) {
-            case "chrome": {
-                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
-                ChromeOptions options = new ChromeOptions();
-                options.setCapability("webdriver.chrome.driver", true);
-                driver = new ChromeDriver(options);
-                break;
-            }
-            case "firefox": {
-                System.setProperty("webdriver.gecko.driver", "C:\\Windows\\geckodriver.exe");
-                FirefoxOptions options = new FirefoxOptions();
-                options.setCapability("marionette", true);
-                driver = new FirefoxDriver(options);
-                break;
-            }
-            case BrowserType.IE:
-                System.setProperty("webdriver.ie.driver", "C:\\Windows\\IEDriverServer.exe");
-                InternetExplorerOptions options = new InternetExplorerOptions();
-                options.setCapability("webdriver.ie.driver", true);
-                driver = new InternetExplorerDriver(options);
-                break;
-        }
+    public void init(String browser) throws IOException {
+        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
