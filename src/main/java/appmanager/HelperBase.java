@@ -155,16 +155,15 @@ public class HelperBase {
 
     public void screenshotCapture(String screenshotName) {
         logger.info("SCREENSHOT CAPTURING...");
-        File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File dest = new File("test-screenshots/" + screenshotName + ".png");
-        Utils.copyFile(scr, dest);
+        Utils.copyFile(screenshot, dest);
     }
 
     public void screenshotCaptureAllScreen(String screenshotName) throws IOException {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        File dest = new File("test-screenshots/" + screenshotName + ".png");
-        ImageIO.write(screenshot.getImage(), "PNG", dest);
+        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
     }
 
     public boolean isAlertPresent() {

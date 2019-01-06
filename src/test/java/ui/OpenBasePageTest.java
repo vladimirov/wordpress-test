@@ -9,6 +9,6 @@ public class OpenBasePageTest extends TestBase {
     public void openBasePage() throws Exception {
         app.openBaseUrl();
 //        app.site().screenshotCapture("BasePage");
-        app.site().screenshotCaptureAllScreen("BasePageAll");
+        app.site().screenshotCaptureAllScreen("BaseAll");
     }
 }
