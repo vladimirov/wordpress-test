@@ -19,8 +19,12 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 import javax.imageio.ImageIO;
 import java.io.File;
+import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -152,18 +156,15 @@ public class HelperBase {
     public void screenshotCapture(String screenshotName) {
         logger.info("SCREENSHOT CAPTURING...");
         File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
-//        File dest = new File("test-screenshots/" + name + "-" + date.format(new Date()));
         File dest = new File("test-screenshots/" + screenshotName + ".png");
         Utils.copyFile(scr, dest);
     }
 
-    public void screenshotCaptureAllScreen(String screenshotName) throws Exception {
+    public void screenshotCaptureAllScreen(String screenshotName) throws IOException {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
-        SimpleDateFormat date = new SimpleDateFormat("ddMMhhmmss'.png'");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-//        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + name + "-" + date.format(new Date())));
-        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+        File dest = new File("test-screenshots/" + screenshotName + ".png");
+        ImageIO.write(screenshot.getImage(), "PNG", dest);
     }
 
     public boolean isAlertPresent() {

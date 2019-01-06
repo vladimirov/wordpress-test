@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 public class AddPostDbTest extends TestBase {
 
-    @Test (enabled = false)
+    @Test (enabled = true)
     public void testPostCreation() throws Exception {
         app.addPostDb(app.admin().testContent());
         app.openTestPostUrl();
