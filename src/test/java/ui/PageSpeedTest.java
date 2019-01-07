@@ -17,32 +17,34 @@ public class PageSpeedTest extends TestBase {
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
         String desc = "PageSpeed Desktop percentage value need to be more than 50";
         String pageSpeedScreenshot = "PageSpeedTestDesktop";
-        int percentDesktop;
+        int percentDesktop = 0;
+        String pageSpeedLink = app.site().pageLinkForGitlab();
 
         app.openPageSpeedUrl();
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
-        app.pageSpeed().percentageIsPresent();
-        app.pageSpeed().desktopTabClick();
         try {
-            percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
-        } catch (IndexOutOfBoundsException e) {
-            app.pageSpeed().analyzeButtonClick();
-            app.pageSpeed().percentageIsPresent();
+            app.pageSpeed().percentageIsPresent();//change type of waiting
             app.pageSpeed().desktopTabClick();
             percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
-        }
-        String pageSpeedLink = app.site().pageLinkForGitlab();
-        if (percentDesktop < 50) {
-            logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
+            if (percentDesktop < 50) {
+                logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
+                app.pageSpeed().screenshotCapture(pageSpeedScreenshot);
+                String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
+                app.uploadIssueWithDescriptionToGitlab(
+                        "PageSpeed Desktop percentage value is " + percentDesktop,
+                        pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
+                        null);
+            } else {
+                logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + percentDesktop);
+            }
+        } catch (Exception e){
             app.pageSpeed().screenshotCapture(pageSpeedScreenshot);
             String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
-                    "PageSpeed Desktop percentage value is " + percentDesktop,
+                    "PageSpeed Desktop percentage value is not displayed",
                     pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
                     null);
-        } else {
-            logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + percentDesktop);
         }
     }
 

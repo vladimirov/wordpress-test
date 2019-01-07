@@ -29,8 +29,6 @@ public class PageSpeedPage extends HelperBase {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
         type(urlInputLocator, properties.getProperty("web.baseUrl"));
-        //TODO Remove web.baseUrlToTestPageSpeed
-//        type(urlInputLocator, properties.getProperty("web.baseUrlToTestPageSpeed"));
     }
 
     public void analyzeButtonClick() {
@@ -46,6 +44,16 @@ public class PageSpeedPage extends HelperBase {
             elementHasValue(percentageLocator);
         }
     }
+
+//    public boolean percentageIsPresent() {
+//        try {
+//            elementHasValue(percentageLocator);
+//            return true;
+//        } catch (Exception e) {
+//            elementHasValue(percentageLocator);
+//            return true;
+//        }
+//    }
 
     public void desktopTabClick() {
         try {

@@ -1,4 +1,4 @@
-package db;
+package ui;
 
 import appmanager.TestBase;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 public class AddPostDbTest extends TestBase {
 
-    @Test (enabled = true)
+    @Test (enabled = false)
     public void testPostCreation() throws Exception {
         app.addPostDb(app.admin().testContent());
         app.openTestPostUrl();

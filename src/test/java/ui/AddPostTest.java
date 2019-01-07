@@ -7,7 +7,7 @@ import static org.testng.Assert.assertTrue;
 
 public class AddPostTest extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void testPostCreation() throws Exception {
         String testPostScreenshot = "TestPost";
         app.loginToAdmin();

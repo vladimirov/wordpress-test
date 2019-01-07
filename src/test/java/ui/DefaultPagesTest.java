@@ -10,10 +10,10 @@ import static org.testng.Assert.assertTrue;
 
 public class DefaultPagesTest extends TestBase {
 
-//    @BeforeTest
-//    public void addTestPostDb() throws IOException {
-//        app.addPostDb(app.admin().testContent());
-//    }
+    @BeforeTest
+    public void addTestPostDb() throws IOException {
+        app.addPostDb(app.admin().testContent());
+    }
 
     @Test
     public void testDefaultPages() throws Exception {
@@ -31,21 +31,21 @@ public class DefaultPagesTest extends TestBase {
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
         //Test Post Page
-//        app.openTestPostUrl();
-//        app.site().screenshotCaptureAllScreen(testPostScreenshot);
-//        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
-//        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
+        app.openTestPostUrl();
+        app.site().screenshotCaptureAllScreen(testPostScreenshot);
+        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
+        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
 
-//        app.uploadIssueWithDescriptionToGitlab(
-//                "Default pages layout screenshots",
-//                checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
-//                "Question");
+        app.uploadIssueWithDescriptionToGitlab(
+                "Default pages layout screenshots",
+                checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
+                "Question");
 
 
         //Test without Test Post page
-        app.uploadIssueWithDescriptionToGitlab(
-                "Default pages layout screenshots",
-                checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404,
-                "Question");
+//        app.uploadIssueWithDescriptionToGitlab(
+//                "Default pages layout screenshots",
+//                checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404,
+//                "Question");
     }
 }
