@@ -2,19 +2,19 @@ package pages;
 
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.Logs;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class SitePage extends HelperBase {
 
     public SitePage(WebDriver driver) {
         super(driver);
     }
-
-    public String name = "Name " + System.currentTimeMillis();
 
     public void getConsoleErrors() {
         Logs logs = driver.manage().logs();

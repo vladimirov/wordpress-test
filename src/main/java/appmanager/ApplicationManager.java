@@ -4,8 +4,9 @@ import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
 import org.gitlab4j.api.models.Project;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.*;
@@ -41,13 +42,16 @@ public class ApplicationManager {
     public static String databaseUrl;
     public static String databaseUser;
     public static String databasePass;
+    Capabilities capabilities;
+
 
     public ApplicationManager() {
         properties = new Properties();
     }
 
     public void init(String browser) throws IOException {
-        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
+//        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
+        driver = DriverFactory.initDriver(browser);
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
@@ -65,10 +69,19 @@ public class ApplicationManager {
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
         faviconPage = new FaviconPage(driver);
+        capabilities = ((RemoteWebDriver) driver).getCapabilities();
     }
 
     public void stop() {
         driver.quit();
+    }
+
+    public String browserName() {
+        return capabilities.getBrowserName().toUpperCase();
+    }
+
+    public String browserVersion() {
+        return capabilities.getVersion().toString();
     }
 
     public void loginToAdmin() {

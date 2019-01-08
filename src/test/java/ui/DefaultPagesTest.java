@@ -1,6 +1,9 @@
 package ui;
 
 import appmanager.TestBase;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -37,15 +40,9 @@ public class DefaultPagesTest extends TestBase {
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
 
         app.uploadIssueWithDescriptionToGitlab(
-                "Default pages layout screenshots",
-                checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
+                "Default pages layout screenshots in " + app.browserName() + " browser",
+                "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
+                        checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
                 "Question");
-
-
-        //Test without Test Post page
-//        app.uploadIssueWithDescriptionToGitlab(
-//                "Default pages layout screenshots",
-//                checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404,
-//                "Question");
     }
 }
