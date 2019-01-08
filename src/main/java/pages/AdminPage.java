@@ -43,6 +43,7 @@ public class AdminPage extends HelperBase {
     private By testPostPageLocator = By.cssSelector("div#primary");
     private By commentsMenu = By.id("menu-comments");
     private By approveSectionLocator = By.xpath("//tbody[@id='the-comment-list']/tr[1]");
+    private By themeScreenshotBlankLocator = By.cssSelector("div.theme-screenshot.blank");
 
     public String url() throws URISyntaxException {
         URI uri = new URI(String.valueOf(driver.getCurrentUrl()));
@@ -138,7 +139,10 @@ public class AdminPage extends HelperBase {
             throw new RuntimeException("IO Error occured");
         }
         return returnValue.toString();
+    }
 
+    public boolean themeScreenshotIsBlank(){
+        return isElementVisible(themeScreenshotBlankLocator);
     }
 
 }

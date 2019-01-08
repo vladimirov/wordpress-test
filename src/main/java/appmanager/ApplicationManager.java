@@ -110,6 +110,10 @@ public class ApplicationManager {
         driver.get(baseUrl + "?s=");
     }
 
+    public void openThemesPage() {
+        driver.get(baseUrl + "wp-admin/themes.php");
+    }
+
     public SitePage site() {
         return sitePage;
     }
