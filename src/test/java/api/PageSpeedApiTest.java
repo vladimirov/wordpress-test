@@ -1,4 +1,4 @@
-package db;
+package api;
 
 import appmanager.TestBase;
 import com.google.api.client.http.HttpRequestInitializer;

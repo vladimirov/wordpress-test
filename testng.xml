@@ -5,15 +5,15 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-    <!--<test name="All Tests In Chrome">-->
-        <!--<parameter name="browser" value="chrome"/>-->
-        <!--<classes>-->
-            <!--<class name="ui.ConsoleErrorsTest"> </class>-->
-            <!--<class name="ui.FaviconTest"> </class>-->
-            <!--<class name="ui.DefaultPagesTest"> </class>-->
-            <!--<class name="ui.PageSpeedTest"> </class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="All Tests In Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ui.ConsoleErrorsTest"> </class>
+            <class name="ui.FaviconTest"> </class>
+            <class name="ui.DefaultPagesTest"> </class>
+            <class name="ui.PageSpeedTest"> </class>
+        </classes>
+    </test>
     <!--<test name="Default Pages In Firefox">-->
         <!--<parameter name="browser" value="firefox"/>-->
         <!--<classes>-->
@@ -34,10 +34,10 @@
             <!--<class name="ui.DefaultPagesTest"/>-->
         <!--</classes>-->
     <!--</test>-->
-    <test name="Default Pages On iPad">
-        <parameter name="browser" value="ipad"/>
-        <classes>
-            <class name="ui.DefaultPagesTest"/>
-        </classes>
-    </test>
+    <!--<test name="Default Pages On iPad">-->
+        <!--<parameter name="browser" value="ipad"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.DefaultPagesTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 </suite>

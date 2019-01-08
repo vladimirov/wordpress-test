@@ -1,4 +1,4 @@
-package api;
+package ui;
 
 import appmanager.TestBase;
 
@@ -22,7 +22,7 @@ import static appmanager.ApplicationManager.adminPassword;
 
 public class AddPostApiTest extends TestBase {
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void addPostViaApi() throws IOException, PostCreateException {
         final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, adminLogin, adminPassword, false, false));
 
