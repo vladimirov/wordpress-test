@@ -8,6 +8,10 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
 public class DriverFactory {
 
     public static WebDriver initDriver(String browser) {
@@ -28,6 +32,20 @@ public class DriverFactory {
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setCapability("webdriver.edge.driver", true);
                 return new EdgeDriver(edgeOptions);
+            case "iphone":
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                Map<String, String> iphoneEmulation = new HashMap<>();
+                iphoneEmulation.put("deviceName", "iPhone 6/7/8");
+                ChromeOptions iphoneOptions = new ChromeOptions();
+                iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
+                return new ChromeDriver(iphoneOptions);
+            case "ipad":
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                Map<String, String> ipadEmulation = new HashMap<>();
+                ipadEmulation.put("deviceName", "iPad");
+                ChromeOptions ipadOptions = new ChromeOptions();
+                ipadOptions.setExperimentalOption("mobileEmulation", ipadEmulation);
+                return new ChromeDriver(ipadOptions);
         }
     }
 }
