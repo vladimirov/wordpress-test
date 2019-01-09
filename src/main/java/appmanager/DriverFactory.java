@@ -18,29 +18,29 @@ public class DriverFactory {
         switch (browser) {
             case "chrome":
             default:
-                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setCapability("webdriver.chrome.driver", true);
                 return new ChromeDriver(chromeOptions);
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "C:\\Windows\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.setCapability("marionette", true);
                 return new FirefoxDriver(firefoxOptions);
             case "edge":
-                System.setProperty("webdriver.edge.driver", "C:\\Windows\\MicrosoftWebDriver.exe");
+                System.setProperty("webdriver.edge.driver", "MicrosoftWebDriver.exe");
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setCapability("webdriver.edge.driver", true);
                 return new EdgeDriver(edgeOptions);
             case "iphone":
-                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 Map<String, String> iphoneEmulation = new HashMap<>();
                 iphoneEmulation.put("deviceName", "iPhone 6/7/8");
                 ChromeOptions iphoneOptions = new ChromeOptions();
                 iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
                 return new ChromeDriver(iphoneOptions);
             case "ipad":
-                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 Map<String, String> ipadEmulation = new HashMap<>();
                 ipadEmulation.put("deviceName", "iPad");
                 ChromeOptions ipadOptions = new ChromeOptions();

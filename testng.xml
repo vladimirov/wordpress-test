@@ -8,29 +8,29 @@
     <test name="All Tests In Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="ui.ConsoleErrorsTest"> </class>
-            <class name="ui.FaviconTest"> </class>
-            <class name="ui.DefaultPagesTest"> </class>
-            <class name="ui.PageSpeedTest"> </class>
-            <class name="ui.ThemeScreenshotTest"> </class>
+            <class name="ui.AppenderTest"> </class>
+            <!--<class name="ui.ConsoleErrorsTest"> </class>-->
+            <!--<class name="ui.FaviconTest"> </class>-->
+            <!--<class name="ui.PageSpeedTest"> </class>-->
+            <!--<class name="ui.ThemeScreenshotTest"> </class>-->
+            <!--<class name="ui.AddPostTest"> </class>-->
+            <!--<class name="ui.DefaultPagesTest"> </class>-->
         </classes>
     </test>
-
-
-    <!--<test name="Default Pages In Firefox">-->
-        <!--<parameter name="browser" value="firefox"/>-->
-        <!--<classes>-->
-            <!--<class name="ui.DefaultPagesTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Default Pages In Edge">-->
-        <!--<parameter name="browser" value="edge"/>-->
-        <!--<classes>-->
-            <!--<class name="ui.DefaultPagesTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Default Pages In Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ui.DefaultPagesTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Default Pages In Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="ui.DefaultPagesTest">
+            </class>
+        </classes>
+    </test>
     <!--<test name="Default Pages On iPhone">-->
         <!--<parameter name="browser" value="iphone"/>-->
         <!--<classes>-->
