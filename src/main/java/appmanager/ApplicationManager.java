@@ -99,7 +99,7 @@ public class ApplicationManager {
     }
 
     public void openPageSpeedUrl() {
-        driver.get(pageSpeedUrl);
+        driver.get("https://developers.google.com/speed/pagespeed/insights/");
     }
 
     public void openPageNotFoundUrl() {

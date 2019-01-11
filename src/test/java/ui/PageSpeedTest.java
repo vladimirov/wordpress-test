@@ -24,7 +24,7 @@ public class PageSpeedTest extends TestBase {
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
         try {
-            app.pageSpeed().percentageIsPresent();//change type of waiting
+            app.pageSpeed().percentageIsPresent();//TODO change type of waiting
             app.pageSpeed().desktopTabClick();
             percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
             if (percentDesktop < 50) {
@@ -43,7 +43,7 @@ public class PageSpeedTest extends TestBase {
             String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     "PageSpeed Desktop percentage value is not displayed",
-                    pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
+                    markdownPageSpeedPage,
                     null);
         }
     }
