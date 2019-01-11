@@ -40,8 +40,6 @@ public class PageSpeedPage extends HelperBase {
             elementHasValue(percentageLocator);
         } catch (Exception e) {
             elementHasValue(percentageLocator);
-        } finally {
-            elementHasValue(percentageLocator);
         }
     }
 

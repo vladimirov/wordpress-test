@@ -11,7 +11,6 @@ public class AddPostTest extends TestBase {
     public void testPostCreation() throws Exception {
         String testPostScreenshot = "TestPost";
         app.loginToAdmin();
-        app.admin().gotoPostsPage();
         app.admin().addNewPostButtonClick();
         app.admin().enterPostTitle();
         app.admin().enterTestContent();

@@ -94,6 +94,10 @@ public class ApplicationManager {
         driver.get(baseUrl);
     }
 
+    public void openPostsPageInAdmin(){
+        driver.get(baseUrl + "wp-admin/edit.php");
+    }
+
     public void openTestPostUrl() {
         driver.get(baseUrl + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
@@ -128,6 +132,10 @@ public class ApplicationManager {
 
     public FaviconPage faviconPage() {
         return faviconPage;
+    }
+
+    public LoginPage loginPage() {
+        return loginPage;
     }
 
     public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description, String label) throws GitLabApiException {

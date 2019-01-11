@@ -181,7 +181,7 @@ public class HelperBase {
         logger.info("TRYING TO FOUND ELEMENT: " + locator);
         try {
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
-            driver.findElement(locator);
+            element = wait.until(presenceOfElementLocated(locator));
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             return true;
         } catch (NoSuchElementException e) {

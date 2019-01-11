@@ -23,4 +23,8 @@ public class LoginPage extends HelperBase {
         click(wpLoginButtonLocator);
     }
 
+    public boolean loginFormIsDisplayed(){
+        return isElementVisible(loginFormLocator);
+    }
+
 }
