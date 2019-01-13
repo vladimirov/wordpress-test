@@ -16,20 +16,20 @@
             <class name="ui.DefaultPagesTest"> </class>
         </classes>
     </test>
-    <test name="Default Pages In Firefox">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="ui.DefaultPagesTest">
-            </class>
-        </classes>
-    </test>
-    <test name="Default Pages In Edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name="ui.DefaultPagesTest">
-            </class>
-        </classes>
-    </test>
+    <!--<test name="Default Pages In Firefox">-->
+        <!--<parameter name="browser" value="firefox"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.DefaultPagesTest">-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Default Pages In Edge">-->
+        <!--<parameter name="browser" value="edge"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.DefaultPagesTest">-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
     <!--<test name="Default Pages On iPhone">-->
         <!--<parameter name="browser" value="iphone"/>-->
         <!--<classes>-->

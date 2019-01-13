@@ -1,4 +1,4 @@
-package ui;
+package api;
 
 import appmanager.TestBase;
 

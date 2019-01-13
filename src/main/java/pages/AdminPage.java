@@ -61,25 +61,24 @@ public class AdminPage extends HelperBase {
 
     public void enterPostTitle() {
         try {
+            type(postTitleInputLocator, postTitle);
+        } catch (Exception e) {
             click(By.xpath("//div[@class='components-popover__content']/button"));//closeTipsPopUp
             type(By.id("post-title-0"), postTitle);
-        } catch (Exception e) {
-            type(postTitleInputLocator, postTitle);
         }
     }
 ///////////////////////////////////////////////////////////
-//    public void enterTestContent() throws IOException {
-//        click(textTabLocator);
-//        type(textAreaLocator, testContent());
-//    }
-
     public void enterTestContent() throws IOException {
-        click(By.xpath("//div[@class='editor-inserter']"));
-        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-//        type(By.id("mce_0"), testContent());
-//        type(By.id("mce_0"), readLineByLineJava8());
-        type(By.id("mce_0"), readTextFile());
+        click(textTabLocator);
+        type(textAreaLocator, testContent());
     }
+//    public void enterTestContent() throws IOException {
+//        click(By.xpath("//div[@class='editor-inserter']"));
+//        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
+////        type(By.id("mce_0"), testContent());
+////        type(By.id("mce_0"), readLineByLineJava8());
+//        type(By.id("mce_0"), readTextFile());
+//    }
 
     public void publishPost() {
         scrollTillElementIsVisible(helpLinkLocator);
