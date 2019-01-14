@@ -33,7 +33,7 @@ public class ApplicationManager {
     private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
-    private String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
+    public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
     public static String baseUrl;
     public static String adminLogin;
     public static String adminPassword;
@@ -82,6 +82,10 @@ public class ApplicationManager {
 
     public String browserName() {
         return capabilities.getBrowserName().toUpperCase();
+    }
+
+    public String postTitle() {
+        return postTitle;
     }
 
     public String browserVersion() {

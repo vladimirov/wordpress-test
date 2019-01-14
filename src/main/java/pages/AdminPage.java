@@ -1,5 +1,6 @@
 package pages;
 
+import appmanager.ApplicationManager;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -16,6 +17,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+import static appmanager.ApplicationManager.baseUrl;
+
 public class AdminPage extends HelperBase {
 
     public AdminPage(WebDriver driver) {
@@ -23,7 +26,7 @@ public class AdminPage extends HelperBase {
     }
 
     private JavascriptExecutor jse = (JavascriptExecutor) driver;
-    private String postTitle = "Test Post - The quick brown fox jumps over the lazy dog";
+    private String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
 
     private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
     private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
@@ -31,14 +34,10 @@ public class AdminPage extends HelperBase {
     private By postTitleInputLocator = By.name("post_title");
     private By textTabLocator = By.id("content-html");
     private By textAreaLocator = By.className("wp-editor-area");
-    private By postSearchLocator = By.id("post-search-input");
-    private By postSearchButtonLocator = By.id("search-submit");
     private By publishPostButtonLocator = By.id("publish");
     private By hiddenPublishInputLocator = By.id("original_publish");
     private By successMessageLocator = By.id("message");
-    private By permalinkLocator = By.id("sample-permalink");
     private By helpLinkLocator = By.id("contextual-help-link");
-    private By testPostPageLocator = By.cssSelector("div#primary");
     private By themeScreenshotBlankLocator = By.cssSelector("div.theme-screenshot.blank");
 
     public String url() throws URISyntaxException {
@@ -64,15 +63,15 @@ public class AdminPage extends HelperBase {
         }
     }
 
-    ///////////////////////////////////////////////////////////
-//    public void enterTestContent() throws IOException {
-//        click(textTabLocator);
-//        type(textAreaLocator, testContent());
-//    }
-    public void enterTestContent() throws IOException {
-        click(By.xpath("//div[@class='editor-inserter']"));
-        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-        type(By.id("mce_0"), readTextFile());
+    public void enterTestContent() {
+        try {
+            click(textTabLocator);
+            type(textAreaLocator, testContent());
+        } catch (Exception e) {
+            click(By.xpath("//div[@class='editor-inserter']"));
+            click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
+            type(By.id("mce_0"), readTextFile());
+        }
     }
 
     public void publishPost() {
@@ -87,18 +86,8 @@ public class AdminPage extends HelperBase {
         waitToBePresent(successMessageLocator);
     }
 
-    public void searchTestPostInAdmin() {
-        type(postSearchLocator, postTitle);
-        click(postSearchButtonLocator);
-    }
-
-    public void clickOnTestPostPermalink() {
-        click(postTitleLocator);
-        click(permalinkLocator);
-    }
-
-    public void openTestPostPageOnSite() {
-        waitToBePresent(testPostPageLocator);
+    public void openTestPostUrl() {
+        driver.get(baseUrl + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
 
     public String testContent() throws IOException {

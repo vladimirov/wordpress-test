@@ -16,10 +16,7 @@ public class AddPostTest extends TestBase {
         app.admin().enterPostTitle();
         app.admin().enterTestContent();
         app.admin().publishPost();
-        app.admin().gotoPostsPage();
-        app.admin().searchTestPostInAdmin();
-        app.admin().clickOnTestPostPermalink();
-        app.admin().openTestPostPageOnSite();
+        app.admin().openTestPostUrl();
         app.site().screenshotCaptureAllScreen(testPostScreenshot);
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
         app.uploadIssueWithDescriptionToGitlab(
