@@ -190,6 +190,13 @@ public class HelperBase {
         }
     }
 
+    public boolean isElementPresent(By locator) {
+        logger.info("TRYING TO FOUND ELEMENT: " + locator);
+        element = wait.until(presenceOfElementLocated(locator));
+        logger.info("ELEMENT HAS BEEN FOUND: " + locator);
+        return true;
+    }
+
     protected boolean isTextDisplayed(By locator, String text) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(presenceOfElementLocated(locator));

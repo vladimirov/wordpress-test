@@ -1,12 +1,14 @@
 package pages;
 
 import appmanager.HelperBase;
-import com.google.api.client.util.Charsets;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
@@ -35,14 +37,10 @@ public class AdminPage extends HelperBase {
     private By hiddenPublishInputLocator = By.id("original_publish");
     private By successMessageLocator = By.id("message");
     private By permalinkLocator = By.id("sample-permalink");
-    private By moveToTrashLocator = By.cssSelector("a.submitdelete.deletion");
     private By helpLinkLocator = By.id("contextual-help-link");
-    private By commentAuthorLocator = By.cssSelector("div.comment-author");
-    private By approveCommentLocator = By.cssSelector("span.approve");
-    private By columnResponseLocator = By.cssSelector("div.response-links");
+
     private By testPostPageLocator = By.cssSelector("div#primary");
-    private By commentsMenu = By.id("menu-comments");
-    private By approveSectionLocator = By.xpath("//tbody[@id='the-comment-list']/tr[1]");
+
     private By themeScreenshotBlankLocator = By.cssSelector("div.theme-screenshot.blank");
 
     public String url() throws URISyntaxException {
@@ -67,7 +65,8 @@ public class AdminPage extends HelperBase {
             type(By.id("post-title-0"), postTitle);
         }
     }
-///////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////
     public void enterTestContent() throws IOException {
         click(textTabLocator);
         type(textAreaLocator, testContent());
@@ -140,8 +139,13 @@ public class AdminPage extends HelperBase {
         return returnValue.toString();
     }
 
-    public boolean themeScreenshotIsBlank(){
-        return isElementVisible(themeScreenshotBlankLocator);
+    public boolean themeScreenshotIsBlank() {
+        try {
+            isElementPresent(themeScreenshotBlankLocator);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }
