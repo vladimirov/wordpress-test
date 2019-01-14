@@ -36,7 +36,7 @@ public class HelperBase {
 
     protected WebDriver driver;
     public WebDriverWait wait;
-    public int timeOutInSeconds = 10;
+    public int timeOutInSeconds = 5;
     public WebElement element;
 
     public HelperBase(WebDriver driver) {

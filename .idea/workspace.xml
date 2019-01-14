@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="local properties updated">
+    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="theme picture screenshot fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
@@ -25,37 +25,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1229">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#2428#2429#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,13 +127,13 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/gitlab.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
       </list>
     </option>
@@ -264,7 +255,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547481044924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547482927340" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -306,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ThemeScreenshotTest">
+  <component name="RunManager" selected="TestNG.AddPostTest">
     <configuration name="Appender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appmanager.Appender" />
       <module name="wordpress-test" />
@@ -411,10 +402,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddPostTest" />
+        <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="TestNG.ThemeScreenshotTest" />
         <item itemvalue="Application.Appender" />
-        <item itemvalue="TestNG.PageSpeedTest" />
-        <item itemvalue="TestNG.AddPostTest" />
         <item itemvalue="TestNG.ConsoleErrorsTest" />
       </list>
     </recent_temporary>
@@ -429,13 +420,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00061" summary="404 page layout test added">
-      <created>1544008057900</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1544008057900</updated>
     </task>
     <task id="LOCAL-00062" summary="default pages test">
       <created>1544018623660</created>
@@ -773,31 +757,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547460762862</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="theme picture screenshot fixed">
+      <created>1547481240073</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1547481240073</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 01m 26s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 03m 42s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 26m 28s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 31m 42s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 34m 58s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 38m 34s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 47m 31s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 48m 39s.xml">
       <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
     </history-entry>
@@ -807,12 +777,33 @@
     <history-entry file="ThemeScreenshotTest - 2019.01.14 at 17h 50m 41s.xml">
       <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PageSpeedTest - 2019.01.14 at 18h 00m 13s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2019.01.14 at 18h 00m 38s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2019.01.14 at 18h 01m 01s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2019.01.14 at 18h 01m 31s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2019.01.14 at 18h 02m 28s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2019.01.14 at 18h 04m 09s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddPostTest - 2019.01.14 at 18h 14m 31s.xml">
+      <configuration name="AddPostTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -822,7 +813,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.42229366" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.42229366" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.55394524" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -842,7 +833,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="favicon test fix" />
     <MESSAGE value="added test content" />
     <MESSAGE value="pagespeed test added" />
     <MESSAGE value="console errors test added" />
@@ -867,7 +857,8 @@
     <MESSAGE value="appender main class execution added" />
     <MESSAGE value="add test post fixed" />
     <MESSAGE value="local properties updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="local properties updated" />
+    <MESSAGE value="theme picture screenshot fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="theme picture screenshot fixed" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1095,16 +1086,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostDbTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1143,13 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/gitlab.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1182,6 +1156,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1189,20 +1183,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="192" column="19" selection-start-line="192" selection-start-column="19" selection-end-line="192" selection-end-column="19" />
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1211,12 +1195,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1229">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="315">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
           </folding>
         </state>
       </provider>

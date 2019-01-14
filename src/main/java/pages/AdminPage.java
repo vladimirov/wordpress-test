@@ -38,9 +38,7 @@ public class AdminPage extends HelperBase {
     private By successMessageLocator = By.id("message");
     private By permalinkLocator = By.id("sample-permalink");
     private By helpLinkLocator = By.id("contextual-help-link");
-
     private By testPostPageLocator = By.cssSelector("div#primary");
-
     private By themeScreenshotBlankLocator = By.cssSelector("div.theme-screenshot.blank");
 
     public String url() throws URISyntaxException {
@@ -67,20 +65,18 @@ public class AdminPage extends HelperBase {
     }
 
     ///////////////////////////////////////////////////////////
-    public void enterTestContent() throws IOException {
-        click(textTabLocator);
-        type(textAreaLocator, testContent());
-    }
 //    public void enterTestContent() throws IOException {
-//        click(By.xpath("//div[@class='editor-inserter']"));
-//        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-////        type(By.id("mce_0"), testContent());
-////        type(By.id("mce_0"), readLineByLineJava8());
-//        type(By.id("mce_0"), readTextFile());
+//        click(textTabLocator);
+//        type(textAreaLocator, testContent());
 //    }
+    public void enterTestContent() throws IOException {
+        click(By.xpath("//div[@class='editor-inserter']"));
+        click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
+        type(By.id("mce_0"), readTextFile());
+    }
 
     public void publishPost() {
-        scrollTillElementIsVisible(helpLinkLocator);
+//        scrollTillElementIsVisible(helpLinkLocator);
         jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
         type(hiddenPublishInputLocator, "test");
         submit(hiddenPublishInputLocator);
