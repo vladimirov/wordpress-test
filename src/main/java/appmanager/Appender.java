@@ -14,22 +14,25 @@ import java.util.Properties;
 public class Appender {
 
     public static void main(String[] args) throws IOException, GitLabApiException {
-        Properties properties = new Properties();
-        String path = "src/main/resources/local.properties";
-        properties.load(new FileReader(new File(path)));
+        Properties gitlabProperties = new Properties();
+        gitlabProperties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
 
         System.out.print("\nEnter project ID: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int projectId = Integer.parseInt(reader.readLine());
 
-        GitLabApi gitLabApi = new GitLabApi(properties.getProperty("gitlabHostUrl"), properties.getProperty("gitlabApiToken"));
+        GitLabApi gitLabApi = new GitLabApi(gitlabProperties.getProperty("gitlabHostUrl"), gitlabProperties.getProperty("gitlabApiToken"));
         Issue credentials = gitLabApi.getIssuesApi().getIssue(projectId, 313);
-        String input = "\r\n" + "projectId = " + projectId + "\r\n" + credentials.getDescription();
+        PrintWriter writer = new PrintWriter("src/main/resources/local.properties");
+        writer.print("");
+        writer.close();
+        String input = "projectId = " + projectId + "\r\n" + credentials.getDescription();
         Files.write(
-                Paths.get(path),
+                Paths.get("src/main/resources/local.properties"),
                 input.getBytes(),
                 StandardOpenOption.APPEND);
+        System.out.println("\r\nSITE CREDENTIALS ARE SUCCESSFULLY ADDED FROM GITLAB\r\n");
 
-//        assertTrue(true, properties.getProperty("asc"));
+        //TODO Add assertion that properties are added to local.properties
     }
 }

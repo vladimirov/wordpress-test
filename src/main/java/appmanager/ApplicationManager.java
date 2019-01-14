@@ -26,6 +26,8 @@ public class ApplicationManager {
     private WebDriver driver;
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
     public final Properties properties;
+    public final Properties gitlabProperties;
+
     private LoginPage loginPage;
     private SitePage sitePage;
     private PageSpeedPage pageSpeedPage;
@@ -47,6 +49,7 @@ public class ApplicationManager {
 
     public ApplicationManager() {
         properties = new Properties();
+        gitlabProperties = new Properties();
     }
 
     public void init(String browser) throws IOException {
@@ -54,13 +57,14 @@ public class ApplicationManager {
         driver = DriverFactory.initDriver(browser);
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
+        properties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
+        gitlabProperties.load(new FileReader(new File(String.format("src/main/resources/gitlab.properties", target))));
+        gitlabHostUrl = gitlabProperties.getProperty("gitlabHostUrl");
+        gitlabApiToken = gitlabProperties.getProperty("gitlabApiToken");
         baseUrl = properties.getProperty("web.baseUrl");
         adminLogin = properties.getProperty("web.adminLogin");
         adminPassword = properties.getProperty("web.adminPassword");
         pageSpeedUrl = properties.getProperty("web.pageSpeedUrl");
-        gitlabHostUrl = properties.getProperty("gitlabHostUrl");
-        gitlabApiToken = properties.getProperty("gitlabApiToken");
         projectId = properties.getProperty("projectId");
         databaseUrl = properties.getProperty("databaseUrl");
         databaseUser = properties.getProperty("databaseUser");

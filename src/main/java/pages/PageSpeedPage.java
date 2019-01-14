@@ -27,7 +27,7 @@ public class PageSpeedPage extends HelperBase {
 
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
+        properties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
         type(urlInputLocator, properties.getProperty("web.baseUrl"));
     }
 
