@@ -70,27 +70,40 @@ public class AdminPage extends HelperBase {
         }
     }
 
-    public void publishPost() {
-        try {
-            click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
-            try {
-                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
-                waitToBePresent(By.xpath("//div[text()='Published']"));
-            } catch (Exception e){
-                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
-                waitToBePresent(By.xpath("//div[text()='Published']"));
-            }
+    public void publishPost(){
+        click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
+        try{
+            click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
+            waitToBePresent(By.xpath("//div[text()='Published']"));
         } catch (Exception e) {
-//            scrollTillElementIsVisible(helpLinkLocator);
-            jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
-            type(hiddenPublishInputLocator, "test");
-            submit(hiddenPublishInputLocator);
-            if (isAlertPresent()) {
-                driver.switchTo().alert().accept();
-            }
-            click(publishPostButtonLocator);
-            waitToBePresent(successMessageLocator);
+            click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
+            waitToBePresent(By.xpath("//div[text()='Published']"));
         }
+    }
+
+//    public void publishPost() {
+//        try {
+//            click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
+//            click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
+//            waitToBePresent(By.xpath("//div[text()='Published']"));
+//        } catch (Exception e) {
+////            scrollTillElementIsVisible(helpLinkLocator);
+//            jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
+//            type(hiddenPublishInputLocator, "test");
+//            submit(hiddenPublishInputLocator);
+//            if (isAlertPresent()) {
+//                driver.switchTo().alert().accept();
+//            }
+//            click(publishPostButtonLocator);
+//            waitToBePresent(successMessageLocator);
+//        }
+//    }
+
+    public void logoutFromAdmin() {
+        click(By.cssSelector("li#wp-admin-bar-my-account"));
+        hoverOnElement(By.cssSelector("li#wp-admin-bar-my-account"));
+        waitTillElementIsVisible(By.cssSelector("li#wp-admin-bar-logout"));
+        click(By.cssSelector("li#wp-admin-bar-logout"));
     }
 
     public void openTestPostUrl() {

@@ -1,21 +1,23 @@
 package ui;
 
 import appmanager.TestBase;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static org.testng.Assert.assertTrue;
-
 public class DefaultPagesTest extends TestBase {
 
     @BeforeTest
-    public void addTestPostDb() throws IOException {
-        app.addPostDb(app.admin().testContent());
+    public void testPostCreation() throws IOException {
+//        app.addPostDb(app.admin().testContent());
+        app.loginToAdmin();
+        app.openPostsPageInAdmin();
+        app.admin().addNewPostButtonClick();
+        app.admin().enterPostTitle();
+        app.admin().enterTestContent();
+        app.admin().publishPost();
+        app.admin().logoutFromAdmin();
     }
 
     @Test
@@ -34,7 +36,7 @@ public class DefaultPagesTest extends TestBase {
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
         //Test Post Page
-        app.openTestPostUrl();
+        app.admin().openTestPostUrl();
         app.site().screenshotCaptureAllScreen(testPostScreenshot);
         String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);

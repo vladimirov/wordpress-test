@@ -2,13 +2,18 @@ package ui;
 
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ThemeScreenshotTest extends TestBase {
 
+//    @BeforeTest
+//    public void loginToAdmin(){
+//        app.loginToAdmin();
+//    }
+
     @Test
-    public void testThemeScreenshotInAdmin() throws GitLabApiException {
-        app.loginToAdmin();
+    public void testThemeScreenshotInAdmin() throws GitLabApiException, InterruptedException {
         app.openThemesPage();
         if (app.admin().themeScreenshotIsBlank()) {
             String themeScreenshot = "ThemeScreenshot";

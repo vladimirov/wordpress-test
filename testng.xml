@@ -13,16 +13,15 @@
             <class name="ui.PageSpeedTest"> </class>
             <class name="ui.ThemeScreenshotTest"> </class>
             <class name="ui.DefaultPagesTest"> </class>
-            <class name="ui.AddPostTest"> </class>
         </classes>
     </test>
-    <!--<test name="Default Pages In Firefox">-->
-        <!--<parameter name="browser" value="firefox"/>-->
-        <!--<classes>-->
-            <!--<class name="ui.DefaultPagesTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Default Pages In Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ui.DefaultPagesTest">
+            </class>
+        </classes>
+    </test>
     <!--<test name="Default Pages In Edge">-->
         <!--<parameter name="browser" value="edge"/>-->
         <!--<classes>-->

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="add test post fixed">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test-content.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test-content.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/AddPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -20,28 +22,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="11" />
+              <folding>
+                <marker date="1547551126226" expanded="true" signature="674:1137" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,22 +36,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+            <state relative-caret-position="296">
+              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3233#3234#0" expanded="true" />
-                <element signature="e#3315#3316#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="323">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostDbTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/OpenBasePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostApiTest.java" />
@@ -140,18 +126,19 @@
         <option value="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/gitlab.properties" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/test-content.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-content.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
       </list>
     </option>
@@ -259,7 +246,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="test-screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,7 +273,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547547439701" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547565681111" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -315,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AddPostTest">
+  <component name="RunManager" selected="TestNG.DefaultPagesTest">
     <configuration name="Appender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appmanager.Appender" />
       <module name="wordpress-test" />
@@ -351,7 +351,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.AddPostTest" />
+      <option name="MAIN_CLASS_NAME" value="api.AddPostTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -359,7 +359,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DefaultPagesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
@@ -368,7 +368,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.ConsoleErrorsTest" />
+      <option name="MAIN_CLASS_NAME" value="ui.DefaultPagesTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -397,7 +397,7 @@
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -420,11 +420,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddPostTest" />
+        <item itemvalue="TestNG.DefaultPagesTest" />
         <item itemvalue="TestNG.ThemeScreenshotTest" />
+        <item itemvalue="TestNG.AddPostTest" />
         <item itemvalue="TestNG.PageSpeedTest" />
         <item itemvalue="Application.Appender" />
-        <item itemvalue="TestNG.ConsoleErrorsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -438,13 +438,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00062" summary="default pages test">
-      <created>1544018623660</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1544018623660</updated>
     </task>
     <task id="LOCAL-00063" summary="default pages test">
       <created>1544026976369</created>
@@ -782,39 +775,46 @@
       <option name="project" value="LOCAL" />
       <updated>1547481240073</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="add test post fixed">
+      <created>1547547488967</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1547547488970</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2019.01.15 at 11h 57m 26s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 12m 08s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 11h 58m 41s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 13m 30s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 01m 12s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 14m 56s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 02m 15s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 15m 27s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 02m 41s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 16m 01s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 08m 12s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 16m 37s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 10m 20s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 17m 11s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 11m 13s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 17m 44s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 11m 46s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 18m 13s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2019.01.15 at 12h 13m 24s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 18m 56s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -830,8 +830,8 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42424244" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.55394524" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42424244" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37337664" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32683983" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -873,10 +873,10 @@
     <MESSAGE value="code refactoring" />
     <MESSAGE value="theme screenshot test added" />
     <MESSAGE value="appender main class execution added" />
-    <MESSAGE value="add test post fixed" />
     <MESSAGE value="local properties updated" />
     <MESSAGE value="theme picture screenshot fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="theme picture screenshot fixed" />
+    <MESSAGE value="add test post fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test post fixed" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -929,13 +929,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logger.log" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="453" selection-start-line="453" selection-end-line="453" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/api/Posts.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1059,19 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1113,6 +1093,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/gitlab.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="343" selection-start-line="343" selection-end-line="343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <marker date="1547551126226" expanded="true" signature="674:1137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding>
+            <element signature="e#3330#3331#0" expanded="true" />
+            <element signature="e#3362#3363#0" expanded="true" />
+            <element signature="e#3847#3848#0" expanded="true" />
+            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#4254#4255#0" expanded="true" />
+            <element signature="e#4313#4314#0" expanded="true" />
+            <element signature="e#4482#4483#0" expanded="true" />
+            <element signature="e#4514#4515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostDbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1120,48 +1194,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostDbTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/gitlab.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#3330#3331#0" expanded="true" />
-            <element signature="e#3362#3363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="253">
+          <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1171,45 +1207,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-content.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="139" column="13" lean-forward="true" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="323">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1218,12 +1223,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+        <state relative-caret-position="296">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3233#3234#0" expanded="true" />
-            <element signature="e#3315#3316#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -23,8 +23,17 @@ public class LoginPage extends HelperBase {
         click(wpLoginButtonLocator);
     }
 
+    public void waitTillLoginPageLoading(){
+        waitToBePresent(loginFormLocator);
+    }
+
     public boolean loginFormIsDisplayed(){
-        return isElementVisible(loginFormLocator);
+        try{
+            isElementPresent(loginFormLocator);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }

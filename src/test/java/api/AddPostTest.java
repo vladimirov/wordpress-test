@@ -1,4 +1,4 @@
-package ui;
+package api;
 
 import appmanager.TestBase;
 import org.testng.annotations.Test;
@@ -7,7 +7,7 @@ import static org.testng.Assert.assertTrue;
 
 public class AddPostTest extends TestBase {
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testPostCreation() throws Exception {
         String testPostScreenshot = "TestPost";
         app.loginToAdmin();
