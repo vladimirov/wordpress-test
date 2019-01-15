@@ -9,15 +9,12 @@ import org.openqa.selenium.WebDriver;
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.io.*;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.stream.Stream;
 
 import static appmanager.ApplicationManager.baseUrl;
 
@@ -62,18 +59,15 @@ public class AdminPage extends HelperBase {
         }
     }
 
-    public void enterTestContent() {
+    public void enterTestContent() throws IOException {
         try {
             click(textTabLocator);
             type(textAreaLocator, testContent());
         } catch (Exception e) {
             click(By.xpath("//div[@class='editor-inserter']"));
             click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-//            type(By.id("mce_0"), readTextFile());
-//            type(By.id("mce_0"), contentToClipboard());
-//            click(By.id("mce_0"));
             contentToClipboard();
-            sendKeys(By.id("mce_0"), Keys.CONTROL+ "v");
+            sendKeys(By.id("mce_0"), Keys.CONTROL + "v");
         }
     }
 
@@ -122,38 +116,8 @@ public class AdminPage extends HelperBase {
                 StandardCharsets.UTF_8);
     }
 
-    private String readLineByLineJava8() {
-        StringBuilder contentBuilder = new StringBuilder();
-        try (Stream<String> stream = Files.lines(Paths.get("src/main/resources/test-content.txt"), StandardCharsets.UTF_8)) {
-            stream.forEach(s -> contentBuilder.append(s).append("\n"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return contentBuilder.toString();
-    }
-
-    public String readTextFile() {
-        StringBuilder returnValue = new StringBuilder();
-        FileReader file;
-        String line = "";
-        try {
-            file = new FileReader("src/main/resources/test-content.txt");
-            try (BufferedReader reader = new BufferedReader(file)) {
-                while ((line = reader.readLine()) != null) {
-                    returnValue.append(line).append("\n");
-                }
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException("File not found");
-        } catch (IOException e) {
-            throw new RuntimeException("IO Error occured");
-        }
-        return returnValue.toString();
-    }
-
-    public void contentToClipboard(){
-//        String myString = "This text will be copied into clipboard when running this code!";
-        StringSelection stringSelection = new StringSelection(readTextFile());
+    public void contentToClipboard() throws IOException {
+        StringSelection stringSelection = new StringSelection(testContent());
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
     }
