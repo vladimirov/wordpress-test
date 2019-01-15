@@ -66,7 +66,7 @@ public class AdminPage extends HelperBase {
         } catch (Exception e) {
             click(By.xpath("//div[@class='editor-inserter']"));
             click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-            contentToClipboard();
+            copyContentToClipboard();
             sendKeys(By.id("mce_0"), Keys.CONTROL + "v");
         }
     }
@@ -116,7 +116,7 @@ public class AdminPage extends HelperBase {
                 StandardCharsets.UTF_8);
     }
 
-    public void contentToClipboard() throws IOException {
+    public void copyContentToClipboard() throws IOException {
         StringSelection stringSelection = new StringSelection(testContent());
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
