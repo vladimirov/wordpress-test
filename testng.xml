@@ -8,12 +8,12 @@
     <test name="All Tests In Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="ui.AddPostTest"> </class>
             <class name="ui.ConsoleErrorsTest"> </class>
             <class name="ui.FaviconTest"> </class>
             <class name="ui.PageSpeedTest"> </class>
             <class name="ui.ThemeScreenshotTest"> </class>
             <class name="ui.DefaultPagesTest"> </class>
+            <class name="ui.AddPostTest"> </class>
         </classes>
     </test>
     <!--<test name="Default Pages In Firefox">-->

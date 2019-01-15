@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class ThemeScreenshotTest extends TestBase {
 
     @Test
-    public void testPageSpeed() throws GitLabApiException {
+    public void testThemeScreenshotInAdmin() throws GitLabApiException {
         app.loginToAdmin();
         app.openThemesPage();
         if (app.admin().themeScreenshotIsBlank()) {

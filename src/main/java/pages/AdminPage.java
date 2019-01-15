@@ -1,6 +1,5 @@
 package pages;
 
-import appmanager.ApplicationManager;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -27,10 +26,7 @@ public class AdminPage extends HelperBase {
 
     private JavascriptExecutor jse = (JavascriptExecutor) driver;
     private String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
-
     private By addPostButtonLocator = By.xpath("//a[@href='post-new.php']");
-    private By createdPostTitleLocator = By.cssSelector("h1.entry-title");
-    private By postTitleLocator = By.cssSelector("a.row-title");
     private By postTitleInputLocator = By.name("post_title");
     private By textTabLocator = By.id("content-html");
     private By textAreaLocator = By.className("wp-editor-area");
@@ -75,15 +71,26 @@ public class AdminPage extends HelperBase {
     }
 
     public void publishPost() {
-//        scrollTillElementIsVisible(helpLinkLocator);
-        jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
-        type(hiddenPublishInputLocator, "test");
-        submit(hiddenPublishInputLocator);
-        if (isAlertPresent()) {
-            driver.switchTo().alert().accept();
+        try {
+            click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
+            try {
+                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
+                waitToBePresent(By.xpath("//div[text()='Published']"));
+            } catch (Exception e){
+                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
+                waitToBePresent(By.xpath("//div[text()='Published']"));
+            }
+        } catch (Exception e) {
+//            scrollTillElementIsVisible(helpLinkLocator);
+            jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
+            type(hiddenPublishInputLocator, "test");
+            submit(hiddenPublishInputLocator);
+            if (isAlertPresent()) {
+                driver.switchTo().alert().accept();
+            }
+            click(publishPostButtonLocator);
+            waitToBePresent(successMessageLocator);
         }
-        click(publishPostButtonLocator);
-        waitToBePresent(successMessageLocator);
     }
 
     public void openTestPostUrl() {
