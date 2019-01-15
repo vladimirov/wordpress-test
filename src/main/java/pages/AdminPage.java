@@ -3,14 +3,17 @@ package pages;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -66,13 +69,17 @@ public class AdminPage extends HelperBase {
         } catch (Exception e) {
             click(By.xpath("//div[@class='editor-inserter']"));
             click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-            type(By.id("mce_0"), readTextFile());
+//            type(By.id("mce_0"), readTextFile());
+//            type(By.id("mce_0"), contentToClipboard());
+//            click(By.id("mce_0"));
+            contentToClipboard();
+            sendKeys(By.id("mce_0"), Keys.CONTROL+ "v");
         }
     }
 
-    public void publishPost(){
+    public void publishPost() {
         click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
-        try{
+        try {
             click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
             waitToBePresent(By.xpath("//div[text()='Published']"));
         } catch (Exception e) {
@@ -144,6 +151,13 @@ public class AdminPage extends HelperBase {
         return returnValue.toString();
     }
 
+    public void contentToClipboard(){
+//        String myString = "This text will be copied into clipboard when running this code!";
+        StringSelection stringSelection = new StringSelection(readTextFile());
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+    }
+
     public boolean themeScreenshotIsBlank() {
         try {
             isElementPresent(themeScreenshotBlankLocator);
@@ -152,5 +166,6 @@ public class AdminPage extends HelperBase {
             return false;
         }
     }
+
 
 }

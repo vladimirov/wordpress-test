@@ -4,12 +4,7 @@
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="add test post fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test-content.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test-content.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/AddPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="516">
+              <caret line="155" column="67" selection-start-line="155" selection-start-column="67" selection-end-line="155" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1674#1675#0" expanded="true" />
@@ -48,10 +43,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="227">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +144,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/test-content.txt" />
         <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-content.txt" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
       </list>
     </option>
@@ -273,7 +280,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547565681111" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573090843" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -438,13 +445,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00063" summary="default pages test">
-      <created>1544026976369</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1544026976369</updated>
     </task>
     <task id="LOCAL-00064" summary="pagespeed api test">
       <created>1544027782784</created>
@@ -782,28 +782,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547547488970</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="add test post fixed">
+      <created>1547565694969</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1547565694969</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 12m 08s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 13m 30s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 14m 56s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 15m 27s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 16m 01s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 16m 37s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 17m 11s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
@@ -814,6 +803,24 @@
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 18m 56s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 19m 37s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 17h 20m 16s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 18h 27m 54s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 18h 49m 44s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 18h 51m 34s.xml">
+      <configuration name="DefaultPagesTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DefaultPagesTest - 2019.01.15 at 19h 19m 49s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -830,7 +837,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32575756" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42424244" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42424244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37337664" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32683983" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -1196,8 +1203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="52" column="58" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
+        <state relative-caret-position="298">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1206,15 +1213,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-content.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="323">
+          <caret line="19" column="50" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="227">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1223,8 +1230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        <state relative-caret-position="516">
+          <caret line="155" column="67" selection-start-line="155" selection-start-column="67" selection-end-line="155" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1674#1675#0" expanded="true" />
