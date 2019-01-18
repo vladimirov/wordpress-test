@@ -5,7 +5,6 @@ import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 
 import static org.testng.Assert.assertTrue;
 

@@ -3,18 +3,12 @@ package appmanager;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.Issue;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 
 import java.io.*;
-import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Properties;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 public class Appender {
@@ -28,7 +22,7 @@ public class Appender {
         int projectId = Integer.parseInt(reader.readLine());
 
         GitLabApi gitLabApi = new GitLabApi(gitlabProperties.getProperty("gitlabHostUrl"), gitlabProperties.getProperty("gitlabApiToken"));
-        Issue credentials = gitLabApi.getIssuesApi().getIssue(projectId, 313);//issue id should be always 1
+        Issue credentials = gitLabApi.getIssuesApi().getIssue(projectId, 1);//issue id should be always 1
         PrintWriter writer = new PrintWriter("src/main/resources/local.properties");
         writer.print("");
         writer.close();

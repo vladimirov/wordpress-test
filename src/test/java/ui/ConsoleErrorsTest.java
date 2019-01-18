@@ -1,14 +1,11 @@
 package ui;
 
-import appmanager.HelperBase;
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 

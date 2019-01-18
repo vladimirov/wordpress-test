@@ -10,8 +10,7 @@ public class DefaultPagesTest extends TestBase {
 
     @BeforeTest
     public void testPostCreation() throws IOException {
-//        app.addPostDb(app.admin().testContent());
-        app.loginToAdmin();
+        app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
         app.openPostsPageInAdmin();
         app.admin().addNewPostButtonClick();
         app.admin().enterPostTitle();
