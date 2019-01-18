@@ -33,7 +33,7 @@ public class Appender {
         String webAdminLogin = creds.split("user: ")[1].split("<")[0];
         String webAdminPass = creds.split("password: ")[1].split("<")[0];
 
-        String input = "projectId = " + projectId + "\r\n" + "web.baseUrl = " + webBaseUrl + "\r\n" + "web.adminLogin = " + webAdminLogin + "\r\n" + "web.adminPassword = " + webAdminPass;
+        String input = "projectId = " + projectId + "\r\n" + "web.baseUrl = " + webBaseUrl + "/" + "\r\n" + "web.adminLogin = " + webAdminLogin + "\r\n" + "web.adminPassword = " + webAdminPass;
         Files.write(
                 Paths.get("src/main/resources/local.properties"),
                 input.getBytes(),
