@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="credentials parser added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="182">
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding>
                 <marker date="1547551126226" expanded="true" signature="674:1137" ph="..." />
               </folding>
@@ -29,45 +27,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="35" column="86" lean-forward="true" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -132,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/Appender.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AppenderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
@@ -149,8 +114,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" />
       </list>
     </option>
   </component>
@@ -177,10 +143,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1927" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="84" />
+    <option name="y" value="22" />
     <option name="width" value="1843" />
-    <option name="height" value="1057" />
+    <option name="height" value="936" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -271,7 +238,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547818954538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547825772416" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -313,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FaviconTest">
+  <component name="RunManager" selected="TestNG.ThemeScreenshotTest">
     <configuration name="Appender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appmanager.Appender" />
       <module name="wordpress-test" />
@@ -340,33 +307,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsoleErrorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="api.AddPostTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DefaultPagesTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wordpress-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.DefaultPagesTest" />
+      <option name="MAIN_CLASS_NAME" value="ui.ConsoleErrorsTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -391,11 +341,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PageSpeedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="wordpress-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.PageSpeedTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThemeScreenshotTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -418,11 +385,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FaviconTest" />
-        <item itemvalue="Application.Appender" />
-        <item itemvalue="TestNG.DefaultPagesTest" />
         <item itemvalue="TestNG.ThemeScreenshotTest" />
-        <item itemvalue="TestNG.AddPostTest" />
+        <item itemvalue="TestNG.PageSpeedTest" />
+        <item itemvalue="TestNG.FaviconTest" />
+        <item itemvalue="TestNG.ConsoleErrorsTest" />
+        <item itemvalue="Application.Appender" />
       </list>
     </recent_temporary>
   </component>
@@ -436,13 +403,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00068" summary="default pages test optimized">
-      <created>1544113411969</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1544113411969</updated>
     </task>
     <task id="LOCAL-00069" summary="pageSpeed test optimized">
       <created>1544114658870</created>
@@ -780,22 +740,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547817022311</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="credentials parser added">
+      <created>1547818974963</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1547818974963</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultPagesTest - 2019.01.18 at 10h 25m 09s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FaviconTest - 2019.01.18 at 15h 18m 14s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FaviconTest - 2019.01.18 at 15h 20m 41s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FaviconTest - 2019.01.18 at 15h 27m 12s.xml">
-      <configuration name="FaviconTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DefaultPagesTest - 2019.01.18 at 15h 31m 19s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
@@ -814,12 +769,24 @@
     <history-entry file="FaviconTest - 2019.01.18 at 15h 39m 16s.xml">
       <configuration name="FaviconTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ConsoleErrorsTest - 2019.01.18 at 16h 47m 41s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FaviconTest - 2019.01.18 at 16h 48m 38s.xml">
+      <configuration name="FaviconTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageSpeedTest - 2019.01.18 at 16h 49m 12s.xml">
+      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ThemeScreenshotTest - 2019.01.18 at 16h 50m 11s.xml">
+      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="84" y="22" width="1843" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17666854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -999,13 +966,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/local.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/AppenderTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1198,37 +1158,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/gitlab.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <marker date="1547551126226" expanded="true" signature="674:1137" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        <state relative-caret-position="595">
+          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="35" column="86" lean-forward="true" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+        <state relative-caret-position="578">
+          <caret line="34" column="79" lean-forward="true" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1238,15 +1181,43 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/FaviconTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding>
+            <marker date="1547551126226" expanded="true" signature="674:1137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/gitlab.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

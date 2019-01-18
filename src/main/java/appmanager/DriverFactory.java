@@ -20,6 +20,7 @@ public class DriverFactory {
             default:
                 System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
+//                chromeOptions.addArguments("--headless");
                 chromeOptions.setCapability("webdriver.chrome.driver", true);
                 return new ChromeDriver(chromeOptions);
             case "firefox":
