@@ -1,13 +1,13 @@
 package ui;
 
 import appmanager.TestBase;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 public class DefaultPagesTest extends TestBase {
 
-    @Parameters("run")
     @BeforeTest
     public void testPostCreation() throws IOException {
         app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
