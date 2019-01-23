@@ -54,13 +54,14 @@ public class ApplicationManager {
 
     public void init(String browser) throws IOException {
         if (OS.contains("win")) {
-            logger.info("WINDOWS OS DETECTED");
             driver = DriverFactory.initWindowsDriver(browser);
+            logger.info("WINDOWS OS DETECTED");
         } else if (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0) {
-            logger.info("LINUX OS DETECTED");
             driver = DriverFactory.initLinuxDriver(browser);
+            logger.info("LINUX OS DETECTED");
         } else if (OS.contains("mac")) {
             driver = DriverFactory.initMacDriver(browser);
+            logger.info("MAC OS DETECTED");
         } else {
             System.out.println("Unknown OS");
         }
