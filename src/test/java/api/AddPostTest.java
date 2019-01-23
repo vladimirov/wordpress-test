@@ -21,7 +21,7 @@ public class AddPostTest extends TestBase {
         app.uploadIssueWithDescriptionToGitlab(
                 "Test post screenshot",
                 markdownTestPost,
-                "Question");
+                "Questions");
     }
 
 }

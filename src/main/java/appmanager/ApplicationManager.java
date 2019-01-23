@@ -19,10 +19,10 @@ import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.Properties;
 
 public class ApplicationManager {
+    private static String OS = System.getProperty("os.name").toLowerCase();
     private WebDriver driver;
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
     public final Properties properties;
@@ -53,8 +53,17 @@ public class ApplicationManager {
     }
 
     public void init(String browser) throws IOException {
-//        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
-        driver = DriverFactory.initDriver(browser);
+        if (OS.contains("win")) {
+            logger.info("WINDOWS OS DETECTED");
+            driver = DriverFactory.initWindowsDriver(browser);
+        } else if (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0) {
+            logger.info("LINUX OS DETECTED");
+            driver = DriverFactory.initLinuxDriver(browser);
+        } else if (OS.contains("mac")) {
+            driver = DriverFactory.initMacDriver(browser);
+        } else {
+            System.out.println("Unknown OS");
+        }
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));

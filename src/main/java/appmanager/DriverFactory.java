@@ -8,22 +8,21 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DriverFactory {
 
-    public static WebDriver initDriver(String browser) {
+    public static WebDriver initWindowsDriver(String browser) {
         switch (browser) {
             case "chrome":
             default:
                 System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
-//                chromeOptions.addArguments("--headless");
-//                chromeOptions.addArguments("--no-sandbox");
-//                chromeOptions.addArguments("--disable-dev-shm-usage");
-//                chromeOptions.addArguments("--window-size=1680x1050");
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--window-size=1680x1050");
                 chromeOptions.setCapability("webdriver.chrome.driver", true);
                 return new ChromeDriver(chromeOptions);
             case "firefox":
@@ -50,6 +49,46 @@ public class DriverFactory {
                 ChromeOptions ipadOptions = new ChromeOptions();
                 ipadOptions.setExperimentalOption("mobileEmulation", ipadEmulation);
                 return new ChromeDriver(ipadOptions);
+        }
+    }
+
+    public static WebDriver initLinuxDriver(String browser) {
+        switch (browser) {
+            case "chrome":
+            default:
+                System.setProperty("webdriver.chrome.driver", "chromedriver");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--window-size=1680x1050");
+                chromeOptions.setCapability("webdriver.chrome.driver", true);
+                return new ChromeDriver(chromeOptions);
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "geckodriver");
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.setCapability("marionette", true);
+                return new FirefoxDriver(firefoxOptions);
+        }
+    }
+
+    public static WebDriver initMacDriver(String browser) {
+        switch (browser) {
+            case "chrome":
+            default:
+                System.setProperty("webdriver.chrome.driver", "chromedriver-mac");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--window-size=1680x1050");
+                chromeOptions.setCapability("webdriver.chrome.driver", true);
+                return new ChromeDriver(chromeOptions);
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "geckodriver-mac");
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.setCapability("marionette", true);
+                return new FirefoxDriver(firefoxOptions);
         }
     }
 }
