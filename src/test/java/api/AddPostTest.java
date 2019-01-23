@@ -3,8 +3,6 @@ package api;
 import appmanager.TestBase;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertTrue;
-
 public class AddPostTest extends TestBase {
 
     @Test(enabled = true)
@@ -16,6 +14,7 @@ public class AddPostTest extends TestBase {
         app.admin().enterPostTitle();
         app.admin().enterTestContent();
         app.admin().publishPost();
+        app.admin().logoutFromAdmin();
         app.admin().openTestPostUrl();
         app.site().screenshotCaptureAllScreen(testPostScreenshot);
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);

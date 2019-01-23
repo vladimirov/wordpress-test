@@ -35,6 +35,16 @@ public class AdminPage extends HelperBase {
     private By successMessageLocator = By.id("message");
     private By helpLinkLocator = By.id("contextual-help-link");
     private By themeScreenshotBlankLocator = By.cssSelector("div.theme-screenshot.blank");
+    private By blockTextAreaLocator = By.id("mce_0");
+    private By blockEditorInserterLocator = By.xpath("//div[@class='editor-inserter']");
+    private By blockItemParagraphLocator = By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']");
+    private By tipsPopupLocator = By.xpath("//div[@class='components-popover__content']/button");
+    private By primaryPublishButtonLocator = By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary");
+    private By publishButtonLargeLocator = By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large");
+    private By publishedTextLocator = By.xpath("//div[text()='Published']");
+    private By myAccountLocator = By.cssSelector("li#wp-admin-bar-my-account");
+    private By logoutItemLocator = By.cssSelector("li#wp-admin-bar-logout");
+
 
     public String url() throws URISyntaxException {
         URI uri = new URI(String.valueOf(driver.getCurrentUrl()));
@@ -54,35 +64,27 @@ public class AdminPage extends HelperBase {
         try {
             type(postTitleInputLocator, postTitle);
         } catch (Exception e) {
-            click(By.xpath("//div[@class='components-popover__content']/button"));//closeTipsPopUp
+            click(tipsPopupLocator);
             type(By.id("post-title-0"), postTitle);
         }
     }
 
     public void enterTestContent() throws IOException {
+        StringSelection stringSelection = new StringSelection(testContent());
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
         try {
             click(textTabLocator);
-            copyContentToClipboard();
             sendKeys(textAreaLocator, Keys.CONTROL + "v");
         } catch (Exception e) {
-            click(By.xpath("//div[@class='editor-inserter']"));
-            click(By.xpath("//button[@class='editor-block-types-list__item editor-block-list-item-paragraph']"));
-            copyContentToClipboard();
-            sendKeys(By.id("mce_0"), Keys.CONTROL + "v");
+            click(blockEditorInserterLocator);
+            click(blockItemParagraphLocator);
+            sendKeys(blockTextAreaLocator, Keys.CONTROL + "v");
         }
     }
 
     public void publishPost() {
-        try{
-            click(By.cssSelector("button.components-button.editor-post-publish-panel__toggle.is-button.is-primary"));
-            try {
-                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
-                waitToBePresent(By.xpath("//div[text()='Published']"));
-            } catch (Exception e) {
-                click(By.cssSelector("button.components-button.editor-post-publish-button.is-button.is-default.is-primary.is-large"));
-                waitToBePresent(By.xpath("//div[text()='Published']"));
-            }
-        } catch (Exception e){
+        try {
             scrollTillElementIsVisible(helpLinkLocator);
             jse.executeScript("document.getElementById('original_publish').setAttribute('type', 'text')");//to change attribute of element
             type(hiddenPublishInputLocator, "test");
@@ -92,14 +94,23 @@ public class AdminPage extends HelperBase {
             }
             click(publishPostButtonLocator);
             waitToBePresent(successMessageLocator);
+        } catch (Exception e) {
+            click(primaryPublishButtonLocator);
+            try {
+                click(publishButtonLargeLocator);
+                waitToBePresent(publishedTextLocator);
+            } catch (Exception ex) {
+                click(publishButtonLargeLocator);
+                waitToBePresent(publishedTextLocator);
+            }
         }
     }
 
     public void logoutFromAdmin() {
-        click(By.cssSelector("li#wp-admin-bar-my-account"));
-        hoverOnElement(By.cssSelector("li#wp-admin-bar-my-account"));
-        waitTillElementIsVisible(By.cssSelector("li#wp-admin-bar-logout"));
-        click(By.cssSelector("li#wp-admin-bar-logout"));
+        click(myAccountLocator);
+        hoverOnElement(myAccountLocator);
+        waitTillElementIsVisible(logoutItemLocator);
+        click(logoutItemLocator);
     }
 
     public void openTestPostUrl() {
@@ -109,12 +120,6 @@ public class AdminPage extends HelperBase {
     public String testContent() throws IOException {
         return new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
                 StandardCharsets.UTF_8);
-    }
-
-    public void copyContentToClipboard() throws IOException {
-        StringSelection stringSelection = new StringSelection(testContent());
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        clipboard.setContents(stringSelection, null);
     }
 
     public boolean themeScreenshotIsBlank() {

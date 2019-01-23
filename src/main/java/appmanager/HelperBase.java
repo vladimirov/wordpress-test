@@ -73,6 +73,7 @@ public class HelperBase {
         logger.info("SEND KEYS TO ELEMENT: " + locator);
         try {
             element = wait.until(presenceOfElementLocated(locator));
+            element.click();
             element.sendKeys(text);
         } catch (StaleElementReferenceException ignored) {
             element = wait.until(presenceOfElementLocated(locator));
@@ -162,8 +163,8 @@ public class HelperBase {
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
         try {
             ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
-        } catch (IOException e) {
-            new File("test-screenshots/").mkdirs();
+        } catch (Exception e) {
+//            new File("test-screenshots/").mkdirs();
             ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
         }
     }
