@@ -69,17 +69,29 @@ public class AdminPage extends HelperBase {
         }
     }
 
+    public String testContent() throws IOException {
+        return new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
+                StandardCharsets.UTF_8);
+    }
+
     public void enterTestContent() throws IOException {
-        StringSelection stringSelection = new StringSelection(testContent());
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        clipboard.setContents(stringSelection, null);
+//        StringSelection stringSelection = new StringSelection(testContent());
+//        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+//        clipboard.setContents(stringSelection, null);
+
+//        String text = new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
+//                StandardCharsets.UTF_8);
         try {
             click(textTabLocator);
-            sendKeys(textAreaLocator, Keys.CONTROL + "v");
+//            sendKeys(textAreaLocator, Keys.CONTROL + "v");
+            click(textAreaLocator);
+            pasteText(textAreaLocator, testContent());
         } catch (Exception e) {
             click(blockEditorInserterLocator);
             click(blockItemParagraphLocator);
-            sendKeys(blockTextAreaLocator, Keys.CONTROL + "v");
+//            sendKeys(blockTextAreaLocator, Keys.CONTROL + "v");
+            click(blockTextAreaLocator);
+            pasteText(blockTextAreaLocator, testContent());
         }
     }
 
@@ -117,10 +129,6 @@ public class AdminPage extends HelperBase {
         driver.get(baseUrl + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
 
-    public String testContent() throws IOException {
-        return new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
-                StandardCharsets.UTF_8);
-    }
 
     public boolean themeScreenshotIsBlank() {
         try {

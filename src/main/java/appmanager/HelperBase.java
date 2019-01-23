@@ -299,6 +299,19 @@ public class HelperBase {
         return errorMessage;
     }
 
+    public void pasteText(By locator, String text){
+        logger.info("INSERTING TEXT TO TEXTAREA " + locator);
+        try {
+            element = wait.until(presenceOfElementLocated(locator));
+            JavascriptExecutor jse = (JavascriptExecutor) driver;
+            jse.executeScript("arguments[0].value = arguments[1];", element, text);
+        } catch (StaleElementReferenceException ignored) {
+            element = wait.until(presenceOfElementLocated(locator));
+            JavascriptExecutor jse = (JavascriptExecutor) driver;
+            jse.executeScript("arguments[0].value = arguments[1];", element, text);
+        }
+    }
+
     public String pageLinkForGitlab() {
         return driver.getCurrentUrl() + "\n";
     }
