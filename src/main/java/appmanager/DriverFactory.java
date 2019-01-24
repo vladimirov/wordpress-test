@@ -19,10 +19,10 @@ public class DriverFactory {
             default:
                 System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--no-sandbox");
-                chromeOptions.addArguments("--disable-dev-shm-usage");
-                chromeOptions.addArguments("--window-size=1680x1050");
+//                chromeOptions.addArguments("--headless");
+//                chromeOptions.addArguments("--no-sandbox");
+//                chromeOptions.addArguments("--disable-dev-shm-usage");
+//                chromeOptions.addArguments("--window-size=1680x1050");
                 chromeOptions.setCapability("webdriver.chrome.driver", true);
                 return new ChromeDriver(chromeOptions);
             case "firefox":

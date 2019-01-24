@@ -23,31 +23,21 @@ public class PageSpeedTest extends TestBase {
         app.openPageSpeedUrl();
         app.pageSpeed().enterPageUrlToPageSpeed();
         app.pageSpeed().analyzeButtonClick();
-        try {
-            app.pageSpeed().percentageIsPresent();//TODO change type of waiting
-            app.pageSpeed().desktopTabClick();
-            percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
-            if (percentDesktop < 50) {
-                logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
-                app.pageSpeed().screenshotCapture(pageSpeedScreenshot);
-                String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
-                app.uploadIssueWithDescriptionToGitlab(
-                        "PageSpeed Desktop percentage value is " + percentDesktop,
-                        pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
-                        null);
-            } else {
-                logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + percentDesktop);
-            }
-        } catch (Exception e){
+        app.pageSpeed().percentageIsPresent();//TODO change type of waiting
+        app.pageSpeed().desktopTabClick();
+        percentDesktop = Integer.valueOf(app.pageSpeed().desktopPercent());
+        if (percentDesktop < 50) {
+            logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is - " + percentDesktop);
             app.pageSpeed().screenshotCapture(pageSpeedScreenshot);
             String markdownPageSpeedPage = app.getGitlabFileMarkdown(pageSpeedScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
-                    "PageSpeed Desktop percentage value is not displayed",
-                    markdownPageSpeedPage,
+                    "PageSpeed Desktop percentage value is " + percentDesktop,
+                    pageSpeedLink + "\n" + desc + "\n" + markdownPageSpeedPage,
                     null);
+        } else {
+            logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + percentDesktop);
         }
+
     }
 
 }
-
-//*/2 * * * *

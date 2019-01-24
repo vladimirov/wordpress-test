@@ -1,5 +1,6 @@
 package pages;
 
+import appmanager.Appender;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,7 @@ public class PageSpeedPage extends HelperBase {
 
     public void enterPageUrlToPageSpeed() throws IOException {
         String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
+        properties.load(new FileReader(new File(String.format(Appender.path, target))));
         type(urlInputLocator, properties.getProperty("web.baseUrl"));
     }
 
