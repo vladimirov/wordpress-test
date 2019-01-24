@@ -56,7 +56,8 @@ public class ApplicationManager {
         if (OS.contains("win")) {
             driver = DriverFactory.initWindowsDriver(browser);
             logger.info("WINDOWS OS DETECTED");
-        } else if (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0) {
+//        } else if (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0) {
+        } else if (OS.contains("nix")){
             driver = DriverFactory.initLinuxDriver(browser);
             logger.info("LINUX OS DETECTED");
         } else if (OS.contains("mac")) {
