@@ -30,7 +30,8 @@ public class OSCheck {
     }
 
     public static boolean isUnix() {
-        return (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0);
+//        return (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0);
+        return (OS.contains("nux"));
 
     }
 
