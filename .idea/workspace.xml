@@ -18,25 +18,25 @@
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+            <state relative-caret-position="629">
+              <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/FaviconTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ui/DefaultPagesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
@@ -124,9 +123,10 @@
         <option value="$PROJECT_DIR$/src/test/java/api/AddPostTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/OsCheck.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/OSCheck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -248,7 +248,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548324068858" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548325515659" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileManager-master" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -413,13 +413,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00073" summary="add post in database">
-      <created>1544545752708</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1544545752708</updated>
     </task>
     <task id="LOCAL-00074" summary="add post in database">
       <created>1544545927116</created>
@@ -757,13 +750,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548240542371</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="code refactored">
+      <created>1548324145190</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1548324145191</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2019.01.23 at 16h 24m 54s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AddPostTest - 2019.01.23 at 16h 29m 45s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
@@ -791,10 +788,12 @@
     <history-entry file="ConsoleErrorsTest - 2019.01.23 at 22h 45m 47s.xml">
       <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ConsoleErrorsTest - 2019.01.24 at 12h 00m 22s.xml">
+      <configuration name="ConsoleErrorsTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -805,9 +804,9 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32475883" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7359098" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21757771" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37337664" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3236715" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3226152" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -1181,24 +1180,24 @@
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="286">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
