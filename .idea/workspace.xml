@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="code refactored">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,38 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="261">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -89,6 +73,18 @@
       <find>java</find>
       <find>javascript</find>
       <find>local</find>
+      <find>percent</find>
+      <find>best pra</find>
+      <find>73</find>
+      <find>73,</find>
+      <find>10</find>
+      <find>100</find>
+      <find>100.0</find>
+      <find>73.0</find>
+      <find>70.0</find>
+      <find>score</find>
+      <find>percen</find>
+      <find>performance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/OpenBasePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AddPostApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/Appender.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/AppenderTest.java" />
@@ -140,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/main/java/appmanager/OsCheck.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/OSCheck.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PageSpeedPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/gitlab.properties" />
@@ -148,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" />
       </list>
     </option>
   </component>
@@ -228,14 +224,6 @@
               <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,7 +265,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548334761710" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548348737202" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileManager-master" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -319,23 +307,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PageSpeedTest">
+  <component name="RunManager" selected="TestNG.PageSpeedApiTest">
     <configuration name="Appender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appmanager.Appender" />
-      <module name="wordpress-test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OSCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="appmanager.OSCheck" />
       <module name="wordpress-test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -394,6 +368,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PageSpeedApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="wordpress-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.PageSpeedApiTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PageSpeedTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
@@ -421,11 +412,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PageSpeedApiTest" />
         <item itemvalue="TestNG.PageSpeedTest" />
+        <item itemvalue="TestNG.FaviconTest" />
         <item itemvalue="Application.Appender" />
         <item itemvalue="TestNG.ConsoleErrorsTest" />
-        <item itemvalue="TestNG.FaviconTest" />
-        <item itemvalue="Application.OSCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -439,13 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00080" summary="issue fixes">
-      <created>1544631480434</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1544631480435</updated>
     </task>
     <task id="LOCAL-00081" summary="updates project files">
       <created>1544644146586</created>
@@ -783,39 +767,46 @@
       <option name="project" value="LOCAL" />
       <updated>1548328060316</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="code refactored">
+      <created>1548334779912</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1548334779912</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 52m 38s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 25m 54s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 52m 52s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 26m 48s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 53m 01s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 28m 27s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 53m 16s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 29m 23s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 53m 27s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 30m 40s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 54m 06s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 30m 58s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 54m 31s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 47m 23s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 55m 03s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 50m 10s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 55m 29s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 50m 56s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedTest - 2019.01.24 at 14h 56m 07s.xml">
-      <configuration name="PageSpeedTest" configurationId="TestNG" />
+    <history-entry file="PageSpeedApiTest - 2019.01.24 at 18h 52m 06s.xml">
+      <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -831,7 +822,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32475883" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3494105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44694534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37299034" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3226152" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -848,7 +839,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19349681" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.1805869" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.18017058" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -878,18 +869,6 @@
     <MESSAGE value="headless mode added" />
     <MESSAGE value="code refactored" />
     <option name="LAST_COMMIT_MESSAGE" value="code refactored" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1118,13 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/501.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1136,16 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,8 +1180,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+        <state relative-caret-position="391">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1228,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1238,8 +1200,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="216">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,7 +17,7 @@ public class PageSpeedTest extends TestBase {
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
         String desc = "PageSpeed Desktop percentage value need to be more than 50";
         String pageSpeedScreenshot = "PageSpeedTestDesktop";
-        int percentDesktop = 0;
+        int percentDesktop;
         String pageSpeedLink = app.site().pageLinkForGitlab();
 
         app.openPageSpeedUrl();

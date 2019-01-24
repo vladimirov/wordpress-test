@@ -177,7 +177,7 @@
         <dependency>
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-pagespeedonline</artifactId>
-            <version>v4-rev15-1.25.0</version>
+            <version>v5-rev1-1.25.0</version>
         </dependency>
         <dependency>
             <groupId>com.afrozaar.wordpress</groupId>
