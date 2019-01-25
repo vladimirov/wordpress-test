@@ -74,9 +74,8 @@ public class PageSpeedApiTest extends TestBase {
                     desc,
                     null);
         } else {
-            logger.info("PageSpeed Desktop is up to date. Right now it's value is - " + score);
+            logger.info("PageSpeed Desktop is up to date. Right now it's value is " + score);
         }
 
     }
-
 }
