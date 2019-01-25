@@ -30,6 +30,17 @@ public class PageSpeedApiTest extends TestBase {
 
     private Properties properties;
 
+    private HttpRequestInitializer setHttpTimeout(final HttpRequestInitializer requestInitializer) {
+        return new HttpRequestInitializer() {
+            @Override
+            public void initialize(HttpRequest httpRequest) throws IOException {
+                requestInitializer.initialize(httpRequest);
+                httpRequest.setConnectTimeout(3 * 60000);  // 3 minutes connect timeout
+                httpRequest.setReadTimeout(3 * 60000);  // 3 minutes read timeout
+            }
+        };
+    }
+
     @BeforeTest
     public void getProperties() throws IOException {
         properties = new Properties();
@@ -43,20 +54,13 @@ public class PageSpeedApiTest extends TestBase {
         String desc = "PageSpeed Desktop percentage value need to be more than 50";
         String url = properties.getProperty("web.baseUrl");
 
-        logger.info("JSON FACTORY INITIALIZATION");
         JsonFactory jsonFactory = new JacksonFactory();
-        logger.info("HttpTransport INITIALIZATION");
         HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
-        logger.info("HttpRequestInitializer INITIALIZATION");
-        HttpRequestInitializer requestInitializer = null;
-        logger.info("Pagespeedonline.Builder INITIALIZATION");
-        Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, requestInitializer).build();
-        logger.info("Pagespeedapi.Runpagespeed runpagespeed INITIALIZATION");
+
+        Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, setHttpTimeout(httpRequest -> {})).build();
         Pagespeedapi.Runpagespeed runpagespeed = p.pagespeedapi().runpagespeed(url);
-        logger.info("PagespeedApiPagespeedResponseV5 result INITIALIZATION");
         PagespeedApiPagespeedResponseV5 result = runpagespeed.execute();
 
-        logger.info("GETTING LIGHTHOUSE RESULT TO STRING");
         String json = result.getLighthouseResult().toString();
 
         JsonObject jsonObject = new Gson().fromJson(json, JsonObject.class);

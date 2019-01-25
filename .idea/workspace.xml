@@ -27,8 +27,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="119">
+              <caret line="60" column="113" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.25.0/google-api-client-1.25.0.jar!/com/google/api/client/googleapis/services/AbstractGoogleClientRequest.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="217" column="13" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -127,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/api/PageSpeedApiTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java" />
       </list>
     </option>
@@ -250,7 +268,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548449284220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548452916275" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileManager-master" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -415,13 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00082" summary="updates project files">
-      <created>1544647264534</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1544647264534</updated>
     </task>
     <task id="LOCAL-00083" summary="updates project files">
       <created>1544648554307</created>
@@ -759,38 +770,45 @@
       <option name="project" value="LOCAL" />
       <updated>1548350090965</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="pagespeed api test in progress">
+      <created>1548449323870</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1548449323872</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 25m 58s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 40m 49s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 27m 27s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 41m 02s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 29m 13s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 41m 17s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 37m 06s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 41m 56s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 45m 47s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 42m 11s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 46m 39s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 42m 54s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 16h 50m 52s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 43m 19s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 17h 59m 05s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 44m 17s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 18h 10m 43s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 44m 36s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageSpeedApiTest - 2019.01.25 at 18h 27m 20s.xml">
+    <history-entry file="PageSpeedApiTest - 2019.01.25 at 23h 46m 47s.xml">
       <configuration name="PageSpeedApiTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -860,20 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/api/Posts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/afrozaar/wordpress/wp-api-v2-client-java/4.8.1/wp-api-v2-client-java-4.8.1.jar!/com/afrozaar/wordpress/wpapi/v2/model/PostStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-screenshots/OpenBasePage.png" />
     <entry file="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/ashot/ashot/1.5.4/ashot-1.5.4.jar!/ru/yandex/qatools/ashot/Screenshot.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1202,15 +1206,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.25.0/google-api-client-1.25.0.jar!/com/google/api/client/googleapis/services/AbstractGoogleClientRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="217" column="13" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client/1.25.0/google-http-client-1.25.0.jar!/com/google/api/client/http/HttpRequestInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="119">
+          <caret line="60" column="113" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="113" />
         </state>
       </provider>
     </entry>
