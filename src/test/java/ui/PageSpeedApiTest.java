@@ -64,7 +64,6 @@ public class PageSpeedApiTest extends TestBase {
         PagespeedApiPagespeedResponseV5 result = runpagespeed.execute();
 
         String json = result.getLighthouseResult().toString();
-
         JsonObject jsonObject = new Gson().fromJson(json, JsonObject.class);
         String categoriesJson = jsonObject.get("categories").toString();
         JsonObject categoriesJsonObject = new Gson().fromJson(categoriesJson, JsonObject.class);

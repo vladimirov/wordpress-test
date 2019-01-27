@@ -16,6 +16,10 @@ public class SitePage extends HelperBase {
         super(driver);
     }
 
+    public void getPageReady(){
+        waitForPageLoadComplete(driver, 10);
+    }
+
     public void getConsoleErrors() {
         Logs logs = driver.manage().logs();
         LogEntries logEntries = logs.get(LogType.BROWSER);

@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.internal.Utils;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -130,19 +131,27 @@ public class HelperBase {
         wait.until(invisibilityOfElementLocated(locator));
     }
 
-    public void waitForPageToLoad(WebDriver driver) {
-        ExpectedCondition<Boolean> pageLoad = new
-                ExpectedCondition<Boolean>() {
-                    public Boolean apply(WebDriver driver) {
-                        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-                    }
-                };
-        Wait<WebDriver> wait = new WebDriverWait(driver, 60);
-        try {
-            wait.until(pageLoad);
-        } catch (Throwable pageLoadWaitError) {
-            fail("Timeout during page load");
-        }
+//    public void waitForPageLoaded() {
+//        ExpectedCondition<Boolean> expectation = new
+//                ExpectedCondition<Boolean>() {
+//                    public Boolean apply(WebDriver driver) {
+//                        return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete");
+//                    }
+//                };
+//        try {
+//            Thread.sleep(1000);
+//            WebDriverWait wait = new WebDriverWait(driver, 30);
+//            wait.until(expectation);
+//        } catch (Throwable error) {
+//            Assert.fail("Timeout waiting for Page Load Request to complete.");
+//        }
+//    }
+
+    public void waitForPageLoadComplete(WebDriver driver, int specifiedTimeout) {
+        Wait<WebDriver> wait = new WebDriverWait(driver, specifiedTimeout);
+        wait.until(driver1 -> String
+                .valueOf(((JavascriptExecutor) driver1).executeScript("return document.readyState"))
+                .equals("complete"));
     }
 
     protected void hoverOnElement(By locator) {

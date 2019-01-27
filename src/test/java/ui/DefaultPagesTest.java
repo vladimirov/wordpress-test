@@ -8,16 +8,16 @@ import java.io.IOException;
 
 public class DefaultPagesTest extends TestBase {
 
-    @BeforeTest
-    public void testPostCreation() throws IOException {
-        app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
-        app.openPostsPageInAdmin();
-        app.admin().addNewPostButtonClick();
-        app.admin().enterPostTitle();
-        app.admin().enterTestContent();
-        app.admin().publishPost();
-        app.admin().logoutFromAdmin();
-    }
+//    @BeforeTest
+//    public void testPostCreation() throws IOException {
+//        app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
+//        app.openPostsPageInAdmin();
+//        app.admin().addNewPostButtonClick();
+//        app.admin().enterPostTitle();
+//        app.admin().enterTestContent();
+//        app.admin().publishPost();
+//        app.admin().logoutFromAdmin();
+//    }
 
     @Test
     public void testDefaultPages() throws Exception {
@@ -26,11 +26,13 @@ public class DefaultPagesTest extends TestBase {
         String testPostScreenshot = "TestPost";
         //Search Page
         app.openSearchPageUrl();
+        app.site().getPageReady();
         app.site().screenshotCapture(searchPageScreenshot);
         String checkboxSearchLink = "* [ ] Search Page " + app.site().pageLinkForGitlab();
         String markdownSearchPage = app.getGitlabFileMarkdown(searchPageScreenshot);
         //404 Page
         app.openPageNotFoundUrl();
+        app.site().getPageReady();
         app.site().screenshotCapture(pageNotFoundScreenshot);
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
