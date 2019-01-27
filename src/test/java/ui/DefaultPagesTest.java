@@ -35,15 +35,21 @@ public class DefaultPagesTest extends TestBase {
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
         //Test Post Page
-        app.admin().openTestPostUrl();
-        app.site().screenshotCaptureAllScreen(testPostScreenshot);
-        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
-        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
+//        app.admin().openTestPostUrl();
+//        app.site().screenshotCaptureAllScreen(testPostScreenshot);
+//        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
+//        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
 
+//        app.uploadIssueWithDescriptionToGitlab(
+//                "Default pages layout screenshots in " + app.browserName() + " browser",
+//                "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
+//                        checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
+//                "Questions");
+        //Without Test Post Test
         app.uploadIssueWithDescriptionToGitlab(
                 "Default pages layout screenshots in " + app.browserName() + " browser",
                 "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
-                        checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
+                        checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n",
                 "Questions");
 
     }

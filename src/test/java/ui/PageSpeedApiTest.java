@@ -51,8 +51,10 @@ public class PageSpeedApiTest extends TestBase {
     @Test
     public void testPageSpeedViaApi() throws Throwable {
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
-        String desc = "PageSpeed Desktop percentage value need to be more than 50";
+        String description = "PageSpeed Desktop percentage value need to be more than 50";
         String url = properties.getProperty("web.baseUrl");
+        String domain = url.split("/")[2];
+        String pageSpeedLink = "https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2F" + domain + "%2F";
 
         JsonFactory jsonFactory = new JacksonFactory();
         HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
@@ -75,7 +77,7 @@ public class PageSpeedApiTest extends TestBase {
             logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is " + score);
             app.uploadIssueWithDescriptionToGitlab(
                     "PageSpeed Desktop percentage value is " + score,
-                    desc,
+                    pageSpeedLink + "\n\n" + description,
                     null);
         } else {
             logger.info("PageSpeed Desktop is up to date. Right now it's value is " + score);
@@ -83,3 +85,10 @@ public class PageSpeedApiTest extends TestBase {
 
     }
 }
+
+
+
+
+
+
+
