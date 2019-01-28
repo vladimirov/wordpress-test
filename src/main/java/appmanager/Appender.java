@@ -6,6 +6,8 @@ import org.gitlab4j.api.models.Issue;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -36,6 +38,7 @@ public class Appender {
     }
 
     public void run() throws IOException, GitLabApiException, CmdLineException {
+        Logger logger = LoggerFactory.getLogger(HelperBase.class);
         Properties gitlabProperties = new Properties();
         gitlabProperties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
         int id = Integer.parseInt(projectId);
@@ -55,9 +58,9 @@ public class Appender {
                 Paths.get(path),
                 input.getBytes(),
                 StandardOpenOption.APPEND);
-        System.out.println("-------------------------------------------------------");
-        System.out.println("SITE CREDENTIALS ARE SUCCESSFULLY ADDED");
-        System.out.println("-------------------------------------------------------");
+        System.out.println(" -------------------------------------------------------");
+        System.out.println(" CREDENTIALS FOR " + webBaseUrl + " ARE SUCCESSFULLY ADDED");
+        System.out.println(" -------------------------------------------------------");
     }
 
 }
