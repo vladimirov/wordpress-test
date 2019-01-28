@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="code refactoring">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" afterDir="false" />
+    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="tagline text test added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,54 +18,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="374">
+              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
-              <folding>
-                <element signature="e#4691#4692#0" expanded="true" />
-                <element signature="e#4734#4735#0" expanded="true" />
-                <element signature="e#4770#4771#0" expanded="true" />
-                <element signature="e#4829#4830#0" expanded="true" />
-                <element signature="e#4749#4750#0" expanded="true" />
-                <element signature="e#4808#4809#0" expanded="true" />
-                <element signature="e#4859#4860#0" expanded="true" />
-                <element signature="e#4890#4891#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="270" column="18" selection-start-line="270" selection-start-column="18" selection-end-line="270" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#12885#12886#0" expanded="true" />
-                <element signature="e#12937#12938#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
-              <folding>
-                <element signature="e#5254#5255#0" expanded="true" />
-                <element signature="e#5336#5337#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="193">
+              <caret line="156" column="33" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -77,12 +36,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="374">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#331#332#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-374">
+              <caret line="166" column="57" lean-forward="true" selection-start-line="166" selection-start-column="57" selection-end-line="166" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -183,9 +151,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
       </list>
     </option>
   </component>
@@ -286,11 +254,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="test-screenshots" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -303,7 +266,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548709641456" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548710858835" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../args4j-maven-example" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -468,13 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00092" summary="appender class added">
-      <created>1545410564072</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1545410564074</updated>
     </task>
     <task id="LOCAL-00093" summary="add post via api added">
       <created>1545649645075</created>
@@ -812,16 +768,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548707633995</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="tagline text test added">
+      <created>1548709804166</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1548709804166</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultPagesTest - 2019.01.27 at 20h 03m 13s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DefaultPagesTest - 2019.01.27 at 20h 04m 33s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DefaultPagesTest - 2019.01.27 at 20h 59m 31s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
@@ -846,6 +803,12 @@
     <history-entry file="TaglineTextTest - 2019.01.28 at 23h 05m 42s.xml">
       <configuration name="TaglineTextTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TaglineTextTest - 2019.01.28 at 23h 07m 36s.xml">
+      <configuration name="TaglineTextTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TaglineTextTest - 2019.01.28 at 23h 17m 40s.xml">
+      <configuration name="TaglineTextTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,7 +823,7 @@
     <frame x="71" y="0" width="1302" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2173913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2173913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -890,7 +853,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="default pages test" />
     <MESSAGE value="pagespeed test updated" />
     <MESSAGE value="default pages test optimized" />
     <MESSAGE value="pageSpeed test optimized" />
@@ -915,14 +877,14 @@
     <MESSAGE value="pagespeed api test in progress" />
     <MESSAGE value="pagespeed api test" />
     <MESSAGE value="code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
+    <MESSAGE value="tagline text test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="tagline text test added" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test-screenshots/TestPost.png" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/Capabilities.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1187,13 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logger.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1228,30 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
-          <folding>
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4734#4735#0" expanded="true" />
-            <element signature="e#4770#4771#0" expanded="true" />
-            <element signature="e#4829#4830#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#4808#4809#0" expanded="true" />
-            <element signature="e#4859#4860#0" expanded="true" />
-            <element signature="e#4890#4891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1273,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
+        <state relative-caret-position="1581">
+          <caret line="142" column="99" selection-start-line="142" selection-start-column="99" selection-end-line="142" selection-end-column="99" />
           <folding>
             <element signature="e#5254#5255#0" expanded="true" />
             <element signature="e#5336#5337#0" expanded="true" />
@@ -1282,10 +1213,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="156" column="33" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="166" column="57" lean-forward="true" selection-start-line="166" selection-start-column="57" selection-end-line="166" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="374">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#331#332#0" expanded="true" />

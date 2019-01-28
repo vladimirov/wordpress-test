@@ -19,6 +19,7 @@ import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Properties;
 
 public class ApplicationManager {
@@ -208,7 +209,7 @@ public class ApplicationManager {
                 null,
                 null,
                 null,
-                label,
+                null,
                 null,
                 null,
                 null,
