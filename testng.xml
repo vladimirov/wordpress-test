@@ -8,6 +8,7 @@
             <class name="ui.FaviconTest"> </class>
             <class name="ui.PageSpeedApiTest"> </class>
             <class name="ui.ThemeScreenshotTest"> </class>
+            <class name="ui.TaglineTextTest"> </class>
             <class name="ui.DefaultPagesTest"> </class>
         </classes>
     </test>

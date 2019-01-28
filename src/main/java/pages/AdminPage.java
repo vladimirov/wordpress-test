@@ -44,6 +44,7 @@ public class AdminPage extends HelperBase {
     private By publishedTextLocator = By.xpath("//div[text()='Published']");
     private By myAccountLocator = By.cssSelector("li#wp-admin-bar-my-account");
     private By logoutItemLocator = By.cssSelector("li#wp-admin-bar-logout");
+    private By taglineInputLocator = By.id("blogdescription");
 
 
     public String url() throws URISyntaxException {
@@ -129,7 +130,6 @@ public class AdminPage extends HelperBase {
         driver.get(baseUrl + postTitle.toLowerCase().replaceAll(" ", "-"));
     }
 
-
     public boolean themeScreenshotIsBlank() {
         try {
             isElementPresent(themeScreenshotBlankLocator);
@@ -138,4 +138,9 @@ public class AdminPage extends HelperBase {
             return false;
         }
     }
+
+    public boolean taglineHasDefaultText() {
+        return getElementAttributeValue(taglineInputLocator).equals("Just another WordPress site");
+    }
+
 }

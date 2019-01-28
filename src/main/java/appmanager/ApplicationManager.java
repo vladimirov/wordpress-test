@@ -67,7 +67,6 @@ public class ApplicationManager {
         }
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
-//        properties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
         properties.load(new FileReader(new File(String.format(Appender.path, target))));
         gitlabProperties.load(new FileReader(new File(String.format("src/main/resources/gitlab.properties", target))));
         gitlabHostUrl = gitlabProperties.getProperty("gitlabHostUrl");
@@ -135,6 +134,10 @@ public class ApplicationManager {
 
     public void openThemesPage() {
         driver.get(baseUrl + "wp-admin/themes.php");
+    }
+
+    public void openSettingsPage() {
+        driver.get(baseUrl + "wp-admin/options-general.php");
     }
 
     public SitePage site() {
