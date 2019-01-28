@@ -8,10 +8,6 @@
     <artifactId>wordpress-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!--<properties>-->
-        <!--<exec.mainClass>appmanager.Appender</exec.mainClass>-->
-    <!--</properties>-->
-
     <build>
         <plugins>
             <plugin>
@@ -50,12 +46,6 @@
                 <version>1.2.1</version>
                 <configuration>
                     <mainClass>appmanager.Appender</mainClass>
-
-                    <!--<commandlineArgs>command line arguments</commandlineArgs>-->
-
-                    <!--<arguments>-->
-                        <!--<argument>argument1</argument>-->
-                    <!--</arguments>-->
                 </configuration>
             </plugin>
         </plugins>
