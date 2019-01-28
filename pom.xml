@@ -43,9 +43,25 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <mainClass>appmanager.Appender</mainClass>
+                    <arguments>
+                        <argument>-id</argument>
+                        <argument>${id}</argument>
+                    </arguments>
+                    <!--Instead of arguments, I could've also used the commandLineArgs option too - see below-->
+                    <!--But args is a little nicer to read-->
+                    <!--<commandlineArgs>-id ${id}</commandlineArgs>-->
                 </configuration>
             </plugin>
         </plugins>
@@ -193,6 +209,11 @@
             <artifactId>mksapi-jar</artifactId>
             <version>4.10.9049</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>args4j</groupId>
+            <artifactId>args4j</artifactId>
+            <version>2.33</version>
         </dependency>
     </dependencies>
 </project>
