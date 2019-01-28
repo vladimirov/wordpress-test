@@ -11,14 +11,14 @@
             <class name="ui.DefaultPagesTest"> </class>
         </classes>
     </test>
-    <!--<test name="Default Pages In Firefox">-->
-        <!--<parameter name="browser" value="firefox"/>-->
-        <!--<parameter name="run" value="false"/>-->
-        <!--<classes>-->
-            <!--<class name="ui.DefaultPagesTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Default Pages In Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="run" value="false"/>
+        <classes>
+            <class name="ui.DefaultPagesTest">
+            </class>
+        </classes>
+    </test>
     <!--<test name="Default Pages In Edge">-->
         <!--<parameter name="browser" value="edge"/>-->
         <!--<classes>-->
