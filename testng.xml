@@ -10,9 +10,9 @@
         <classes>
             <class name="ui.ConsoleErrorsTest"> </class>
             <class name="ui.FaviconTest"> </class>
-            <class name="ui.PageSpeedTest"> </class>
+            <class name="ui.PageSpeedApiTest"> </class>
             <class name="ui.ThemeScreenshotTest"> </class>
-            <!--<class name="ui.DefaultPagesTest"> </class>-->
+            <class name="ui.DefaultPagesTest"> </class>
         </classes>
     </test>
     <!--<test name="Default Pages In Firefox">-->
