@@ -31,13 +31,10 @@ public class PageSpeedApiTest extends TestBase {
     private Properties properties;
 
     private HttpRequestInitializer setHttpTimeout(final HttpRequestInitializer requestInitializer) {
-        return new HttpRequestInitializer() {
-            @Override
-            public void initialize(HttpRequest httpRequest) throws IOException {
-                requestInitializer.initialize(httpRequest);
-                httpRequest.setConnectTimeout(3 * 60000);  // 3 minutes connect timeout
-                httpRequest.setReadTimeout(3 * 60000);  // 3 minutes read timeout
-            }
+        return httpRequest -> {
+            requestInitializer.initialize(httpRequest);
+            httpRequest.setConnectTimeout(3 * 60000);  // 3 minutes connect timeout
+            httpRequest.setReadTimeout(3 * 60000);  // 3 minutes read timeout
         };
     }
 

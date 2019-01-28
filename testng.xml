@@ -1,10 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="UI Tests">
-    <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    </listeners>
     <test name="All Tests In Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
