@@ -19,7 +19,7 @@ public class Appender {
     public static void main(String[] args) throws IOException, GitLabApiException {
         Properties gitlabProperties = new Properties();
         gitlabProperties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
-        System.out.print("\nEnter project ID or press enter to continue: ");
+        System.out.print("\n\rEnter project ID: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         projectId = Integer.parseInt(reader.readLine());
         GitLabApi gitLabApi = new GitLabApi(gitlabProperties.getProperty("gitlabHostUrl"), gitlabProperties.getProperty("gitlabApiToken"));
