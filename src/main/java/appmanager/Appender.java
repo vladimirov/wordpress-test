@@ -38,13 +38,14 @@ public class Appender {
     }
 
     public void run() throws IOException, GitLabApiException, CmdLineException {
-        Logger logger = LoggerFactory.getLogger(HelperBase.class);
         Properties gitlabProperties = new Properties();
         gitlabProperties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
         int id = Integer.parseInt(projectId);
+
         GitLabApi gitLabApi = new GitLabApi(gitlabProperties.getProperty("gitlabHostUrl"), gitlabProperties.getProperty("gitlabApiToken"));
         Issue credentials = gitLabApi.getIssuesApi().getIssue(id, 1);
         new PrintWriter(path).print("");
+
         String creds = credentials.getDescription();
         String webBaseUrl = creds.split("\\[")[2].split("]")[0];
         String webAdminLogin = creds.split("user: ")[1].split("<")[0];
