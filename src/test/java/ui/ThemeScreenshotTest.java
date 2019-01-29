@@ -20,8 +20,7 @@ public class ThemeScreenshotTest extends TestBase {
             String markdownThemeScreenshot = app.getGitlabFileMarkdown(themeScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     "Theme screenshot is missing in admin",
-                    app.site().pageLinkForGitlab() + "\n" + markdownThemeScreenshot,
-                    null);
+                    app.site().pageLinkForGitlab() + "\n" + markdownThemeScreenshot);
         }
     }
 }

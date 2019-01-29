@@ -20,8 +20,7 @@ public class AddPostTest extends TestBase {
         String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
         app.uploadIssueWithDescriptionToGitlab(
                 "Test post screenshot",
-                markdownTestPost,
-                "Questions");
+                markdownTestPost);
     }
 
 }

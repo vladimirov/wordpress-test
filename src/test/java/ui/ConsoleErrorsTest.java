@@ -26,7 +26,7 @@ public class ConsoleErrorsTest extends TestBase {
         app.openBaseUrl();
         String errors = app.site().consoleLog();
         if (errors.length() > 0) {
-            app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", errors, null);
+            app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", errors);
         }
     }
 

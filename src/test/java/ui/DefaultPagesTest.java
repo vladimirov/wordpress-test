@@ -51,8 +51,7 @@ public class DefaultPagesTest extends TestBase {
         app.uploadIssueWithDescriptionToGitlab(
                 "Default pages layout screenshots in " + app.browserName() + " browser",
                 "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
-                        checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n",
-                "Questions");
+                        checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
     }
 }

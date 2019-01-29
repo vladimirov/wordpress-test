@@ -21,8 +21,7 @@ public class TaglineTextTest extends TestBase {
             String markdownTaglineScreenshot = app.getGitlabFileMarkdown(taglineScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     "Tagline has default text in admin",
-                    app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot,
-                    null);
+                    app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot);
         }
     }
 

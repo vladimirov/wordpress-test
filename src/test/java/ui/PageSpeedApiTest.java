@@ -73,8 +73,7 @@ public class PageSpeedApiTest extends TestBase {
             logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is " + score);
             app.uploadIssueWithDescriptionToGitlab(
                     "PageSpeed Desktop percentage value is " + score,
-                    pageSpeedLink + "\n\n" + description,
-                    null);
+                    pageSpeedLink + "\n\n" + description);
         } else {
             logger.info("PageSpeed Desktop is up to date. Right now it's value is " + score);
         }
