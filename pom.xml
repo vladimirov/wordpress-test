@@ -59,8 +59,7 @@
                         <argument>-id</argument>
                         <argument>${id}</argument>
                     </arguments>
-                    <!--Instead of arguments, I could've also used the commandLineArgs option too - see below-->
-                    <!--But args is a little nicer to read-->
+                    <!--or-->
                     <!--<commandlineArgs>-id ${id}</commandlineArgs>-->
                 </configuration>
             </plugin>

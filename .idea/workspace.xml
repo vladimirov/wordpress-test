@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="one label for all tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/InvalidLinksTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/TestRecursiveURLReading.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,17 +29,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="1205">
+              <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/api/InvalidLinksTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/api/TestRecursiveURLReading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="374">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,8 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ui/HttpTransport.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/PagespeedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/admin/AddPostTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/admin/SearchPagePaginationTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/wordpress.local-test.yaml" />
@@ -132,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
@@ -144,6 +152,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/api/InvalidLinksTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/api/TestRecursiveURLReading.java" />
       </list>
     </option>
   </component>
@@ -171,9 +182,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="71" />
-    <option name="width" value="1302" />
-    <option name="height" value="745" />
+    <option name="x" value="-967" />
+    <option name="width" value="974" />
+    <option name="height" value="532" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -183,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +253,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -250,13 +268,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548755180945" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548781140988" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../args4j-maven-example" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -298,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TaglineTextTest">
+  <component name="RunManager" selected="Application.TestRecursiveURLReading">
     <configuration name="Appender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appmanager.Appender" />
       <module name="wordpress-test" />
@@ -306,6 +325,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="appmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRecursiveURLReading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="api.TestRecursiveURLReading" />
+      <module name="wordpress-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -325,33 +358,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefaultPagesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvalidLinksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="wordpress-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.DefaultPagesTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FaviconTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wordpress-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.FaviconTest" />
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.InvalidLinksTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -403,11 +419,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestRecursiveURLReading" />
+        <item itemvalue="TestNG.InvalidLinksTest" />
         <item itemvalue="TestNG.TaglineTextTest" />
         <item itemvalue="Application.Appender" />
         <item itemvalue="TestNG.PageSpeedApiTest" />
-        <item itemvalue="TestNG.DefaultPagesTest" />
-        <item itemvalue="TestNG.FaviconTest" />
       </list>
     </recent_temporary>
   </component>
@@ -769,9 +785,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultPagesTest - 2019.01.27 at 21h 00m 33s.xml">
-      <configuration name="DefaultPagesTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DefaultPagesTest - 2019.01.27 at 21h 04m 19s.xml">
       <configuration name="DefaultPagesTest" configurationId="TestNG" />
     </history-entry>
@@ -799,6 +812,9 @@
     <history-entry file="TaglineTextTest - 2019.01.29 at 11h 42m 24s.xml">
       <configuration name="TaglineTextTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="InvalidLinksTest - 2019.01.29 at 18h 27m 15s.xml">
+      <configuration name="InvalidLinksTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,10 +826,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14605543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -822,7 +837,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32475883" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.65487677" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6152197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37299034" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.31939977" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32843137" />
@@ -875,14 +890,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.12.0/selenium-api-3.12.0.jar!/org/openqa/selenium/Capabilities.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/db/HbConnectionTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/db/DbConnectionTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/api/GitlabApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -970,13 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-881">
           <caret line="497" column="9" selection-start-line="497" selection-start-column="9" selection-end-line="497" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
         </state>
       </provider>
     </entry>
@@ -1146,13 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1226,17 +1219,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="374">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1205">
+          <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/InvalidLinksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/AddPostApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/api/TestRecursiveURLReading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
