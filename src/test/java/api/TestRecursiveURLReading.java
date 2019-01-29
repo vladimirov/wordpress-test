@@ -14,9 +14,8 @@ public class TestRecursiveURLReading {
 
     public static void main(String[] args) {
         try {
-            String url="";
             HashMap<String, String> h = new HashMap<>();
-            url = "https://wp-dev.space/no_client/mazur/master";
+            String url = "https://wp-dev.space/no_client/mazur/master";
             Document doc = Jsoup.connect(url).get();
 
             //  Page Title
@@ -27,14 +26,13 @@ public class TestRecursiveURLReading {
             List url_array = new ArrayList();
             int i=0;
             url_array.add(url);
-            String root = url;
             h.put(url, title);
             Iterator<String> keySetIterator = h.keySet().iterator();
             while((i<=h.size())){
                 try{
                     url = url_array.get(i).toString();
                     doc = Jsoup.connect(url).get();
-                    title = doc.title();
+//                    title = doc.title();
                     links = doc.select("a[href]");
 
                     for (Element link : links) {
@@ -42,7 +40,7 @@ public class TestRecursiveURLReading {
                         String res= h.putIfAbsent(link.attr("href"), link.text());
                         if (res==null){
                             url_array.add(link.attr("href"));
-                            System.out.print("\nURL: " + link.attr("href"));
+                            System.out.println(link.attr("href"));
                         }
                     }
                 }catch(Exception e){

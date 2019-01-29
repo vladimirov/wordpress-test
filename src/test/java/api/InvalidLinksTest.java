@@ -1,45 +1,39 @@
 package api;
 
 import appmanager.TestBase;
-import com.afrozaar.wordpress.wpapi.v2.Wordpress;
-import com.afrozaar.wordpress.wpapi.v2.config.ClientConfig;
-import com.afrozaar.wordpress.wpapi.v2.config.ClientFactory;
-import com.afrozaar.wordpress.wpapi.v2.exception.PostCreateException;
-import com.afrozaar.wordpress.wpapi.v2.model.Post;
-import com.afrozaar.wordpress.wpapi.v2.model.PostStatus;
-import com.afrozaar.wordpress.wpapi.v2.model.Taxonomy;
-import com.afrozaar.wordpress.wpapi.v2.model.builder.ContentBuilder;
-import com.afrozaar.wordpress.wpapi.v2.model.builder.ExcerptBuilder;
-import com.afrozaar.wordpress.wpapi.v2.model.builder.PostBuilder;
-import com.afrozaar.wordpress.wpapi.v2.model.builder.TitleBuilder;
-import org.testng.annotations.Test;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
+import javax.swing.text.BadLocationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import static appmanager.ApplicationManager.*;
+import java.net.URISyntaxException;
+import java.util.HashSet;
+import java.util.Set;
 
 public class InvalidLinksTest extends TestBase {
 
-    @Test(enabled = true)
-    public void invalidLinksCheck() throws IOException, PostCreateException {
+    public static void main(String[] args) throws IOException {
 
-        final Wordpress client = ClientFactory.fromConfig(ClientConfig.of(baseUrl, adminLogin, adminPassword, false, false));
+        Set<String> initial_link_set = new HashSet();
+        initial_link_set.add("http://abc.com/");
+        Set<String> final_link_set = retrieveAllLinksFromSite(1, initial_link_set);
 
-        final Post post = PostBuilder.aPost()
-                .withTitle(TitleBuilder.aTitle().withRendered("Title_from_Wordpress_Java_API").build())
-                .withExcerpt(ExcerptBuilder.anExcerpt().withRendered("").build())
-                .withContent(ContentBuilder.aContent().withRendered(app.admin().testContent()).build())
-                .build();
-
-        final Post createdPost = client.createPost(post, PostStatus.publish);
-
-        List<Taxonomy> taxonomies = client.getTaxonomies();
-
-        for (Taxonomy taxonomy : taxonomies) {
-            System.out.println(taxonomy.getDescription());
+        Document docs = Jsoup.connect("https://wp-dev.space/no_client/mazur/master/").get();
+//        Document docs = Jsoup.connect("https://wp-dev.space/no_client/mazur/master/?p=1#comments").get();
+        Elements links = docs.select("a[href]");
+        System.out.println("Total Links :" + links.size());
+        for (Element link : links) {
+            String hrefUrl = link.attr("href");
+            if (!"#".equals(hrefUrl) && !hrefUrl.isEmpty()) {
+                System.out.println(hrefUrl);
+            }
         }
-    }
 
+    }
 }
+
+
+
+
