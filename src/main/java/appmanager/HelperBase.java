@@ -1,6 +1,10 @@
 package appmanager;
 
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
@@ -19,10 +23,10 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.Properties;
@@ -280,7 +284,7 @@ public class HelperBase {
         return element.getText();
     }
 
-    protected void verifyLinkActive(String linkUrl) {
+    protected void verifyLinkIsActive(String linkUrl) {
         logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
         try {
             URL url = new URL(linkUrl);
@@ -298,6 +302,36 @@ public class HelperBase {
         }
     }
 
+    public void verifyAllLinks(String linkUrl) throws IOException {
+        Document doc = Jsoup.connect(linkUrl).get();
+        Elements links = doc.select("a[href]");
+        System.out.println("TOTAL LINKS: " + links.size());
+        for (Element link : links) {
+            String hrefUrl = link.attr("href");
+            if (!"#".equals(hrefUrl) && !"#content".equals(hrefUrl) &&  !"#top".equals(hrefUrl) && !hrefUrl.isEmpty()) {
+                verifyLinkIsActive(hrefUrl);
+                Document docInternal = Jsoup.connect(hrefUrl).get();
+                Elements linksInternal = docInternal.select("a[href]");
+                System.out.println("TOTAL INTERNAL LINKS: " + linksInternal.size());
+                for (Element linkInternal : linksInternal) {
+                    String hrefInternalUrl = linkInternal.attr("href");
+                    if (!"#".equals(hrefInternalUrl) && !hrefInternalUrl.isEmpty()) {
+                        verifyLinkIsActive(hrefInternalUrl);
+                    }
+                }
+            }
+        }
+    }
+
+    public String responseCode(String linkUrl) throws IOException {
+        logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
+        URL url = new URL(linkUrl);
+        HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+        httpURLConnect.setConnectTimeout(3000);
+        httpURLConnect.connect();
+        return String.valueOf(httpURLConnect.getResponseCode());
+    }
+
     public String consoleLog() {
         String errorMessage = "";
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
@@ -308,7 +342,7 @@ public class HelperBase {
         return errorMessage;
     }
 
-    public void pasteText(By locator, String text){
+    public void pasteText(By locator, String text) {
         logger.info("INSERTING TEXT TO TEXTAREA " + locator);
         try {
             element = wait.until(presenceOfElementLocated(locator));

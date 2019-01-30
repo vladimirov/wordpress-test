@@ -4,7 +4,6 @@ import appmanager.HelperBase;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
@@ -40,7 +39,7 @@ public class FaviconPage extends HelperBase {
         Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
         Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
         String linkHref = link.attr("href");
-        verifyLinkActive(linkHref);
+        verifyLinkIsActive(linkHref);
         return true;
     }
 
