@@ -34,7 +34,6 @@
                             <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
                         </property>
                     </properties>
-                    <!--<workingDirectory>target/</workingDirectory>-->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -59,8 +58,6 @@
                         <argument>-id</argument>
                         <argument>${id}</argument>
                     </arguments>
-                    <!--or-->
-                    <!--<commandlineArgs>-id ${id}</commandlineArgs>-->
                 </configuration>
             </plugin>
         </plugins>
@@ -214,5 +211,11 @@
             <artifactId>args4j</artifactId>
             <version>2.33</version>
         </dependency>
+        <dependency>
+            <groupId>com.ullink.slack</groupId>
+            <artifactId>simpleslackapi</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
     </dependencies>
 </project>

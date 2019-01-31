@@ -6,10 +6,11 @@ import org.gitlab4j.api.models.Issue;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -37,7 +38,7 @@ public class Appender {
         }
     }
 
-    public void run() throws IOException, GitLabApiException, CmdLineException {
+    public void run() throws IOException, GitLabApiException {
         Properties gitlabProperties = new Properties();
         gitlabProperties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
         int id = Integer.parseInt(projectId);
