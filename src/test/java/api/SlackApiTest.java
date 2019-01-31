@@ -13,15 +13,7 @@ public class SlackApiTest {
     public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
         properties.load(new FileReader(new File("src/main/resources/gitlab.properties")));
-        String slackApiToken = properties.getProperty("slackApiToken");
         String slackApiBotToken = properties.getProperty("slackApiBotToken");
-
-//        SlackSession session = SlackSessionFactory.getSlackSessionBuilder(slackApiToken).build();
-//        session.connect();
-//        //Send message to a Channel
-//        SlackChannel channel = session.findChannelByName("simple-slack-api");
-//        session.sendMessage(channel, "Hey there");
-//        session.disconnect();
 
         SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
         session.connect();

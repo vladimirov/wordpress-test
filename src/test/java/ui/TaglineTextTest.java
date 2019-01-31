@@ -2,9 +2,15 @@ package ui;
 
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TaglineTextTest extends TestBase {
+
+    @BeforeTest
+    public void loginToAdmin(){
+        app.loginToAdmin();
+    }
 
     @Test
     public void testTaglineTextInAdmin() throws GitLabApiException {

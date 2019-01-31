@@ -1,10 +1,12 @@
 package appmanager;
 
+import org.gitlab4j.api.GitLabApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 
@@ -33,6 +35,11 @@ public class TestBase {
     @AfterMethod(alwaysRun = true)
     public void logTestStop(Method m) {
         logger.info("STOP TEST " + m.getName());
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public void notifyInSlackAfterSuite() throws IOException, GitLabApiException {
+        app.sendSlackNotify();
     }
 
 }

@@ -1,5 +1,8 @@
 package appmanager;
 
+import com.ullink.slack.simpleslackapi.SlackChannel;
+import com.ullink.slack.simpleslackapi.SlackSession;
+import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
@@ -28,7 +31,6 @@ public class ApplicationManager {
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
     public final Properties properties;
     public final Properties gitlabProperties;
-
     private LoginPage loginPage;
     private SitePage sitePage;
     private PageSpeedPage pageSpeedPage;
@@ -40,12 +42,13 @@ public class ApplicationManager {
     public static String adminPassword;
     public static String gitlabHostUrl;
     public static String gitlabApiToken;
+    public static String slackApiBotToken;
     public static String pageSpeedUrl;
     public static String projectId;
     public static String databaseUrl;
     public static String databaseUser;
     public static String databasePass;
-    Capabilities capabilities;
+    private Capabilities capabilities;
 
 
     public ApplicationManager() {
@@ -72,6 +75,7 @@ public class ApplicationManager {
         gitlabProperties.load(new FileReader(new File(String.format("src/main/resources/gitlab.properties", target))));
         gitlabHostUrl = gitlabProperties.getProperty("gitlabHostUrl");
         gitlabApiToken = gitlabProperties.getProperty("gitlabApiToken");
+        slackApiBotToken = gitlabProperties.getProperty("slackApiBotToken");
         baseUrl = properties.getProperty("web.baseUrl");
         adminLogin = properties.getProperty("web.adminLogin");
         adminPassword = properties.getProperty("web.adminPassword");
@@ -228,11 +232,23 @@ public class ApplicationManager {
                 null,
                 null,
                 null,
-                "Question",
+                "Automation Tests",
                 null,
                 null,
                 null,
                 null);
+    }
+
+    public void sendSlackNotify() throws IOException, GitLabApiException {
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        Project project = gitLabApi.getProjectApi().getProject(projectId);
+
+        SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
+        session.connect();
+        SlackChannel channel = session.findChannelByName("simple-slack-api"); //make sure bot is a member of the channel.
+        session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
+                "Please go to Gitlab to see results " + project.getWebUrl() + "/issues");
+        session.disconnect();
     }
 
 }
