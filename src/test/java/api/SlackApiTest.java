@@ -1,4 +1,4 @@
-package ui;
+package api;
 
 import com.ullink.slack.simpleslackapi.*;
 import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
@@ -23,10 +23,9 @@ public class SlackApiTest {
 //        session.sendMessage(channel, "Hey there");
 //        session.disconnect();
 
-        SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken).;
+        SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
         session.connect();
-//        SlackChannel channel = session.findChannelByName("simple-slack-api"); //make sure bot is a member of the channel.
-        SlackChannel channel = session.findChannelByName("general"); //make sure bot is a member of the channel.
+        SlackChannel channel = session.findChannelByName("simple-slack-api"); //make sure bot is a member of the channel.
         session.sendMessage(channel, "hi im a bot" );
         session.disconnect();
 
