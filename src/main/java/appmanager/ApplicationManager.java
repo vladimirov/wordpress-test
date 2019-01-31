@@ -247,7 +247,7 @@ public class ApplicationManager {
         session.connect();
         SlackChannel channel = session.findChannelByName("simple-slack-api"); //make sure bot is a member of the channel.
         session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
-                "Please go to Gitlab to see results " + project.getWebUrl() + "/issues");
+                "Please go to Gitlab to see test results " + project.getWebUrl() + "/issues");
         session.disconnect();
     }
 
