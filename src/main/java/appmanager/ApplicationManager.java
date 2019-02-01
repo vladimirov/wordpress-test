@@ -198,7 +198,7 @@ public class ApplicationManager {
         logger.info("UPLOADING SCREENSHOT TO GITLAB ");
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
-        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("target/test-screenshots/" + screenshotName + ".png"));
         return upload.getMarkdown();
     }
 
@@ -224,7 +224,7 @@ public class ApplicationManager {
         logger.info("UPLOADING ISSUE TO GITLAB WITH SCREENSHOT...");
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
-        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("test-screenshots/" + screenshotName + ".png"));
+        FileUpload upload = gitLabApi.getProjectApi().uploadFile(project, new File("target/test-screenshots/" + screenshotName + ".png"));
         gitLabApi.getIssuesApi().createIssue(
                 project.getId(),
                 issueTitle,

@@ -167,7 +167,7 @@ public class HelperBase {
     public void screenshotCapture(String screenshotName) {
         logger.info("SCREENSHOT CAPTURING...");
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File("test-screenshots/" + screenshotName + ".png");
+        File dest = new File("target/test-screenshots/" + screenshotName + ".png");
         Utils.copyFile(screenshot, dest);
     }
 

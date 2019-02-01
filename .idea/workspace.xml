@@ -201,8 +201,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1532" />
+    <option name="y" value="206" />
     <option name="width" value="1291" />
     <option name="height" value="745" />
   </component>
@@ -287,7 +288,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548969932305" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549026301342" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple-slack-api" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
