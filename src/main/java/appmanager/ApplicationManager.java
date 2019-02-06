@@ -33,7 +33,6 @@ public class ApplicationManager {
     public final Properties gitlabProperties;
     private LoginPage loginPage;
     private SitePage sitePage;
-    private PageSpeedPage pageSpeedPage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
     public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
@@ -84,7 +83,6 @@ public class ApplicationManager {
         databaseUrl = properties.getProperty("databaseUrl");
         databaseUser = properties.getProperty("databaseUser");
         databasePass = properties.getProperty("databasePass");
-        pageSpeedPage = new PageSpeedPage(driver);
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
         faviconPage = new FaviconPage(driver);
@@ -147,10 +145,6 @@ public class ApplicationManager {
 
     public SitePage site() {
         return sitePage;
-    }
-
-    public PageSpeedPage pageSpeed() {
-        return pageSpeedPage;
     }
 
     public AdminPage admin() {
