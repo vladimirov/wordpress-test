@@ -21,7 +21,7 @@ public class Appender {
     @Option(name = "-id", usage = "Sets a project id")
     public static String projectId;
     public static String path;
-
+//    public static String path = "src/main/resources/" + projectId + ".properties";
 
     public static void main(String[] args) throws IOException, GitLabApiException {
         new Appender().doAppender(args);
@@ -31,7 +31,7 @@ public class Appender {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
-            run();
+            this.run();
         } catch (CmdLineException e) {
             System.err.println(e.getMessage());
             parser.printUsage(System.err);
@@ -65,13 +65,13 @@ public class Appender {
                     Paths.get(path),
                     input.getBytes(),
                     StandardOpenOption.CREATE_NEW);
-            System.out.println(" ---------------------------------------------------------------------------------------------------");
+            System.out.println(" --------------------------------------------------------------------------------");
             System.out.println(" CREDENTIALS FOR " + webBaseUrl + " ARE SUCCESSFULLY ADDED ");
-            System.out.println(" ---------------------------------------------------------------------------------------------------");
+            System.out.println(" --------------------------------------------------------------------------------");
         } catch (FileAlreadyExistsException e) {
-            System.out.println(" -----------------------------------------------------------------------------------------------");
+            System.out.println(" --------------------------------------------------------------------------------");
             System.out.println(" FILE WITH CREDENTIALS ALREADY EXISTS ");
-            System.out.println(" -----------------------------------------------------------------------------------------------");
+            System.out.println(" --------------------------------------------------------------------------------");
         }
 
     }
