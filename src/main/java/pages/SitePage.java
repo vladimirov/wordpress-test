@@ -23,11 +23,9 @@ import java.util.Properties;
 
 public class SitePage extends HelperBase {
 
-    private final Properties properties;
 
     public SitePage(WebDriver driver) {
         super(driver);
-        properties = new Properties();
     }
 
     public void getPageReady() {
@@ -36,16 +34,16 @@ public class SitePage extends HelperBase {
 
     public void verifyAllLinksOnSite() throws IOException {
         String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format(Appender.path, target))));
-        verifyAllLinks(properties.getProperty("web.baseUrl"));
+        projectProperties.load(new FileReader(new File(String.format(Appender.path, target))));
+        verifyAllLinks(projectProperties.getProperty("web.baseUrl"));
     }
 
     public String getResponseCode() throws IOException {
-        return responseCode(properties.getProperty("web.baseUrl"));
+        return responseCode(projectProperties.getProperty("web.baseUrl"));
     }
 
     public boolean responseCodeIs200() throws IOException {
-        return responseCode(properties.getProperty("web.baseUrl")).equalsIgnoreCase("200");
+        return responseCode(projectProperties.getProperty("web.baseUrl")).equalsIgnoreCase("200");
     }
 
 }

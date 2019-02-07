@@ -12,7 +12,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.*;
+import pages.AdminPage;
+import pages.FaviconPage;
+import pages.LoginPage;
+import pages.SitePage;
 
 import java.io.File;
 import java.io.FileReader;
@@ -22,15 +25,14 @@ import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Calendar;
-import java.util.List;
 import java.util.Properties;
 
 public class ApplicationManager {
     private static String OS = System.getProperty("os.name").toLowerCase();
     private WebDriver driver;
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
-    public final Properties properties;
-    public final Properties gitlabProperties;
+    public final Properties projectProperties;
+    public final Properties localProperties;
     private LoginPage loginPage;
     private SitePage sitePage;
     private AdminPage adminPage;
@@ -51,8 +53,8 @@ public class ApplicationManager {
 
 
     public ApplicationManager() {
-        properties = new Properties();
-        gitlabProperties = new Properties();
+        projectProperties = new Properties();
+        localProperties = new Properties();
     }
 
     public void init(String browser) throws IOException {
@@ -70,19 +72,19 @@ public class ApplicationManager {
         }
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(String.format(Appender.path, target))));
-        gitlabProperties.load(new FileReader(new File(String.format("src/main/resources/gitlab.properties", target))));
-        gitlabHostUrl = gitlabProperties.getProperty("gitlabHostUrl");
-        gitlabApiToken = gitlabProperties.getProperty("gitlabApiToken");
-        slackApiBotToken = gitlabProperties.getProperty("slackApiBotToken");
-        baseUrl = properties.getProperty("web.baseUrl");
-        adminLogin = properties.getProperty("web.adminLogin");
-        adminPassword = properties.getProperty("web.adminPassword");
-        pageSpeedUrl = properties.getProperty("web.pageSpeedUrl");
-        projectId = properties.getProperty("projectId");
-        databaseUrl = properties.getProperty("databaseUrl");
-        databaseUser = properties.getProperty("databaseUser");
-        databasePass = properties.getProperty("databasePass");
+        projectProperties.load(new FileReader(new File(String.format(Appender.path, target))));
+        localProperties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
+        gitlabHostUrl = localProperties.getProperty("gitlabHostUrl");
+        gitlabApiToken = localProperties.getProperty("gitlabApiToken");
+        slackApiBotToken = localProperties.getProperty("slackApiBotToken");
+        baseUrl = projectProperties.getProperty("web.baseUrl");
+        adminLogin = projectProperties.getProperty("web.adminLogin");
+        adminPassword = projectProperties.getProperty("web.adminPassword");
+        pageSpeedUrl = projectProperties.getProperty("web.pageSpeedUrl");
+        projectId = projectProperties.getProperty("projectId");
+        databaseUrl = projectProperties.getProperty("databaseUrl");
+        databaseUser = projectProperties.getProperty("databaseUser");
+        databasePass = projectProperties.getProperty("databasePass");
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
         faviconPage = new FaviconPage(driver);
@@ -121,10 +123,6 @@ public class ApplicationManager {
 
     public void openTestPostUrl() {
         driver.get(baseUrl + postTitle.toLowerCase().replaceAll(" ", "-"));
-    }
-
-    public void openPageSpeedUrl() {
-        driver.get("https://developers.google.com/speed/pagespeed/insights/");
     }
 
     public void openPageNotFoundUrl() {

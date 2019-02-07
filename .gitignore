@@ -1,6 +1,6 @@
 *.properties
-.png
-.log
+*.png
+*.log
 *.yaml
 target/
 test-screenshots/

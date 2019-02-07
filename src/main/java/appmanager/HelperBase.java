@@ -37,7 +37,7 @@ import static org.testng.AssertJUnit.fail;
 public class HelperBase {
 
     Logger logger = LoggerFactory.getLogger(HelperBase.class);
-    public final Properties properties;
+    public final Properties projectProperties;
 
     protected WebDriver driver;
     public WebDriverWait wait;
@@ -47,7 +47,7 @@ public class HelperBase {
     public HelperBase(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSeconds);
-        properties = new Properties();
+        projectProperties = new Properties();
     }
 
     protected void click(By locator) {
