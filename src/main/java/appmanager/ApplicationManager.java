@@ -51,7 +51,6 @@ public class ApplicationManager {
     public static String databasePass;
     private Capabilities capabilities;
 
-
     public ApplicationManager() {
         projectProperties = new Properties();
         localProperties = new Properties();

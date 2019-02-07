@@ -1,6 +1,7 @@
 package pages;
 
 import appmanager.Appender;
+import appmanager.ApplicationManager;
 import appmanager.HelperBase;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

@@ -20,7 +20,8 @@ public class Appender {
 
     @Option(name = "-id", usage = "Sets a project id")
     public static String projectId;
-    public static String path = "src/main/resources/project.properties";
+    public static String path;
+
 
     public static void main(String[] args) throws IOException, GitLabApiException {
         new Appender().doAppender(args);
@@ -30,7 +31,7 @@ public class Appender {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
-            this.run();
+            run();
         } catch (CmdLineException e) {
             System.err.println(e.getMessage());
             parser.printUsage(System.err);
@@ -40,23 +41,24 @@ public class Appender {
     public void run() throws IOException, GitLabApiException {
         Properties localProperties = new Properties();
         localProperties.load(new FileReader(new File("src/main/resources/local.properties")));
-        int id = Integer.parseInt(projectId);
+        path = "src/main/resources/" + projectId + ".properties";
 
         GitLabApi gitLabApi = new GitLabApi(localProperties.getProperty("gitlabHostUrl"), localProperties.getProperty("gitlabApiToken"));
-        Issue credentials = gitLabApi.getIssuesApi().getIssue(id, 1);
-
+        Issue credentials = gitLabApi.getIssuesApi().getIssue(Integer.parseInt(projectId), 1);
         String creds = credentials.getDescription();
         String webBaseUrl = creds.split("\\[")[2].split("]")[0];
         String webAdminLogin = creds.split("user: ")[1].split("<")[0];
         String webAdminPass = creds.split("password: ")[1].split("<")[0];
 
         String input =
-                "projectId = " + id + "\r\n" +
+                "projectId = " + projectId + "\r\n" +
                         "web.baseUrl = " + webBaseUrl + "/" + "\r\n" +
                         "web.adminLogin = " + webAdminLogin + "\r\n" +
                         "web.adminPassword = " + webAdminPass;
 
+        System.out.println();
         System.out.println("Current path is: " + path);
+        System.out.println();
 
         try {
             Files.write(
@@ -68,7 +70,7 @@ public class Appender {
             System.out.println(" ---------------------------------------------------------------------------------------------------");
         } catch (FileAlreadyExistsException e) {
             System.out.println(" -----------------------------------------------------------------------------------------------");
-            System.out.println(" FILE WITH CREDENTIALS ALREADY EXISTS IN " + path);
+            System.out.println(" FILE WITH CREDENTIALS ALREADY EXISTS ");
             System.out.println(" -----------------------------------------------------------------------------------------------");
         }
 

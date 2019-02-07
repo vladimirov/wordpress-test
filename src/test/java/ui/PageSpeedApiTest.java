@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.Appender;
+import appmanager.ApplicationManager;
 import appmanager.HelperBase;
 import appmanager.TestBase;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
