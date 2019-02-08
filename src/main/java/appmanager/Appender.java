@@ -16,12 +16,12 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Properties;
 
+
 public class Appender {
 
     @Option(name = "-id", usage = "Sets a project id")
-    public static String projectId;
+    public static String id;
     public static String path;
-//    public static String path = "src/main/resources/" + projectId + ".properties";
 
     public static void main(String[] args) throws IOException, GitLabApiException {
         new Appender().doAppender(args);
@@ -41,17 +41,17 @@ public class Appender {
     public void run() throws IOException, GitLabApiException {
         Properties localProperties = new Properties();
         localProperties.load(new FileReader(new File("src/main/resources/local.properties")));
-        path = "src/main/resources/" + projectId + ".properties";
+        path = "src/main/resources/" + id + ".properties";
 
         GitLabApi gitLabApi = new GitLabApi(localProperties.getProperty("gitlabHostUrl"), localProperties.getProperty("gitlabApiToken"));
-        Issue credentials = gitLabApi.getIssuesApi().getIssue(Integer.parseInt(projectId), 1);
+        Issue credentials = gitLabApi.getIssuesApi().getIssue(Integer.parseInt(id), 1);
         String creds = credentials.getDescription();
         String webBaseUrl = creds.split("\\[")[2].split("]")[0];
         String webAdminLogin = creds.split("user: ")[1].split("<")[0];
         String webAdminPass = creds.split("password: ")[1].split("<")[0];
 
         String input =
-                "projectId = " + projectId + "\r\n" +
+                "projectId = " + id + "\r\n" +
                         "web.baseUrl = " + webBaseUrl + "/" + "\r\n" +
                         "web.adminLogin = " + webAdminLogin + "\r\n" +
                         "web.adminPassword = " + webAdminPass;
@@ -65,14 +65,14 @@ public class Appender {
                     Paths.get(path),
                     input.getBytes(),
                     StandardOpenOption.CREATE_NEW);
-            System.out.println(" --------------------------------------------------------------------------------");
-            System.out.println(" CREDENTIALS FOR " + webBaseUrl + " ARE SUCCESSFULLY ADDED ");
-            System.out.println(" --------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println("CREDENTIALS ARE SUCCESSFULLY ADDED");
+            System.out.println();
         } catch (FileAlreadyExistsException e) {
-            System.out.println(" --------------------------------------------------------------------------------");
-            System.out.println(" FILE WITH CREDENTIALS ALREADY EXISTS ");
-            System.out.println(" --------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println("FILE WITH CREDENTIALS ALREADY EXISTS");
+            System.out.println();
         }
-
     }
+
 }

@@ -51,13 +51,9 @@ public class ApplicationManager {
     public static String databasePass;
     private Capabilities capabilities;
 
-    public Appender appender;
-
-
     public ApplicationManager() {
         projectProperties = new Properties();
         localProperties = new Properties();
-        appender = new Appender();
     }
 
     public void init(String browser) throws IOException {
@@ -76,10 +72,6 @@ public class ApplicationManager {
         driver.manage().window().maximize();
         String target = System.getProperty("target", "local");
         projectProperties.load(new FileReader(new File(String.format(Appender.path, target))));
-//        projectProperties.load(new FileReader(new File(String.format(Appender.getPath(), target))));
-//        projectProperties.load(new FileReader(new File(String.format(appender.run(), target))));
-
-
         localProperties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
         gitlabHostUrl = localProperties.getProperty("gitlabHostUrl");
         gitlabApiToken = localProperties.getProperty("gitlabApiToken");
