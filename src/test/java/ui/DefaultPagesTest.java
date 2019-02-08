@@ -1,12 +1,20 @@
 package ui;
 
+import appmanager.Appender;
 import appmanager.TestBase;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class DefaultPagesTest extends TestBase {
+
+    String searchPageScreenshot = "SearchPageTest";
+    String pageNotFoundScreenshot = "404PageTest";
+    String testPostScreenshot = "TestPost";
 
 //    @BeforeTest
 //    public void testPostCreation() throws IOException {
@@ -21,9 +29,6 @@ public class DefaultPagesTest extends TestBase {
 
     @Test
     public void testDefaultPages() throws Exception {
-        String searchPageScreenshot = "SearchPageTest";
-        String pageNotFoundScreenshot = "404PageTest";
-        String testPostScreenshot = "TestPost";
         //Search Page
         app.openSearchPageUrl();
         app.site().getPageReady();
@@ -54,4 +59,13 @@ public class DefaultPagesTest extends TestBase {
                         checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
     }
+
+//    @AfterTest
+//    public void deleteScreenshot() throws IOException {
+//        Files.delete(Paths.get("test-screenshots/" + searchPageScreenshot + "-" + Appender.id + ".png"));
+//        System.out.println("SCREENSHOT DELETED");
+//        Files.delete(Paths.get("test-screenshots/" + pageNotFoundScreenshot + "-" + Appender.id + ".png"));
+//        System.out.println("SCREENSHOT DELETED");
+//    }
+
 }

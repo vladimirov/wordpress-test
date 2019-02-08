@@ -167,7 +167,7 @@ public class HelperBase {
     public void screenshotCapture(String screenshotName) {
         logger.info("SCREENSHOT CAPTURING...");
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File("target/test-screenshots/" + screenshotName + ".png");
+        File dest = new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png");
         Utils.copyFile(screenshot, dest);
     }
 
@@ -175,10 +175,10 @@ public class HelperBase {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
         try {
-            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
         } catch (Exception e) {
 //            new File("test-screenshots/").mkdirs();
-            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + ".png"));
+            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
         }
     }
 
@@ -308,7 +308,7 @@ public class HelperBase {
         System.out.println("TOTAL LINKS: " + links.size());
         for (Element link : links) {
             String hrefUrl = link.attr("href");
-            if (!"#".equals(hrefUrl) && !"#content".equals(hrefUrl) &&  !"#top".equals(hrefUrl) && !hrefUrl.isEmpty()) {
+            if (!"#".equals(hrefUrl) && !"#content".equals(hrefUrl) && !"#top".equals(hrefUrl) && !hrefUrl.isEmpty()) {
                 verifyLinkIsActive(hrefUrl);
                 Document docInternal = Jsoup.connect(hrefUrl).get();
                 Elements linksInternal = docInternal.select("a[href]");

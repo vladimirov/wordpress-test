@@ -1,10 +1,19 @@
 package ui;
 
+import appmanager.Appender;
 import appmanager.TestBase;
 import org.gitlab4j.api.GitLabApiException;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class ThemeScreenshotTest extends TestBase {
+
+    String themeScreenshot = "ThemeScreenshot";
+
 
 //    @BeforeTest
 //    public void loginToAdmin(){
@@ -15,7 +24,6 @@ public class ThemeScreenshotTest extends TestBase {
     public void testThemeScreenshotInAdmin() throws GitLabApiException {
         app.openThemesPage();
         if (app.admin().themeScreenshotIsBlank()) {
-            String themeScreenshot = "ThemeScreenshot";
             app.admin().screenshotCapture(themeScreenshot);
             String markdownThemeScreenshot = app.getGitlabFileMarkdown(themeScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
@@ -23,4 +31,10 @@ public class ThemeScreenshotTest extends TestBase {
                     app.site().pageLinkForGitlab() + "\n" + markdownThemeScreenshot);
         }
     }
+
+//    @AfterTest
+//    public void deleteScreenshot() throws IOException {
+//        Files.delete(Paths.get("test-screenshots/" + themeScreenshot + "-" + Appender.id + ".png"));
+//        System.out.println("SCREENSHOT DELETED");
+//    }
 }
