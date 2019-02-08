@@ -28,6 +28,7 @@ public class ConsoleErrorsTest extends TestBase {
         if (errors.length() > 0) {
             app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", errors);
         }
+
     }
 
 }

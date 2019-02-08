@@ -38,8 +38,9 @@ public class TestBase {
     }
 
     @AfterSuite(alwaysRun = true)
-    public void notifyInSlackAfterSuite() throws IOException, GitLabApiException {
+    public void afterSuite() throws IOException, GitLabApiException {
         app.sendSlackNotify();
+        app.deletePropertiesFile();
     }
 
 }

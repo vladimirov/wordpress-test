@@ -7,7 +7,6 @@ import org.gitlab4j.api.models.Issue;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -18,6 +17,7 @@ public class Appender {
 
     public static String id = System.getProperty("id");
     public static String path = "src/main/resources/" + id + ".properties";
+    public static String pathTarget = "target/classes/" + id + ".properties";
 
     public static void main(String[] args) throws IOException, GitLabApiException {
         Properties localProperties = new Properties();
@@ -36,20 +36,11 @@ public class Appender {
                         "web.adminLogin = " + webAdminLogin + "\r\n" +
                         "web.adminPassword = " + webAdminPass;
 
-        try {
-            Files.write(
-                    Paths.get(path),
-                    input.getBytes(),
-                    StandardOpenOption.CREATE_NEW);
-            System.out.println();
-            System.out.println("\r\n" + "CREDENTIALS ARE SUCCESSFULLY ADDED" + "\r\n");
-            System.out.println();
-        } catch (FileAlreadyExistsException e) {
-            System.out.println();
-            System.out.println("\r\n" + "FILE WITH CREDENTIALS ALREADY EXISTS" + "\r\n");
-            System.out.println();
-        }
-    }
+        Files.write(
+                Paths.get(path),
+                input.getBytes(),
+                StandardOpenOption.CREATE);
 
+    }
 
 }

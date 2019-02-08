@@ -20,6 +20,8 @@ import pages.SitePage;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -29,15 +31,15 @@ import java.util.Properties;
 
 public class ApplicationManager {
     private static String OS = System.getProperty("os.name").toLowerCase();
-    private WebDriver driver;
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
+    public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
+    private WebDriver driver;
     public final Properties projectProperties;
     public final Properties localProperties;
     private LoginPage loginPage;
     private SitePage sitePage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
-    public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
     public static String baseUrl;
     public static String adminLogin;
     public static String adminPassword;
@@ -71,9 +73,8 @@ public class ApplicationManager {
             System.out.println("Unknown OS");
         }
         driver.manage().window().maximize();
-        String target = System.getProperty("target", "local");
-        projectProperties.load(new FileReader(new File(String.format(Appender.path, target))));
-        localProperties.load(new FileReader(new File(String.format("src/main/resources/local.properties", target))));
+        projectProperties.load(new FileReader(new File(Appender.path)));
+        localProperties.load(new FileReader(new File("src/main/resources/local.properties")));
         gitlabHostUrl = localProperties.getProperty("gitlabHostUrl");
         gitlabApiToken = localProperties.getProperty("gitlabApiToken");
         slackApiBotToken = localProperties.getProperty("slackApiBotToken");
@@ -241,6 +242,13 @@ public class ApplicationManager {
         session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
                 "Please go to Gitlab to see test results " + project.getWebUrl() + "/issues");
         session.disconnect();
+    }
+
+    public void deletePropertiesFile() throws IOException {
+        Files.delete(Paths.get(Appender.pathTarget));
+        System.out.println(new File(Appender.pathTarget).exists());
+        Files.delete(Paths.get(Appender.path));
+        System.out.println(new File(Appender.path).exists());
     }
 
 }
