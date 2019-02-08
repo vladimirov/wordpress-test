@@ -3,9 +3,6 @@ package appmanager;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.Issue;
-import org.kohsuke.args4j.CmdLineException;
-import org.kohsuke.args4j.CmdLineParser;
-import org.kohsuke.args4j.Option;
 
 import java.io.File;
 import java.io.FileReader;
@@ -19,29 +16,12 @@ import java.util.Properties;
 
 public class Appender {
 
-    @Option(name = "-id", usage = "Sets a project id")
-    public static String id;
-    public static String path;
+    public static String id = System.getProperty("id");
+    public static String path = "src/main/resources/" + id + ".properties";
 
     public static void main(String[] args) throws IOException, GitLabApiException {
-        new Appender().doAppender(args);
-    }
-
-    private void doAppender(String[] args) throws IOException, GitLabApiException {
-        CmdLineParser parser = new CmdLineParser(this);
-        try {
-            parser.parseArgument(args);
-            this.run();
-        } catch (CmdLineException e) {
-            System.err.println(e.getMessage());
-            parser.printUsage(System.err);
-        }
-    }
-
-    public void run() throws IOException, GitLabApiException {
         Properties localProperties = new Properties();
         localProperties.load(new FileReader(new File("src/main/resources/local.properties")));
-        path = "src/main/resources/" + id + ".properties";
 
         GitLabApi gitLabApi = new GitLabApi(localProperties.getProperty("gitlabHostUrl"), localProperties.getProperty("gitlabApiToken"));
         Issue credentials = gitLabApi.getIssuesApi().getIssue(Integer.parseInt(id), 1);
@@ -56,23 +36,20 @@ public class Appender {
                         "web.adminLogin = " + webAdminLogin + "\r\n" +
                         "web.adminPassword = " + webAdminPass;
 
-        System.out.println();
-        System.out.println("Current path is: " + path);
-        System.out.println();
-
         try {
             Files.write(
                     Paths.get(path),
                     input.getBytes(),
                     StandardOpenOption.CREATE_NEW);
             System.out.println();
-            System.out.println("CREDENTIALS ARE SUCCESSFULLY ADDED");
+            System.out.println("\r\n" + "CREDENTIALS ARE SUCCESSFULLY ADDED" + "\r\n");
             System.out.println();
         } catch (FileAlreadyExistsException e) {
             System.out.println();
-            System.out.println("FILE WITH CREDENTIALS ALREADY EXISTS");
+            System.out.println("\r\n" + "FILE WITH CREDENTIALS ALREADY EXISTS" + "\r\n");
             System.out.println();
         }
     }
+
 
 }
