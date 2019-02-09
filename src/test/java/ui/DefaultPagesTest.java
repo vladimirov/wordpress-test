@@ -12,10 +12,6 @@ import java.nio.file.Paths;
 
 public class DefaultPagesTest extends TestBase {
 
-    String searchPageScreenshot = "SearchPageTest";
-    String pageNotFoundScreenshot = "404PageTest";
-    String testPostScreenshot = "TestPost";
-
 //    @BeforeTest
 //    public void testPostCreation() throws IOException {
 //        app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
@@ -32,17 +28,20 @@ public class DefaultPagesTest extends TestBase {
         //Search Page
         app.openSearchPageUrl();
         app.site().getPageReady();
+        String searchPageScreenshot = "SearchPageTest";
         app.site().screenshotCapture(searchPageScreenshot);
         String checkboxSearchLink = "* [ ] Search Page " + app.site().pageLinkForGitlab();
         String markdownSearchPage = app.getGitlabFileMarkdown(searchPageScreenshot);
         //404 Page
         app.openPageNotFoundUrl();
         app.site().getPageReady();
+        String pageNotFoundScreenshot = "404PageTest";
         app.site().screenshotCapture(pageNotFoundScreenshot);
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
         //Test Post Page
 //        app.admin().openTestPostUrl();
+//        String testPostScreenshot = "TestPost";
 //        app.site().screenshotCaptureAllScreen(testPostScreenshot);
 //        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
 //        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
@@ -59,13 +58,5 @@ public class DefaultPagesTest extends TestBase {
                         checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
     }
-
-//    @AfterTest
-//    public void deleteScreenshot() throws IOException {
-//        Files.delete(Paths.get("test-screenshots/" + searchPageScreenshot + "-" + Appender.id + ".png"));
-//        System.out.println("SCREENSHOT DELETED");
-//        Files.delete(Paths.get("test-screenshots/" + pageNotFoundScreenshot + "-" + Appender.id + ".png"));
-//        System.out.println("SCREENSHOT DELETED");
-//    }
 
 }

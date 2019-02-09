@@ -13,8 +13,6 @@ import java.nio.file.Paths;
 
 public class TaglineTextTest extends TestBase {
 
-    String taglineScreenshot = "TaglineScreenshot";
-
     @BeforeTest
     public void loginToAdmin(){
         app.loginToAdmin();
@@ -24,6 +22,7 @@ public class TaglineTextTest extends TestBase {
     public void testTaglineTextInAdmin() throws GitLabApiException {
         app.openSettingsPage();
         if (app.admin().taglineHasDefaultText()) {
+            String taglineScreenshot = "TaglineScreenshot";
             app.admin().screenshotCapture(taglineScreenshot);
             String markdownTaglineScreenshot = app.getGitlabFileMarkdown(taglineScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
@@ -31,11 +30,5 @@ public class TaglineTextTest extends TestBase {
                     app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot);
         }
     }
-
-//    @AfterTest
-//    public void deleteScreenshot() throws IOException {
-//        Files.delete(Paths.get("test-screenshots/" + taglineScreenshot + "-" + Appender.id + ".png"));
-//        System.out.println("SCREENSHOT DELETED");
-//    }
 
 }
