@@ -39,8 +39,8 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite() throws IOException, GitLabApiException {
+        app.deleteProjectPropertiesFile();
         app.sendSlackNotify();
-        app.deletePropertiesFile();
     }
 
 }

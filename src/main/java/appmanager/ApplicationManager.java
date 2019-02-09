@@ -244,11 +244,15 @@ public class ApplicationManager {
         session.disconnect();
     }
 
-    public void deletePropertiesFile() throws IOException {
-        Files.delete(Paths.get(Appender.pathTarget));
-        System.out.println(new File(Appender.pathTarget).exists());
+    public void deleteProjectPropertiesFile() throws IOException {
         Files.delete(Paths.get(Appender.path));
-        System.out.println(new File(Appender.path).exists());
+        if(!new File(Appender.path).exists()){
+            logger.info("DELETING PROPERTIES FROM RESOURCES FOLDER");
+        }
+        Files.delete(Paths.get(Appender.pathTarget));
+        if(!new File(Appender.pathTarget).exists()){
+            logger.info("DELETING PROPERTIES FROM TARGET FOLDER");
+        }
     }
 
 }

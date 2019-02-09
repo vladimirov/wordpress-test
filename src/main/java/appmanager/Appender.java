@@ -41,6 +41,10 @@ public class Appender {
                 input.getBytes(),
                 StandardOpenOption.CREATE);
 
+        System.out.println();
+        System.out.println("CREDENTIALS ARE SUCCESSFULLY PARSED FROM GITLAB");
+        System.out.println();
+
     }
 
 }
