@@ -39,13 +39,13 @@ public class SitePage extends HelperBase {
         verifyAllLinks(projectProperties.getProperty("web.baseUrl"));
     }
 
-    public String getResponseCode() throws IOException {
-        return responseCode(projectProperties.getProperty("web.baseUrl"));
-    }
-
-    public boolean responseCodeIs200() throws IOException {
-        return responseCode(projectProperties.getProperty("web.baseUrl")).equalsIgnoreCase("200");
-    }
+//    public String getResponseCode() throws IOException {
+//        return responseCode(projectProperties.getProperty("web.baseUrl"));
+//    }
+//
+//    public boolean responseCodeIs200() throws IOException {
+//        return responseCode(projectProperties.getProperty("web.baseUrl")).equalsIgnoreCase("200");
+//    }
 
 }
 

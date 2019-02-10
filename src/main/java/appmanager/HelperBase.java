@@ -323,13 +323,38 @@ public class HelperBase {
         }
     }
 
-    public String responseCode(String linkUrl) throws IOException {
+    public void verifyLinksInSitemapXml() throws IOException {
+        String url = projectProperties.getProperty("web.baseUrl");
+        String sitemapUrl = url + "sitemap_index.xml";
+        Elements xmlLinks = getElements(sitemapUrl, "Total sitemap xml: ");
+        for (Element xmlLink : xmlLinks) {
+            String loc = xmlLink.text();
+            System.out.println(loc);
+            verifyLinkIsActive(loc);
+            Elements xmlLinksInternal = getElements(loc, "Total links : ");
+            for (Element xmlLinkInternal : xmlLinksInternal) {
+                String locInternal = xmlLinkInternal.text();
+                if (!locInternal.isEmpty()) {
+                    System.out.println(locInternal);
+                    verifyLinkIsActive(locInternal);
+                }
+            }
+        }
+    }
+
+    private Elements getElements(String url, String s) throws IOException {
+        Document doc = Jsoup.connect(url).get();
+//        System.out.println(s + xmlLinks.size());
+        return doc.select("loc");
+    }
+
+    public boolean responseCodeIs200(String linkUrl) throws IOException {
         logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
         URL url = new URL(linkUrl);
         HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
         httpURLConnect.setConnectTimeout(3000);
         httpURLConnect.connect();
-        return String.valueOf(httpURLConnect.getResponseCode());
+        return Integer.valueOf(httpURLConnect.getResponseCode()).equals(200);
     }
 
     public String consoleLog() {

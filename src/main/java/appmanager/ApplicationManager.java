@@ -7,6 +7,10 @@ import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
 import org.gitlab4j.api.models.Project;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -246,11 +250,11 @@ public class ApplicationManager {
 
     public void deleteProjectPropertiesFile() throws IOException {
         Files.delete(Paths.get(Appender.path));
-        if(!new File(Appender.path).exists()){
+        if (!new File(Appender.path).exists()) {
             logger.info("DELETING PROPERTIES FROM RESOURCES FOLDER");
         }
         Files.delete(Paths.get(Appender.pathTarget));
-        if(!new File(Appender.pathTarget).exists()){
+        if (!new File(Appender.pathTarget).exists()) {
             logger.info("DELETING PROPERTIES FROM TARGET FOLDER");
         }
     }
