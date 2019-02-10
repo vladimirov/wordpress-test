@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="added screenshots deleting">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" afterDir="false" />
+    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="site links check in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/VerifyLinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -275,7 +270,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549834846905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549834964430" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -435,13 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00109" summary="local properties updated">
-      <created>1547460762861</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1547460762862</updated>
     </task>
     <task id="LOCAL-00110" summary="theme picture screenshot fixed">
       <created>1547481240073</created>
@@ -779,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549744165870</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="site links check in progress">
+      <created>1549834910328</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1549834910329</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -857,7 +852,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pagespeed test fixes" />
     <MESSAGE value="added test post creation test via ui" />
     <MESSAGE value="appender class added" />
     <MESSAGE value="add post via api added" />
@@ -882,7 +876,8 @@
     <MESSAGE value="added index.php file" />
     <MESSAGE value="added properties deleting" />
     <MESSAGE value="added screenshots deleting" />
-    <option name="LAST_COMMIT_MESSAGE" value="added screenshots deleting" />
+    <MESSAGE value="site links check in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="site links check in progress" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
