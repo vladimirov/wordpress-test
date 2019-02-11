@@ -6,11 +6,8 @@ import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
+import org.gitlab4j.api.models.Issue;
 import org.gitlab4j.api.models.Project;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -31,6 +28,7 @@ import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Properties;
 
 public class ApplicationManager {
@@ -256,6 +254,17 @@ public class ApplicationManager {
         if (!new File(Appender.pathTarget).exists()) {
             logger.info("DELETING PROPERTIES FROM TARGET FOLDER");
         }
+    }
+
+    public boolean issueIsAlreadyOpen(String issueTitle) throws GitLabApiException {
+        logger.info("CHECKING IF ISSUE IS ALREADY EXISTS...");
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        List<Issue> issues = gitLabApi.getIssuesApi().getIssues();
+        for (Issue issue : issues) {
+            System.out.println(issue.getTitle());
+            return issue.getTitle().equalsIgnoreCase(issueTitle);
+        }
+        return false;
     }
 
 }

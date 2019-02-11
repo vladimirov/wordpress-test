@@ -6,12 +6,21 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.SkipException;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
 
 public class ConsoleErrorsTest extends TestBase {
+
+//    @BeforeMethod
+//    protected void checkEnvironment() throws GitLabApiException {
+//        if (app.issueIsAlreadyOpen("Errors in browser console are displayed")) {
+//            throw new SkipException("Skipping test because issue with the same name is already open");
+//        }
+//    }
 
     @BeforeTest
     public void setUp() {
@@ -23,6 +32,7 @@ public class ConsoleErrorsTest extends TestBase {
 
     @Test
     public void consoleErrors() throws GitLabApiException {
+
         app.openBaseUrl();
         String errors = app.site().consoleLog();
         if (errors.length() > 0) {
