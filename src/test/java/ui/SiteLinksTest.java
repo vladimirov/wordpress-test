@@ -14,7 +14,7 @@ public class SiteLinksTest extends TestBase {
         if (!app.site().sitemapPageIsAdded()) {
             app.uploadIssueWithDescriptionToGitlab(
                     "Yoast SEO plugin is missing",
-                    app.projectProperties.getProperty("web.baseUrl") + "sitemap_index.xml" + "\n\r" +
+                    app.projectProperties.getProperty("web.baseUrl") + "sitemap_index.xml" + "\n\r" + "\n\r" +
                             "Sitemap is missing because Yoast SEO plugin isn't added");
         }
 
