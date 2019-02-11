@@ -10,6 +10,8 @@ public class SiteLinksTest extends TestBase {
 
     @Test
     public void checkLinksOnSite() throws IOException, GitLabApiException {
+
+        //TODO Add checking of Yoast SEO plugin
         if (!app.site().responseCodeIs200()) {
             app.uploadIssueWithDescriptionToGitlab(
                     "Site has invalid links",
