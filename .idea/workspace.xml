@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="site links check in progress">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TEST/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -321,7 +318,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549882708979" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549883403978" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sitemap-xml-parser" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -329,9 +326,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
-      <recent name="appmanager" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\wordpress-test\src\test\java" />
+      <recent name="C:\Projects\wordpress-test\src\main\resources" />
+      <recent name="C:\Projects\wordpress-test" />
+      <recent name="C:\Projects\wordpress-test\src\main\java\appmanager" />
+      <recent name="C:\Projects\wordpress-test\src\test\resources\config" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -343,12 +343,9 @@
       <recent name="appmanager" />
       <recent name="ui" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\wordpress-test\src\main\resources" />
-      <recent name="C:\Projects\wordpress-test" />
-      <recent name="C:\Projects\wordpress-test\src\main\java\appmanager" />
-      <recent name="C:\Projects\wordpress-test\src\test\resources\config" />
-      <recent name="C:\Projects\wordpress-test\src\test" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui" />
+      <recent name="appmanager" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -480,13 +477,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00111" summary="add test post fixed">
-      <created>1547547488967</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1547547488970</updated>
     </task>
     <task id="LOCAL-00112" summary="add test post fixed">
       <created>1547565694969</created>
@@ -824,7 +814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549882489539</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="site links check in progress">
+      <created>1549882953286</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1549882953286</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -870,7 +867,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21375267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
