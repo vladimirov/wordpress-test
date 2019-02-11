@@ -26,7 +26,6 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
 import java.util.Properties;
@@ -37,17 +36,18 @@ import static org.testng.AssertJUnit.fail;
 public class HelperBase {
 
     Logger logger = LoggerFactory.getLogger(HelperBase.class);
-    public final Properties projectProperties;
+//    public final Properties projectProperties;
 
     protected WebDriver driver;
     public WebDriverWait wait;
     public int timeOutInSeconds = 10;
     public WebElement element;
+    public String locInternal;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSeconds);
-        projectProperties = new Properties();
+//        projectProperties = new Properties();
     }
 
     protected void click(By locator) {
@@ -302,59 +302,37 @@ public class HelperBase {
         }
     }
 
-    public void verifyAllLinks(String linkUrl) throws IOException {
-        Document doc = Jsoup.connect(linkUrl).get();
-        Elements links = doc.select("a[href]");
-        System.out.println("TOTAL LINKS: " + links.size());
-        for (Element link : links) {
-            String hrefUrl = link.attr("href");
-            if (!"#".equals(hrefUrl) && !"#content".equals(hrefUrl) && !"#top".equals(hrefUrl) && !hrefUrl.isEmpty()) {
-                verifyLinkIsActive(hrefUrl);
-                Document docInternal = Jsoup.connect(hrefUrl).get();
-                Elements linksInternal = docInternal.select("a[href]");
-                System.out.println("TOTAL INTERNAL LINKS: " + linksInternal.size());
-                for (Element linkInternal : linksInternal) {
-                    String hrefInternalUrl = linkInternal.attr("href");
-                    if (!"#".equals(hrefInternalUrl) && !hrefInternalUrl.isEmpty()) {
-                        verifyLinkIsActive(hrefInternalUrl);
-                    }
-                }
-            }
-        }
-    }
-
-    public void verifyLinksInSitemapXml() throws IOException {
-        String url = projectProperties.getProperty("web.baseUrl");
+    public Integer responseCode(String url) throws IOException {
         String sitemapUrl = url + "sitemap_index.xml";
         Elements xmlLinks = getElements(sitemapUrl, "Total sitemap xml: ");
+        HttpURLConnection httpURLConnect = null;
         for (Element xmlLink : xmlLinks) {
             String loc = xmlLink.text();
             System.out.println(loc);
-            verifyLinkIsActive(loc);
             Elements xmlLinksInternal = getElements(loc, "Total links : ");
             for (Element xmlLinkInternal : xmlLinksInternal) {
-                String locInternal = xmlLinkInternal.text();
+                locInternal = xmlLinkInternal.text();
                 if (!locInternal.isEmpty()) {
                     System.out.println(locInternal);
-                    verifyLinkIsActive(locInternal);
+//                    verifyLinkIsActive(locInternal);
+                    logger.info("VERIFY LINK IS ACTIVE: " + locInternal);
+                    URL locUrl = new URL(locInternal);
+                    httpURLConnect = (HttpURLConnection) locUrl.openConnection();
+                    httpURLConnect.setConnectTimeout(3000);
+                    httpURLConnect.connect();
                 }
             }
         }
+        assert httpURLConnect != null;
+        return httpURLConnect.getResponseCode();
     }
+
 
     private Elements getElements(String url, String s) throws IOException {
-        Document doc = Jsoup.connect(url).get();
+        Document doc = Jsoup.connect(url).userAgent("Mozilla").get();
+        Elements xmlLinks = doc.select("loc");
 //        System.out.println(s + xmlLinks.size());
         return doc.select("loc");
-    }
-
-    public boolean responseCodeIs200(String linkUrl) throws IOException {
-        logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
-        URL url = new URL(linkUrl);
-        HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
-        httpURLConnect.setConnectTimeout(3000);
-        httpURLConnect.connect();
-        return Integer.valueOf(httpURLConnect.getResponseCode()).equals(200);
     }
 
     public String consoleLog() {

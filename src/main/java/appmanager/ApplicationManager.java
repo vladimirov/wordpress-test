@@ -239,7 +239,6 @@ public class ApplicationManager {
     public void sendSlackNotify() throws IOException, GitLabApiException {
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
-
         SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
         session.connect();
         SlackChannel channel = session.findChannelByName("simple-slack-api"); //make sure bot is a member of the channel.

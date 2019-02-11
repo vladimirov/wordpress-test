@@ -10,16 +10,11 @@ public class SiteLinksTest extends TestBase {
 
     @Test
     public void checkLinksOnSite() throws IOException, GitLabApiException {
-//        app.site().verifyAllLinksOnSite();
-//        if (!app.site().responseCodeIs200()) {
-//            app.uploadIssueWithDescriptionToGitlab(
-//                    "Site has invalid links",
-//                    app.site().getResponseCode());
-//        }
-
-        app.site().verifyLinksInSitemapXml();
-
-
+        if (!app.site().responseCodeIs200()) {
+            app.uploadIssueWithDescriptionToGitlab(
+                    "Site has invalid links",
+                    app.site().locInternal + "\n\r");
+        }
     }
 }
 
