@@ -10,7 +10,7 @@
             <class name="ui.TaglineTextTest"> </class>
             <class name="ui.ThemeScreenshotTest"> </class>
             <class name="ui.DefaultPagesTest"> </class>
-            <class name="ui.SiteLinksTest"> </class>
+            <!--<class name="ui.SiteLinksTest"> </class>-->
         </classes>
     </test>
 </suite>
