@@ -3,16 +3,19 @@ package appmanager;
 import com.ullink.slack.simpleslackapi.SlackChannel;
 import com.ullink.slack.simpleslackapi.SlackSession;
 import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
+import org.gitlab4j.api.Constants;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.FileUpload;
 import org.gitlab4j.api.models.Issue;
+import org.gitlab4j.api.models.IssueFilter;
 import org.gitlab4j.api.models.Project;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.SkipException;
 import pages.AdminPage;
 import pages.FaviconPage;
 import pages.LoginPage;
@@ -27,6 +30,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
@@ -252,15 +256,35 @@ public class ApplicationManager {
         }
     }
 
-    public boolean issueIsAlreadyOpen(String issueTitle) throws GitLabApiException {
-        logger.info("CHECKING IF ISSUE IS ALREADY EXISTS...");
-        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
-        List<Issue> issues = gitLabApi.getIssuesApi().getIssues();
-        for (Issue issue : issues) {
-            System.out.println(issue.getTitle());
-            return issue.getTitle().equalsIgnoreCase(issueTitle);
-        }
-        return false;
-    }
+    public void checkIssuesWithStateOpened() throws GitLabApiException {
+        List<String> titles = new ArrayList<>();
+        titles.add("Errors in browser console are displayed");
+        titles.add("Default pages layout screenshots in CHROME browser");
+        titles.add("Tagline has default text in admin");
+        titles.add("Favicon is missing");
+        titles.add("Errors in browser console are displayed");
+        titles.add("Yoast SEO plugin is missing");
+        titles.add("Site has invalid links");
+        titles.add("Theme screenshot is missing in admin");
+        titles.add("PageSpeed Desktop percentage value is");
 
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        IssueFilter openFilter = new IssueFilter().withState(Constants.IssueState.OPENED);
+        List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
+        for (Issue issue : issues) {
+            List<String> issuesTitles = new ArrayList<>();
+            issuesTitles.add(issue.getTitle());
+            for (String issueTitle : issuesTitles) {
+                if (titles.contains(issueTitle)) {
+                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
+                    throw new SkipException("Skipping test because issue with the same name is already open");
+                }
+            }
+
+//            if (titles.contains(issue.getTitle())) {
+//                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
+//                throw new SkipException("Skipping test because issue with the same name is already open");
+//            }
+        }
+    }
 }

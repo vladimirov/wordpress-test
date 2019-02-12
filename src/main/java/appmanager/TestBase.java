@@ -33,8 +33,9 @@ public class TestBase {
     }
 
     @BeforeMethod
-    public void logTestStart(Method m) {
+    public void logTestStart(Method m) throws GitLabApiException {
         logger.info("START TEST " + m.getName());
+        app.checkIssuesWithStateOpened();
     }
 
     @AfterMethod(alwaysRun = true)
@@ -44,8 +45,8 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite() throws IOException, GitLabApiException {
-        app.deleteProjectPropertiesFile();
         app.sendSlackNotify();
+        app.deleteProjectPropertiesFile();
     }
 
 }
