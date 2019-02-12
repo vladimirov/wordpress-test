@@ -17,9 +17,8 @@ public class Appender {
 
     public static String id = System.getProperty("id");
     public static String path = "src/main/resources/" + id + ".properties";
-    public static String pathTarget = "target/classes/" + id + ".properties";
 
-    public static void main(String[] args) throws IOException, GitLabApiException {
+    static void credentialsParsingFromGitlab() throws IOException, GitLabApiException {
         Properties localProperties = new Properties();
         localProperties.load(new FileReader(new File("src/main/resources/local.properties")));
 

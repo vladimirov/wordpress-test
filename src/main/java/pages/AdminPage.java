@@ -80,7 +80,7 @@ public class AdminPage extends HelperBase {
 //        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 //        clipboard.setContents(stringSelection, null);
 
-//        String text = new String(Files.readAllBytes(Paths.get("src/main/resources/test-content.txt")),
+//        String text = new String(Files.readAllBytes(Paths.get("src/credentialsParsingFromGitlab/resources/test-content.txt")),
 //                StandardCharsets.UTF_8);
         try {
             click(textTabLocator);

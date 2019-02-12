@@ -15,6 +15,11 @@ public class TestBase {
     protected static final ApplicationManager app = new ApplicationManager();
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
+    @BeforeSuite
+    public void credentialsAdding() throws IOException, GitLabApiException {
+        Appender.credentialsParsingFromGitlab();
+    }
+
     @BeforeTest
     @Parameters("browser")
     public void setUp(@Optional("") String browser, ITestContext context) throws Exception {

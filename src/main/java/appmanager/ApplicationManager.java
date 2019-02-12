@@ -250,10 +250,6 @@ public class ApplicationManager {
         if (!new File(Appender.path).exists()) {
             logger.info("DELETING PROPERTIES FROM RESOURCES FOLDER");
         }
-        Files.delete(Paths.get(Appender.pathTarget));
-        if (!new File(Appender.pathTarget).exists()) {
-            logger.info("DELETING PROPERTIES FROM TARGET FOLDER");
-        }
     }
 
     public boolean issueIsAlreadyOpen(String issueTitle) throws GitLabApiException {
