@@ -22,7 +22,6 @@ public class ConsoleErrorsTest extends TestBase {
         caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
     }
 
-//    @Parameters("title")
     @Test
     public void consoleErrors() throws GitLabApiException {
         app.openBaseUrl();

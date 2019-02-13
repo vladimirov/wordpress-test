@@ -270,17 +270,18 @@ public class ApplicationManager {
 
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         IssueFilter openFilter = new IssueFilter().withState(Constants.IssueState.OPENED);
-
         List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
         for (Issue issue : issues) {
+            for (String issueTitle : titles) {
+                if (issue.getTitle().contains(issueTitle)){
+                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
+                    throw new SkipException("Skipping test because issue with the same name is already open");
+                }
+            }
 //          if (titles.contains(issue.getTitle())) {
 //                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
 //                throw new SkipException("Skipping test because issue with the same name is already open");
 //            }
-            if(Arrays.toString(testResult.getParameters()).equalsIgnoreCase(issue.getTitle())){
-                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
-                throw new SkipException("Skipping test because issue with the same name is already open");
-            }
         }
     }
 }

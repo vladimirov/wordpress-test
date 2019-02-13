@@ -19,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="227">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,16 +30,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="284" column="25" selection-start-line="284" selection-start-column="25" selection-end-line="284" selection-end-column="25" />
-              <folding>
-                <element signature="e#5514#5515#0" expanded="true" />
-                <element signature="e#5558#5559#0" expanded="true" />
-                <marker date="1550055454508" expanded="true" signature="10904:11170" ph="..." />
-              </folding>
+            <state relative-caret-position="933">
+              <caret line="276" selection-start-line="276" selection-end-line="276" />
             </state>
           </provider>
         </entry>
@@ -48,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,14 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding>
-                <marker date="1550051382218" expanded="true" signature="331:660" ph="..." />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -168,10 +174,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/524.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/Appender.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" />
       </list>
     </option>
   </component>
@@ -293,7 +299,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550055511064" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550069461984" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -335,7 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ThemeScreenshotTest">
+  <component name="RunManager" selected="TestNG.all tests">
     <configuration name="SlackApiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.SlackApiTest" />
       <module name="wordpress-test" />
@@ -359,17 +365,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Projects/wordpress-test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="wordpress-test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -433,12 +428,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="all tests" type="TestNG" temporary="true">
+      <module name="wordpress-test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs>
+        <env name="id" value="501" />
+      </envs>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SlackApiTest" />
+      <item itemvalue="TestNG.all tests" />
+      <item itemvalue="TestNG.ConsoleErrorsTest" />
+      <item itemvalue="TestNG.TaglineTextTest" />
+      <item itemvalue="TestNG.ThemeScreenshotTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.all tests" />
         <item itemvalue="TestNG.ThemeScreenshotTest" />
         <item itemvalue="TestNG.TaglineTextTest" />
         <item itemvalue="TestNG.ConsoleErrorsTest" />
-        <item itemvalue="TestNG.C:/Projects/wordpress-test/testng.xml" />
         <item itemvalue="Application.SlackApiTest" />
       </list>
     </recent_temporary>
@@ -453,13 +476,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00126" summary="code refactored">
-      <created>1548326481373</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1548326481373</updated>
     </task>
     <task id="LOCAL-00127" summary="code refactored">
       <created>1548327893898</created>
@@ -797,31 +813,17 @@
       <option name="project" value="LOCAL" />
       <updated>1549992370215</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="issue titles comparing in progress">
+      <created>1550055603903</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1550055603904</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TaglineTextTest - 2019.02.09 at 21h 59m 56s.xml">
-      <configuration name="TaglineTextTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TaglineTextTest - 2019.02.09 at 22h 00m 48s.xml">
-      <configuration name="TaglineTextTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TaglineTextTest - 2019.02.09 at 22h 03m 43s.xml">
-      <configuration name="TaglineTextTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TaglineTextTest - 2019.02.09 at 22h 04m 22s.xml">
-      <configuration name="TaglineTextTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TaglineTextTest - 2019.02.09 at 22h 04m 53s.xml">
-      <configuration name="TaglineTextTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.02.09 at 22h 09m 36s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThemeScreenshotTest - 2019.02.09 at 22h 10m 39s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ThemeScreenshotTest - 2019.02.09 at 22h 12m 39s.xml">
       <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
     </history-entry>
@@ -830,6 +832,27 @@
     </history-entry>
     <history-entry file="ThemeScreenshotTest - 2019.02.09 at 22h 17m 29s.xml">
       <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Projects_wordpress-test_testng_xml - 2019.02.13 at 16h 23m 12s.xml">
+      <configuration name="C:/Projects/wordpress-test/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 26m 01s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 27m 36s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 28m 06s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 29m 45s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 31m 22s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.02.13 at 16h 32m 55s.xml">
+      <configuration name="all tests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -854,9 +877,9 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3215434" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21329047" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37299034" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.31561998" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30760986" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45123258" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.31511253" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32843137" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -871,7 +894,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19349681" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.14712153" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.14712153" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23081024" />
@@ -939,7 +962,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/local-501.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/0.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/id.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/project.properties" />
@@ -1193,16 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1214,13 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/reflect/Executable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1238,20 +1243,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/reflect/Executable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <marker date="1550051382218" expanded="true" signature="331:660" ph="..." />
-          </folding>
+        <state relative-caret-position="301">
+          <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/annotations/BeforeTest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1260,23 +1269,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="83">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="284" column="25" selection-start-line="284" selection-start-column="25" selection-end-line="284" selection-end-column="25" />
+        <state relative-caret-position="933">
+          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <element signature="e#5514#5515#0" expanded="true" />
-            <element signature="e#5558#5559#0" expanded="true" />
-            <marker date="1550055454508" expanded="true" signature="10904:11170" ph="..." />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>

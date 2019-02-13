@@ -3,7 +3,7 @@
 <suite name="UI Tests">
     <test name="All Tests In Chrome">
         <parameter name="browser" value="chrome"/>
-        <parameter name="title" value="Errors in browser console are displayed"/>
+        <!--<parameter name="title" value="Errors in browser console are displayed"/>-->
         <classes>
             <class name="ui.ConsoleErrorsTest"> </class>
             <class name="ui.FaviconTest"> </class>

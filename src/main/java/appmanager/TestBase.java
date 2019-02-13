@@ -14,6 +14,27 @@ public class TestBase {
 
     protected static final ApplicationManager app = new ApplicationManager();
     Logger logger = LoggerFactory.getLogger(TestBase.class);
+    public static String title;
+
+//    @DataProvider(name = "test1")
+//    public Object[] checkingExistingIssues() {
+//        return new Object[]{
+//                "Errors in browser console are displayed",
+//                "Default pages layout screenshots in CHROME browser",
+//                "Tagline has default text in admin",
+//                "Favicon is missing",
+//                "Errors in browser console are displayed",
+//                "Yoast SEO plugin is missing",
+//                "Site has invalid links",
+//                "Theme screenshot is missing in admin",
+//                "PageSpeed Desktop percentage value is"
+//        };
+//    }
+
+//    @Test(dataProvider = "test1")
+//    public void setTitle(String title){
+//        TestBase.title = title;
+//    }
 
     @BeforeSuite
     public void credentialsAdding() throws IOException, GitLabApiException {
@@ -25,7 +46,7 @@ public class TestBase {
     public void setUp(@Optional("") String browser, ITestContext context) throws Exception {
         app.init(browser);
         context.setAttribute("app", app);
-//        app.checkIssuesWithStateOpened();//TODO
+
 
     }
 
@@ -37,8 +58,7 @@ public class TestBase {
     @BeforeMethod
     public void logTestStart(Method m) throws GitLabApiException {
         logger.info("START TEST " + m.getName());
-
-
+//        app.checkIssuesWithStateOpened();//TODO
     }
 
     @AfterMethod(alwaysRun = true)
