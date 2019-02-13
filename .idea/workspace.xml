@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="issue titles comparing in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="255">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,12 +29,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
+            <state relative-caret-position="255">
               <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1994#1995#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="933">
+            <state relative-caret-position="3655">
               <caret line="276" selection-start-line="276" selection-end-line="276" />
             </state>
           </provider>
@@ -56,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="238">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -219,6 +213,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,7 +287,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,13 +470,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00127" summary="code refactored">
-      <created>1548327893898</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1548327893898</updated>
     </task>
     <task id="LOCAL-00128" summary="code refactored">
       <created>1548328060316</created>
@@ -820,7 +807,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550055603904</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="issue titles comparing in progress">
+      <created>1550074792306</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1550074792309</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -868,7 +862,7 @@
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23347548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1259,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="255">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1269,26 +1263,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="255">
           <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
+        <state relative-caret-position="3655">
           <caret line="276" selection-start-line="276" selection-end-line="276" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/ConsoleErrorsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="238">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1298,8 +1290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
