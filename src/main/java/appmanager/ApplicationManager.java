@@ -24,16 +24,14 @@ import pages.SitePage;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Executable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 public class ApplicationManager {
     private static String OS = System.getProperty("os.name").toLowerCase();
@@ -58,6 +56,8 @@ public class ApplicationManager {
     public static String databaseUser;
     public static String databasePass;
     private Capabilities capabilities;
+
+    private Executable testResult;
 
     public ApplicationManager() {
         projectProperties = new Properties();
@@ -270,21 +270,25 @@ public class ApplicationManager {
 
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         IssueFilter openFilter = new IssueFilter().withState(Constants.IssueState.OPENED);
+
         List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
         for (Issue issue : issues) {
-            List<String> issuesTitles = new ArrayList<>();
-            issuesTitles.add(issue.getTitle());
-            for (String issueTitle : issuesTitles) {
-                if (titles.contains(issueTitle)) {
-                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
-                    throw new SkipException("Skipping test because issue with the same name is already open");
-                }
-            }
-
-//            if (titles.contains(issue.getTitle())) {
+//          if (titles.contains(issue.getTitle())) {
 //                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
 //                throw new SkipException("Skipping test because issue with the same name is already open");
 //            }
+            if(Arrays.toString(testResult.getParameters()).equalsIgnoreCase(issue.getTitle())){
+                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
+                throw new SkipException("Skipping test because issue with the same name is already open");
+            }
         }
     }
 }
+
+
+//            for (String issueTitle : issuesTitles) {
+//                    if (titles.contains(issueTitle)) {
+//                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
+//                    throw new SkipException("Skipping test because issue with the same name is already open");
+//                    }
+//                    }

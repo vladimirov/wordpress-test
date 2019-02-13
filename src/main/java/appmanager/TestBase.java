@@ -25,6 +25,8 @@ public class TestBase {
     public void setUp(@Optional("") String browser, ITestContext context) throws Exception {
         app.init(browser);
         context.setAttribute("app", app);
+//        app.checkIssuesWithStateOpened();//TODO
+
     }
 
     @AfterTest(alwaysRun = true)
@@ -35,7 +37,8 @@ public class TestBase {
     @BeforeMethod
     public void logTestStart(Method m) throws GitLabApiException {
         logger.info("START TEST " + m.getName());
-        app.checkIssuesWithStateOpened();
+
+
     }
 
     @AfterMethod(alwaysRun = true)

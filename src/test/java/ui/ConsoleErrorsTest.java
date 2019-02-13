@@ -7,6 +7,7 @@ import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
@@ -21,6 +22,7 @@ public class ConsoleErrorsTest extends TestBase {
         caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
     }
 
+//    @Parameters("title")
     @Test
     public void consoleErrors() throws GitLabApiException {
         app.openBaseUrl();
