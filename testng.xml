@@ -3,15 +3,14 @@
 <suite name="UI Tests">
     <test name="All Tests In Chrome">
         <parameter name="browser" value="chrome"/>
-        <!--<parameter name="title" value="Errors in browser console are displayed"/>-->
         <classes>
             <class name="ui.ConsoleErrorsTest"> </class>
             <class name="ui.FaviconTest"> </class>
             <class name="ui.PageSpeedApiTest"> </class>
-            <class name="ui.TaglineTextTest"> </class>
-            <class name="ui.ThemeScreenshotTest"> </class>
-            <class name="ui.DefaultPagesTest"> </class>
-            <class name="ui.SiteLinksTest"> </class>
+            <!--<class name="ui.TaglineTextTest"> </class>-->
+            <!--<class name="ui.ThemeScreenshotTest"> </class>-->
+            <!--<class name="ui.DefaultPagesTest"> </class>-->
+            <!--<class name="ui.SiteLinksTest"> </class>-->
         </classes>
     </test>
 </suite>

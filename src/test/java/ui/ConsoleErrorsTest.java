@@ -6,24 +6,33 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
 
 public class ConsoleErrorsTest extends TestBase {
 
+    String title = "Errors in browser console are displayed";
+
     @BeforeTest
-    public void setUp() {
-        DesiredCapabilities caps = DesiredCapabilities.chrome();
-        LoggingPreferences logPrefs = new LoggingPreferences();
-        logPrefs.enable(LogType.BROWSER, Level.ALL);
-        caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+    public void setUp() throws GitLabApiException {
+
+        if (app.getIssueTitles().contains(title)){
+            System.out.println("ISSUE " + title + " IS ON GITLAB");
+            throw new SkipException("Skipping test");
+        }
+
     }
 
     @Test
     public void consoleErrors() throws GitLabApiException {
+        DesiredCapabilities caps = DesiredCapabilities.chrome();
+        LoggingPreferences logPrefs = new LoggingPreferences();
+        logPrefs.enable(LogType.BROWSER, Level.ALL);
+        caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+
         app.openBaseUrl();
         String errors = app.site().consoleLog();
         if (errors.length() > 0) {

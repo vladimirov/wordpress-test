@@ -15,7 +15,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.SkipException;
 import pages.AdminPage;
 import pages.FaviconPage;
 import pages.LoginPage;
@@ -256,33 +255,15 @@ public class ApplicationManager {
         }
     }
 
-    public void checkIssuesWithStateOpened() throws GitLabApiException {
-        List<String> titles = new ArrayList<>();
-        titles.add("Errors in browser console are displayed");
-        titles.add("Default pages layout screenshots in CHROME browser");
-        titles.add("Tagline has default text in admin");
-        titles.add("Favicon is missing");
-        titles.add("Errors in browser console are displayed");
-        titles.add("Yoast SEO plugin is missing");
-        titles.add("Site has invalid links");
-        titles.add("Theme screenshot is missing in admin");
-        titles.add("PageSpeed Desktop percentage value is");
-
+    public List<String> getIssueTitles() throws GitLabApiException {
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         IssueFilter openFilter = new IssueFilter().withState(Constants.IssueState.OPENED);
         List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
+        List<String> issueTitles = new ArrayList<>();
         for (Issue issue : issues) {
-            for (String issueTitle : titles) {
-                if (issue.getTitle().contains(issueTitle)){
-                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
-                    throw new SkipException("Skipping test because issue with the same name is already open");
-                }
-            }
-//          if (titles.contains(issue.getTitle())) {
-//                logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
-//                throw new SkipException("Skipping test because issue with the same name is already open");
-//            }
+             issueTitles.add(issue.getTitle());
         }
+        return issueTitles;
     }
 }
 
