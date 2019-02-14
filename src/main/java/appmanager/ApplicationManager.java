@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.SkipException;
 import pages.AdminPage;
 import pages.FaviconPage;
 import pages.LoginPage;
@@ -30,7 +31,10 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Properties;
 
 public class ApplicationManager {
     private static String OS = System.getProperty("os.name").toLowerCase();
@@ -261,16 +265,17 @@ public class ApplicationManager {
         List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
         List<String> issueTitles = new ArrayList<>();
         for (Issue issue : issues) {
-             issueTitles.add(issue.getTitle());
+            issueTitles.add(issue.getTitle());
         }
         return issueTitles;
     }
+
+    public void checkIfIssueExists(String title) throws GitLabApiException {
+        if (getIssueTitles().contains(title)) {
+            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
+            throw new SkipException("");
+        }
+
+    }
+
 }
-
-
-//            for (String issueTitle : issuesTitles) {
-//                    if (titles.contains(issueTitle)) {
-//                    logger.info("ISSUE " + issue.getTitle() + " IS ALREADY OPEN IN GITLAB");
-//                    throw new SkipException("Skipping test because issue with the same name is already open");
-//                    }
-//                    }

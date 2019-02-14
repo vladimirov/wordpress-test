@@ -14,31 +14,19 @@ import java.util.logging.Level;
 
 public class ConsoleErrorsTest extends TestBase {
 
-    String title = "Errors in browser console are displayed";
-
-    @BeforeTest
-    public void setUp() throws GitLabApiException {
-
-        if (app.getIssueTitles().contains(title)){
-            System.out.println("ISSUE " + title + " IS ON GITLAB");
-            throw new SkipException("Skipping test");
-        }
-
-    }
-
     @Test
     public void consoleErrors() throws GitLabApiException {
+        String title = "Errors in browser console are displayed";
+        app.checkIfIssueExists(title);
         DesiredCapabilities caps = DesiredCapabilities.chrome();
         LoggingPreferences logPrefs = new LoggingPreferences();
         logPrefs.enable(LogType.BROWSER, Level.ALL);
         caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
-
         app.openBaseUrl();
         String errors = app.site().consoleLog();
         if (errors.length() > 0) {
-            app.uploadIssueWithDescriptionToGitlab("Errors in browser console are displayed", errors);
+            app.uploadIssueWithDescriptionToGitlab(title, errors);
         }
-
     }
 
 }

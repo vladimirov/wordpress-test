@@ -13,12 +13,14 @@ public class FaviconTest extends TestBase {
 
     @Test
     public void testFavicon() throws IOException, GitLabApiException {
+        String title = "Favicon is missing";
+        app.checkIfIssueExists(title);
         try {
             app.openBaseUrl();
             assertTrue(app.faviconPage().isFaviconPresent());
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
-            app.uploadIssueWithDescriptionToGitlab("Favicon is missing", "Check site favicon");
+            app.uploadIssueWithDescriptionToGitlab(title, "Check site favicon");
         }
     }
 

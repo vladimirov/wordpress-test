@@ -1,11 +1,9 @@
 package ui;
 
 import appmanager.Appender;
-import appmanager.ApplicationManager;
 import appmanager.HelperBase;
 import appmanager.TestBase;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.http.HttpRequest;
 import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
@@ -15,7 +13,6 @@ import com.google.api.services.pagespeedonline.Pagespeedonline.Pagespeedapi;
 import com.google.api.services.pagespeedonline.model.PagespeedApiPagespeedResponseV5;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import org.gitlab4j.api.GitLabApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeTest;
@@ -24,7 +21,6 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.util.Properties;
 
 public class PageSpeedApiTest extends TestBase {
@@ -48,8 +44,9 @@ public class PageSpeedApiTest extends TestBase {
 
     @Test
     public void testPageSpeedViaApi() throws Throwable {
+        String title = "PageSpeed Desktop percentage value need to be optimized";
+        app.checkIfIssueExists(title);
         Logger logger = LoggerFactory.getLogger(HelperBase.class);
-        String description = "PageSpeed Desktop percentage value need to be more than 50";
         String url = properties.getProperty("web.baseUrl");
         String domain = url.split("/")[2];
         String pageSpeedLink = "https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2F" + domain + "%2F";
@@ -57,7 +54,8 @@ public class PageSpeedApiTest extends TestBase {
         JsonFactory jsonFactory = new JacksonFactory();
         HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
 
-        Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, setHttpTimeout(httpRequest -> {})).build();
+        Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, setHttpTimeout(httpRequest -> {
+        })).build();
         Pagespeedapi.Runpagespeed runpagespeed = p.pagespeedapi().runpagespeed(url);
         PagespeedApiPagespeedResponseV5 result = runpagespeed.execute();
 
@@ -71,10 +69,10 @@ public class PageSpeedApiTest extends TestBase {
         int score = Math.round(scoreFloat);
 
         if (score < 50) {
-            logger.info("Google PageSpeed Desktop need to be optimized to more than 50. Right now it's value is " + score);
+            logger.info("PageSpeed Desktop value need to be optimized to more than 50. Right now it's value is " + score);
             app.uploadIssueWithDescriptionToGitlab(
-                    "PageSpeed Desktop percentage value is " + score,
-                    pageSpeedLink + "\n\n" + description);
+                    title,
+                    pageSpeedLink + "\n\n" + "PageSpeed Desktop value need to be optimized to more than 50. Right now it's value is " + score);
         } else {
             logger.info("PageSpeed Desktop is up to date. Right now it's value is " + score);
         }

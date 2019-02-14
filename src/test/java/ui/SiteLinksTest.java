@@ -10,17 +10,20 @@ public class SiteLinksTest extends TestBase {
 
     @Test
     public void checkLinksOnSite() throws IOException, GitLabApiException {
-
+        String title = "Yoast SEO plugin is missing";
+        app.checkIfIssueExists(title);
         if (!app.site().sitemapPageIsAdded()) {
             app.uploadIssueWithDescriptionToGitlab(
-                    "Yoast SEO plugin is missing",
+                    title,
                     app.projectProperties.getProperty("web.baseUrl") + "sitemap_index.xml" + "\n\r" + "\n\r" +
                             "Sitemap is missing because Yoast SEO plugin isn't added");
         }
 
+        String titleLinks = "Site has invalid links";
+        app.checkIfIssueExists(titleLinks);
         if (app.site().sitemapPageIsAdded() && !app.site().responseCodeIs200()) {
             app.uploadIssueWithDescriptionToGitlab(
-                    "Site has invalid links",
+                    titleLinks,
                     app.site().locInternal + "\n\r");
         }
     }

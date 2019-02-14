@@ -1,30 +1,14 @@
 package ui;
 
-import appmanager.Appender;
 import appmanager.TestBase;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class DefaultPagesTest extends TestBase {
 
-//    @BeforeTest
-//    public void testPostCreation() throws IOException {
-//        app.loginToAdmin();//Add post via database - app.addPostDb(app.admin().testContent());
-//        app.openPostsPageInAdmin();
-//        app.admin().addNewPostButtonClick();
-//        app.admin().enterPostTitle();
-//        app.admin().enterTestContent();
-//        app.admin().publishPost();
-//        app.admin().logoutFromAdmin();
-//    }
-
     @Test
     public void testDefaultPages() throws Exception {
+        String title = "Default pages layout screenshots in " + app.browserName() + " browser";
+        app.checkIfIssueExists(title);
         //Search Page
         app.openSearchPageUrl();
         app.site().getPageReady();
@@ -53,7 +37,7 @@ public class DefaultPagesTest extends TestBase {
 //                "Questions");
         //Without Test Post Test
         app.uploadIssueWithDescriptionToGitlab(
-                "Default pages layout screenshots in " + app.browserName() + " browser",
+                title,
                 "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
                         checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
