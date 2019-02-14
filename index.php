@@ -56,7 +56,7 @@ function liveExecuteCommand($cmd)
 
 if ( $hash == "true" ) {
   echo '<pre>';
-  $result = liveExecuteCommand('mvn exec:java -Did=' . $id . ' test');
+  $result = liveExecuteCommand('mvn -Did=' . $id . ' test');
   echo '</pre>';
 
   if($result['exit_status'] === 0){
