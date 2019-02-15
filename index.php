@@ -18,6 +18,19 @@
     white-space: pre-wrap;
   }
 </style>
+<script>
+var csrollTimer = setInterval(scrollClock, 1000);
+function scrollClock() {
+  window.scrollTo(0,document.body.scrollHeight);
+  if (
+      (
+        document.documentElement.innerText
+      ).indexOf('Command execution') > -1
+    ) {
+      clearInterval(csrollTimer);
+    }
+}
+</script>
 <?php
 
 $id = ($_GET["id"])?($_GET["id"]):"501";
@@ -64,9 +77,9 @@ if ( $hash == "true" ) {
      echo '<div style="color:green;font-weight:bold;">Command execution succeeds</div>';
   } else {
       // do something on failure
-     echo '<div style="color:red;font-weight:bold;">Failure</div>';
+     echo '<div style="color:red;font-weight:bold;">Command execution failure</div>';
   }
 
 } else {
-  echo '<div style="color:red;font-weight:bold;">Permissions denied</div>';
+  echo '<div style="color:red;font-weight:bold;">Command execution: Permissions denied</div>';
 }
