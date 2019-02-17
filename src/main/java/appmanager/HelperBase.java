@@ -28,6 +28,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -284,8 +285,47 @@ public class HelperBase {
         return element.getText();
     }
 
-    protected void verifyLinkIsActive(String linkUrl) {
-        logger.info("VERIFY LINK IS ACTIVE: " + linkUrl);
+    public Integer responseCode(String url) throws IOException {
+        HashSet<String> hrefHashSet = new HashSet<String>();
+        HttpURLConnection httpURLConnect = null;
+        Elements sitemaps = getElementsFromXml(url + "sitemap_index.xml");
+        for (Element sitemap : sitemaps) {
+            Elements sitemapUrls = getElementsFromXml(sitemap.text());
+            for (Element sitemapUrl : sitemapUrls) {
+                Elements hrefs = getElementsFromHtml(sitemapUrl.text());
+                for (Element href : hrefs) {
+                    String link = href.attr("href");
+                    if (!link.contains("#") && !link.contains("tel") && !link.contains("@") && !link.isEmpty()) {
+                        hrefHashSet.add(link);
+                    }
+                }
+            }
+        }
+        System.out.println("Total set size: " + hrefHashSet.size());
+        for (String linkHashSet : hrefHashSet) {
+            URL linkHashSetUrl = new URL(linkHashSet);
+            httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
+        }
+        assert httpURLConnect != null;
+        return httpURLConnect.getResponseCode();
+
+    }
+
+    private static Elements getElementsFromXml(String url) throws IOException {
+        Document doc = Jsoup.connect(url).get();
+        Elements xmlLinks = doc.select("loc");
+        return xmlLinks;
+    }
+
+    private static Elements getElementsFromHtml(String url) throws IOException {
+        Document doc = Jsoup.connect(url).get();
+        Elements href = doc.select("a[href]");
+        return href;
+    }
+
+    protected void verifyLink(String linkUrl) {
         try {
             URL url = new URL(linkUrl);
             HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
@@ -300,39 +340,6 @@ public class HelperBase {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-    }
-
-    public Integer responseCode(String url) throws IOException {
-        String sitemapUrl = url + "sitemap_index.xml";
-        Elements xmlLinks = getElements(sitemapUrl, "Total sitemap xml: ");
-        HttpURLConnection httpURLConnect = null;
-        for (Element xmlLink : xmlLinks) {
-            String loc = xmlLink.text();
-            System.out.println(loc);
-            Elements xmlLinksInternal = getElements(loc, "Total links : ");
-            for (Element xmlLinkInternal : xmlLinksInternal) {
-                locInternal = xmlLinkInternal.text();
-                if (!locInternal.isEmpty()) {
-                    System.out.println(locInternal);
-//                    verifyLinkIsActive(locInternal);
-                    logger.info("VERIFY LINK IS ACTIVE: " + locInternal);
-                    URL locUrl = new URL(locInternal);
-                    httpURLConnect = (HttpURLConnection) locUrl.openConnection();
-                    httpURLConnect.setConnectTimeout(3000);
-                    httpURLConnect.connect();
-                }
-            }
-        }
-        assert httpURLConnect != null;
-        return httpURLConnect.getResponseCode();
-    }
-
-
-    private Elements getElements(String url, String s) throws IOException {
-        Document doc = Jsoup.connect(url).userAgent("Mozilla").get();
-        Elements xmlLinks = doc.select("loc");
-//        System.out.println(s + xmlLinks.size());
-        return doc.select("loc");
     }
 
     public String consoleLog() {
