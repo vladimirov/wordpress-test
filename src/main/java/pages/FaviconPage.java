@@ -39,7 +39,7 @@ public class FaviconPage extends HelperBase {
         Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
         Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
         String linkHref = link.attr("href");
-        verifyLink(linkHref);
+        verifyUrl(linkHref);
         return true;
     }
 

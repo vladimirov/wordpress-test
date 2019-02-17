@@ -325,7 +325,7 @@ public class HelperBase {
         return href;
     }
 
-    protected void verifyLink(String linkUrl) {
+    protected void verifyUrl(String linkUrl) {
         try {
             URL url = new URL(linkUrl);
             HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
@@ -364,7 +364,6 @@ public class HelperBase {
             jse.executeScript("arguments[0].value = arguments[1];", element, text);
         }
     }
-
     public String pageLinkForGitlab() {
         return driver.getCurrentUrl() + "\n";
     }
