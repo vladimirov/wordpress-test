@@ -5,7 +5,6 @@ import appmanager.HelperBase;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -31,8 +30,10 @@ public class SitePage extends HelperBase {
         }
     }
 
-    public boolean responseCodeIs200() throws IOException {
-        return responseCode(projectProperties.getProperty("web.baseUrl")).equals(200);
+    public boolean responseCodeIsValid() throws IOException {
+        String url = projectProperties.getProperty("web.baseUrl");
+//        return responseCode(url) < 400 && responseCode(url).equals(403) && responseCode(url).equals(999);
+        return responseCode(url).equals(200);
     }
 
 }

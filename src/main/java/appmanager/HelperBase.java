@@ -43,7 +43,8 @@ public class HelperBase {
     public WebDriverWait wait;
     public int timeOutInSeconds = 10;
     public WebElement element;
-    public String locInternal;
+    public String link;
+    public String brokenLink;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -294,15 +295,17 @@ public class HelperBase {
             for (Element sitemapUrl : sitemapUrls) {
                 Elements hrefs = getElementsFromHtml(sitemapUrl.text());
                 for (Element href : hrefs) {
-                    String link = href.attr("href");
+                    link = href.attr("href");
                     if (!link.contains("#") && !link.contains("tel") && !link.contains("@") && !link.isEmpty()) {
                         hrefHashSet.add(link);
                     }
                 }
             }
         }
-        System.out.println("Total set size: " + hrefHashSet.size());
+        System.out.println("Total links size: " + hrefHashSet.size());
         for (String linkHashSet : hrefHashSet) {
+            brokenLink = linkHashSet;
+            System.out.println(linkHashSet + " " + responseCodeNumber(linkHashSet) + " " + responseMessageText(linkHashSet));
             URL linkHashSetUrl = new URL(linkHashSet);
             httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
             httpURLConnect.setConnectTimeout(3000);
@@ -310,7 +313,6 @@ public class HelperBase {
         }
         assert httpURLConnect != null;
         return httpURLConnect.getResponseCode();
-
     }
 
     private static Elements getElementsFromXml(String url) throws IOException {
@@ -323,6 +325,22 @@ public class HelperBase {
         Document doc = Jsoup.connect(url).get();
         Elements href = doc.select("a[href]");
         return href;
+    }
+
+    private static Integer responseCodeNumber(String hrefUrl) throws IOException {
+        URL linkHashSetUrl = new URL(hrefUrl);
+        HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
+        httpURLConnect.setConnectTimeout(3000);
+        httpURLConnect.connect();
+        return httpURLConnect.getResponseCode();
+    }
+
+    private static String responseMessageText(String hrefUrl) throws IOException {
+        URL linkHashSetUrl = new URL(hrefUrl);
+        HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
+        httpURLConnect.setConnectTimeout(3000);
+        httpURLConnect.connect();
+        return httpURLConnect.getResponseMessage();
     }
 
     protected void verifyUrl(String linkUrl) {
@@ -364,6 +382,7 @@ public class HelperBase {
             jse.executeScript("arguments[0].value = arguments[1];", element, text);
         }
     }
+
     public String pageLinkForGitlab() {
         return driver.getCurrentUrl() + "\n";
     }

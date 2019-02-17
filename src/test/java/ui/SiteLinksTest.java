@@ -21,10 +21,10 @@ public class SiteLinksTest extends TestBase {
 
         String titleLinks = "Site has invalid links";
         app.checkIfIssueExists(titleLinks);
-        if (app.site().sitemapPageIsAdded() && !app.site().responseCodeIs200()) {
+        if (app.site().sitemapPageIsAdded() && !app.site().responseCodeIsValid() ) {
             app.uploadIssueWithDescriptionToGitlab(
                     titleLinks,
-                    app.site().locInternal + "\n\r");
+                     app.site().brokenLink + "\n\r");
         }
     }
 }
