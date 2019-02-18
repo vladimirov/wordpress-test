@@ -302,10 +302,10 @@ public class HelperBase {
                 }
             }
         }
-        System.out.println("Total links size: " + hrefHashSet.size());
+        System.out.println("Total links count: " + hrefHashSet.size());
         for (String linkHashSet : hrefHashSet) {
-            brokenLink = linkHashSet;
             System.out.println(linkHashSet + " " + responseCodeNumber(linkHashSet) + " " + responseMessageText(linkHashSet));
+            brokenLink = linkHashSet;
             URL linkHashSetUrl = new URL(linkHashSet);
             httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
             httpURLConnect.setConnectTimeout(3000);

@@ -23,8 +23,9 @@ public class SitePage extends HelperBase {
     }
 
     public boolean sitemapPageIsAdded() throws IOException {
+        String url = projectProperties.getProperty("web.baseUrl");
         try {
-            return responseCode(projectProperties.getProperty("web.baseUrl")) > 0;
+            return responseCode(url) > 0;
         } catch (Exception e) {
             return false;
         }
@@ -33,7 +34,7 @@ public class SitePage extends HelperBase {
     public boolean responseCodeIsValid() throws IOException {
         String url = projectProperties.getProperty("web.baseUrl");
 //        return responseCode(url) < 400 && responseCode(url).equals(403) && responseCode(url).equals(999);
-        return responseCode(url).equals(200);
+        return responseCode(url) == 200;
     }
 
 }

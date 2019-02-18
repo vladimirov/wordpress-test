@@ -16,12 +16,12 @@ public class SiteLinksTest extends TestBase {
             app.uploadIssueWithDescriptionToGitlab(
                     title,
                     app.projectProperties.getProperty("web.baseUrl") + "sitemap_index.xml" + "\n\r" + "\n\r" +
-                            "Sitemap is missing because Yoast SEO plugin isn't added");
+                            "Sitemap is missing because Yoast SEO plugin isn't installed");
         }
 
         String titleLinks = "Site has invalid links";
         app.checkIfIssueExists(titleLinks);
-        if (app.site().sitemapPageIsAdded() && !app.site().responseCodeIsValid() ) {
+        if (app.site().sitemapPageIsAdded() && app.site().responseCodeIsValid() ) {
             app.uploadIssueWithDescriptionToGitlab(
                     titleLinks,
                      app.site().brokenLink + "\n\r");
