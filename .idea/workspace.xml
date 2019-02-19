@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="response code check">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/DenisQA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SitePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +22,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="288" column="19" selection-start-line="288" selection-start-column="19" selection-end-line="288" selection-end-column="19" />
+            <state relative-caret-position="379">
+              <caret line="317" column="25" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="25" />
+              <folding>
+                <element signature="e#14942#14943#0" expanded="true" />
+                <element signature="e#14994#14995#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,17 +35,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="678">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="442">
+              <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,13 +53,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
-                <marker date="1550500425148" expanded="true" signature="192:525" ph="..." />
+                <marker date="1550569830334" expanded="true" signature="192:564" ph="..." />
               </folding>
             </state>
           </provider>
@@ -159,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/appmanager/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/SitePage.java" />
       </list>
     </option>
   </component>
@@ -190,10 +196,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1718" />
-    <option name="y" value="14" />
-    <option name="width" value="1287" />
-    <option name="height" value="745" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -203,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -269,15 +276,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550156609808" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550591918467" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sitemap-links-validator" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25274727" />
@@ -345,7 +351,7 @@
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
       <envs>
-        <env name="id" value="501" />
+        <env name="id" value="505" />
       </envs>
       <properties />
       <listeners />
@@ -377,13 +383,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00137" summary="code refactoring">
-      <created>1548681758271</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1548681758271</updated>
     </task>
     <task id="LOCAL-00138" summary="code refactoring">
       <created>1548682622224</created>
@@ -721,16 +720,17 @@
       <option name="project" value="LOCAL" />
       <updated>1550404416989</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="response code check">
+      <created>1550500439359</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1550500439360</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ThemeScreenshotTest - 2019.02.09 at 22h 17m 29s.xml">
-      <configuration name="ThemeScreenshotTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Projects_wordpress-test_testng_xml - 2019.02.13 at 16h 23m 12s.xml">
-      <configuration name="C:/Projects/wordpress-test/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="all_tests - 2019.02.13 at 16h 26m 01s.xml">
       <configuration name="all tests" configurationId="TestNG" />
     </history-entry>
@@ -755,6 +755,12 @@
     <history-entry file="All_Tests - 2019.02.14 at 16h 13m 39s.xml">
       <configuration name="All Tests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="All_Tests - 2019.02.19 at 16h 11m 19s.xml">
+      <configuration name="All Tests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.02.19 at 16h 12m 32s.xml">
+      <configuration name="All Tests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,7 +775,7 @@
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -778,7 +784,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3215434" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37942123" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12861736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45123258" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.6045016" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32843137" />
@@ -795,7 +801,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19349681" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.14588428" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.14552239" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -948,7 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/505.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1013,16 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,36 +1128,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/505.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="288" column="19" selection-start-line="288" selection-start-column="19" selection-end-line="288" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <marker date="1550569830334" expanded="true" signature="192:564" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="578">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="379">
+          <caret line="317" column="25" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="25" />
           <folding>
-            <marker date="1550500425148" expanded="true" signature="192:525" ph="..." />
+            <element signature="e#14942#14943#0" expanded="true" />
+            <element signature="e#14994#14995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SitePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ui/SiteLinksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

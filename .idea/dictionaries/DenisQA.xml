@@ -2,8 +2,10 @@
   <dictionary name="DenisQA">
     <words>
       <w>chromedriver</w>
+      <w>hrefs</w>
       <w>pagespeed</w>
       <w>sitemap</w>
+      <w>sitemaps</w>
       <w>tagline</w>
       <w>webdriver</w>
       <w>wordpress</w>

@@ -29,10 +29,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
-import static org.testng.AssertJUnit.fail;
 
 public class HelperBase {
 
@@ -43,8 +41,7 @@ public class HelperBase {
     public WebDriverWait wait;
     public int timeOutInSeconds = 10;
     public WebElement element;
-    public String link;
-    public String brokenLink;
+    public String setLink = null;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -286,33 +283,22 @@ public class HelperBase {
         return element.getText();
     }
 
-    public Integer responseCode(String url) throws IOException {
-        HashSet<String> hrefHashSet = new HashSet<String>();
-        HttpURLConnection httpURLConnect = null;
+    public HashSet<String> hrefHashSet(String url) throws IOException {
+        HashSet<String> hashSet = new HashSet<>();
         Elements sitemaps = getElementsFromXml(url + "sitemap_index.xml");
         for (Element sitemap : sitemaps) {
             Elements sitemapUrls = getElementsFromXml(sitemap.text());
             for (Element sitemapUrl : sitemapUrls) {
                 Elements hrefs = getElementsFromHtml(sitemapUrl.text());
                 for (Element href : hrefs) {
-                    link = href.attr("href");
+                    String link = href.attr("href");
                     if (!link.contains("#") && !link.contains("tel") && !link.contains("@") && !link.isEmpty()) {
-                        hrefHashSet.add(link);
+                        hashSet.add(link);
                     }
                 }
             }
         }
-        System.out.println("Total links count: " + hrefHashSet.size());
-        for (String linkHashSet : hrefHashSet) {
-            System.out.println(linkHashSet + " " + responseCodeNumber(linkHashSet) + " " + responseMessageText(linkHashSet));
-            brokenLink = linkHashSet;
-            URL linkHashSetUrl = new URL(linkHashSet);
-            httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
-            httpURLConnect.setConnectTimeout(3000);
-            httpURLConnect.connect();
-        }
-        assert httpURLConnect != null;
-        return httpURLConnect.getResponseCode();
+        return hashSet;
     }
 
     private static Elements getElementsFromXml(String url) throws IOException {
@@ -327,18 +313,18 @@ public class HelperBase {
         return href;
     }
 
-    private static Integer responseCodeNumber(String hrefUrl) throws IOException {
+    public static Integer responseCodeNumber(String hrefUrl) throws IOException {
         URL linkHashSetUrl = new URL(hrefUrl);
         HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
-        httpURLConnect.setConnectTimeout(3000);
+        httpURLConnect.setConnectTimeout(7000);
         httpURLConnect.connect();
         return httpURLConnect.getResponseCode();
     }
 
-    private static String responseMessageText(String hrefUrl) throws IOException {
+    public static String responseMessageText(String hrefUrl) throws IOException {
         URL linkHashSetUrl = new URL(hrefUrl);
         HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
-        httpURLConnect.setConnectTimeout(3000);
+        httpURLConnect.setConnectTimeout(7000);
         httpURLConnect.connect();
         return httpURLConnect.getResponseMessage();
     }
