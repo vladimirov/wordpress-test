@@ -5,6 +5,8 @@ import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.List;
 
 public class SiteLinksTest extends TestBase {
 
@@ -21,14 +23,21 @@ public class SiteLinksTest extends TestBase {
 
         String titleLinks = "Site has invalid links";
         app.checkIfIssueExists(titleLinks);
-        if (app.site().brokenLinks().size() > 0) {
+        HashSet<String> hashSet;
+//        list = app.site().brokenLinks();
+        hashSet = app.site().brokenHashSet();
+        String description = String.valueOf(hashSet).replaceAll("[\\[\\]]", "");
+        if (hashSet.size() > 0) {
             app.uploadIssueWithDescriptionToGitlab(
                     titleLinks,
-                    String.valueOf(app.site().brokenLinks().size()));
+                    description + "\n\r");
         }
+
+//        app.site().hrefHashSet();
+//        app.site().sitemapUrls();
+//        app.site().brokenHashSet();
+
+
 
     }
 }
-
-
-
