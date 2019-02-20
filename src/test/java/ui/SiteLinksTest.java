@@ -23,21 +23,11 @@ public class SiteLinksTest extends TestBase {
 
         String titleLinks = "Site has invalid links";
         app.checkIfIssueExists(titleLinks);
-        HashSet<String> hashSet;
-//        list = app.site().brokenLinks();
-        hashSet = app.site().brokenHashSet();
-        String description = String.valueOf(hashSet).replaceAll("[\\[\\]]", "");
-        if (hashSet.size() > 0) {
+        HashSet<String> brokenLinks = app.site().checkHrefHashSet();
+        if (brokenLinks.size() > 0) {
             app.uploadIssueWithDescriptionToGitlab(
                     titleLinks,
-                    description + "\n\r");
+                    String.valueOf(brokenLinks).replaceAll("[\\[\\]]", "") + "\n\r");
         }
-
-//        app.site().hrefHashSet();
-//        app.site().sitemapUrls();
-//        app.site().brokenHashSet();
-
-
-
     }
 }
