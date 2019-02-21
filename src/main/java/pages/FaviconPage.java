@@ -19,7 +19,7 @@ public class FaviconPage extends HelperBase {
     public boolean isFaviconPresent() throws IOException {
         try {
             Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
-            Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
+            Element link = doc.head().select("link[href~=.*\\.(ico|png|jpg)]").first();
             return link != null;
         } catch (NullPointerException e) {
             return false;
@@ -28,7 +28,7 @@ public class FaviconPage extends HelperBase {
 
     public String croppedFaviconText() throws IOException, URISyntaxException {
         Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
-        Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
+        Element link = doc.head().select("link[href~=.*\\.(ico|png|jpg)]").first();
         String linkHref = link.attr("href");
         URI uri = new URI(linkHref);
         String[] segments = uri.getPath().split("/");
@@ -37,7 +37,7 @@ public class FaviconPage extends HelperBase {
 
     public boolean verifyFaviconLink() throws IOException {
         Document doc = Jsoup.connect(driver.getCurrentUrl()).userAgent("Mozilla").get();
-        Element link = doc.head().select("link[href~=.*\\.(ico|png)]").first();
+        Element link = doc.head().select("link[href~=.*\\.(ico|png|jpg)]").first();
         String linkHref = link.attr("href");
         verifyUrl(linkHref);
         return true;

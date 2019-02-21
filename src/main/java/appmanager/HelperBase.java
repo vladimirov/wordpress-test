@@ -301,18 +301,6 @@ public class HelperBase {
         return hashSet;
     }
 
-//    public HashSet<String> sitemapUrls(String url) throws IOException {
-//        HashSet<String> hashSet = new HashSet<>();
-//        Elements sitemaps = getElementsFromXml(url + "sitemap_index.xml");
-//        for (Element sitemap : sitemaps) {
-//            Elements sitemapUrls = getElementsFromXml(sitemap.text());
-//            for (Element sitemapUrl : sitemapUrls) {
-//                hashSet.add(sitemapUrl.text());
-//            }
-//        }
-//        return hashSet;
-//    }
-
     public static Elements getElementsFromXml(String url) throws IOException {
         Document doc = Jsoup.connect(url).get();
         Elements xmlLinks = doc.select("loc");
@@ -326,16 +314,16 @@ public class HelperBase {
     }
 
     public static Integer responseCodeNumber(String hrefUrl) throws IOException {
-        URL linkHashSetUrl = new URL(hrefUrl);
-        HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
-        httpURLConnect.setConnectTimeout(3000);
+        URL url = new URL(hrefUrl);
+        HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+        httpURLConnect.setConnectTimeout(7000);
         httpURLConnect.connect();
         return httpURLConnect.getResponseCode();
     }
 
     public static String responseMessageText(String hrefUrl) throws IOException {
-        URL linkHashSetUrl = new URL(hrefUrl);
-        HttpURLConnection httpURLConnect = (HttpURLConnection) linkHashSetUrl.openConnection();
+        URL url = new URL(hrefUrl);
+        HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
         httpURLConnect.setConnectTimeout(3000);
         httpURLConnect.connect();
         return httpURLConnect.getResponseMessage();
