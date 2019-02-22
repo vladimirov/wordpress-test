@@ -34,8 +34,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class HelperBase {
 
-    Logger logger = LoggerFactory.getLogger(HelperBase.class);
-//    public final Properties projectProperties;
+    public Logger logger = LoggerFactory.getLogger(HelperBase.class);
 
     protected WebDriver driver;
     public WebDriverWait wait;
@@ -46,7 +45,6 @@ public class HelperBase {
     public HelperBase(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSeconds);
-//        projectProperties = new Properties();
     }
 
     protected void click(By locator) {

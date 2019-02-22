@@ -3,14 +3,6 @@ package ui;
 import appmanager.Appender;
 import appmanager.HelperBase;
 import appmanager.TestBase;
-import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.http.HttpRequestInitializer;
-import com.google.api.client.http.HttpTransport;
-import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.jackson2.JacksonFactory;
-import com.google.api.services.pagespeedonline.Pagespeedonline;
-import com.google.api.services.pagespeedonline.Pagespeedonline.Pagespeedapi;
-import com.google.api.services.pagespeedonline.model.PagespeedApiPagespeedResponseV5;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.slf4j.Logger;
@@ -26,14 +18,6 @@ import java.util.Properties;
 public class PageSpeedApiTest extends TestBase {
 
     private Properties properties;
-
-    private HttpRequestInitializer setHttpTimeout(final HttpRequestInitializer requestInitializer) {
-        return httpRequest -> {
-            requestInitializer.initialize(httpRequest);
-            httpRequest.setConnectTimeout(3 * 60000);  // 3 minutes connect timeout
-            httpRequest.setReadTimeout(3 * 60000);  // 3 minutes read timeout
-        };
-    }
 
     @BeforeTest
     public void getProperties() throws IOException {
@@ -51,20 +35,14 @@ public class PageSpeedApiTest extends TestBase {
         String domain = url.split("/")[2];
         String pageSpeedLink = "https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2F" + domain + "%2F";
 
-        JsonFactory jsonFactory = new JacksonFactory();
-        HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
+        String json = app.pageSpeedPage().result(url).getLighthouseResult().toString();//Skip if Lighthouse returned error
 
-        Pagespeedonline p = new Pagespeedonline.Builder(transport, jsonFactory, setHttpTimeout(httpRequest -> {
-        })).build();
-        Pagespeedapi.Runpagespeed runpagespeed = p.pagespeedapi().runpagespeed(url);
-        PagespeedApiPagespeedResponseV5 result = runpagespeed.execute();
-
-        String json = result.getLighthouseResult().toString();
         JsonObject jsonObject = new Gson().fromJson(json, JsonObject.class);
         String categoriesJson = jsonObject.get("categories").toString();
         JsonObject categoriesJsonObject = new Gson().fromJson(categoriesJson, JsonObject.class);
         String performanceJson = categoriesJsonObject.get("performance").toString();
         JsonObject performanceJsonObject = new Gson().fromJson(performanceJson, JsonObject.class);
+
         float scoreFloat = performanceJsonObject.get("score").getAsFloat() * 100;
         int score = Math.round(scoreFloat);
 

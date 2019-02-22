@@ -16,10 +16,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.SkipException;
-import pages.AdminPage;
-import pages.FaviconPage;
-import pages.LoginPage;
-import pages.SitePage;
+import pages.*;
 
 import java.io.File;
 import java.io.FileReader;
@@ -47,6 +44,7 @@ public class ApplicationManager {
     private SitePage sitePage;
     private AdminPage adminPage;
     private FaviconPage faviconPage;
+    private PageSpeedPage pageSpeedPage;
     public static String baseUrl;
     public static String adminLogin;
     public static String adminPassword;
@@ -97,6 +95,7 @@ public class ApplicationManager {
         adminPage = new AdminPage(driver);
         sitePage = new SitePage(driver);
         faviconPage = new FaviconPage(driver);
+        pageSpeedPage = new PageSpeedPage(driver);
         capabilities = ((RemoteWebDriver) driver).getCapabilities();
     }
 
@@ -164,6 +163,10 @@ public class ApplicationManager {
 
     public LoginPage loginPage() {
         return loginPage;
+    }
+
+    public PageSpeedPage pageSpeedPage() {
+        return pageSpeedPage;
     }
 
     public void addPostDb(String content) {
