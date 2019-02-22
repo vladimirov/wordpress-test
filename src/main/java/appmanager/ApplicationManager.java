@@ -264,8 +264,8 @@ public class ApplicationManager {
 
     public List<String> getIssueTitles() throws GitLabApiException {
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
-        IssueFilter openFilter = new IssueFilter().withState(Constants.IssueState.OPENED);
-        List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, openFilter);
+//        List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, new IssueFilter().withState(Constants.IssueState.OPENED));//Get all opened issue
+        List<Issue> issues = gitLabApi.getIssuesApi().getIssues(projectId, new IssueFilter().withScope(Constants.IssueScope.CREATED_BY_ME));//Gets all issues created by Automation Bot
         List<String> issueTitles = new ArrayList<>();
         for (Issue issue : issues) {
             issueTitles.add(issue.getTitle());
