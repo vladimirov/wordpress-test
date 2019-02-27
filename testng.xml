@@ -10,8 +10,6 @@
         <class name="ui.TaglineTextTest"> </class>
         <class name="ui.ThemeScreenshotTest"> </class>
         <class name="ui.DefaultPagesTest"> </class>
-        <class name="ui.AddPostTest"> </class>
-        <class name="ui.AddPostTest"> </class>
     </classes>
 </test>
 </suite>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="add test post via api added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/AddPostTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="391">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -258,8 +257,8 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551276848345" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-api" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551276877238" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25274727" />
@@ -359,13 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00147" summary="excess classes excluded">
-      <created>1549459514387</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1549459514388</updated>
     </task>
     <task id="LOCAL-00148" summary="excess classes excluded">
       <created>1549538272052</created>
@@ -703,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551263630735</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="add test post via api added">
+      <created>1551276869814</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1551276869814</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1137,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ui/AddPostTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="391">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
