@@ -12,9 +12,15 @@ import com.afrozaar.wordpress.wpapi.v2.model.builder.ContentBuilder;
 import com.afrozaar.wordpress.wpapi.v2.model.builder.ExcerptBuilder;
 import com.afrozaar.wordpress.wpapi.v2.model.builder.PostBuilder;
 import com.afrozaar.wordpress.wpapi.v2.model.builder.TitleBuilder;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 import static appmanager.ApplicationManager.baseUrl;
 import static appmanager.ApplicationManager.adminLogin;
