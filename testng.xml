@@ -1,6 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="UI Tests">
+
+    <parameter name="pdfngreport-properties" value="src/main/resources/pdfngreport.properties" />
+
+    <listeners>
+        <listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+    </listeners>
+
 <test name="All Tests In Chrome">
     <parameter name="browser" value="chrome"/>
     <classes>
