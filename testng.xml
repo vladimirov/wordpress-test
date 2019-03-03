@@ -1,32 +1,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<!--<suite name="All Tests">-->
-<suite name="UI Tests" parallel="classes" thread-count="2">
+<suite name="All Tests">
+<!--<suite name="UI Tests" parallel="classes" thread-count="2">-->
 
     <parameter name="pdfngreport-properties" value="src/main/resources/pdfngreport.properties"/>
     <listeners>
         <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
     </listeners>
 
-    <test name="Chrome UI Test">
-        <parameter name="browser" value="chrome"/>
+    <!--<test name="Chrome UI Test">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.ConsoleErrorsTest"></class>-->
+            <!--<class name="ui.FaviconTest"></class>-->
+            <!--<class name="ui.DefaultPagesTest"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Admin Pannel Test">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.TaglineTextTest"></class>-->
+            <!--<class name="ui.ThemeScreenshotTest"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Performarance Test">-->
+        <!--<parameter name="browser" value="chrome"/>-->
+        <!--<classes>-->
+            <!--<class name="ui.PageSpeedApiTest"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="Responsive Test">
+        <parameter name="browser" value="iphone"/>
         <classes>
-            <class name="ui.ConsoleErrorsTest"></class>
-            <class name="ui.FaviconTest"></class>
-            <class name="ui.DefaultPagesTest"></class>
-        </classes>
-    </test>
-    <test name="Admin Pannel Test">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="ui.TaglineTextTest"></class>
-            <class name="ui.ThemeScreenshotTest"></class>
-        </classes>
-    </test>
-    <test name="Performarance Test">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="ui.PageSpeedApiTest"></class>
+            <class name="ui.DefaultPagesMobileTest"/>
         </classes>
     </test>
 

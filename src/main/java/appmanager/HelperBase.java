@@ -27,6 +27,9 @@ import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Date;
 import java.util.HashSet;
 
@@ -174,7 +177,6 @@ public class HelperBase {
         try {
             ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
         } catch (Exception e) {
-//            new File("test-screenshots/").mkdirs();
             ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
         }
     }
@@ -370,6 +372,7 @@ public class HelperBase {
     public String pageLinkForGitlab() {
         return driver.getCurrentUrl() + "\n";
     }
+
 
 }
 

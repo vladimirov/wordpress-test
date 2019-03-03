@@ -244,6 +244,26 @@ public class ApplicationManager {
                 null);
     }
 
+    public void updateIssueOnGitlab(String issueTitle, String description) throws GitLabApiException {
+        logger.info("UPDATING ISSUE ON GITLAB...");
+        issueTitle = "Default pages layout screenshots in CHROME browser";
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        Project project = gitLabApi.getProjectApi().getProject(projectId);
+        gitLabApi.getIssuesApi().updateIssue(
+                project.getId(),
+                0,
+                issueTitle,
+                description,
+                false,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+    }
+
     public void sendSlackNotify() throws IOException, GitLabApiException {
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
@@ -273,7 +293,7 @@ public class ApplicationManager {
         return issueTitles;
     }
 
-//     TODO Remove Before Commit
+    //     TODO Remove Before Commit
     public void checkIfIssueExists(String title) throws GitLabApiException {
         if (getIssueTitles().contains(title)) {
             logger.info("ISSUE \"" + title + "\" IS ON GITLAB");

@@ -40,6 +40,9 @@ public class DriverFactory {
                 Map<String, String> iphoneEmulation = new HashMap<>();
                 iphoneEmulation.put("deviceName", "iPhone 6/7/8");
                 ChromeOptions iphoneOptions = new ChromeOptions();
+                iphoneOptions.addArguments("--headless");
+                iphoneOptions.addArguments("--no-sandbox");
+                iphoneOptions.addArguments("--disable-dev-shm-usage");
                 iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
                 return new ChromeDriver(iphoneOptions);
             case "ipad":
@@ -69,6 +72,23 @@ public class DriverFactory {
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.setCapability("marionette", true);
                 return new FirefoxDriver(firefoxOptions);
+            case "iphone":
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                Map<String, String> iphoneEmulation = new HashMap<>();
+                iphoneEmulation.put("deviceName", "iPhone 6/7/8");
+                ChromeOptions iphoneOptions = new ChromeOptions();
+                iphoneOptions.addArguments("--headless");
+                iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
+                return new ChromeDriver(iphoneOptions);
+            case "ipad":
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                Map<String, String> ipadEmulation = new HashMap<>();
+                ipadEmulation.put("deviceName", "iPad");
+                ChromeOptions ipadOptions = new ChromeOptions();
+                ipadOptions.addArguments("--headless");
+                ipadOptions.setExperimentalOption("mobileEmulation", ipadEmulation);
+                return new ChromeDriver(ipadOptions);
+
         }
     }
 
