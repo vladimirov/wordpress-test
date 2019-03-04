@@ -26,7 +26,7 @@ public class DefaultPagesTest extends TestBase {
         //Test Post Page
 //        app.admin().openTestPostUrl();
 //        String testPostScreenshot = "TestPost";
-//        app.site().screenshotCaptureAllScreen(testPostScreenshot);
+//        app.site().screenshotCaptureEntirePage(testPostScreenshot);
 //        String checkboxTestPostLink = "* [ ] Test Post " + app.site().pageLinkForGitlab();
 //        String markdownTestPost = app.getGitlabFileMarkdown(testPostScreenshot);
 

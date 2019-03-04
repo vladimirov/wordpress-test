@@ -11,22 +11,22 @@
     <!--<test name="Chrome UI Test">-->
         <!--<parameter name="browser" value="chrome"/>-->
         <!--<classes>-->
-            <!--<class name="ui.ConsoleErrorsTest"></class>-->
-            <!--<class name="ui.FaviconTest"></class>-->
-            <!--<class name="ui.DefaultPagesTest"></class>-->
+            <!--<class name="ui.ConsoleErrorsTest"/>-->
+            <!--<class name="ui.FaviconTest"/>-->
+            <!--<class name="ui.DefaultPagesTest"/>-->
         <!--</classes>-->
     <!--</test>-->
     <!--<test name="Admin Pannel Test">-->
         <!--<parameter name="browser" value="chrome"/>-->
         <!--<classes>-->
-            <!--<class name="ui.TaglineTextTest"></class>-->
-            <!--<class name="ui.ThemeScreenshotTest"></class>-->
+            <!--<class name="ui.TaglineTextTest"/>-->
+            <!--<class name="ui.ThemeScreenshotTest"/>-->
         <!--</classes>-->
     <!--</test>-->
     <!--<test name="Performarance Test">-->
         <!--<parameter name="browser" value="chrome"/>-->
         <!--<classes>-->
-            <!--<class name="ui.PageSpeedApiTest"></class>-->
+            <!--<class name="ui.PageSpeedApiTest"/>-->
         <!--</classes>-->
     <!--</test>-->
 

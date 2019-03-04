@@ -40,10 +40,11 @@ public class DriverFactory {
                 Map<String, String> iphoneEmulation = new HashMap<>();
                 iphoneEmulation.put("deviceName", "iPhone 6/7/8");
                 ChromeOptions iphoneOptions = new ChromeOptions();
-                iphoneOptions.addArguments("--headless");
-                iphoneOptions.addArguments("--no-sandbox");
-                iphoneOptions.addArguments("--disable-dev-shm-usage");
+//                iphoneOptions.addArguments("--headless");
                 iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
+                iphoneOptions.addArguments("start-maximized");
+                iphoneOptions.addArguments("disable-infobars");
+                iphoneOptions.addArguments("--disable-extensions");
                 return new ChromeDriver(iphoneOptions);
             case "ipad":
                 System.setProperty("webdriver.chrome.driver", "chromedriver.exe");

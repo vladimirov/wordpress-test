@@ -171,14 +171,16 @@ public class HelperBase {
         Utils.copyFile(screenshot, dest);
     }
 
-    public void screenshotCaptureAllScreen(String screenshotName) throws IOException {
+    public void screenshotCaptureEntirePage(String screenshotName) throws IOException {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        try {
-            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
-        } catch (Exception e) {
-            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
-        }
+        ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
+
+//        try {
+//            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
+//        } catch (Exception e) {
+//            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
+//        }
     }
 
     public boolean isAlertPresent() {
