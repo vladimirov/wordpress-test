@@ -294,12 +294,11 @@ public class ApplicationManager {
         return issueTitles;
     }
 
-    //     TODO Remove Before Commit
     public void checkIfIssueExists(String title) throws GitLabApiException {
-//        if (getIssueTitles().contains(title)) {
-//            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
-//            throw new SkipException("");
-//        }
+        if (getIssueTitles().contains(title)) {
+            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
+            throw new SkipException("");
+        }
     }
 
 }
