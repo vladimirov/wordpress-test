@@ -82,7 +82,7 @@ public class DriverFactory {
                 iphoneOptions.setExperimentalOption("mobileEmulation", iphoneEmulation);
                 return new ChromeDriver(iphoneOptions);
             case "ipad":
-                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "chromedriver");
                 Map<String, String> ipadEmulation = new HashMap<>();
                 ipadEmulation.put("deviceName", "iPad");
                 ChromeOptions ipadOptions = new ChromeOptions();
