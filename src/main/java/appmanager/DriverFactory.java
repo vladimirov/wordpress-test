@@ -74,7 +74,7 @@ public class DriverFactory {
                 firefoxOptions.setCapability("marionette", true);
                 return new FirefoxDriver(firefoxOptions);
             case "iphone":
-                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "chromedriver");
                 Map<String, String> iphoneEmulation = new HashMap<>();
                 iphoneEmulation.put("deviceName", "iPhone 6/7/8");
                 ChromeOptions iphoneOptions = new ChromeOptions();
