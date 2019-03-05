@@ -16,16 +16,16 @@ public class DefaultPagesMobileTest extends TestBase {
         app.openSearchPageUrl();
         app.site().getPageReady();
         String searchPageScreenshot = "SearchPageTest";
-//        app.site().screenshotCapture(searchPageScreenshot);
-        app.site().screenshotCaptureEntirePage(searchPageScreenshot);
+        app.site().screenshotCapture(searchPageScreenshot);
+//        app.site().screenshotCaptureEntirePage(searchPageScreenshot);
         String checkboxSearchLink = "* [ ] Search Page " + app.site().pageLinkForGitlab();
         String markdownSearchPage = app.getGitlabFileMarkdown(searchPageScreenshot);
         //404 Page
         app.openPageNotFoundUrl();
         app.site().getPageReady();
         String pageNotFoundScreenshot = "404PageTest";
-//        app.site().screenshotCapture(pageNotFoundScreenshot);
-        app.site().screenshotCaptureEntirePage(pageNotFoundScreenshot);
+        app.site().screenshotCapture(pageNotFoundScreenshot);
+//        app.site().screenshotCaptureEntirePage(pageNotFoundScreenshot);
         String markdown404 = app.getGitlabFileMarkdown(pageNotFoundScreenshot);
         String checkbox404Link = "* [ ] 404 Page " + app.site().pageLinkForGitlab();
 
