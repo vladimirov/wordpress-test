@@ -3,6 +3,7 @@ package appmanager;
 import com.ullink.slack.simpleslackapi.SlackChannel;
 import com.ullink.slack.simpleslackapi.SlackSession;
 import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
+import org.apache.commons.lang3.StringUtils;
 import org.gitlab4j.api.Constants;
 import org.gitlab4j.api.GitLabApi;
 import org.gitlab4j.api.GitLabApiException;
@@ -34,7 +35,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class ApplicationManager {
-    private static String OS = System.getProperty("os.name").toLowerCase();
+    public String OS = System.getProperty("os.name").toLowerCase();
     private Logger logger = LoggerFactory.getLogger(HelperBase.class);
     public String postTitle = "The quick brown fox jumps over the lazy dog " + System.currentTimeMillis();
     private WebDriver driver;
@@ -104,7 +105,7 @@ public class ApplicationManager {
     }
 
     public String browserName() {
-        return capabilities.getBrowserName().toUpperCase();
+        return StringUtils.capitalize(capabilities.getBrowserName());
     }
 
     public String postTitle() {

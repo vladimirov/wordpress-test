@@ -1,6 +1,9 @@
 package ui;
 
 import appmanager.TestBase;
+import org.apache.commons.exec.OS;
+import org.apache.commons.lang3.StringUtils;
+import org.glassfish.jersey.message.internal.StringBuilderUtils;
 import org.testng.annotations.Test;
 
 public class DefaultPagesMobileTest extends TestBase {
@@ -29,7 +32,7 @@ public class DefaultPagesMobileTest extends TestBase {
         //Without Test Post Test
         app.uploadIssueWithDescriptionToGitlab(
                 title,
-                "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
+                "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n" +
                         checkboxSearchLink + checkbox404Link + "\n" + markdownSearchPage + "\n" + markdown404 + "\n");
 
 
