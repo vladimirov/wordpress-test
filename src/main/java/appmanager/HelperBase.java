@@ -175,12 +175,6 @@ public class HelperBase {
         logger.info("SCREENSHOT ALL SCREEN CAPTURING...");
         Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
         ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
-
-//        try {
-//            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
-//        } catch (Exception e) {
-//            ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
-//        }
     }
 
     public boolean isAlertPresent() {

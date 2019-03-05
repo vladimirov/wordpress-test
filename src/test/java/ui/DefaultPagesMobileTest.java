@@ -10,7 +10,7 @@ public class DefaultPagesMobileTest extends TestBase {
 
     @Test
     public void testDefaultPages() throws Exception {
-        String title = "iPhone - Default pages layout screenshots in " + app.browserName() + " browser";
+        String title = "iPhone 6/7/8 - Default pages layout screenshots in " + app.browserName() + " browser";
         app.checkIfIssueExists(title);
         //Search Page
         app.openSearchPageUrl();

@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.Test;
 
 public class DefaultPagesTest extends TestBase {
@@ -35,10 +36,11 @@ public class DefaultPagesTest extends TestBase {
 //                "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
 //                        checkboxSearchLink + checkbox404Link + checkboxTestPostLink + markdownSearchPage + "\n" + markdown404 + "\n" + markdownTestPost,
 //                "Questions");
+
         //Without Test Post Test
         app.uploadIssueWithDescriptionToGitlab(
                 title,
-                "Browser: " + app.browserName() + "\n" + "Version: " + app.browserVersion() + "\n" +
+                "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n" +
                         checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
     }
