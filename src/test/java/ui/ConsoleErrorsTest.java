@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.apache.commons.lang3.StringUtils;
 import org.gitlab4j.api.GitLabApiException;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
@@ -25,7 +26,10 @@ public class ConsoleErrorsTest extends TestBase {
         app.openBaseUrl();
         String errors = app.site().consoleLog();
         if (errors.length() > 0) {
-            app.uploadIssueWithDescriptionToGitlab(title, errors);
+            app.uploadIssueWithDescriptionToGitlab(
+                    title,
+                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                            errors);
         }
     }
 

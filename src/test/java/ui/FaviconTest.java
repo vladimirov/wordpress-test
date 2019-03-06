@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.apache.commons.lang3.StringUtils;
 import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,9 @@ public class FaviconTest extends TestBase {
             assertTrue(app.faviconPage().isFaviconPresent());
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
-            app.uploadIssueWithDescriptionToGitlab(title, "Check site favicon");
+            app.uploadIssueWithDescriptionToGitlab(title,
+                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                            "Check site favicon");
         }
     }
 

@@ -1,6 +1,7 @@
 package ui;
 
 import appmanager.TestBase;
+import org.apache.commons.lang3.StringUtils;
 import org.gitlab4j.api.GitLabApiException;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,8 @@ public class TaglineTextTest extends TestBase {
             String markdownTaglineScreenshot = app.getGitlabFileMarkdown(taglineScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     title,
-                    app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot);
+                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                            app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot);
         }
     }
 

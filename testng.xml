@@ -1,12 +1,40 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="All Tests">
-<!--<suite name="UI Tests" parallel="classes" thread-count="2">-->
+    <!--<suite name="UI Tests" parallel="classes" thread-count="2">-->
 
-    <parameter name="pdfngreport-properties" value="pdfngreport/pdfngreport.properties"/>
-    <listeners>
-        <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
-    </listeners>
+    <!--<parameter name="pdfngreport-properties" value="pdfngreport/pdfngreport.properties"/>-->
+    <!--<listeners>-->
+    <!--<listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>-->
+    <!--</listeners>-->
+
+    <!--<test name="Chrome UI Test">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="ui.ConsoleErrorsTest"/>-->
+    <!--<class name="ui.FaviconTest"/>-->
+    <!--<class name="ui.DefaultPagesTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Admin Pannel Test">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="ui.TaglineTextTest"/>-->
+    <!--<class name="ui.ThemeScreenshotTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Performarance Test">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="ui.PageSpeedApiTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Responsive Test">-->
+    <!--<parameter name="browser" value="iphone"/>-->
+    <!--<classes>-->
+    <!--<class name="ui.DefaultPagesMobileTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
     <test name="Chrome UI Test">
         <parameter name="browser" value="chrome"/>
@@ -14,21 +42,12 @@
             <class name="ui.ConsoleErrorsTest"/>
             <class name="ui.FaviconTest"/>
             <class name="ui.DefaultPagesTest"/>
-        </classes>
-    </test>
-    <test name="Admin Pannel Test">
-        <parameter name="browser" value="chrome"/>
-        <classes>
             <class name="ui.TaglineTextTest"/>
             <class name="ui.ThemeScreenshotTest"/>
-        </classes>
-    </test>
-    <test name="Performarance Test">
-        <parameter name="browser" value="chrome"/>
-        <classes>
             <class name="ui.PageSpeedApiTest"/>
         </classes>
     </test>
+
     <test name="Responsive Test">
         <parameter name="browser" value="iphone"/>
         <classes>
