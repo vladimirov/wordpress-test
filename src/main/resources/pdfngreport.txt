@@ -31,8 +31,8 @@ pdfngreport.time.column.format=MMMM dd YYYY hh:mm:sss
 
 #Logo
 pdfreport.logo=show
-pdfreport.report.logo.file=C:/Projects/wordpress-test/pdfngreport/logo.png
-#pdfreport.report.logo.file=pdfngreport/logo.png
+#pdfreport.report.logo.file=C:/Projects/wordpress-test/pdfngreport/logo.png
+pdfreport.report.logo.file=pdfngreport/logo.png
 pdfreport.report.logo.align=right
 
 # chat related
@@ -40,8 +40,8 @@ pdfreport.pie.chart.type=normal
 #pdfreport.pie.chart.type=explode
 
 # pdf report output location
-pdfreport.outputdir=C:/Projects/wordpress-test/pdfngreport
-#pdfreport.outputdir=pdfngreport
+#pdfreport.outputdir=C:/Projects/wordpress-test/pdfngreport
+pdfreport.outputdir=pdfngreport
 
 # tables/page setting : show/hide
 pdfreport.exception.page=hide
