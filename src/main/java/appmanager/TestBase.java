@@ -18,6 +18,7 @@ public class TestBase {
     @BeforeSuite
     public void credentialsAdding() throws IOException, GitLabApiException {
         Appender.credentialsParsingFromGitlab();
+        Reporter.reportPropertiesCreation();
     }
 
     @BeforeTest

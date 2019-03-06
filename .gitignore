@@ -1,5 +1,5 @@
 local.properties
-
 *.log
 *.yaml
+*.pdf
 target/

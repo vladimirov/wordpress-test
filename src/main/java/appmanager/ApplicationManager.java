@@ -1,6 +1,8 @@
 package appmanager;
 
+import com.ullink.slack.simpleslackapi.SlackAttachment;
 import com.ullink.slack.simpleslackapi.SlackChannel;
+import com.ullink.slack.simpleslackapi.SlackPreparedMessage;
 import com.ullink.slack.simpleslackapi.SlackSession;
 import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
 import org.apache.commons.lang3.StringUtils;
@@ -273,13 +275,14 @@ public class ApplicationManager {
         SlackChannel channel = session.findChannelByName("simple-tests"); //make sure bot is a member of the channel.
         session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
                 "Please go to Gitlab to see test results " + project.getWebUrl() + "/issues");
+        session.sendFile(channel, Files.readAllBytes(Paths.get("pdfngreport/report-" + Reporter.id + ".pdf")), "Report");
         session.disconnect();
     }
 
     public void deleteProjectPropertiesFile() throws IOException {
         Files.delete(Paths.get(Appender.path));
         if (!new File(Appender.path).exists()) {
-            logger.info("DELETING PROPERTIES FROM RESOURCES FOLDER");
+            logger.info("PROJECT PROPERTIES ARE SUCCESSFULLY DELETED");
         }
     }
 
