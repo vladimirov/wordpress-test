@@ -1,8 +1,6 @@
 package appmanager;
 
-import com.ullink.slack.simpleslackapi.SlackAttachment;
 import com.ullink.slack.simpleslackapi.SlackChannel;
-import com.ullink.slack.simpleslackapi.SlackPreparedMessage;
 import com.ullink.slack.simpleslackapi.SlackSession;
 import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
 import org.apache.commons.lang3.StringUtils;
@@ -18,13 +16,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.SkipException;
 import pages.*;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Executable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -70,13 +66,10 @@ public class ApplicationManager {
     public void init(String browser) throws IOException {
         if (OS.contains("win")) {
             driver = DriverFactory.initWindowsDriver(browser);
-            logger.info("WINDOWS OS DETECTED");
         } else if (OS.contains("nux")) {
             driver = DriverFactory.initLinuxDriver(browser);
-            logger.info("LINUX OS DETECTED");
         } else if (OS.contains("mac")) {
             driver = DriverFactory.initMacDriver(browser);
-            logger.info("MAC OS DETECTED");
         } else {
             System.out.println("Unknown OS");
         }
