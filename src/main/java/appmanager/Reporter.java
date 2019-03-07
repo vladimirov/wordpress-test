@@ -9,7 +9,7 @@ import java.nio.file.StandardOpenOption;
 public class Reporter {
 
     public static String id = System.getProperty("id");
-    public static String path = "pdfngreport/pdfngreport.properties";
+    public static String path = "target/pdfngreport.properties";
 
     static void reportPropertiesCreation() throws IOException {
         String input = new String(Files.readAllBytes(Paths.get("src/main/resources/report.properties")), StandardCharsets.UTF_8);
