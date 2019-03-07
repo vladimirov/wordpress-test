@@ -277,7 +277,8 @@ public class ApplicationManager {
         SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
         session.connect();
         SlackChannel channel = session.findChannelByName("simple-tests"); //make sure bot is a member of the channel.
-        session.sendFile(channel, Files.readAllBytes(Paths.get("report-" + Reporter.id + ".pdf")), "Report");
+//        session.sendFile(channel, Files.readAllBytes(Paths.get("report-" + Reporter.id + ".pdf")), "Report");
+        session.sendFile(channel, Files.readAllBytes(Paths.get("/home/denis/autotests/wordpress-test/report-" + Reporter.id + ".pdf")), "Report");
         session.disconnect();
     }
 
