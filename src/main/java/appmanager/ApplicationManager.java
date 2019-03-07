@@ -271,6 +271,16 @@ public class ApplicationManager {
         session.disconnect();
     }
 
+    public void sendReport() throws IOException, GitLabApiException {
+        GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
+        Project project = gitLabApi.getProjectApi().getProject(projectId);
+        SlackSession session = SlackSessionFactory.createWebSocketSlackSession(slackApiBotToken);
+        session.connect();
+        SlackChannel channel = session.findChannelByName("simple-tests"); //make sure bot is a member of the channel.
+        session.sendFile(channel, Files.readAllBytes(Paths.get("report-" + Reporter.id + ".pdf")), "Report");
+        session.disconnect();
+    }
+
     public void deleteProjectPropertiesFile() throws IOException {
         Files.delete(Paths.get(Appender.path));
         if (!new File(Appender.path).exists()) {
