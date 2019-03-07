@@ -53,7 +53,7 @@
                             <tasks>
                                 <delete>
                                     <fileset dir="test-screenshots" includes="*.png"/>
-                                    <!--<fileset dir="pdfngreport" includes="*.properties"/>-->
+                                    <fileset dir="pdfngreport" includes="*.properties"/>
                                 </delete>
                             </tasks>
                         </configuration>

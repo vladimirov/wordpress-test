@@ -61,7 +61,6 @@ public class ApplicationManager {
     public static String databasePass;
     private Capabilities capabilities;
 
-    private Executable testResult;
 
     public ApplicationManager() {
         projectProperties = new Properties();
@@ -275,7 +274,7 @@ public class ApplicationManager {
         SlackChannel channel = session.findChannelByName("simple-tests"); //make sure bot is a member of the channel.
         session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
                 "Please go to Gitlab to see test results " + project.getWebUrl() + "/issues");
-//        session.sendFile(channel, Files.readAllBytes(Paths.get("pdfngreport/report-" + Reporter.id + ".pdf")), "Report");
+        session.sendFile(channel, Files.readAllBytes(Paths.get("pdfngreport/report-" + Reporter.id + ".pdf")), "Report");
         session.disconnect();
     }
 
@@ -298,10 +297,10 @@ public class ApplicationManager {
     }
 
     public void checkIfIssueExists(String title) throws GitLabApiException {
-        if (getIssueTitles().contains(title)) {
-            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
-            throw new SkipException("");
-        }
+//        if (getIssueTitles().contains(title)) {
+//            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
+//            throw new SkipException("");
+//        }
     }
 
 }

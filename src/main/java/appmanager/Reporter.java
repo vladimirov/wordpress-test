@@ -12,7 +12,7 @@ public class Reporter {
     public static String path = "pdfngreport/pdfngreport.properties";
 
     static void reportPropertiesCreation() throws IOException {
-        String input = new String(Files.readAllBytes(Paths.get("src/main/resources/pdfngreport.txt")), StandardCharsets.UTF_8);
+        String input = new String(Files.readAllBytes(Paths.get("src/main/resources/report.properties")), StandardCharsets.UTF_8);
         String reportName = "pdfreport.file.name=" + "report-" + id + "\r\n";
 
         Files.write(
