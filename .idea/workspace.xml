@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="report properties changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/report.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/report.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/report.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="446">
+              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -233,11 +232,6 @@
             <path>
               <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
-              <item name="pdfngreport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordpress-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wordpress-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,12 +316,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\wordpress-test\src\main\resources" />
-      <recent name="C:\Projects\wordpress-test\pdfngreport" />
-      <recent name="C:\Projects\wordpress-test" />
-      <recent name="C:\Projects\wordpress-test\pdfnglogo" />
-      <recent name="C:\Projects\wordpress-test\src\test\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui" />
+      <recent name="appmanager" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -340,9 +331,12 @@
       <recent name="appmanager" />
       <recent name="ui" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
-      <recent name="appmanager" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\wordpress-test" />
+      <recent name="C:\Projects\wordpress-test\src\main\resources" />
+      <recent name="C:\Projects\wordpress-test\pdfngreport" />
+      <recent name="C:\Projects\wordpress-test\pdfnglogo" />
+      <recent name="C:\Projects\wordpress-test\src\test\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -416,20 +410,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00166" summary="yoast seo plugin test in progress">
-      <created>1549920897090</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1549920897091</updated>
-    </task>
-    <task id="LOCAL-00167" summary="yoast seo plugin test in progress">
-      <created>1549921018718</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1549921018718</updated>
     </task>
     <task id="LOCAL-00168" summary="yoast seo plugin test in progress">
       <created>1549921109627</created>
@@ -760,7 +740,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551975093224</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="report properties changed">
+      <created>1551976566897</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1551976566897</updated>
+    </task>
+    <task id="LOCAL-00216" summary="report properties changed">
+      <created>1551976955323</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1551976955323</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -806,8 +800,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" sideWeight="0.50080514" side_tool="true" weight="0.16641453" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -822,7 +817,7 @@
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32843137" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30760986" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30760986" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1135,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/report.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="446">
+          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
         </state>
       </provider>
     </entry>
