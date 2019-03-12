@@ -267,7 +267,6 @@ public class ApplicationManager {
         SlackChannel channel = session.findChannelByName("simple-tests"); //make sure bot is a member of the channel.
         session.sendMessage(channel, "Project *" + project.getName() + "* has been automatically tested. " +
                 "Please go to Gitlab to see test results " + project.getWebUrl() + "/issues");
-        session.sendFile(channel, Files.readAllBytes(Paths.get("report-" + Reporter.id + ".pdf")), "Report");
         session.disconnect();
     }
 
