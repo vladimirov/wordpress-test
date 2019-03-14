@@ -3,12 +3,8 @@ package pages;
 import appmanager.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import java.awt.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -45,6 +41,7 @@ public class AdminPage extends HelperBase {
     private By myAccountLocator = By.cssSelector("li#wp-admin-bar-my-account");
     private By logoutItemLocator = By.cssSelector("li#wp-admin-bar-logout");
     private By taglineInputLocator = By.id("blogdescription");
+    private By postNameRadioLocator = By.xpath("//table[contains(@class,'form-table permalink-structure')]/tbody/tr[5]/th/label/input");
 
 
     public String url() throws URISyntaxException {
@@ -141,6 +138,10 @@ public class AdminPage extends HelperBase {
 
     public boolean taglineHasDefaultText() {
         return getElementAttributeValue(taglineInputLocator).equals("Just another WordPress site");
+    }
+
+    public boolean postNameRadioActive() {
+        return elementIsSelected(postNameRadioLocator);
     }
 
 }

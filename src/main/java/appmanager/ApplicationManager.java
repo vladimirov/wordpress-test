@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.SkipException;
 import pages.*;
 
 import java.io.File;
@@ -142,6 +143,10 @@ public class ApplicationManager {
 
     public void openSettingsPage() {
         driver.get(baseUrl + "wp-admin/options-general.php");
+    }
+
+    public void openPermalinksSettings() {
+        driver.get(baseUrl + "wp-admin/options-permalink.php");
     }
 
     public SitePage site() {
@@ -299,10 +304,10 @@ public class ApplicationManager {
     }
 
     public void checkIfIssueExists(String title) throws GitLabApiException {
-//        if (getIssueTitles().contains(title)) {
-//            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
-//            throw new SkipException("");
-//        }
+        if (getIssueTitles().contains(title)) {
+            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
+            throw new SkipException("");
+        }
     }
 
 }

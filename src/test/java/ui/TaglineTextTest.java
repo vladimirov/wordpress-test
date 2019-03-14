@@ -11,7 +11,7 @@ public class TaglineTextTest extends TestBase {
     public void testTaglineTextInAdmin() throws GitLabApiException {
         String title = "Tagline has default text in admin";
         app.checkIfIssueExists(title);
-        app.loginToAdmin();
+//        app.loginToAdmin();
         app.openSettingsPage();
         if (app.admin().taglineHasDefaultText()) {
             String taglineScreenshot = "TaglineScreenshot";
@@ -20,7 +20,7 @@ public class TaglineTextTest extends TestBase {
             app.uploadIssueWithDescriptionToGitlab(
                     title,
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
-                            app.site().pageLinkForGitlab() + "\n" + markdownTaglineScreenshot);
+                            "**Link**: " + app.site().pageLinkForGitlab() + "\n\n" + markdownTaglineScreenshot);
         }
     }
 

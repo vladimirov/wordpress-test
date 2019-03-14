@@ -22,7 +22,7 @@ public class ThemeScreenshotTest extends TestBase {
             app.uploadIssueWithDescriptionToGitlab(
                     title,
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
-                            app.site().pageLinkForGitlab() + "\n" + markdownThemeScreenshot);
+                            "**Link**: " + app.site().pageLinkForGitlab() + "\n\n" + markdownThemeScreenshot);
         }
     }
 

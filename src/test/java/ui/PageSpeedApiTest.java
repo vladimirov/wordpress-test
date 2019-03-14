@@ -50,7 +50,7 @@ public class PageSpeedApiTest extends TestBase {
             logger.info("PageSpeed Desktop value need to be optimized to more than 50. Right now it's value is " + score);
             app.uploadIssueWithDescriptionToGitlab(
                     title,
-                    pageSpeedLink + "\n\n" + "PageSpeed Desktop value need to be optimized to more than 50. Right now it's value is " + score);
+                    "**Link**: " + pageSpeedLink + "\n\n" + "PageSpeed Desktop value need to be optimized to more than 50. Right now it's value is " + score);
         } else {
             logger.info("PageSpeed Desktop is up to date. Right now it's value is " + score);
         }

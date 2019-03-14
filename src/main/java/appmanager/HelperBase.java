@@ -27,9 +27,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.Date;
 import java.util.HashSet;
 
@@ -254,6 +251,14 @@ public class HelperBase {
         return element.getAttribute("value").equals(expectedValue);
     }
 
+    protected String elementHasSpecificAttribute(By locator, String attribute) {
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        logger.info("ACTUAL VALUE:   " + element.getAttribute(attribute));
+        return element.getAttribute(attribute);
+
+    }
+
     public boolean elementHasValue(By locator) {
         logger.info("WAITING TILL ELEMENT " + locator + " HAS VALUE");
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -277,6 +282,12 @@ public class HelperBase {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.getText();
+    }
+
+    public boolean elementIsSelected(By locator){
+        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
+        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return element.isSelected();
     }
 
     public HashSet<String> hrefHashSet(String url) throws IOException {
