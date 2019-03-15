@@ -70,7 +70,6 @@ function liveExecuteCommand($cmd)
 if ( $hash == "true" ) {
   echo '<pre>';
   $result = liveExecuteCommand('mvn -Did=' . $id . ' test');
-  $result = liveExecuteCommand('allure serve');//To Run Allere Reports
   echo '</pre>';
 
   if($result['exit_status'] === 0){
