@@ -4,16 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/chromedriver.exe" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="allure reports added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/PostNameTest.java" afterDir="false" />
+    <list default="true" id="a4aefe94-9413-4ee3-9d64-3735ef330550" name="Default" comment="post name test added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/PageSpeedApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/TaglineTextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/ThemeScreenshotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -288,7 +280,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552579878157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552643938309" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -392,13 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528960069452</updated>
-    </task>
-    <task id="LOCAL-00179" summary="remove exec:java from index.php">
-      <created>1550140476647</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1550140476647</updated>
     </task>
     <task id="LOCAL-00180" summary="remove exec:java from index.php">
       <created>1550141635515</created>
@@ -736,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552322108349</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="post name test added">
+      <created>1552579907688</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1552579907688</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -817,7 +809,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/addressbook" />
     </ignored-roots>
-    <MESSAGE value="one label for all tests" />
     <MESSAGE value="verify link test in progress" />
     <MESSAGE value="slack notifications added" />
     <MESSAGE value="excess classes excluded" />
@@ -842,7 +833,8 @@
     <MESSAGE value="updated issue description" />
     <MESSAGE value="report properties changed" />
     <MESSAGE value="allure reports added" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure reports added" />
+    <MESSAGE value="post name test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="post name test added" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
