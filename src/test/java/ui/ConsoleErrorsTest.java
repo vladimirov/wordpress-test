@@ -7,8 +7,6 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.SkipException;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
@@ -28,7 +26,9 @@ public class ConsoleErrorsTest extends TestBase {
         if (errors.length() > 0) {
             app.uploadIssueWithDescriptionToGitlab(
                     title,
-                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
+                            "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                            "**Screen size**: " + app.site().screenSize() + "\n\n" +
                             errors);
         }
     }

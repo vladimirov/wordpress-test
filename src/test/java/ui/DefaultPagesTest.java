@@ -40,7 +40,9 @@ public class DefaultPagesTest extends TestBase {
         //Without Test Post Test
         app.uploadIssueWithDescriptionToGitlab(
                 title,
-                "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n" +
+                "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
+                        "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                        "**Screen size**: " + app.site().screenSize() + "\n\n" +
                         checkboxSearchLink + checkbox404Link + markdownSearchPage + "\n" + markdown404 + "\n");
 
     }

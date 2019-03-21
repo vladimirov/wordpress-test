@@ -137,7 +137,7 @@ public class AdminPage extends HelperBase {
     }
 
     public boolean taglineHasDefaultText() {
-        return getElementAttributeValue(taglineInputLocator).equals("Just another WordPress site");
+        return getElementAttribute(taglineInputLocator, "value").equals("Just another WordPress site");
     }
 
     public boolean postNameRadioActive() {

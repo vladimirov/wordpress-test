@@ -305,7 +305,7 @@ public class ApplicationManager {
 
     public void checkIfIssueExists(String title) throws GitLabApiException {
         if (getIssueTitles().contains(title)) {
-            logger.info("ISSUE \"" + title + "\" IS ON GITLAB");
+            logger.info("ISSUE IS ON GITLAB - " + "\"" + title + "\"");
             throw new SkipException("");
         }
     }

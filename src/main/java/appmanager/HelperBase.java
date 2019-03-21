@@ -1,6 +1,5 @@
 package appmanager;
 
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -34,12 +33,12 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class HelperBase {
 
-    public Logger logger = LoggerFactory.getLogger(HelperBase.class);
+    private Logger logger = LoggerFactory.getLogger(HelperBase.class);
 
     protected WebDriver driver;
-    public WebDriverWait wait;
-    public int timeOutInSeconds = 10;
-    public WebElement element;
+    private WebDriverWait wait;
+    private int timeOutInSeconds = 10;
+    private WebElement element;
     public String setLink = null;
 
     public HelperBase(WebDriver driver) {
@@ -95,7 +94,7 @@ public class HelperBase {
         }
     }
 
-    public void waitToBePresent(By locator) {
+    protected void waitToBePresent(By locator) {
         try {
             logger.info("ELEMENT HAS BEEN FOUND: " + locator);
             element = wait.until(visibilityOfElementLocated(locator));
@@ -116,7 +115,7 @@ public class HelperBase {
         }
     }
 
-    public void waitTillElementIsVisible(By locator) {
+    protected void waitTillElementIsVisible(By locator) {
         logger.info("WAITING TILL ELEMENT IS VISIBLE: " + locator);
         try {
             logger.info("ELEMENT IS VISIBLE: " + locator);
@@ -148,7 +147,7 @@ public class HelperBase {
         }
     }
 
-    public void waitForPageLoadComplete(WebDriver driver, int specifiedTimeout) {
+    protected void waitForPageLoadComplete(WebDriver driver, int specifiedTimeout) {
         Wait<WebDriver> wait = new WebDriverWait(driver, specifiedTimeout);
         wait.until(driver1 -> String
                 .valueOf(((JavascriptExecutor) driver1).executeScript("return document.readyState"))
@@ -174,7 +173,7 @@ public class HelperBase {
         ImageIO.write(screenshot.getImage(), "PNG", new File("test-screenshots/" + screenshotName + "-" + Appender.id + ".png"));
     }
 
-    public boolean isAlertPresent() {
+    protected boolean isAlertPresent() {
         try {
             driver.switchTo().alert();
             return true;
@@ -196,7 +195,7 @@ public class HelperBase {
         }
     }
 
-    public boolean isElementPresent(By locator) {
+    protected boolean isElementPresent(By locator) {
         logger.info("TRYING TO FOUND ELEMENT: " + locator);
         element = wait.until(presenceOfElementLocated(locator));
         logger.info("ELEMENT HAS BEEN FOUND: " + locator);
@@ -265,17 +264,11 @@ public class HelperBase {
         return element.getText().length() > 0;
     }
 
-    public String getElementAttribute(By locator, String attribute) {
+    protected String getElementAttribute(By locator, String attribute) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         logger.info("GETTING ELEMENT ATTRIBUTE: " + attribute);
         return element.getAttribute(attribute);
-    }
-
-    public String getElementAttributeValue(By locator) {
-        logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
-        element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        return element.getAttribute("value");
     }
 
     public String getElementText(By locator) {
@@ -284,7 +277,7 @@ public class HelperBase {
         return element.getText();
     }
 
-    public boolean elementIsSelected(By locator){
+    protected boolean elementIsSelected(By locator) {
         logger.info("WAIT ELEMENT TO BE PRESENT: " + locator);
         element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return element.isSelected();
@@ -308,19 +301,19 @@ public class HelperBase {
         return hashSet;
     }
 
-    public static Elements getElementsFromXml(String url) throws IOException {
+    protected static Elements getElementsFromXml(String url) throws IOException {
         Document doc = Jsoup.connect(url).get();
         Elements xmlLinks = doc.select("loc");
         return xmlLinks;
     }
 
-    public static Elements getElementsFromHtml(String url) throws IOException {
+    protected static Elements getElementsFromHtml(String url) throws IOException {
         Document doc = Jsoup.connect(url).get();
         Elements href = doc.select("a[href]");
         return href;
     }
 
-    public static Integer responseCodeNumber(String hrefUrl) throws IOException {
+    protected static Integer responseCodeNumber(String hrefUrl) throws IOException {
         URL url = new URL(hrefUrl);
         HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
         httpURLConnect.setConnectTimeout(7000);
@@ -363,7 +356,7 @@ public class HelperBase {
         return errorMessage;
     }
 
-    public void pasteText(By locator, String text) {
+    protected void pasteText(By locator, String text) {
         logger.info("INSERTING TEXT TO TEXTAREA " + locator);
         try {
             element = wait.until(presenceOfElementLocated(locator));
@@ -378,6 +371,44 @@ public class HelperBase {
 
     public String pageLinkForGitlab() {
         return driver.getCurrentUrl() + "\n";
+    }
+
+    public String screenSize() {
+        String size = String.valueOf(driver.manage().window().getSize());
+        return size.substring(1, size.length() - 1).replace(",", " x");
+    }
+
+    protected void switchToNewTab() {
+        String currentTab = driver.getWindowHandle();
+        for (String tab : driver.getWindowHandles()) {
+            if (!tab.equals(currentTab)) {
+                driver.switchTo().window(tab);
+            }
+        }
+    }
+
+    protected boolean isClickable(By locator) {
+        logger.info("CHECK IF ELEMENT IS CLICKABLE " + locator);
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 1);
+            element = wait.until(elementToBeClickable(locator));
+            logger.info("ELEMENT IS CLICKABLE: " + locator);
+            return true;
+        } catch (Exception e) {
+            logger.info("ELEMENT IS NOT CLICKABLE: " + locator);
+            return false;
+        }
+    }
+
+    protected void open(String url) {
+        logger.info("OPEN URL: " + url);
+        driver.get(url);
+    }
+
+    public boolean isTextOnPagePresent(String text) {
+        WebElement body = driver.findElement(By.tagName("body"));
+        String bodyText = body.getText();
+        return bodyText.contains(text);
     }
 
 
