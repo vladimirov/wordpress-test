@@ -23,8 +23,8 @@ public class PostNameTest extends TestBase {
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
                             "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
                             "**Screen size**: " + app.site().screenSize() + "\n\n" +
-                            "**Link**: " + app.site().pageLinkForGitlab() + "\n" + "**Comment**: " +
-                            "'Post name' permalink structure should be active by default if another doesn't mentioned in project specifications" +"\n\n" +
+                            "**Link**: " + app.site().pageLinkForGitlab() + "\n" +
+                            "**Comment**: " + "'Post name' permalink structure should be active by default if another doesn't mentioned in project specifications" +"\n\n" +
                             markdownTaglineScreenshot);
         }
 

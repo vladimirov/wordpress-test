@@ -29,6 +29,7 @@ public class ConsoleErrorsTest extends TestBase {
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
                             "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
                             "**Screen size**: " + app.site().screenSize() + "\n\n" +
+                            "**Link**: " + app.site().pageLinkForGitlab() + "\n\n" +
                             errors);
         }
     }

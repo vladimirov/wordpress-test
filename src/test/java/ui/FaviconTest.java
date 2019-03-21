@@ -22,8 +22,10 @@ public class FaviconTest extends TestBase {
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
             app.uploadIssueWithDescriptionToGitlab(title,
-                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" + "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
-                            "Check site favicon");
+                    "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
+                            "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
+                            "**Link**: " + app.site().pageLinkForGitlab() + "\n\n" +
+                            "**Comment**: " + "Check site favicon");
         }
     }
 
