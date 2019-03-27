@@ -21,7 +21,9 @@ public class FaviconTest extends TestBase {
             assertTrue(app.faviconPage().isFaviconPresent());
             assertTrue(app.faviconPage().verifyFaviconLink());
         } catch (AssertionError e) {
-            app.uploadIssueWithDescriptionToGitlab(title,
+            app.uploadIssueWithDescriptionToGitlab(
+                    title,
+                    "Automation Tests",
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
                             "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
                             "**Link**: " + app.site().pageLinkForGitlab() + "\n\n" +

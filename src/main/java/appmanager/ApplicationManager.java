@@ -206,7 +206,7 @@ public class ApplicationManager {
         return upload.getMarkdown();
     }
 
-    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String description) throws GitLabApiException {
+    public void uploadIssueWithDescriptionToGitlab(String issueTitle, String label, String description) throws GitLabApiException {
         logger.info("UPLOADING ISSUE TO GITLAB WITH DESCRIPTION...");
         GitLabApi gitLabApi = new GitLabApi(gitlabHostUrl, gitlabApiToken);
         Project project = gitLabApi.getProjectApi().getProject(projectId);
@@ -217,7 +217,7 @@ public class ApplicationManager {
                 null,
                 null,
                 null,
-                "Automation Tests",
+                label,
                 null,
                 null,
                 null,

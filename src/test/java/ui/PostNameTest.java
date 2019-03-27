@@ -20,6 +20,7 @@ public class PostNameTest extends TestBase {
             String markdownTaglineScreenshot = app.getGitlabFileMarkdown(permalinkScreenshot);
             app.uploadIssueWithDescriptionToGitlab(
                     title,
+                    "Automation Tests",
                     "**Browser**: " + app.browserName() + "\n" + app.browserVersion() + "\n\n" +
                             "**OS**: " + StringUtils.capitalize(app.OS) + "\n\n" +
                             "**Screen size**: " + app.site().screenSize() + "\n\n" +

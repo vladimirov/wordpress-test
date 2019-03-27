@@ -16,6 +16,7 @@ public class SiteLinksTest extends TestBase {
         if (!app.site().sitemapPageIsAdded()) {
             app.uploadIssueWithDescriptionToGitlab(
                     title,
+                    "Automation Tests",
                     app.projectProperties.getProperty("web.baseUrl") + "sitemap_index.xml" + "\n\r" + "\n\r" +
                             "Sitemap is missing because Yoast SEO plugin isn't installed");
         }
@@ -26,6 +27,7 @@ public class SiteLinksTest extends TestBase {
         if (hashSet.size() > 0) {
             app.uploadIssueWithDescriptionToGitlab(
                     titleLinks,
+                    "Automation Tests",
                     String.valueOf(hashSet).replaceAll("[\\[\\]]", "").replaceAll(",", "\n\r\n\r"));
         }
 
