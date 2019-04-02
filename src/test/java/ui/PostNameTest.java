@@ -9,7 +9,7 @@ public class PostNameTest extends TestBase {
 
     @Test
     public void permalinksHasPostHameIsSelected() throws GitLabApiException {
-        String title = "Site isn't displays with correct permalink name";
+        String title = "Site displays with incorrect permalink name";
         app.checkIfIssueExists(title);
         app.loginToAdmin();
         app.openPermalinksSettings();
